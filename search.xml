@@ -96,12 +96,316 @@
   <entry>
     <title>JavaScript基础</title>
     <url>/2023/03/20/JavaScript%E5%9F%BA%E7%A1%80/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h3 id="一、前端知识"><a href="#一、前端知识" class="headerlink" title="一、前端知识"></a>一、前端知识</h3><h4 id="1-1、Web发展史"><a href="#1-1、Web发展史" class="headerlink" title="1.1、Web发展史"></a>1.1、Web发展史</h4><p>Mosaic，是互联网历史上第一个获普遍使用和能够显示图片的网页浏览器。于 1993 年问世。 1994 年 4 月，马克.安德森和 Silicon Graphics（简称为 SGI，中译为“视算科技”或“硅 图”）公司的创始人吉姆·克拉克（Jim Clark）在美国加州设立了“Mosaic Communication Corporation”。 Mosaic 公司成立后，由于伊利诺伊大学拥有 Mosaic 的商标权，且伊利诺伊大学已将 技术转让给 Spy Glass 公司，开发团队必须彻底重新撰写浏览器程式码，且浏览器名 称更改为 Netscape Navigator，公司名字于 1994 年 11 月改名为“Netscape Communication Corporation”，此后沿用至今，中译为“网景”。 微软的Internet Explorer及Mozilla Firefox等，其早期版本皆以Mosaic为基础而开发。 微软随后买下Spy Glass公司的技术开发出Internet Explorer浏览器，而Mozilla Firefox 则是网景通讯家开放源代码后所衍生出的版本。</p>
+<h4 id="1-2js历史"><a href="#1-2js历史" class="headerlink" title="1.2js历史"></a>1.2js历史</h4><p>JavaScript 作为 Netscape Navigator 浏览器的一部分首次出现在 1996 年。它最初的设 计目标是改善网页的用户体验。 作者：Brendan Eich 期初 JavaScript 被命名为 LiveScript，后因和 Sun 公司合作，因市场宣传需要改名 JavaScript。后来 Sun 公司被 Oracle 收购，JavaScript 版权归 Oracle 所有。</p>
+<h4 id="1-3浏览器组成"><a href="#1-3浏览器组成" class="headerlink" title="1.3浏览器组成"></a>1.3浏览器组成</h4><p>shell 部分——用户能操作部分(壳)</p>
+<p>内核部分——用户看不到的部分</p>
+<ul>
+<li>渲染引擎（语法规则和渲染）</li>
+<li>js 引擎</li>
+<li>其他模块（如异步）</li>
+</ul>
+<h4 id="1-4js引擎"><a href="#1-4js引擎" class="headerlink" title="1.4js引擎"></a>1.4js引擎</h4><p>2001 年发布 ie6，首次实现对 js 引擎的优化。 2008 年 Google 发布最新浏览器 Chrome，它是采用优化后的 javascript 引擎，引擎代 号 V8，因能把 js 代码直接转化为机械码来执行，进而以速度快而闻名。 后 Firefox 也推出了具备强大功能的 js 引擎 Firefox3.5 TraceMonkey（对频繁执行的代码做了路径优化） Firefox4.0 JeagerMonkey</p>
+<h4 id="1-5js的特色"><a href="#1-5js的特色" class="headerlink" title="1.5js的特色"></a>1.5js的特色</h4><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">编译型语言</th>
+<th align="center">解释型语言</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">怎么做</td>
+<td align="center">通篇编译后，生成翻译完的文件，程序执行翻译后的文件</td>
+<td align="center">看一行翻译一行，不生成特定文件</td>
+</tr>
+<tr>
+<td align="center">代表语言</td>
+<td align="center">c、c++</td>
+<td align="center">js、php、python</td>
+</tr>
+<tr>
+<td align="center">优点</td>
+<td align="center">快（常用于系统，游戏）</td>
+<td align="center">可以跨平台</td>
+</tr>
+<tr>
+<td align="center">缺点</td>
+<td align="center">移植性不好（不跨平台，windows和linux不能混用）</td>
+<td align="center">稍微慢点</td>
+</tr>
+</tbody></table>
+<ol>
+<li>js 是解释性语言：(不需要编译成文件）跨平台</li>
+<li>java 先通过 javac，编译成.class 文件，通过 jvm（Java 虚拟机）进行解释执行<br>.java→javac→编译→.class→jvm→解释执行（java 可以跨平台）（java 是 oak 语言）</li>
+<li>link rel &#x3D; “”是异步加载</li>
+<li>单线程：同一时间只能做一件事——js 引擎是单线程<br>（同一时间做很多事叫多线程）</li>
+<li>ECMA（欧洲计算机制造联合会）标注：为了取得技术优势，微软推出了 JScript，<br>CEnvi 推出 ScriptEase，与 JavaScript 同样可在浏览器上运行。为了统一规格 JavaScript<br>兼容于 ECMA 标准，因此也称为 ECMAScript。<br>js 是轮转时间片</li>
+</ol>
+<h4 id="1-6js执行队列"><a href="#1-6js执行队列" class="headerlink" title="1.6js执行队列"></a>1.6js执行队列</h4><p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/8fb93cf220bd4a66a4b5107a5e5787f9.png"></p>
+<h4 id="1-7主流浏览器内核"><a href="#1-7主流浏览器内核" class="headerlink" title="1.7主流浏览器内核"></a>1.7主流浏览器内核</h4><p>|主流浏览器（必须有独立内核）市场份额大于3%|	内核名称|<br>|:—:|:—:|:—:|<br>|IE	|trident|<br>|chrome	|webkit&#x2F;blink|<br>|firefox|gecko|<br>|opera	|presto|<br>|safari	|werbkit|</p>
+<h3 id="二、引入js"><a href="#二、引入js" class="headerlink" title="二、引入js"></a>二、引入js</h3><h4 id="2-1如何引入js"><a href="#2-1如何引入js" class="headerlink" title="2.1如何引入js"></a>2.1如何引入js</h4><ul>
+<li>第一种：页面内嵌标签,写 head 里面也行,写 body 里面也行<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span> </span><br><span class="line">	<span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>第二种 ：外部 js 文件，引入<blockquote>
+<p>注意：为符合 web 标准（w3c 标准中的一项）结构（html）、行为（js）、样式（css） 相分离，通常会采用外部引入。<br>一个文件中可以包括多个 css，js——不混用</p>
+</blockquote>
+</li>
+</ul>
+<p>特殊写页面，大部分写在外部——不混用</p>
+<p>如果同时写了内部的 js 和外部的 js，那么是外部的 js 文件显示出来</p>
+<h3 id="三、变量"><a href="#三、变量" class="headerlink" title="三、变量"></a>三、变量</h3><p>HTML，css 不是编程语言，是计算机语言，编程语言需要有变量和函数 变量是存放东西，方便后续使用的框</p>
+<h4 id="3-1变量声明"><a href="#3-1变量声明" class="headerlink" title="3.1变量声明"></a>3.1变量声明</h4><p>声明、赋值分解<br>var a; 这个叫变量声明。我们向系统中申请了 var 这个框，命名叫 a 给 a 赋值 100，写作 a &#x3D;100，这里不是等号是赋值 var a ；a &#x3D;100；可以简化写成 var a&#x3D;100；</p>
+<h4 id="3-2单一var声明法"><a href="#3-2单一var声明法" class="headerlink" title="3.2单一var声明法"></a>3.2单一var声明法</h4><p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/b8d65bbf71ab424a9f88cdfa21111e29.png"></p>
+<blockquote>
+<p>如写做：var a &#x3D; 10；a&#x3D;20;那么后面的 20 就会覆盖掉前面的 10<br>命名规则（用接近的英文单词）<br>变量名必须以英文字母、_、$ 开头</p>
+</blockquote>
+<p>变量名可以包括英文字母、_、$、数字</p>
+<p>不可以用系统的关键字、保留字作为变量名</p>
+<p>注意：起变量名一定要以英文语义化</p>
+<h4 id="关键字与保留字"><a href="#关键字与保留字" class="headerlink" title="关键字与保留字"></a>关键字与保留字</h4><p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/7783e53d84694fb4a607f5a16634f8a8.png"></p>
+<h3 id="四、基本语法"><a href="#四、基本语法" class="headerlink" title="四、基本语法"></a>四、基本语法</h3><p>下面是变量,例：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">var</span> b = <span class="number">20</span>;</span><br><span class="line"><span class="keyword">var</span> c;</span><br><span class="line">c = a + b;</span><br></pre></td></tr></table></figure>
+<p>先运算等号右边的 a+b，运算完后，再赋值给左边 c<br>先取值，再赋值</p>
+<h4 id="4-1运算大于赋值的优先级"><a href="#4-1运算大于赋值的优先级" class="headerlink" title="4.1运算大于赋值的优先级"></a>4.1运算大于赋值的优先级</h4><p>js 是动态语言，动态语言基本上都是解释性语言，解释性语言基本上都是脚本语言<br>js 是浮点型语言（带小数点）</p>
+<h4 id="4-2值类型（数据类型）"><a href="#4-2值类型（数据类型）" class="headerlink" title="4.2值类型（数据类型）"></a>4.2值类型（数据类型）</h4><h5 id="1-不可改变的原始值（栈数据）栈-stack"><a href="#1-不可改变的原始值（栈数据）栈-stack" class="headerlink" title="1.不可改变的原始值（栈数据）栈 stack"></a>1.不可改变的原始值（栈数据）栈 stack</h5><blockquote>
+<p>已经放进去的值不可改变，只会改房间编号为 null(硬盘原理)</p>
+</blockquote>
+<pre><code>1.Number 数字,例 var a = 123;
+2.String 字符串,语言放双引号里，例 var a=”语言”，““是空串
+3.Boolean 布尔数字,就两个值，false，true
+4.undefined 是没有定义的，表示还没赋值,仅一个值 underfined
+5.null 代表空，占位用，用空值来覆盖
+</code></pre>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a =<span class="number">10</span>;</span><br><span class="line"><span class="keyword">var</span> b = a;</span><br><span class="line">a = <span class="number">20</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(b)</span><br><span class="line">答案：<span class="number">10</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>原始值是我把一个值放到另一个值里面，改了第一个值，第二个值不变</p>
+</blockquote>
+<h5 id="2-引用值（堆数据）大致上放堆-heap-里面"><a href="#2-引用值（堆数据）大致上放堆-heap-里面" class="headerlink" title="2.引用值（堆数据）大致上放堆 heap 里面"></a>2.引用值（堆数据）大致上放堆 heap 里面</h5><p>array 数组, Object, function … data,RegExp 正则</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="literal">false</span>,”abc”]; <span class="comment">//这是数组</span></span><br><span class="line">例：<span class="keyword">var</span> arr = [<span class="number">1</span>];</span><br><span class="line"><span class="keyword">var</span> arr1 = arr;</span><br><span class="line">arr.<span class="title function_">push</span>(<span class="number">2</span>);</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(arr1);</span><br><span class="line">答案：arr 是 <span class="number">1</span>,<span class="number">2</span>   arr1 是 <span class="number">1</span>,<span class="number">2</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>引用值是把第一个值放到第二个值里面，改第一个值，第二个值也改变</p>
+</blockquote>
+<p>js 由值决定类型。原始值和引用值唯一的不同是赋值形式不同<br><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/41ac78870d2c4440b23d759f997963ba.png"></p>
+<p>var a &#x3D; 10;var b &#x3D;a；是 a 先取出 10，copy 一份放到 b 里面，改变 a 的值，b 的值是不变的，再把 a&#x3D;20;时 b 的值还是 10，不发生改变。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>];</span><br><span class="line"><span class="keyword">var</span> arr1 =arr;</span><br><span class="line">arr.<span class="title function_">push</span>(<span class="number">3</span>);</span><br><span class="line">答案：这往[<span class="number">1</span>,<span class="number">2</span>]放 <span class="number">3</span>，arr 和 arr1 都是[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>引用值是在栈内存里面放堆的地址，拷贝的也是地址，所以改变 arr，arr1 也变了</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>]; </span><br><span class="line"><span class="keyword">var</span> arr1 =arr; </span><br><span class="line">arr = [<span class="number">1</span>,<span class="number">3</span>]; </span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(arr1)</span><br><span class="line">答案：arr = [<span class="number">1</span>,<span class="number">3</span>];</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>新建了一个新的房间。arr1 是 1,2,现在是插入新引入值”房间”,会在堆里面重新申请一间房，并指向新房间</p>
+</blockquote>
+<h5 id="3-js-语句基本规"><a href="#3-js-语句基本规" class="headerlink" title="3.js 语句基本规"></a>3.js 语句基本规</h5><p>语句后面要用分号结束“；”但 function test(){}，for(){}，if(){}后面都不用加分号<br>js 语法错误会引发后续代码终止，但不会影响其它 js 代码块<br>书写格式要规范，“&#x3D; + &#x2F; -”两边都应该有空格<br><strong>错误分为两种</strong><br>1）低级错误（语法解析错误），不能写中文<br>2）逻辑错误（标准错误，情有可原，错的那个执行不了）</p>
+<h3 id="五、js运算符"><a href="#五、js运算符" class="headerlink" title="五、js运算符"></a>五、js运算符</h3><h4 id="5-1-运算操作符"><a href="#5-1-运算操作符" class="headerlink" title="5.1 运算操作符"></a>5.1 运算操作符</h4><ol>
+<li><p>+</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">“+”作用：数学运算、字符串链接</span><br><span class="line">任何数据类型加字符串都等于字符串</span><br><span class="line">例 <span class="keyword">var</span> a = “a”+ <span class="literal">true</span> + <span class="number">1</span>; <span class="comment">//打印 atrue1</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span> + “a” + <span class="number">1</span> + <span class="number">1</span>; <span class="comment">//打印 1a11</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span> + <span class="number">1</span> + “a” + <span class="number">1</span> + <span class="number">1</span>; <span class="comment">//打印 2a11，从左向右运算</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span> + <span class="number">1</span> + “a” +( <span class="number">1</span> + <span class="number">2</span>); <span class="comment">//打印 2a3</span></span><br></pre></td></tr></table></figure></li>
+<li><p>*、- 、&#x2F;</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a = <span class="number">0</span> – <span class="number">1</span>； <span class="comment">//等于-1</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">2</span> * <span class="number">1</span>； <span class="comment">//等于 2</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">0</span> / <span class="number">0</span>； <span class="comment">//答案是 NaN，应该得出一个数字类型的数，但是没法表达，</span></span><br><span class="line">就用 <span class="title class_">NaN</span> (<span class="title class_">NaN</span> 是 <span class="title class_">Not</span> a <span class="title class_">Number</span> 非数，不是数，但是是数字类型</span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span> / <span class="number">0</span>; <span class="comment">//是 infinity</span></span><br><span class="line">例 <span class="keyword">var</span> a = -<span class="number">1</span> / <span class="number">0</span>; /是-infinity</span><br></pre></td></tr></table></figure></li>
+<li><p>%<br>摩尔，模，是取余数的意思</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">5</span>%<span class="number">2</span> <span class="comment">//5%2 是五除二的余数，商二余一</span></span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">5</span>%<span class="number">1</span> <span class="comment">//是五除一的余数，结果是 0</span></span><br><span class="line">例 <span class="keyword">var</span> num = <span class="number">1</span> % <span class="number">5</span>; <span class="comment">//意思是 1 除以 5 的余数。商 0 余 1</span></span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">4</span>%<span class="number">6</span> <span class="comment">//是四除六的余数，结果是 4</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">4</span>;a % = <span class="number">5</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">// 4</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">0</span>;a % = <span class="number">5</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//0</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">10</span>;a %= <span class="number">2</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//0</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">3</span>;a % = <span class="number">4</span>; <span class="comment">//4</span></span><br></pre></td></tr></table></figure>
+<p>优先级”&#x3D;“最弱【赋值符号优先级最低】，”()”优先级较高</p>
+</li>
+<li><p>++</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a = <span class="number">10</span>; a = a + <span class="number">1</span>; <span class="comment">//结果 11</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+<p>a &#x3D; a + 1;写成 a ++是一种简化形式“++”，是自身加一，再赋值给自身<br>a++是 a&#x3D;a+1 的简化形式</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(++a );<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//答案 11；11</span></span><br><span class="line">是先执行++，再执行本条语句 <span class="variable language_">document</span>.<span class="title function_">write</span>(++a)</span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(a ++);<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//答案 1；2。是先执行</span></span><br><span class="line">语句(<span class="variable language_">document</span>.<span class="title function_">write</span>(a))，再++，所以第一次打印的还是 a，第二次打印 a++后的值</span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>；<span class="keyword">var</span> b=++a -<span class="number">1</span>+a++;<span class="variable language_">document</span>.<span class="title function_">write</span>(b + “ ” + a) <span class="comment">//答案 21 12</span></span><br><span class="line">先++a，这个时候 a=<span class="number">11</span>，再-<span class="number">1</span>，再加 a，b 就是 <span class="number">21</span>，最后++，a 就是 <span class="number">12</span></span><br></pre></td></tr></table></figure>
+<p>赋值的顺序自右向左，计算的顺序自左向右（按数学来）</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>；<span class="keyword">var</span> b = a ++ + <span class="number">1</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(b)； <span class="comment">//答案 2，先执行 var b =a+1，</span></span><br><span class="line">再 a++</span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>；<span class="keyword">var</span> b = a ++ + <span class="number">1</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(a)；<span class="variable language_">document</span>.<span class="title function_">write</span>(b)； <span class="comment">//答案 2，2</span></span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>；<span class="keyword">var</span> b = ++a + <span class="number">1</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(a)；<span class="variable language_">document</span>.<span class="title function_">write</span>(b)； <span class="comment">//答案 2，3</span></span><br><span class="line">例 <span class="keyword">var</span> i = <span class="number">1</span>;<span class="keyword">var</span> a = i++; <span class="comment">//答案 a = 1; 此时 i 先将值 1 赋给 a,然后自己+1，i=2;</span></span><br><span class="line"><span class="keyword">var</span> b = ++i; <span class="comment">//答案 b = 3；此时 i 先自己+1 为 3.再给 b 赋值，b=3;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>–<br>“- -”，是自身减一，在赋值给自身</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="keyword">var</span> b = a-- + -- a;<span class="variable language_">document</span>.<span class="title function_">write</span>(b); <span class="comment">//答案 0，先执行--a;此时 a 变成</span></span><br><span class="line"><span class="number">0</span>，然后第一个 a 也变成 <span class="number">0</span>，那么 b = <span class="number">0</span>-- + --a</span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="keyword">var</span> b = --a + --a;<span class="variable language_">document</span>.<span class="title function_">write</span>(b); <span class="comment">//答案-1</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a++);<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//答案 1；2</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(++a);<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//答案 2；2</span></span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>; <span class="keyword">var</span> b = a ++ +<span class="number">1</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(b); <span class="comment">//答案 2</span></span><br><span class="line">a 写在后面就后运行，先计算 a+<span class="number">1</span>=<span class="number">2</span> 赋值给 b 后再++</span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="keyword">var</span> b= ++a + <span class="number">1</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a);<span class="variable language_">document</span>.<span class="title function_">write</span>(b); <span class="comment">//答案 2；3</span></span><br></pre></td></tr></table></figure></li>
+<li><p>+&#x3D; -&#x3D;</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>;a ++;a ++;a ++;加十个</span><br><span class="line">简化写法：a +=<span class="number">10</span>;也是 a = a+<span class="number">10</span>;</span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>;a += <span class="number">10</span> + <span class="number">1</span>; <span class="comment">//答案 21</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;a = a + <span class="number">10</span>;等于 a+=<span class="number">10</span></span><br><span class="line">a++是 a +=<span class="number">1</span> 的写法</span><br></pre></td></tr></table></figure></li>
+<li><p>&#x2F;&#x3D;</p>
+</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a=<span class="number">10</span>;a/=<span class="number">2</span>; <span class="comment">//答案 5，是除二赋给自身的意思</span></span><br></pre></td></tr></table></figure>
+<ol>
+<li>*&#x3D;</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>;a *=<span class="number">2</span>; <span class="comment">//答案：20，是乘二赋给自身的意思</span></span><br></pre></td></tr></table></figure>
+<ol>
+<li>%&#x3D;</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a=<span class="number">10</span>;a%=<span class="number">2</span>; <span class="comment">//答案：0， 10 能整除 2,余数是 0,取余，余数赋给自身。</span></span><br><span class="line">例 <span class="keyword">var</span> a=<span class="number">3</span>;a%=<span class="number">4</span>; <span class="comment">//答案：3，3 除以 4，余数为 3，余数赋给自身。</span></span><br><span class="line">例 <span class="keyword">var</span> a=<span class="number">0</span>;a%=<span class="number">4</span>; <span class="comment">//答案：0，0 除以 4，余数为 0，余数赋给自身。</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;a% =<span class="number">10</span>; <span class="comment">//答案：1，1 除以 10，余数为 1，余数赋给自身。</span></span><br></pre></td></tr></table></figure>
+<h5 id="10-小测"><a href="#10-小测" class="headerlink" title="10.小测"></a>10.小测</h5><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a =(<span class="number">10</span> * <span class="number">3</span> – <span class="number">4</span> / <span class="number">2</span> + <span class="number">1</span>)%<span class="number">2</span>,b=<span class="number">3</span>;b %= a + <span class="number">3</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(a++);</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">wtite</span>(“&lt;br&gt;”);</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(--b);</span><br><span class="line"><span class="number">2</span>、<span class="keyword">var</span> a =<span class="number">123</span>; <span class="keyword">var</span> b =<span class="number">234</span>;经过计算交换 a，b 的值</span><br></pre></td></tr></table></figure>
+<p>答案</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span>、<span class="variable language_">document</span>.<span class="title function_">write</span>(a++);是 <span class="number">1</span>（先打出 <span class="number">1</span> 再++）</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(--b);是 <span class="number">2</span></span><br><span class="line">b % =a + <span class="number">3</span>,<span class="number">3</span> 的模等于 <span class="number">4</span>，除不开再赋值给 b，b 还是 <span class="number">3</span></span><br><span class="line"><span class="number">2</span>、方法一普通方法：<span class="keyword">var</span> c = a; a = b; b = c;<span class="variable language_">document</span>.<span class="title function_">write</span>(a ,b);</span><br><span class="line">方法二 a = a + b; b = a – b; a = a –b; <span class="variable language_">document</span>.<span class="title function_">write</span>(a ,b);</span><br></pre></td></tr></table></figure>
+<h4 id="5-2-比较运算符"><a href="#5-2-比较运算符" class="headerlink" title="5.2 比较运算符"></a>5.2 比较运算符</h4>]]></content>
       <categories>
         <category>Learn</category>
       </categories>
       <tags>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ATM</title>
+    <url>/2023/03/20/ATM/</url>
+    <content><![CDATA[<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// A T M </span></span><br><span class="line">        <span class="keyword">var</span> money = <span class="number">100</span>;</span><br><span class="line">        <span class="keyword">var</span> price = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (num != <span class="number">4</span>) &#123;</span><br><span class="line">            <span class="keyword">var</span> num = <span class="title function_">prompt</span>(<span class="string">&#x27;请输入你要的操作:\n1.存钱\n2.取钱\n3.显示余额\n4.退出&#x27;</span>)</span><br><span class="line">            <span class="keyword">switch</span> (num) &#123;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;1&#x27;</span>:</span><br><span class="line">                    price = <span class="title function_">prompt</span>(<span class="string">&#x27;输入要存的钱数；&#x27;</span>);</span><br><span class="line">                    money = money + <span class="built_in">parseFloat</span>(price);</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额；&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;2&#x27;</span>:</span><br><span class="line">                    price = <span class="title function_">prompt</span>(<span class="string">&#x27;输入你要取出的钱: &#x27;</span>);</span><br><span class="line">                    money = money - <span class="built_in">parseFloat</span>(price);</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;3&#x27;</span>:</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额：&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;4&#x27;</span>:</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;正在退出...&#x27;</span>)</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>demo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML基础</title>
+    <url>/2023/03/20/HTML%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<p>HTML是HyperText Markup Language的简称,中文名称:超文本标记语言,它是一种用于创建网页的标准标记语言。</p>
+<p>标记语言是由标签构成的语言。&lt;标签名称&gt;例如html,xml;标记语言不是编程语言。</p>
+<p>HTML运行在浏览器上,由浏览器来解析</p>
+<p>标签的内部是可以定义属性的,属性由键值对构成,值需要用双引号括起来,多个属性用空格隔开</p>
+<p><code>&lt;标签名称 属性名1=”属性值” 属性2=”属性值”&gt;&lt;/标签名称&gt;</code></p>
+<p><code>&lt;p id=”p1” name=”p1”&gt; &lt;/p&gt;</code>   </p>
+<h2 id="HTML文档的基本结构"><a href="#HTML文档的基本结构" class="headerlink" title="HTML文档的基本结构"></a>HTML文档的基本结构</h2><p>HTML文档也叫web页面。</p>
+<h3 id="基本结构"><a href="#基本结构" class="headerlink" title="基本结构"></a>基本结构</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- html,根元素,围堵标签--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">head,头元素:</span></span><br><span class="line"><span class="comment">    作用:</span></span><br><span class="line"><span class="comment">    1.用于指定HTML文章中的一些元数据,例如元数据 meta:定义页面的编码格式title:定义页面的标题</span></span><br><span class="line"><span class="comment">    2.引入外部的资源的文件</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">body,主体: 浏览器显示内容都将在这里编写</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">格式化代码的快捷键: ctrl+shift++f(英文状态下使用)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="HTML中常用标签"><a href="#HTML中常用标签" class="headerlink" title="HTML中常用标签"></a>HTML中常用标签</h2><p>1.<code>&lt;h1&gt;&lt;/h1&gt; ....&lt;h6&gt;&lt;/h6&gt;</code> 分别是一级标题到六级标题。</p>
+<p>2.<code>&lt;h2&gt;&lt;/h2&gt;</code>:段落标签一般用在正文。</p>
+<p>3.<code>&lt;/br&gt;</code>:一般用在段落中强制换行。</p>
+<p>4.<code>&lt;hr/&gt;</code>:一般用来分隔内容。(color和size可以设置分割线的颜色和大小)<br><code>&lt;span&gt;内容&lt;/span&gt;</code>：一般在大段落中为了突出部分内容使用的标签;很少独立使用,一般嵌套在其他标签中使用。</p>
+<p>5.<code>&lt; img src=”  ” title=”” width=”px  /  %”  height=”px  / %”  &gt;</code>:图片标签</p>
+<p>常用属性:</p>
+<pre><code>title: 
+    作用1:鼠标悬浮在图片上的时候显示的文字。
+    作用2:当图片因为各种原因无法正常显示的时候,应该显示图片的位置显示title中的文字。
+src:
+    指定图片的路径路径的分类:相对路径(表示与当前文件同级的文件夹下的图片 推荐使用)  绝对路径(一般以盘符开头 不推荐使用)
+
+alt与title作用相同,但是浏览器不支持该属性,所以我们一般使用title属性
+
+width和height:高度和宽度,设置之后图片可能会失真。
+</code></pre>
+<p>6.有序和无序列表</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span>    </span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>12345<span class="tag">&lt;/<span class="name">li</span>&gt;</span>        </span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>上山打老虎<span class="tag">&lt;/<span class="name">li</span>&gt;</span>   </span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span>    </span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>老虎没打着<span class="tag">&lt;/<span class="name">li</span>&gt;</span>   </span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>打着个小松鼠<span class="tag">&lt;/<span class="name">li</span>&gt;</span>   </span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>ul-li表示无序列表 li标签可以多个</p>
+<p>ol-li表示有序列表,与无序列表功能一样只是样式不同。</p>
+<p>7.dl-dt-dd:定义描述标签,一般用在图文混编的场合</p>
+<pre><code>     dl:只能盛放dt和dd标签,不推荐放其他内容
+
+     dt:一般用来盛放图片或者标题
+
+     dd:一般用来补充对dt的描述说明
+</code></pre>
+<p>8.标签分类 :</p>
+<pre><code>    html标签可以分为块状元素和行集元素两大类
+
+    块状元素:一般都是新起一行,可以容纳行内元素和其他块级元素
+
+    行集元素:一般都是语义级别的基本元素,一般只能容乃文本或者掐腰行内元素
+
+    区分方法:是否独占一行
+</code></pre>
+<p>块状元素和行内元素的区别：</p>
+<pre><code>1.块级元素会独占一行,其宽度自动填满父元素宽度;
+ 行内元素会排列到同一行里,其宽度随元素的内容变化而变化
+
+2.块级元素可以设置宽高;行内元素设置宽高无效
+
+3.块级元素可以设置margin,padding属性;行内元素的水平方向的padding会有边距效果,但是竖直方向的padding没有效果
+</code></pre>
+<h4 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h4><p> 超链接标签一般有两个作用:1.用来实现页面之间的跳转 2.实现锚链接的功能</p>
+<p>1.页面键的跳转&lt;a href&#x3D; ”  ” target&#x3D;”   ”&gt;内容</a></p>
+<p>  a:超链接,作用:跳转到其他资源</p>
+<p> 属性:href&#x3D;”目标资源路径” &#x2F;&#x2F;路径推荐相对路径</p>
+<pre><code> target=”打开资源的位置” 默认值:_self --在当前页面打开
+
+                              _blank--在新的页面打开资源
+</code></pre>
+<p>2.锚链接</p>
+<p> 当一个页面长度超过一个屏的时候,想迅速跳转到制定的位置,例如大家浏览网页的时候,滑动超过一屏的时候,右下角会有返回顶部连接,这个就是用锚链接来实现的.这个定位可以实现本页间的锚链接也可以实现不同页面的锚链接.</p>
+<h4 id="表格标签"><a href="#表格标签" class="headerlink" title="表格标签"></a>表格标签</h4><p>  规则表格: table定义表格.</p>
+<pre><code>       常用属性:    height:高度 width:宽度
+
+                   border:边框
+
+                   cellpadding:内容与单元格之间的距离
+
+                   cellspacing:单元格和单元格之间的距离
+</code></pre>
+<p><code>&lt;table border=” ” cellpadding=” ” cellsacing=” ” width=”   ” height=”  ”&gt;</code></p>
+<p>tr:定义行  常用属性:</p>
+<pre><code>    align:文本水平方向上的对齐方式
+
+    有三个数值: 默认left-左对齐 center-居中对齐 right-右对齐
+</code></pre>
+<p>th和td标签都用来定义单元格,</p>
+<p>th:一般用来定义表头单元格,即做标题那一行中的单元格</p>
+<p>td:一般用来定义非表头单元格,即除了标题正文内容的单元格</p>
+<p>两种方法没有严格限制 </p>
+<p>常用属性: valign:文本垂直方向上的对齐方式,top-顶部对齐 bottom-底部对齐 middle-居中对齐</p>
+<p><strong>不规则–跨行跨列</strong></p>
+<p>colspan&#x3D;” 3” : 意思是它和合并包括自身在行内的三列单元,所有本行后面的两个单元格要被它占用,所有要删除后面两个单元格</p>
+<p>rowspan&#x3D;”3”: 意思是它要和包括自身在内的本列的三行单元格,所有本列后面两行的同样位置的单元格的位置要被它占用,所有要删除后面两行的同位置单元格</p>
+<h4 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h4><p>概念:用于采集用户输入的数据,用于和服务器进行交互.</p>
+<p>form：用于定义表单的.可以定义一个范围,范围代表采集用户数据的范围</p>
+<p>常用属性: action:指定提交的数据URL</p>
+<pre><code>     method:指定提交方式,一共7种,以下俩种比较常用
+
+             get:
+
+                1.请求参数会在地址栏中显示.会封装到请求中.
+
+                2.请求参数大小是有限制的
+
+                3.不太安全
+
+             post:
+
+                1.请求参数不会在地址栏中显示.会封装到请求中.
+
+                2.请求参数大小是没有限制的
+
+                3.较为安全
+
+     enctype:表中有上传的文件的时候必备属性,且取值为multipart/form-data
+</code></pre>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">”</span>   <span class="attr">.html</span>” <span class="attr">method</span>=<span class="string">”get”</span> <span class="attr">enctype</span>=<span class="string">”multipart/form-data”</span>&gt;</span><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="常用表单元素"><a href="#常用表单元素" class="headerlink" title="常用表单元素"></a>常用表单元素</h4><p>1.id:元素的唯一表示,不重复</p>
+<p>2.name:表单项元素的名称,很重要:提交数据到服务器之后,服务器获取数据通过该名称</p>
+<p>3.value:表单项元素的值,服务器获取数据通过name获取到的就是value</p>
+<p>4.type:表示表单元素的呈现形式</p>
+<p>5.class:表示样式名称</p>
+<p>6.readonly:表示只读,用户只能看不能改</p>
+<p>7.disabled:表示禁用,该元素不能改而且背景是灰色</p>
+<p>8.required:表示用户必须填写此内容,如没有填写在提交表单时会给错误提示</p>
+<p>一.文本框:<code>&lt;input type=”text” /&gt;</code></p>
+<p>二.密码框:<code>&lt;input type=”password” /&gt;</code></p>
+<p>三.单元按钮:<code>&lt;input type=”radio” name=”” /&gt;</code>:name相同是一组,同组按钮互斥</p>
+<p>四.复选框:<code>&lt;input type=”checkbox” /&gt;</code>:name同组可以选择多个</p>
+<p>五.文件件域:<code>&lt;input type=”file” /&gt; </code>:multip表示可以上传多个文件</p>
+<p>六.日期-html5的新特性：type&#x3D;”data”：表示年月日</p>
+<pre><code>                   type=”datatime-local”:表示年月日时分秒
+</code></pre>
+<p>七:隐藏域:<code>&lt;input type=”hidden”&gt;</code>:页面看不到任何效果</p>
+<pre><code>     作用:程序员需要的值
+</code></pre>
+<p>八.下拉列表框:<code>&lt;select name=””&gt;     &lt;option&gt; 内容&lt;/option&gt;    &lt;/select&gt;</code>:</p>
+<p>option:select中的所有选项,其中value表示下拉列表中被选中项对应的值</p>
+<pre><code>  其中selected表示默认选中
+</code></pre>
+<p>九.文本域:<code>&lt;textarea rows=”” cols=” ” readonly=”readonly” disabled=”disabled”&gt;&lt;/textarea&gt;</code></p>
+<p>  cols:指定行数,每一行有多少个字符</p>
+<p>  rows:默认多少行</p>
+<p>  readonly:表示只读内容不可修改</p>
+<p>  disabled:表示不可用,样式呈现灰色</p>
+<p>十一．按钮</p>
+<pre><code>1.type=”submit”:提交按钮,提交到form的指定路径
+
+2.type=”image”:等价于提交按钮,只是没有value值,多了src=”提交按钮图片”
+
+3.type=”reset”:清空表单中的所有用户输入,回到默认原始状态
+
+4.type=”button”:普通按钮,没有任何功能,有按钮的长相
+</code></pre>
+]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>html</tag>
       </tags>
   </entry>
 </search>

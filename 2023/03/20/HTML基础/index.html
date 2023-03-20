@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha256-/4UQcSmErDzPCMAiuOiWPVVsNN2s3ZY/NsmXNcj0IFc=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.15.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="HTML是HyperText Markup Language的简称,中文名称:超文本标记语言,它是一种用于创建网页的标准标记语言。 标记语言是由标签构成的语言。&lt;标签名称&gt;例如html,xml;标记语言不是编程语言。 HTML运行在浏览器上,由浏览器来解析 标签的内部是可以定义属性的,属性由键值对构成,值需要用双引号括起来,多个属性用空格隔开 &lt;标签名称 属性名1&#x3D;”属性值” 属">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML基础">
+<meta property="og:url" content="http://example.com/2023/03/20/HTML%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:site_name" content="Blog">
+<meta property="og:description" content="HTML是HyperText Markup Language的简称,中文名称:超文本标记语言,它是一种用于创建网页的标准标记语言。 标记语言是由标签构成的语言。&lt;标签名称&gt;例如html,xml;标记语言不是编程语言。 HTML运行在浏览器上,由浏览器来解析 标签的内部是可以定义属性的,属性由键值对构成,值需要用双引号括起来,多个属性用空格隔开 &lt;标签名称 属性名1&#x3D;”属性值” 属">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-03-20T10:15:29.000Z">
+<meta property="article:modified_time" content="2023-03-20T11:57:09.029Z">
+<meta property="article:author" content="Uu">
+<meta property="article:tag" content="html">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/2023/03/20/HTML%E5%9F%BA%E7%A1%80/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2023/03/20/HTML%E5%9F%BA%E7%A1%80/","path":"2023/03/20/HTML基础/","title":"HTML基础"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>HTML基础 | Blog</title>
+  
+
+
+
+
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "gbbtocpj2k");
+</script>
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">uu</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML%E6%96%87%E6%A1%A3%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84"><span class="nav-number">1.</span> <span class="nav-text">HTML文档的基本结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84"><span class="nav-number">1.1.</span> <span class="nav-text">基本结构</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML%E4%B8%AD%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE"><span class="nav-number">2.</span> <span class="nav-text">HTML中常用标签</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B6%85%E9%93%BE%E6%8E%A5"><span class="nav-number">2.0.1.</span> <span class="nav-text">超链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A1%A8%E6%A0%BC%E6%A0%87%E7%AD%BE"><span class="nav-number">2.0.2.</span> <span class="nav-text">表格标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A1%A8%E5%8D%95"><span class="nav-number">2.0.3.</span> <span class="nav-text">表单</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E8%A1%A8%E5%8D%95%E5%85%83%E7%B4%A0"><span class="nav-number">2.0.4.</span> <span class="nav-text">常用表单元素</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Uu"
+      src="/uploads/logo.png">
+  <p class="site-author-name" itemprop="name">Uu</p>
+  <div class="site-description" itemprop="description">Pain is only aware of their own has not changed only you know.</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="sidebar-button animated">
+    <button><i class="fa fa-comment"></i>
+      聊天
+    </button>
+  </div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Sangwq" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Sangwq" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:2644498831@qq.com" title="E-Mail → mailto:2644498831@qq.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          链接
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <a href="https://baidu.com/" title="https:&#x2F;&#x2F;baidu.com" rel="noopener" target="_blank">友链</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/03/20/HTML%E5%9F%BA%E7%A1%80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/logo.png">
+      <meta itemprop="name" content="Uu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog">
+      <meta itemprop="description" content="Pain is only aware of their own has not changed only you know.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="HTML基础 | Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          HTML基础
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2023-03-20 18:15:29 / 修改时间：19:57:09" itemprop="dateCreated datePublished" datetime="2023-03-20T18:15:29+08:00">2023-03-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Learn/" itemprop="url" rel="index"><span itemprop="name">Learn</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    <a title="HTML基础" href="/2023/03/20/HTML%E5%9F%BA%E7%A1%80/#SOHUCS" itemprop="discussionUrl">
+      <span id="sourceId::4684dbec2f5974029fa9fee87a8e1a68" class="cy_cmt_count" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>2.1k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>8 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>HTML是HyperText Markup Language的简称,中文名称:超文本标记语言,它是一种用于创建网页的标准标记语言。</p>
+<p>标记语言是由标签构成的语言。&lt;标签名称&gt;例如html,xml;标记语言不是编程语言。</p>
+<p>HTML运行在浏览器上,由浏览器来解析</p>
+<p>标签的内部是可以定义属性的,属性由键值对构成,值需要用双引号括起来,多个属性用空格隔开</p>
+<p><code>&lt;标签名称 属性名1=”属性值” 属性2=”属性值”&gt;&lt;/标签名称&gt;</code></p>
+<p><code>&lt;p id=”p1” name=”p1”&gt; &lt;/p&gt;</code>   </p>
+<h2 id="HTML文档的基本结构"><a href="#HTML文档的基本结构" class="headerlink" title="HTML文档的基本结构"></a>HTML文档的基本结构</h2><p>HTML文档也叫web页面。</p>
+<h3 id="基本结构"><a href="#基本结构" class="headerlink" title="基本结构"></a>基本结构</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- html,根元素,围堵标签--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">head,头元素:</span></span><br><span class="line"><span class="comment">    作用:</span></span><br><span class="line"><span class="comment">    1.用于指定HTML文章中的一些元数据,例如元数据 meta:定义页面的编码格式title:定义页面的标题</span></span><br><span class="line"><span class="comment">    2.引入外部的资源的文件</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">body,主体: 浏览器显示内容都将在这里编写</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">格式化代码的快捷键: ctrl+shift++f(英文状态下使用)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="HTML中常用标签"><a href="#HTML中常用标签" class="headerlink" title="HTML中常用标签"></a>HTML中常用标签</h2><p>1.<code>&lt;h1&gt;&lt;/h1&gt; ....&lt;h6&gt;&lt;/h6&gt;</code> 分别是一级标题到六级标题。</p>
+<p>2.<code>&lt;h2&gt;&lt;/h2&gt;</code>:段落标签一般用在正文。</p>
+<p>3.<code>&lt;/br&gt;</code>:一般用在段落中强制换行。</p>
+<p>4.<code>&lt;hr/&gt;</code>:一般用来分隔内容。(color和size可以设置分割线的颜色和大小)<br><code>&lt;span&gt;内容&lt;/span&gt;</code>：一般在大段落中为了突出部分内容使用的标签;很少独立使用,一般嵌套在其他标签中使用。</p>
+<p>5.<code>&lt; img src=”  ” title=”” width=”px  /  %”  height=”px  / %”  &gt;</code>:图片标签</p>
+<p>常用属性:</p>
+<pre><code>title: 
+    作用1:鼠标悬浮在图片上的时候显示的文字。
+    作用2:当图片因为各种原因无法正常显示的时候,应该显示图片的位置显示title中的文字。
+src:
+    指定图片的路径路径的分类:相对路径(表示与当前文件同级的文件夹下的图片 推荐使用)  绝对路径(一般以盘符开头 不推荐使用)
+
+alt与title作用相同,但是浏览器不支持该属性,所以我们一般使用title属性
+
+width和height:高度和宽度,设置之后图片可能会失真。
+</code></pre>
+<p>6.有序和无序列表</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span>    </span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>12345<span class="tag">&lt;/<span class="name">li</span>&gt;</span>        </span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>上山打老虎<span class="tag">&lt;/<span class="name">li</span>&gt;</span>   </span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span>    </span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>老虎没打着<span class="tag">&lt;/<span class="name">li</span>&gt;</span>   </span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>打着个小松鼠<span class="tag">&lt;/<span class="name">li</span>&gt;</span>   </span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>ul-li表示无序列表 li标签可以多个</p>
+<p>ol-li表示有序列表,与无序列表功能一样只是样式不同。</p>
+<p>7.dl-dt-dd:定义描述标签,一般用在图文混编的场合</p>
+<pre><code>     dl:只能盛放dt和dd标签,不推荐放其他内容
+
+     dt:一般用来盛放图片或者标题
+
+     dd:一般用来补充对dt的描述说明
+</code></pre>
+<p>8.标签分类 :</p>
+<pre><code>    html标签可以分为块状元素和行集元素两大类
+
+    块状元素:一般都是新起一行,可以容纳行内元素和其他块级元素
+
+    行集元素:一般都是语义级别的基本元素,一般只能容乃文本或者掐腰行内元素
+
+    区分方法:是否独占一行
+</code></pre>
+<p>块状元素和行内元素的区别：</p>
+<pre><code>1.块级元素会独占一行,其宽度自动填满父元素宽度;
+ 行内元素会排列到同一行里,其宽度随元素的内容变化而变化
+
+2.块级元素可以设置宽高;行内元素设置宽高无效
+
+3.块级元素可以设置margin,padding属性;行内元素的水平方向的padding会有边距效果,但是竖直方向的padding没有效果
+</code></pre>
+<h4 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h4><p> 超链接标签一般有两个作用:1.用来实现页面之间的跳转 2.实现锚链接的功能</p>
+<p>1.页面键的跳转&lt;a href&#x3D; ”  ” target&#x3D;”   ”&gt;内容</a></p>
+<p>  a:超链接,作用:跳转到其他资源</p>
+<p> 属性:href&#x3D;”目标资源路径” &#x2F;&#x2F;路径推荐相对路径</p>
+<pre><code> target=”打开资源的位置” 默认值:_self --在当前页面打开
+
+                              _blank--在新的页面打开资源
+</code></pre>
+<p>2.锚链接</p>
+<p> 当一个页面长度超过一个屏的时候,想迅速跳转到制定的位置,例如大家浏览网页的时候,滑动超过一屏的时候,右下角会有返回顶部连接,这个就是用锚链接来实现的.这个定位可以实现本页间的锚链接也可以实现不同页面的锚链接.</p>
+<h4 id="表格标签"><a href="#表格标签" class="headerlink" title="表格标签"></a>表格标签</h4><p>  规则表格: table定义表格.</p>
+<pre><code>       常用属性:    height:高度 width:宽度
+
+                   border:边框
+
+                   cellpadding:内容与单元格之间的距离
+
+                   cellspacing:单元格和单元格之间的距离
+</code></pre>
+<p><code>&lt;table border=” ” cellpadding=” ” cellsacing=” ” width=”   ” height=”  ”&gt;</code></p>
+<p>tr:定义行  常用属性:</p>
+<pre><code>    align:文本水平方向上的对齐方式
+
+    有三个数值: 默认left-左对齐 center-居中对齐 right-右对齐
+</code></pre>
+<p>th和td标签都用来定义单元格,</p>
+<p>th:一般用来定义表头单元格,即做标题那一行中的单元格</p>
+<p>td:一般用来定义非表头单元格,即除了标题正文内容的单元格</p>
+<p>两种方法没有严格限制 </p>
+<p>常用属性: valign:文本垂直方向上的对齐方式,top-顶部对齐 bottom-底部对齐 middle-居中对齐</p>
+<p><strong>不规则–跨行跨列</strong></p>
+<p>colspan&#x3D;” 3” : 意思是它和合并包括自身在行内的三列单元,所有本行后面的两个单元格要被它占用,所有要删除后面两个单元格</p>
+<p>rowspan&#x3D;”3”: 意思是它要和包括自身在内的本列的三行单元格,所有本列后面两行的同样位置的单元格的位置要被它占用,所有要删除后面两行的同位置单元格</p>
+<h4 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h4><p>概念:用于采集用户输入的数据,用于和服务器进行交互.</p>
+<p>form：用于定义表单的.可以定义一个范围,范围代表采集用户数据的范围</p>
+<p>常用属性: action:指定提交的数据URL</p>
+<pre><code>     method:指定提交方式,一共7种,以下俩种比较常用
+
+             get:
+
+                1.请求参数会在地址栏中显示.会封装到请求中.
+
+                2.请求参数大小是有限制的
+
+                3.不太安全
+
+             post:
+
+                1.请求参数不会在地址栏中显示.会封装到请求中.
+
+                2.请求参数大小是没有限制的
+
+                3.较为安全
+
+     enctype:表中有上传的文件的时候必备属性,且取值为multipart/form-data
+</code></pre>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">”</span>   <span class="attr">.html</span>” <span class="attr">method</span>=<span class="string">”get”</span> <span class="attr">enctype</span>=<span class="string">”multipart/form-data”</span>&gt;</span><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="常用表单元素"><a href="#常用表单元素" class="headerlink" title="常用表单元素"></a>常用表单元素</h4><p>1.id:元素的唯一表示,不重复</p>
+<p>2.name:表单项元素的名称,很重要:提交数据到服务器之后,服务器获取数据通过该名称</p>
+<p>3.value:表单项元素的值,服务器获取数据通过name获取到的就是value</p>
+<p>4.type:表示表单元素的呈现形式</p>
+<p>5.class:表示样式名称</p>
+<p>6.readonly:表示只读,用户只能看不能改</p>
+<p>7.disabled:表示禁用,该元素不能改而且背景是灰色</p>
+<p>8.required:表示用户必须填写此内容,如没有填写在提交表单时会给错误提示</p>
+<p>一.文本框:<code>&lt;input type=”text” /&gt;</code></p>
+<p>二.密码框:<code>&lt;input type=”password” /&gt;</code></p>
+<p>三.单元按钮:<code>&lt;input type=”radio” name=”” /&gt;</code>:name相同是一组,同组按钮互斥</p>
+<p>四.复选框:<code>&lt;input type=”checkbox” /&gt;</code>:name同组可以选择多个</p>
+<p>五.文件件域:<code>&lt;input type=”file” /&gt; </code>:multip表示可以上传多个文件</p>
+<p>六.日期-html5的新特性：type&#x3D;”data”：表示年月日</p>
+<pre><code>                   type=”datatime-local”:表示年月日时分秒
+</code></pre>
+<p>七:隐藏域:<code>&lt;input type=”hidden”&gt;</code>:页面看不到任何效果</p>
+<pre><code>     作用:程序员需要的值
+</code></pre>
+<p>八.下拉列表框:<code>&lt;select name=””&gt;     &lt;option&gt; 内容&lt;/option&gt;    &lt;/select&gt;</code>:</p>
+<p>option:select中的所有选项,其中value表示下拉列表中被选中项对应的值</p>
+<pre><code>  其中selected表示默认选中
+</code></pre>
+<p>九.文本域:<code>&lt;textarea rows=”” cols=” ” readonly=”readonly” disabled=”disabled”&gt;&lt;/textarea&gt;</code></p>
+<p>  cols:指定行数,每一行有多少个字符</p>
+<p>  rows:默认多少行</p>
+<p>  readonly:表示只读内容不可修改</p>
+<p>  disabled:表示不可用,样式呈现灰色</p>
+<p>十一．按钮</p>
+<pre><code>1.type=”submit”:提交按钮,提交到form的指定路径
+
+2.type=”image”:等价于提交按钮,只是没有value值,多了src=”提交按钮图片”
+
+3.type=”reset”:清空表单中的所有用户输入,回到默认原始状态
+
+4.type=”button”:普通按钮,没有任何功能,有按钮的长相
+</code></pre>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>Buy me a coffee</div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.png" alt="Uu 微信">
+        <span>微信</span>
+      </div>
+      <div>
+        <img src="/images/alipay.png" alt="Uu 支付宝">
+        <span>支付宝</span>
+      </div>
+
+  </div>
+</div>
+
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <span class="social-link">
+            <span class="icon">
+              <i class="fab fa-telegram"></i>
+            </span>
+
+            <span class="label">Telegram</span>
+          </span>
+
+          <img class="social-item-img" src="/images/telegram.png">
+      </div>
+
+      <div class="social-item">
+          <span class="social-link">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">WeChat</span>
+          </span>
+
+          <img class="social-item-img" src="/images/wechat_channel.png">
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/html/" rel="tag"># html</a>
+          </div>
+
+        
+  <div class="addthis_inline_share_toolbox social-like">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=RA-6417118A3C7F1F6C" async="async"></script>
+  </div>
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/03/20/ATM/" rel="prev" title="ATM">
+                  <i class="fa fa-chevron-left"></i> ATM
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="SOHUCS" sid="4684dbec2f5974029fa9fee87a8e1a68"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Uu</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">5k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">19 分钟</span>
+  </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/Sangwq" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+<script class="next-config" data-name="chatra" type="application/json">{"enable":true,"async":true,"id":"9ba28KCwMYxEdpf4Y"}</script>
+<script src="/js/third-party/chat/chatra.js"></script>
+<script async src="https://call.chatra.io/chatra.js"></script>
+
+
+
+
+
+  
+
+
+
+
+<script class="next-config" data-name="changyan" type="application/json">{"enable":true,"appid":"cywzaN4rd","appkey":"prod_e61baf3d7bcffcaa9ec4220ad214808d","count":true}</script>
+<script src="/js/third-party/comments/changyan.js"></script>
+
+</body>
+</html>
