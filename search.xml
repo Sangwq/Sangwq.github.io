@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>ATM</title>
+    <url>/2023/03/20/ATM/</url>
+    <content><![CDATA[<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// A T M </span></span><br><span class="line">        <span class="keyword">var</span> money = <span class="number">100</span>;</span><br><span class="line">        <span class="keyword">var</span> price = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (num != <span class="number">4</span>) &#123;</span><br><span class="line">            <span class="keyword">var</span> num = <span class="title function_">prompt</span>(<span class="string">&#x27;请输入你要的操作:\n1.存钱\n2.取钱\n3.显示余额\n4.退出&#x27;</span>)</span><br><span class="line">            <span class="keyword">switch</span> (num) &#123;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;1&#x27;</span>:</span><br><span class="line">                    price = <span class="title function_">prompt</span>(<span class="string">&#x27;输入要存的钱数；&#x27;</span>);</span><br><span class="line">                    money = money + <span class="built_in">parseFloat</span>(price);</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额；&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;2&#x27;</span>:</span><br><span class="line">                    price = <span class="title function_">prompt</span>(<span class="string">&#x27;输入你要取出的钱: &#x27;</span>);</span><br><span class="line">                    money = money - <span class="built_in">parseFloat</span>(price);</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;3&#x27;</span>:</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额：&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;4&#x27;</span>:</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;正在退出...&#x27;</span>)</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>demo</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CSS基础</title>
     <url>/2023/03/21/CSS%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<h3 id="一、初识CSS"><a href="#一、初识CSS" class="headerlink" title="一、初识CSS"></a>一、初识CSS</h3><h4 id="1-1-CSS是什么"><a href="#1-1-CSS是什么" class="headerlink" title="1.1 CSS是什么"></a>1.1 CSS是什么</h4><pre><code>CSS：Cascading Style Sheet 层叠级联样式表
@@ -205,95 +217,6 @@ CSS的优势：
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/03/09/hello-world/</url>
-    <content><![CDATA[<p>Welcome to my blog! This is your very first post. If you get any problems when using blog, you can find the answer in <a href="https://github.com/Sangwq">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>Learn</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ATM</title>
-    <url>/2023/03/20/ATM/</url>
-    <content><![CDATA[<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// A T M </span></span><br><span class="line">        <span class="keyword">var</span> money = <span class="number">100</span>;</span><br><span class="line">        <span class="keyword">var</span> price = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (num != <span class="number">4</span>) &#123;</span><br><span class="line">            <span class="keyword">var</span> num = <span class="title function_">prompt</span>(<span class="string">&#x27;请输入你要的操作:\n1.存钱\n2.取钱\n3.显示余额\n4.退出&#x27;</span>)</span><br><span class="line">            <span class="keyword">switch</span> (num) &#123;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;1&#x27;</span>:</span><br><span class="line">                    price = <span class="title function_">prompt</span>(<span class="string">&#x27;输入要存的钱数；&#x27;</span>);</span><br><span class="line">                    money = money + <span class="built_in">parseFloat</span>(price);</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额；&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;2&#x27;</span>:</span><br><span class="line">                    price = <span class="title function_">prompt</span>(<span class="string">&#x27;输入你要取出的钱: &#x27;</span>);</span><br><span class="line">                    money = money - <span class="built_in">parseFloat</span>(price);</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;3&#x27;</span>:</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额：&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;4&#x27;</span>:</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;正在退出...&#x27;</span>)</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Learn</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-        <tag>demo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown</title>
-    <url>/2023/03/09/LearnMarkdown/</url>
-    <content><![CDATA[<p><a href="https://baidu.com/" title="这是一个百度链接">百度链接</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/bj5.jpg"></p>
-<hr>
-<ul>
-<li>无序列表1</li>
-<li>无序列表2<ol>
-<li>有序列表1</li>
-<li>有序列表1</li>
-</ol>
-</li>
-</ul>
-<hr>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><span id="more"></span>
-<p><em>斜体</em><br><strong>加粗</strong><br><code>行内代码</code><br><u>下划线</u></p>
-<blockquote>
-<p>引用</p>
-</blockquote>
-<h3 id="代办"><a href="#代办" class="headerlink" title="代办"></a>代办</h3><ul>
-<li><input checked="" disabled="" type="checkbox"> one</li>
-<li><input disabled="" type="checkbox"> two</li>
-</ul>
-<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><table>
-<thead>
-<tr>
-<th align="left">表头</th>
-<th align="right">表头</th>
-<th align="center">表头</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">左对齐</td>
-<td align="right">右对齐</td>
-<td align="center">剧中</td>
-</tr>
-<tr>
-<td align="left">11</td>
-<td align="right">12</td>
-<td align="center">13</td>
-</tr>
-</tbody></table>
-<p>脚注：<br>一键三连<a href="%E7%82%B9%E8%B5%9E%EF%BC%8C%E6%8A%95%E5%B8%81%E6%94%B6%E8%97%8F">^三连</a></p>
-]]></content>
-      <categories>
-        <category>Learn</category>
-      </categories>
-      <tags>
-        <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML基础</title>
     <url>/2023/03/20/HTML%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<p>HTML是HyperText Markup Language的简称,中文名称:超文本标记语言,它是一种用于创建网页的标准标记语言。</p>
@@ -452,6 +375,59 @@ width和height:高度和宽度,设置之后图片可能会失真。
       </tags>
   </entry>
   <entry>
+    <title>Markdown</title>
+    <url>/2023/03/09/LearnMarkdown/</url>
+    <content><![CDATA[<p><a href="https://baidu.com/" title="这是一个百度链接">百度链接</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/bj5.jpg"></p>
+<hr>
+<ul>
+<li>无序列表1</li>
+<li>无序列表2<ol>
+<li>有序列表1</li>
+<li>有序列表1</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><span id="more"></span>
+<p><em>斜体</em><br><strong>加粗</strong><br><code>行内代码</code><br><u>下划线</u></p>
+<blockquote>
+<p>引用</p>
+</blockquote>
+<h3 id="代办"><a href="#代办" class="headerlink" title="代办"></a>代办</h3><ul>
+<li><input checked="" disabled="" type="checkbox"> one</li>
+<li><input disabled="" type="checkbox"> two</li>
+</ul>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><table>
+<thead>
+<tr>
+<th align="left">表头</th>
+<th align="right">表头</th>
+<th align="center">表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">左对齐</td>
+<td align="right">右对齐</td>
+<td align="center">剧中</td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td align="right">12</td>
+<td align="center">13</td>
+</tr>
+</tbody></table>
+<p>脚注：<br>一键三连<a href="%E7%82%B9%E8%B5%9E%EF%BC%8C%E6%8A%95%E5%B8%81%E6%94%B6%E8%97%8F">^三连</a></p>
+]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>text</title>
     <url>/2023/03/19/text/</url>
     <content><![CDATA[<h2 id="first-push"><a href="#first-push" class="headerlink" title="first push"></a>first push</h2><blockquote class="blockquote-center">
@@ -465,6 +441,30 @@ width和height:高度和宽度,设置之后图片可能会失真。
       </categories>
       <tags>
         <tag>text</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/03/09/hello-world/</url>
+    <content><![CDATA[<p>Welcome to my blog! This is your very first post. If you get any problems when using blog, you can find the answer in <a href="https://github.com/Sangwq">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
 </search>
