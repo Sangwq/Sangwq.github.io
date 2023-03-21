@@ -467,4 +467,35 @@ CSS的优势：
         <tag>text</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Git</title>
+    <url>/2023/03/21/Git/</url>
+    <content><![CDATA[<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .                   #添加全部文件到暂存区</span><br><span class="line">git commit -m &quot;massage&quot;     #提交修改消息</span><br><span class="line">git status                  #查看分支情况</span><br><span class="line"></span><br><span class="line">git log                     #查看提交日志</span><br><span class="line">git reset --hard 要回滚id    #回滚历史版本</span><br><span class="line">git reset --hard HEAD^      #回滚上一个仓库指向版本</span><br><span class="line">git reset --hard HEAD~3     #回滚上一个仓库指</span><br><span class="line"></span><br><span class="line">git branch name             #创建分支</span><br><span class="line">git branch                  #查看当前分支</span><br><span class="line">git checkout name           #切换分支</span><br><span class="line">git merge                   #分支合并(应站在master上)</span><br><span class="line">git branch -D name          #删除本地分支</span><br><span class="line"></span><br><span class="line">ls                          #列出文件夹</span><br><span class="line">touch name                  #新建文件</span><br><span class="line">mkdir name                  #新建文件夹</span><br><span class="line">rm    name                  #删除</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置全局"><a href="#配置全局" class="headerlink" title="配置全局"></a>配置全局</h3><p>安装完成后，还需要最后一步设置，在命令行输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git config --global user.name &quot;Your Name&quot;</span><br><span class="line">$ git config --global user.email &quot;email@example.com&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="生成ssh密钥"><a href="#生成ssh密钥" class="headerlink" title="生成ssh密钥"></a>生成ssh密钥</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="远程克隆"><a href="#远程克隆" class="headerlink" title="远程克隆"></a>远程克隆</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone GitHub上ssh链接</span><br></pre></td></tr></table></figure>
+<h3 id="本地库提交远程"><a href="#本地库提交远程" class="headerlink" title="本地库提交远程"></a>本地库提交远程</h3><p>创建一个版本库非常简单，首先，选择一个合适的地方，创建一个空目录：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ mkdir learngit</span><br><span class="line">$ cd learngit</span><br><span class="line">$ pwd</span><br><span class="line">/Users/michael/learngit</span><br></pre></td></tr></table></figure>
+<p><code>pwd</code>命令用于显示当前目录<br>第二步，通过<code>git init</code>命令把这个目录变成Git可以管理的仓库：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git init</span><br><span class="line">Initialized empty Git repository in /Users/michael/learngit/.git/</span><br></pre></td></tr></table></figure>
+<p>本地有一个仓库，我们想把它推送到远程上去,使用git remote add origin命令就可以了，ongin是github上的仓库名称，意思是远程仓库的意思</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git remote add origin GitHub中ssh的链接</span><br></pre></td></tr></table></figure>
+<p>然后使用git push推送到远程</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<p>这里我来解释一下</p>
+<blockquote>
+<p>push：将本地仓库与远程仓库合并<br>-u：将本地仓库分支与远程仓库分支一起合并，就是说将master的分支也提交上去，这样你就可以在远程仓库上看到你在本地仓库的master中创建了多少分支，不加这个参数只将当前的master与远程的合并，没有分支的历史记录，也不能切换分支<br>origin：远程仓库的意思，如果这个仓库是远程的那么必须使用这个选项<br>master：提交本地matser分支仓库</p>
+</blockquote>
+<p><strong>使用Windows的童鞋要特别注意：</strong></p>
+<p>千万不要使用Windows自带的<strong>记事本</strong>编辑任何文本文件。原因是Microsoft开发记事本的团队使用了一个非常弱智的行为来保存UTF-8编码的文件，他们自作聪明地在每个文件开头添加了0xefbbbf（十六进制）的字符，你会遇到很多不可思议的问题</p>
+]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
 </search>
