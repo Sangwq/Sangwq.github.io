@@ -27,7 +27,7 @@
 <meta property="og:description" content="一、初识CSS1.1 CSS是什么CSS：Cascading Style Sheet 层叠级联样式表  CSS作用：表现（美化网页）      字体、颜色、边距、高度、宽度、背景图片、网页定位、网页浮动……  CSS的优势：      1、内容和表现分离      2、网页结构表现统一，可以实现服用      3、样式十分的丰富      4、建议使用独立于html的css文件      5、利用">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-21T02:05:48.000Z">
-<meta property="article:modified_time" content="2023-03-21T02:34:03.988Z">
+<meta property="article:modified_time" content="2023-03-21T02:52:18.601Z">
 <meta property="article:author" content="Uu">
 <meta property="article:tag" content="css">
 <meta name="twitter:card" content="summary">
@@ -259,7 +259,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-03-21 10:05:48 / 修改时间：10:34:03" itemprop="dateCreated datePublished" datetime="2023-03-21T10:05:48+08:00">2023-03-21</time>
+      <time title="创建时间：2023-03-21 10:05:48 / 修改时间：10:52:18" itemprop="dateCreated datePublished" datetime="2023-03-21T10:05:48+08:00">2023-03-21</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -292,7 +292,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>407</span>
+      <span>397</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -347,16 +347,16 @@ CSS的优势：
 </code></pre>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">    <span class="comment">&lt;!--规范,&lt;style&gt; 可以编写css的代码,每一个声明 最好使用分号结尾</span></span><br><span class="line"><span class="comment">    语法:</span></span><br><span class="line"><span class="comment">        选择器&#123;</span></span><br><span class="line"><span class="comment">            声明1;</span></span><br><span class="line"><span class="comment">            声明2;</span></span><br><span class="line"><span class="comment">            声明3;</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">    --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">        <span class="selector-tag">h1</span>&#123;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">color</span>: red;</span></span><br><span class="line"><span class="language-css">        &#125;</span></span><br><span class="line"><span class="language-css">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"> </span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"> </span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>我是标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"> </span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h5 id="1-3-2-外部样式（推荐使用）："><a href="#1-3-2-外部样式（推荐使用）：" class="headerlink" title="1.3.2 外部样式（推荐使用）："></a>1.3.2 外部样式（推荐使用）：</h5><p>&amp;emsp;&amp;emsp;<strong>两种写法：</strong></p>
-<p>&amp;emsp;&amp;emsp;<strong>①链接式（推荐）</strong>：在html文件的<code>&lt;head&gt;</code>中，用 <code>&lt;link&gt;</code> 引用css文件</p>
+<h5 id="1-3-2-外部样式（推荐使用）："><a href="#1-3-2-外部样式（推荐使用）：" class="headerlink" title="1.3.2 外部样式（推荐使用）："></a>1.3.2 外部样式（推荐使用）：</h5><p><strong>两种写法：</strong></p>
+<p><strong>①链接式（推荐）</strong>：在html文件的<code>&lt;head&gt;</code>中，用 <code>&lt;link&gt;</code> 引用css文件</p>
 <blockquote>
 <p><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;</code><br>注：css文件夹与此 html 在同一个文件夹里</p>
 </blockquote>
-<p>&amp;emsp;&amp;emsp;index.html ：</p>
+<p>index.html ：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">    <span class="comment">&lt;!--引用css文件--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;css/style.css&quot;</span>&gt;</span></span><br><span class="line"> </span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"> </span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>我是标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"> </span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>&amp;emsp;&amp;emsp;css&#x2F;style.css ：</p>
+<p>css&#x2F;style.css ：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h1</span> &#123;</span><br><span class="line">     <span class="attribute">color</span>:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>&amp;emsp;&amp;emsp;②导入式：在html中， 在<code>&lt;head&gt;</code> 的 <code>&lt;style&gt;</code> 中使用 @import</p>
+<p>②导入式：在html中， 在<code>&lt;head&gt;</code> 的 <code>&lt;style&gt;</code> 中使用 @import</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"> </span></span><br><span class="line"><span class="language-css">    <span class="keyword">@import</span> url(<span class="string">&quot;css/style.css&quot;</span>); </span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
     </div>
