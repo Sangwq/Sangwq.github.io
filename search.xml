@@ -506,9 +506,19 @@ CSS的优势：
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">net start MySQL80</span><br></pre></td></tr></table></figure>
 <p>停止服务</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">net stop MySQL80</span><br></pre></td></tr></table></figure>
-<h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><p><code>C:\Program Files\MySQL\MySQL Server 8.0\bin</code><br><img src="https://s2.loli.net/2023/03/28/MXLq8tHbJQzc31D.png"></p>
-<h3 id="登录MYSQL"><a href="#登录MYSQL" class="headerlink" title="登录MYSQL"></a>登录MYSQL</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mysql -u root</span><br></pre></td></tr></table></figure>
-]]></content>
+<h4 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h4><p><code>C:\Program Files\MySQL\MySQL Server 8.0\bin</code><br><img src="https://s2.loli.net/2023/03/28/MXLq8tHbJQzc31D.png"></p>
+<h4 id="登录MYSQL"><a href="#登录MYSQL" class="headerlink" title="登录MYSQL"></a>登录MYSQL</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mysql -u root -p</span><br></pre></td></tr></table></figure>
+<h3 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h3><p>查询</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">show databases;         查询所有数据库</span><br><span class="line">select database();      查询当前所处数据库</span><br></pre></td></tr></table></figure>
+<p>创建</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create database 数据库名;</span><br></pre></td></tr></table></figure>
+<p>删除</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">drop database 数据库名;</span><br></pre></td></tr></table></figure>
+<p>使用</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">use 数据库名;</span><br></pre></td></tr></table></figure>
+<h3 id="表操作"><a href="#表操作" class="headerlink" title="表操作"></a>表操作</h3><p>增<br><img src="https://s2.loli.net/2023/03/28/JBIdPzcC8629Anw.png"><br><img src="https://s2.loli.net/2023/03/28/eCm65NDvSLdg8M4.png"><br>删<br><img src="https://s2.loli.net/2023/03/28/fpxbMK8R36riJUC.png"></p>
+<p><img src="https://s2.loli.net/2023/03/28/bWwXfZiAksv95TQ.png"><br>改<br><img src="https://s2.loli.net/2023/03/28/RiXTIGKWmVbMDO9.png"><br><img src="https://s2.loli.net/2023/03/28/a6ubKOL4yPAQDkc.png"><br>查</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">show tables;                查询所有的表</span><br><span class="line">desc 表名;                  查询表结构</span><br><span class="line">show create table 表名;     查询建表语句</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>Learn</category>
       </categories>
