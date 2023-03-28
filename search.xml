@@ -498,4 +498,21 @@ CSS的优势：
         <tag>git</tag>
       </tags>
   </entry>
+  <entry>
+    <title>MySQL</title>
+    <url>/2023/03/28/MySQL/</url>
+    <content><![CDATA[<h3 id="管理MySQL服务"><a href="#管理MySQL服务" class="headerlink" title="管理MySQL服务"></a>管理MySQL服务</h3><p>启动服务</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">net start MySQL80</span><br></pre></td></tr></table></figure>
+<p>停止服务</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">net stop MySQL80</span><br></pre></td></tr></table></figure>
+<h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><p><code>C:\Program Files\MySQL\MySQL Server 8.0\bin</code><br><img src="https://s2.loli.net/2023/03/28/MXLq8tHbJQzc31D.png"></p>
+<h3 id="登录MYSQL"><a href="#登录MYSQL" class="headerlink" title="登录MYSQL"></a>登录MYSQL</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mysql -u root</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>sql</tag>
+      </tags>
+  </entry>
 </search>
