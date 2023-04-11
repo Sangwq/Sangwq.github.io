@@ -1,37 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Git</title>
-    <url>/2023/03/21/Git/</url>
-    <content><![CDATA[<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .                   #添加全部文件到暂存区</span><br><span class="line">git commit -m &quot;massage&quot;     #提交修改消息</span><br><span class="line">git status                  #查看分支情况</span><br><span class="line"></span><br><span class="line">git log                     #查看提交日志</span><br><span class="line">git reset --hard 要回滚id    #回滚历史版本</span><br><span class="line">git reset --hard HEAD^      #回滚上一个仓库指向版本</span><br><span class="line">git reset --hard HEAD~3     #回滚上一个仓库指</span><br><span class="line"></span><br><span class="line">git branch name             #创建分支</span><br><span class="line">git branch                  #查看当前分支</span><br><span class="line">git checkout name           #切换分支</span><br><span class="line">git merge                   #分支合并(应站在master上)</span><br><span class="line">git branch -D name          #删除本地分支</span><br><span class="line"></span><br><span class="line">ls                          #列出文件夹</span><br><span class="line">touch name                  #新建文件</span><br><span class="line">mkdir name                  #新建文件夹</span><br><span class="line">rm    name                  #删除</span><br></pre></td></tr></table></figure>
-
-<h3 id="配置全局"><a href="#配置全局" class="headerlink" title="配置全局"></a>配置全局</h3><p>安装完成后，还需要最后一步设置，在命令行输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git config --global user.name &quot;Your Name&quot;</span><br><span class="line">$ git config --global user.email &quot;email@example.com&quot;</span><br></pre></td></tr></table></figure>
-<h3 id="生成ssh密钥"><a href="#生成ssh密钥" class="headerlink" title="生成ssh密钥"></a>生成ssh密钥</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
-<h3 id="远程克隆"><a href="#远程克隆" class="headerlink" title="远程克隆"></a>远程克隆</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone GitHub上ssh链接</span><br></pre></td></tr></table></figure>
-<h3 id="本地库提交远程"><a href="#本地库提交远程" class="headerlink" title="本地库提交远程"></a>本地库提交远程</h3><p>创建一个版本库非常简单，首先，选择一个合适的地方，创建一个空目录：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ mkdir learngit</span><br><span class="line">$ cd learngit</span><br><span class="line">$ pwd</span><br><span class="line">/Users/michael/learngit</span><br></pre></td></tr></table></figure>
-<p><code>pwd</code>命令用于显示当前目录<br>第二步，通过<code>git init</code>命令把这个目录变成Git可以管理的仓库：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git init</span><br><span class="line">Initialized empty Git repository in /Users/michael/learngit/.git/</span><br></pre></td></tr></table></figure>
-<p>本地有一个仓库，我们想把它推送到远程上去,使用git remote add origin命令就可以了，ongin是github上的仓库名称，意思是远程仓库的意思</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git remote add origin GitHub中ssh的链接</span><br></pre></td></tr></table></figure>
-<p>然后使用git push推送到远程</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
-<p>这里我来解释一下</p>
-<blockquote>
-<p>push：将本地仓库与远程仓库合并<br>-u：将本地仓库分支与远程仓库分支一起合并，就是说将master的分支也提交上去，这样你就可以在远程仓库上看到你在本地仓库的master中创建了多少分支，不加这个参数只将当前的master与远程的合并，没有分支的历史记录，也不能切换分支<br>origin：远程仓库的意思，如果这个仓库是远程的那么必须使用这个选项<br>master：提交本地matser分支仓库</p>
-</blockquote>
-<p><strong>使用Windows的童鞋要特别注意：</strong></p>
-<p>千万不要使用Windows自带的<strong>记事本</strong>编辑任何文本文件。原因是Microsoft开发记事本的团队使用了一个非常弱智的行为来保存UTF-8编码的文件，他们自作聪明地在每个文件开头添加了0xefbbbf（十六进制）的字符，你会遇到很多不可思议的问题</p>
-]]></content>
-      <categories>
-        <category>Learn</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CSS基础</title>
     <url>/2023/03/21/CSS%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<h3 id="一、初识CSS"><a href="#一、初识CSS" class="headerlink" title="一、初识CSS"></a>一、初识CSS</h3><h4 id="1-1-CSS是什么"><a href="#1-1-CSS是什么" class="headerlink" title="1.1 CSS是什么"></a>1.1 CSS是什么</h4><pre><code>CSS：Cascading Style Sheet 层叠级联样式表
@@ -237,6 +206,217 @@ CSS的优势：
       </tags>
   </entry>
   <entry>
+    <title>ATM</title>
+    <url>/2023/03/20/ATM/</url>
+    <content><![CDATA[<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// A T M </span></span><br><span class="line">        <span class="keyword">var</span> money = <span class="number">100</span>;</span><br><span class="line">        <span class="keyword">var</span> price = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (num != <span class="number">4</span>) &#123;</span><br><span class="line">            <span class="keyword">var</span> num = <span class="title function_">prompt</span>(<span class="string">&#x27;请输入你要的操作:\n1.存钱\n2.取钱\n3.显示余额\n4.退出&#x27;</span>)</span><br><span class="line">            <span class="keyword">switch</span> (num) &#123;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;1&#x27;</span>:</span><br><span class="line">                    price = <span class="title function_">prompt</span>(<span class="string">&#x27;输入要存的钱数；&#x27;</span>);</span><br><span class="line">                    money = money + <span class="built_in">parseFloat</span>(price);</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额；&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;2&#x27;</span>:</span><br><span class="line">                    price = <span class="title function_">prompt</span>(<span class="string">&#x27;输入你要取出的钱: &#x27;</span>);</span><br><span class="line">                    money = money - <span class="built_in">parseFloat</span>(price);</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;3&#x27;</span>:</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额：&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;4&#x27;</span>:</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;正在退出...&#x27;</span>)</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>demo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown</title>
+    <url>/2023/03/09/LearnMarkdown/</url>
+    <content><![CDATA[<p><a href="https://baidu.com/" title="这是一个百度链接">百度链接</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/bj5.jpg"></p>
+<hr>
+<ul>
+<li>无序列表1</li>
+<li>无序列表2<ol>
+<li>有序列表1</li>
+<li>有序列表1</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><span id="more"></span>
+<p><em>斜体</em><br><strong>加粗</strong><br><code>行内代码</code><br><u>下划线</u></p>
+<blockquote>
+<p>引用</p>
+</blockquote>
+<h3 id="代办"><a href="#代办" class="headerlink" title="代办"></a>代办</h3><ul>
+<li><input checked="" disabled="" type="checkbox"> one</li>
+<li><input disabled="" type="checkbox"> two</li>
+</ul>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><table>
+<thead>
+<tr>
+<th align="left">表头</th>
+<th align="right">表头</th>
+<th align="center">表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">左对齐</td>
+<td align="right">右对齐</td>
+<td align="center">剧中</td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td align="right">12</td>
+<td align="center">13</td>
+</tr>
+</tbody></table>
+<p>脚注：<br>一键三连<a href="%E7%82%B9%E8%B5%9E%EF%BC%8C%E6%8A%95%E5%B8%81%E6%94%B6%E8%97%8F">^三连</a></p>
+]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git</title>
+    <url>/2023/03/21/Git/</url>
+    <content><![CDATA[<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .                   #添加全部文件到暂存区</span><br><span class="line">git commit -m &quot;massage&quot;     #提交修改消息</span><br><span class="line">git status                  #查看分支情况</span><br><span class="line"></span><br><span class="line">git log                     #查看提交日志</span><br><span class="line">git reset --hard 要回滚id    #回滚历史版本</span><br><span class="line">git reset --hard HEAD^      #回滚上一个仓库指向版本</span><br><span class="line">git reset --hard HEAD~3     #回滚上一个仓库指</span><br><span class="line"></span><br><span class="line">git branch name             #创建分支</span><br><span class="line">git branch                  #查看当前分支</span><br><span class="line">git checkout name           #切换分支</span><br><span class="line">git merge                   #分支合并(应站在master上)</span><br><span class="line">git branch -D name          #删除本地分支</span><br><span class="line"></span><br><span class="line">ls                          #列出文件夹</span><br><span class="line">touch name                  #新建文件</span><br><span class="line">mkdir name                  #新建文件夹</span><br><span class="line">rm    name                  #删除</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置全局"><a href="#配置全局" class="headerlink" title="配置全局"></a>配置全局</h3><p>安装完成后，还需要最后一步设置，在命令行输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git config --global user.name &quot;Your Name&quot;</span><br><span class="line">$ git config --global user.email &quot;email@example.com&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="生成ssh密钥"><a href="#生成ssh密钥" class="headerlink" title="生成ssh密钥"></a>生成ssh密钥</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="远程克隆"><a href="#远程克隆" class="headerlink" title="远程克隆"></a>远程克隆</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone GitHub上ssh链接</span><br></pre></td></tr></table></figure>
+<h3 id="本地库提交远程"><a href="#本地库提交远程" class="headerlink" title="本地库提交远程"></a>本地库提交远程</h3><p>创建一个版本库非常简单，首先，选择一个合适的地方，创建一个空目录：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ mkdir learngit</span><br><span class="line">$ cd learngit</span><br><span class="line">$ pwd</span><br><span class="line">/Users/michael/learngit</span><br></pre></td></tr></table></figure>
+<p><code>pwd</code>命令用于显示当前目录<br>第二步，通过<code>git init</code>命令把这个目录变成Git可以管理的仓库：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git init</span><br><span class="line">Initialized empty Git repository in /Users/michael/learngit/.git/</span><br></pre></td></tr></table></figure>
+<p>本地有一个仓库，我们想把它推送到远程上去,使用git remote add origin命令就可以了，ongin是github上的仓库名称，意思是远程仓库的意思</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git remote add origin GitHub中ssh的链接</span><br></pre></td></tr></table></figure>
+<p>然后使用git push推送到远程</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<p>这里我来解释一下</p>
+<blockquote>
+<p>push：将本地仓库与远程仓库合并<br>-u：将本地仓库分支与远程仓库分支一起合并，就是说将master的分支也提交上去，这样你就可以在远程仓库上看到你在本地仓库的master中创建了多少分支，不加这个参数只将当前的master与远程的合并，没有分支的历史记录，也不能切换分支<br>origin：远程仓库的意思，如果这个仓库是远程的那么必须使用这个选项<br>master：提交本地matser分支仓库</p>
+</blockquote>
+<p><strong>使用Windows的童鞋要特别注意：</strong></p>
+<p>千万不要使用Windows自带的<strong>记事本</strong>编辑任何文本文件。原因是Microsoft开发记事本的团队使用了一个非常弱智的行为来保存UTF-8编码的文件，他们自作聪明地在每个文件开头添加了0xefbbbf（十六进制）的字符，你会遇到很多不可思议的问题</p>
+]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>text</title>
+    <url>/2023/03/19/text/</url>
+    <content><![CDATA[<h2 id="first-push"><a href="#first-push" class="headerlink" title="first push"></a>first push</h2><blockquote class="blockquote-center">
+<p>Something</p>
+
+</blockquote>
+
+]]></content>
+      <categories>
+        <category>Texting</category>
+      </categories>
+      <tags>
+        <tag>text</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>eNSP</title>
+    <url>/2023/04/06/eNSP/</url>
+    <content><![CDATA[<h6 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h6><p><img src="https://s2.loli.net/2023/04/09/56i2AEgjn3NsBdf.png" alt="image-20230409163311555"></p>
+<p>当前位置所作配置</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">display this</span><br></pre></td></tr></table></figure>
+
+
+
+<h6 id="05-ip地址配置"><a href="#05-ip地址配置" class="headerlink" title="05-ip地址配置"></a>05-ip地址配置</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ip address 192.168.1.1 255.255.255.0</span><br></pre></td></tr></table></figure>
+
+<p>改名</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sysname AR2</span><br></pre></td></tr></table></figure>
+
+<h6 id="06-DHCP地址池"><a href="#06-DHCP地址池" class="headerlink" title="06-DHCP地址池"></a>06-DHCP地址池</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dhcp enable</span><br><span class="line">int g0/0/0</span><br><span class="line">dhcp select interface </span><br></pre></td></tr></table></figure>
+
+<h6 id="07-DNS域名系统"><a href="#07-DNS域名系统" class="headerlink" title="07-DNS域名系统"></a>07-DNS域名系统</h6><p><img src="https://s2.loli.net/2023/04/06/fvgz4mOFyDPhVUd.png" alt="image-20230406200841622"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dhcp server dns-list 192.168.1.100</span><br></pre></td></tr></table></figure>
+
+<h6 id="08-网关入门"><a href="#08-网关入门" class="headerlink" title="08-网关入门"></a>08-网关入门</h6><p><img src="https://s2.loli.net/2023/04/06/mbQpcC3VLzDg4dt.png" alt="image-20230406200632434"></p>
+<h6 id="09-静态路由"><a href="#09-静态路由" class="headerlink" title="09-静态路由"></a>09-静态路由</h6><p><img src="https://s2.loli.net/2023/04/06/fkHawtNGxpKqEmQ.png" alt="image-20230406202420122"></p>
+<p>查路由表</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">display ip routing-table 192.168.3.10</span><br></pre></td></tr></table></figure>
+
+<p>下一跳——去R1</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ip route-static 192.168.3.0 255.255.255.0 192.168.2.10</span><br></pre></td></tr></table></figure>
+
+<p>下一跳——回R2</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ip route-static 192.168.1.0 255.255.255.0 192.168.2.1</span><br></pre></td></tr></table></figure>
+
+<h6 id="10-TCP和UDP"><a href="#10-TCP和UDP" class="headerlink" title="10-TCP和UDP"></a>10-TCP和UDP</h6><p>Tcp：可靠性高。<br>适合对文件传输的完整性要求高，但是对延迟不敏感<br>电子邮件</p>
+<p>更新客户端<br>Udp:速度快</p>
+<h6 id="11-划分vlan"><a href="#11-划分vlan" class="headerlink" title="11-划分vlan"></a>11-划分vlan</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vlan 10</span><br><span class="line">int g0/0/1</span><br><span class="line">port link-type access</span><br><span class="line">port default vlan 10</span><br><span class="line">display vlan</span><br></pre></td></tr></table></figure>
+
+<h6 id="12-Trunk模式"><a href="#12-Trunk模式" class="headerlink" title="12-Trunk模式"></a>12-Trunk模式</h6><p><img src="https://s2.loli.net/2023/04/06/ZrQHNlCmEWxBGdw.png" alt="image-20230406211246144"></p>
+<p>注：交换机根据trunk接口打标签来回包</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">port link-type trunk </span><br><span class="line">port trunk allow-pass vlan all</span><br></pre></td></tr></table></figure>
+
+<h6 id="13-三层交换"><a href="#13-三层交换" class="headerlink" title="13-三层交换"></a>13-三层交换</h6><p>注：用三层配置vlan的ip作为网关</p>
+<p><img src="https://s2.loli.net/2023/04/06/uaBsm2IPYhTbRl4.png" alt="image-20230406214540804"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int vlan 20</span><br><span class="line">ip add 2.2.2.254 255.255.255.0</span><br></pre></td></tr></table></figure>
+
+<h6 id="14-单臂路由"><a href="#14-单臂路由" class="headerlink" title="14-单臂路由"></a>14-单臂路由</h6><p>注：用路由器接口分两个子接口配置网关</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dot1q termination vid 10</span><br><span class="line">ip address 1.1.1.254 255.255.255.0 </span><br><span class="line">arp broadcast enable</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>HCIP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MySQL</title>
+    <url>/2023/03/28/MySQL/</url>
+    <content><![CDATA[<h3 id="管理MySQL服务"><a href="#管理MySQL服务" class="headerlink" title="管理MySQL服务"></a>管理MySQL服务</h3><p>启动服务</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">net <span class="keyword">start</span> MySQL80</span><br></pre></td></tr></table></figure>
+<p>停止服务</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">net stop MySQL80</span><br></pre></td></tr></table></figure>
+<h4 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h4><p><code>C:\Program Files\MySQL\MySQL Server 8.0\bin</code><br><img src="https://s2.loli.net/2023/03/28/MXLq8tHbJQzc31D.png"></p>
+<h4 id="登录MYSQL"><a href="#登录MYSQL" class="headerlink" title="登录MYSQL"></a>登录MYSQL</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">mysql <span class="operator">-</span>u root <span class="operator">-</span>p</span><br></pre></td></tr></table></figure>
+<h3 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h3><p>查询</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">show</span> databases;         查询所有数据库</span><br><span class="line"><span class="keyword">select</span> database();      查询当前所处数据库</span><br></pre></td></tr></table></figure>
+<p>创建</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> database 数据库名;</span><br></pre></td></tr></table></figure>
+<p>删除</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">drop</span> database 数据库名;</span><br></pre></td></tr></table></figure>
+<p>使用</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">use 数据库名;</span><br></pre></td></tr></table></figure>
+<h3 id="表操作"><a href="#表操作" class="headerlink" title="表操作"></a>表操作</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 增</span></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">user</span>(id, name, gender, age) <span class="keyword">values</span> (<span class="number">1</span>, <span class="string">&#x27;张三&#x27;</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">20</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">user</span> <span class="keyword">values</span> (<span class="number">2</span>, <span class="string">&#x27;李四&#x27;</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">18</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">user</span> <span class="keyword">values</span> (<span class="number">3</span>, <span class="string">&#x27;王麻子&#x27;</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">30</span>),(<span class="number">4</span>, <span class="string">&#x27;赵六&#x27;</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">40</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 删</span></span><br><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> <span class="keyword">user</span> <span class="keyword">where</span> id <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> <span class="keyword">user</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 改</span></span><br><span class="line"><span class="keyword">update</span> <span class="keyword">user</span> <span class="keyword">set</span> name <span class="operator">=</span> <span class="string">&#x27;匿名&#x27;</span> <span class="keyword">where</span> id <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">update</span> <span class="keyword">user</span> <span class="keyword">set</span> name <span class="operator">=</span> <span class="string">&#x27;迪迦&#x27;</span>, gender <span class="operator">=</span> <span class="string">&#x27;女&#x27;</span> <span class="keyword">where</span> id <span class="operator">=</span> <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">update</span> <span class="keyword">user</span> <span class="keyword">set</span> gender <span class="operator">=</span> <span class="string">&#x27;女&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="表查询"><a href="#表查询" class="headerlink" title="表查询"></a>表查询</h3><h4 id="基础查询"><a href="#基础查询" class="headerlink" title="基础查询"></a>基础查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> name,gender <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> entrydate <span class="keyword">from</span> emp;</span><br><span class="line"><span class="keyword">select</span> entrydate <span class="keyword">as</span> <span class="string">&#x27;入职时间&#x27;</span> <span class="keyword">from</span> emp;</span><br><span class="line"><span class="keyword">select</span> entrydate <span class="string">&#x27;入职时间&#x27;</span> <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">distinct</span> workaddress <span class="keyword">from</span> emp;</span><br></pre></td></tr></table></figure>
+<h4 id="条件查询"><a href="#条件查询" class="headerlink" title="条件查询"></a>条件查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">&lt;</span> <span class="number">20</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">&gt;=</span> <span class="number">18</span> <span class="keyword">and</span> age <span class="operator">&lt;=</span> <span class="number">30</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="keyword">between</span> <span class="number">16</span> <span class="keyword">and</span> <span class="number">20</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> gender <span class="operator">!=</span> <span class="string">&#x27;男&#x27;</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> idcard <span class="keyword">is</span> <span class="keyword">null</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">=</span> <span class="number">20</span> <span class="keyword">and</span> gender <span class="operator">=</span> <span class="string">&#x27;女&#x27;</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">=</span> <span class="number">16</span> <span class="keyword">or</span> age <span class="operator">=</span> <span class="number">18</span> <span class="keyword">or</span> age <span class="operator">=</span> <span class="number">20</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="keyword">in</span> (<span class="number">16</span>,<span class="number">18</span>,<span class="number">20</span>);</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> name <span class="keyword">like</span> <span class="string">&#x27;__&#x27;</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> idcard <span class="keyword">like</span> <span class="string">&#x27;%X&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<h4 id="聚合查询"><a href="#聚合查询" class="headerlink" title="聚合查询"></a>聚合查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="operator">*</span>) <span class="keyword">from</span> emp;</span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(idcard) <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">avg</span>(age) <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">max</span>(age) <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">min</span>(age) <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">sum</span>(age) <span class="keyword">from</span> emp <span class="keyword">where</span> workaddress <span class="operator">=</span> <span class="string">&#x27;西安&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<h4 id="分组查询"><a href="#分组查询" class="headerlink" title="分组查询"></a>分组查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> gender, <span class="built_in">count</span>(<span class="operator">*</span>) <span class="string">&#x27;数量&#x27;</span> <span class="keyword">from</span> emp <span class="keyword">group</span> <span class="keyword">by</span> gender;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> gender, <span class="built_in">avg</span>(age) <span class="string">&#x27;年龄&#x27;</span> <span class="keyword">from</span> emp <span class="keyword">group</span> <span class="keyword">by</span> gender;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> workaddress, <span class="built_in">count</span>(<span class="operator">*</span>) <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">&lt;</span> <span class="number">50</span> <span class="keyword">group</span> <span class="keyword">by</span> workaddress <span class="keyword">having</span> <span class="built_in">count</span>(<span class="operator">*</span>) <span class="operator">&gt;</span> <span class="number">3</span>;</span><br></pre></td></tr></table></figure>
+<h4 id="排序查询"><a href="#排序查询" class="headerlink" title="排序查询"></a>排序查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> age ;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> age <span class="keyword">desc</span> ;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> age <span class="keyword">asc</span> , entrydate <span class="keyword">desc</span> ;</span><br></pre></td></tr></table></figure>
+<h4 id="分页查询"><a href="#分页查询" class="headerlink" title="分页查询"></a>分页查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp limit <span class="number">0</span>, <span class="number">10</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp limit <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp limit <span class="number">10</span>, <span class="number">10</span>;</span><br></pre></td></tr></table></figure>
+<h4 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 1．查询年龄为20,21,22,23岁的女性员工信息。</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="keyword">in</span> (<span class="number">20</span>,<span class="number">21</span>,<span class="number">22</span>,<span class="number">23</span>) <span class="keyword">and</span> gender <span class="operator">=</span> <span class="string">&#x27;女&#x27;</span>;</span><br><span class="line"><span class="comment">-- 2．查询性别为男,并且年龄在20-40岁(含)以内的姓名为三个字的员工。</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> gender <span class="operator">=</span> <span class="string">&#x27;男&#x27;</span> <span class="keyword">and</span> age <span class="keyword">between</span> <span class="number">20</span> <span class="keyword">and</span> <span class="number">40</span> <span class="keyword">and</span> name <span class="keyword">like</span> <span class="string">&#x27;___&#x27;</span>;</span><br><span class="line"><span class="comment">-- 3．统计员工表中，年龄小于60岁的,男性员工和女性员工的人数。</span></span><br><span class="line"><span class="keyword">select</span> gender, <span class="built_in">count</span>(<span class="operator">*</span>) <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">&lt;</span> <span class="number">60</span> <span class="keyword">group</span> <span class="keyword">by</span> gender;</span><br><span class="line"><span class="comment">-- 4，查询所有年龄小于等于35岁员工的姓名和年龄，并对查询结果按年龄升序排序，如果年龄相同按入职时间降序排序。</span></span><br><span class="line"><span class="keyword">select</span> name, age <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">&lt;=</span> <span class="number">35</span> <span class="keyword">order</span> <span class="keyword">by</span> age, entrydate <span class="keyword">desc</span> ;</span><br><span class="line"><span class="comment">-- 5．查询性别为男，且年龄在20-40 岁(含)以内的前5个员工信息，对查询的结果按年龄升序排齐，年龄相同按入职时间升序槽序。</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> gender <span class="operator">=</span> <span class="string">&#x27;男&#x27;</span> <span class="keyword">and</span> age <span class="keyword">between</span> <span class="number">20</span> <span class="keyword">and</span> <span class="number">40</span> <span class="keyword">order</span> <span class="keyword">by</span> age, entrydate <span class="keyword">desc</span> limit <span class="number">5</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="执行顺序"><a href="#执行顺序" class="headerlink" title="执行顺序"></a>执行顺序</h4><p><img src="https://s2.loli.net/2023/03/29/SCJkXQ7ftF4lnsh.png"></p>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h4 id="字符串函数"><a href="#字符串函数" class="headerlink" title="字符串函数"></a>字符串函数</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">-- 拼接字符</span></span><br><span class="line"><span class="keyword">select</span> concat(<span class="string">&#x27;Hello&#x27;</span>, <span class="string">&#x27;MySQL&#x27;</span>);</span><br><span class="line"><span class="comment">-- 大小写</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">upper</span>(<span class="string">&#x27;Hello&#x27;</span>);</span><br><span class="line"><span class="keyword">select</span> <span class="built_in">lower</span>(<span class="string">&#x27;Hello&#x27;</span>);</span><br><span class="line"><span class="comment">-- 左右增加字符</span></span><br><span class="line"><span class="keyword">select</span> rpad(<span class="string">&#x27;01&#x27;</span>, <span class="number">5</span>, <span class="string">&#x27;-&#x27;</span>);</span><br><span class="line"><span class="keyword">select</span> lpad(<span class="string">&#x27;01&#x27;</span>, <span class="number">5</span>, <span class="string">&#x27;-&#x27;</span>);</span><br><span class="line"><span class="comment">-- 去前后空格</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">trim</span>(<span class="string">&#x27; Hello MySQL&#x27;</span>);</span><br><span class="line"><span class="comment">-- 截取</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">substring</span>(<span class="string">&#x27;Hello MySQL&#x27;</span>, <span class="number">1</span>, <span class="number">5</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- practice工号前补零</span></span><br><span class="line"><span class="keyword">update</span> emp <span class="keyword">set</span> workno <span class="operator">=</span> lpad(workno, <span class="number">5</span>, <span class="string">&#x27;0&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<h4 id="数值函数"><a href="#数值函数" class="headerlink" title="数值函数"></a>数值函数</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 上下取整</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">ceil</span>(<span class="number">1.1</span>);</span><br><span class="line"><span class="keyword">select</span> <span class="built_in">floor</span>(<span class="number">1.9</span>);</span><br><span class="line"><span class="comment">-- 求模运算</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">mod</span>(<span class="number">7</span>, <span class="number">5</span>);</span><br><span class="line"><span class="comment">-- 0~1随机数</span></span><br><span class="line"><span class="keyword">select</span> rand();</span><br><span class="line"><span class="comment">-- 保留两位小数</span></span><br><span class="line"><span class="keyword">select</span> round(<span class="number">2.345</span>, <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- practice生成一个随机六位数</span></span><br><span class="line"><span class="keyword">select</span> lpad(round(rand()<span class="operator">*</span><span class="number">1000000</span>, <span class="number">0</span>), <span class="number">6</span>, <span class="string">&#x27;0&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<h4 id="日期函数"><a href="#日期函数" class="headerlink" title="日期函数"></a>日期函数</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 日期</span></span><br><span class="line"><span class="keyword">select</span> curdate();</span><br><span class="line"><span class="comment">-- 时间</span></span><br><span class="line"><span class="keyword">select</span> curtime();</span><br><span class="line"><span class="comment">-- 日期和时间</span></span><br><span class="line"><span class="keyword">select</span> now();</span><br><span class="line"><span class="comment">-- 当前年</span></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">year</span>(now());</span><br><span class="line"><span class="comment">-- 当前月</span></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">month</span>(now());</span><br><span class="line"><span class="comment">-- 当前天</span></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">day</span>(now());</span><br><span class="line"><span class="comment">-- 增加时间</span></span><br><span class="line"><span class="keyword">select</span> date_add(now(), <span class="type">interval</span> <span class="number">2</span> <span class="keyword">year</span> );</span><br><span class="line"><span class="comment">-- 时间做差</span></span><br><span class="line"><span class="keyword">select</span> datediff(<span class="string">&#x27;2023-3-30&#x27;</span>, <span class="string">&#x27;2002-9-5&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- demo查询所有员工入职天数，并倒序排序</span></span><br><span class="line"><span class="keyword">select</span> name, datediff(curdate(), entrydate) <span class="keyword">as</span> <span class="string">&#x27;入职天数&#x27;</span> <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> <span class="string">&#x27;入职天数&#x27;</span> <span class="keyword">desc</span> ;</span><br></pre></td></tr></table></figure>
+<h4 id="流程函数"><a href="#流程函数" class="headerlink" title="流程函数"></a>流程函数</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- if判断</span></span><br><span class="line"><span class="keyword">select</span> if(<span class="literal">true</span>, <span class="string">&#x27;y&#x27;</span>, <span class="string">&#x27;n&#x27;</span>);</span><br><span class="line"><span class="keyword">select</span> if(<span class="literal">false</span>, <span class="string">&#x27;y&#x27;</span>, <span class="string">&#x27;n&#x27;</span>);</span><br><span class="line"><span class="comment">-- ifnull是否为空</span></span><br><span class="line"><span class="keyword">select</span> ifnull(<span class="string">&#x27;y&#x27;</span>, <span class="string">&#x27;n&#x27;</span>);</span><br><span class="line"><span class="keyword">select</span> ifnull(<span class="string">&#x27;&#x27;</span>, <span class="string">&#x27;n&#x27;</span>);</span><br><span class="line"><span class="keyword">select</span> ifnull(<span class="keyword">null</span>, <span class="string">&#x27;n&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- demo判断员工工作地址是否为一线城市，不是则为二线城市</span></span><br><span class="line"><span class="keyword">select</span></span><br><span class="line">    name,</span><br><span class="line">    <span class="keyword">case</span> workaddress <span class="keyword">when</span> <span class="string">&#x27;北京&#x27;</span> <span class="keyword">then</span> <span class="string">&#x27;一线城市&#x27;</span> <span class="keyword">when</span> <span class="string">&#x27;上海&#x27;</span> <span class="keyword">then</span> <span class="string">&#x27;一线城市&#x27;</span> <span class="keyword">else</span> <span class="string">&#x27;二线城市&#x27;</span> <span class="keyword">end</span> <span class="keyword">as</span> <span class="string">&#x27;工作地址&#x27;</span></span><br><span class="line"><span class="keyword">from</span> emp;</span><br><span class="line"><span class="comment">-- demo2查询score表各科成绩</span></span><br><span class="line"><span class="keyword">select</span></span><br><span class="line">    name,</span><br><span class="line">    (<span class="keyword">case</span> <span class="keyword">when</span> math <span class="operator">&gt;=</span> <span class="number">85</span> <span class="keyword">then</span> <span class="string">&#x27;优秀&#x27;</span> <span class="keyword">when</span> math <span class="operator">&gt;=</span> <span class="number">60</span> <span class="keyword">then</span> <span class="string">&#x27;合格&#x27;</span> <span class="keyword">else</span> <span class="string">&#x27;不合格&#x27;</span> <span class="keyword">end</span>) <span class="keyword">as</span> <span class="string">&#x27;数学&#x27;</span>,</span><br><span class="line">    (<span class="keyword">case</span> <span class="keyword">when</span> english <span class="operator">&gt;=</span> <span class="number">85</span> <span class="keyword">then</span> <span class="string">&#x27;优秀&#x27;</span> <span class="keyword">when</span> english <span class="operator">&gt;=</span> <span class="number">60</span> <span class="keyword">then</span> <span class="string">&#x27;合格&#x27;</span> <span class="keyword">else</span> <span class="string">&#x27;不合格&#x27;</span> <span class="keyword">end</span>) <span class="keyword">as</span> <span class="string">&#x27;英语&#x27;</span>,</span><br><span class="line">    (<span class="keyword">case</span> <span class="keyword">when</span> chinese <span class="operator">&gt;=</span> <span class="number">85</span> <span class="keyword">then</span> <span class="string">&#x27;优秀&#x27;</span> <span class="keyword">when</span> chinese <span class="operator">&gt;=</span> <span class="number">60</span> <span class="keyword">then</span> <span class="string">&#x27;合格&#x27;</span> <span class="keyword">else</span> <span class="string">&#x27;不合格&#x27;</span> <span class="keyword">end</span>) <span class="keyword">as</span> <span class="string">&#x27;语文&#x27;</span></span><br><span class="line"><span class="keyword">from</span> score;</span><br></pre></td></tr></table></figure>
+
+<h3 id="约束"><a href="#约束" class="headerlink" title="约束"></a>约束</h3><h4 id="基本约束"><a href="#基本约束" class="headerlink" title="基本约束"></a>基本约束</h4><p>建表<br><img src="https://s2.loli.net/2023/03/31/fsZNJXPHObqB6Gm.png"></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> user2(</span><br><span class="line">    id <span class="type">int</span> <span class="keyword">primary</span> key auto_increment comment <span class="string">&#x27;主键&#x27;</span>,</span><br><span class="line">    name <span class="type">varchar</span>(<span class="number">10</span>) <span class="keyword">not</span> <span class="keyword">null</span> <span class="keyword">unique</span> comment <span class="string">&#x27;姓名&#x27;</span>,</span><br><span class="line">    age <span class="type">int</span> <span class="keyword">check</span> ( age <span class="operator">&gt;</span> <span class="number">0</span> <span class="operator">&amp;&amp;</span> age <span class="operator">&lt;=</span> <span class="number">120</span> ) comment <span class="string">&#x27;年龄&#x27;</span>,</span><br><span class="line">    status <span class="type">char</span>(<span class="number">1</span>) <span class="keyword">default</span> <span class="string">&#x27;1&#x27;</span> comment <span class="string">&#x27;状态&#x27;</span>,</span><br><span class="line">    gender <span class="type">char</span>(<span class="number">1</span>) comment <span class="string">&#x27;性别&#x27;</span></span><br><span class="line">) comment <span class="string">&#x27;用户表2&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<p>插入数据</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom1&#x27;</span>, <span class="number">19</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>), (<span class="string">&#x27;Tom2&#x27;</span>, <span class="number">25</span>, <span class="number">0</span>, <span class="string">&#x27;男&#x27;</span>), (<span class="string">&#x27;Tom3&#x27;</span>, <span class="number">19</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="keyword">null</span>, <span class="number">19</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom3&#x27;</span>, <span class="number">19</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom4&#x27;</span>, <span class="number">80</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom5&#x27;</span>, <span class="number">-1</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom6&#x27;</span>, <span class="number">121</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom7&#x27;</span>, <span class="number">120</span>, <span class="string">&#x27;男&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<p>效果展示<br><img src="https://s2.loli.net/2023/03/31/7jxpAtVmO2BPTha.png"></p>
+<h4 id="外键"><a href="#外键" class="headerlink" title="外键"></a>外键</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">add</span> <span class="keyword">constraint</span> emp_emp_id_fk <span class="keyword">foreign</span> key (dept_id) <span class="keyword">references</span> dept(id);</span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">drop</span> <span class="keyword">foreign</span> key emp_emp_id_fk;</span><br></pre></td></tr></table></figure>
+<p>效果<br><img src="https://s2.loli.net/2023/03/31/rQytdHFkISxV6zf.png"></p>
+]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>sql</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML基础</title>
     <url>/2023/03/20/HTML%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<p>HTML是HyperText Markup Language的简称,中文名称:超文本标记语言,它是一种用于创建网页的标准标记语言。</p>
@@ -395,160 +575,6 @@ width和height:高度和宽度,设置之后图片可能会失真。
       </tags>
   </entry>
   <entry>
-    <title>eNSP</title>
-    <url>/2023/04/06/eNSP/</url>
-    <content><![CDATA[<h6 id="05-ip地址配置"><a href="#05-ip地址配置" class="headerlink" title="05-ip地址配置"></a>05-ip地址配置</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ip address 192.168.1.1 255.255.255.0</span><br></pre></td></tr></table></figure>
-
-<p>改名</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sysname AR2</span><br></pre></td></tr></table></figure>
-
-<h6 id="06-DHCP地址池"><a href="#06-DHCP地址池" class="headerlink" title="06-DHCP地址池"></a>06-DHCP地址池</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dhcp enable</span><br><span class="line">int g0/0/0</span><br><span class="line">dhcp select interface </span><br></pre></td></tr></table></figure>
-
-<h6 id="07-DNS域名系统"><a href="#07-DNS域名系统" class="headerlink" title="07-DNS域名系统"></a>07-DNS域名系统</h6><p><img src="https://s2.loli.net/2023/04/06/fvgz4mOFyDPhVUd.png" alt="image-20230406200841622"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dhcp server dns-list 192.168.1.100</span><br></pre></td></tr></table></figure>
-
-<h6 id="08-网关入门"><a href="#08-网关入门" class="headerlink" title="08-网关入门"></a>08-网关入门</h6><p><img src="https://s2.loli.net/2023/04/06/mbQpcC3VLzDg4dt.png" alt="image-20230406200632434"></p>
-<h6 id="09-静态路由"><a href="#09-静态路由" class="headerlink" title="09-静态路由"></a>09-静态路由</h6><p><img src="https://s2.loli.net/2023/04/06/fkHawtNGxpKqEmQ.png" alt="image-20230406202420122"></p>
-<p>查路由表</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">display ip routing-table 192.168.3.10</span><br></pre></td></tr></table></figure>
-
-<p>下一跳——去R1</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ip route-static 192.168.3.0 255.255.255.0 192.168.2.10</span><br></pre></td></tr></table></figure>
-
-<p>下一跳——回R2</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ip route-static 192.168.1.0 255.255.255.0 192.168.2.1</span><br></pre></td></tr></table></figure>
-
-<h6 id="10-TCP和UDP"><a href="#10-TCP和UDP" class="headerlink" title="10-TCP和UDP"></a>10-TCP和UDP</h6><p>Tcp：可靠性高。<br>适合对文件传输的完整性要求高，但是对延迟不敏感<br>电子邮件</p>
-<p>更新客户端<br>Udp:速度快</p>
-<h6 id="11-划分vlan"><a href="#11-划分vlan" class="headerlink" title="11-划分vlan"></a>11-划分vlan</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vlan 10</span><br><span class="line">int g0/0/1</span><br><span class="line">port link-type access</span><br><span class="line">port default vlan 10</span><br><span class="line">display vlan</span><br></pre></td></tr></table></figure>
-
-<h6 id="12-Trunk模式"><a href="#12-Trunk模式" class="headerlink" title="12-Trunk模式"></a>12-Trunk模式</h6><p><img src="https://s2.loli.net/2023/04/06/ZrQHNlCmEWxBGdw.png" alt="image-20230406211246144"></p>
-<p>注：交换机根据trunk接口打标签来回包</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">port link-type trunk </span><br><span class="line">port trunk allow-pass vlan all</span><br></pre></td></tr></table></figure>
-
-<h6 id="13-三层交换"><a href="#13-三层交换" class="headerlink" title="13-三层交换"></a>13-三层交换</h6><p><img src="https://s2.loli.net/2023/04/06/uaBsm2IPYhTbRl4.png" alt="image-20230406214540804"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int vlan 20</span><br><span class="line">ip add 2.2.2.254 255.255.255.0</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Learn</category>
-      </categories>
-      <tags>
-        <tag>HCIP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MySQL</title>
-    <url>/2023/03/28/MySQL/</url>
-    <content><![CDATA[<h3 id="管理MySQL服务"><a href="#管理MySQL服务" class="headerlink" title="管理MySQL服务"></a>管理MySQL服务</h3><p>启动服务</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">net <span class="keyword">start</span> MySQL80</span><br></pre></td></tr></table></figure>
-<p>停止服务</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">net stop MySQL80</span><br></pre></td></tr></table></figure>
-<h4 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h4><p><code>C:\Program Files\MySQL\MySQL Server 8.0\bin</code><br><img src="https://s2.loli.net/2023/03/28/MXLq8tHbJQzc31D.png"></p>
-<h4 id="登录MYSQL"><a href="#登录MYSQL" class="headerlink" title="登录MYSQL"></a>登录MYSQL</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">mysql <span class="operator">-</span>u root <span class="operator">-</span>p</span><br></pre></td></tr></table></figure>
-<h3 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h3><p>查询</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">show</span> databases;         查询所有数据库</span><br><span class="line"><span class="keyword">select</span> database();      查询当前所处数据库</span><br></pre></td></tr></table></figure>
-<p>创建</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> database 数据库名;</span><br></pre></td></tr></table></figure>
-<p>删除</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">drop</span> database 数据库名;</span><br></pre></td></tr></table></figure>
-<p>使用</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">use 数据库名;</span><br></pre></td></tr></table></figure>
-<h3 id="表操作"><a href="#表操作" class="headerlink" title="表操作"></a>表操作</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 增</span></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">user</span>(id, name, gender, age) <span class="keyword">values</span> (<span class="number">1</span>, <span class="string">&#x27;张三&#x27;</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">20</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">user</span> <span class="keyword">values</span> (<span class="number">2</span>, <span class="string">&#x27;李四&#x27;</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">18</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">user</span> <span class="keyword">values</span> (<span class="number">3</span>, <span class="string">&#x27;王麻子&#x27;</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">30</span>),(<span class="number">4</span>, <span class="string">&#x27;赵六&#x27;</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">40</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 删</span></span><br><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> <span class="keyword">user</span> <span class="keyword">where</span> id <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> <span class="keyword">user</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 改</span></span><br><span class="line"><span class="keyword">update</span> <span class="keyword">user</span> <span class="keyword">set</span> name <span class="operator">=</span> <span class="string">&#x27;匿名&#x27;</span> <span class="keyword">where</span> id <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">update</span> <span class="keyword">user</span> <span class="keyword">set</span> name <span class="operator">=</span> <span class="string">&#x27;迪迦&#x27;</span>, gender <span class="operator">=</span> <span class="string">&#x27;女&#x27;</span> <span class="keyword">where</span> id <span class="operator">=</span> <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">update</span> <span class="keyword">user</span> <span class="keyword">set</span> gender <span class="operator">=</span> <span class="string">&#x27;女&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<h3 id="表查询"><a href="#表查询" class="headerlink" title="表查询"></a>表查询</h3><h4 id="基础查询"><a href="#基础查询" class="headerlink" title="基础查询"></a>基础查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> name,gender <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> entrydate <span class="keyword">from</span> emp;</span><br><span class="line"><span class="keyword">select</span> entrydate <span class="keyword">as</span> <span class="string">&#x27;入职时间&#x27;</span> <span class="keyword">from</span> emp;</span><br><span class="line"><span class="keyword">select</span> entrydate <span class="string">&#x27;入职时间&#x27;</span> <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">distinct</span> workaddress <span class="keyword">from</span> emp;</span><br></pre></td></tr></table></figure>
-<h4 id="条件查询"><a href="#条件查询" class="headerlink" title="条件查询"></a>条件查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">&lt;</span> <span class="number">20</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">&gt;=</span> <span class="number">18</span> <span class="keyword">and</span> age <span class="operator">&lt;=</span> <span class="number">30</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="keyword">between</span> <span class="number">16</span> <span class="keyword">and</span> <span class="number">20</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> gender <span class="operator">!=</span> <span class="string">&#x27;男&#x27;</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> idcard <span class="keyword">is</span> <span class="keyword">null</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">=</span> <span class="number">20</span> <span class="keyword">and</span> gender <span class="operator">=</span> <span class="string">&#x27;女&#x27;</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">=</span> <span class="number">16</span> <span class="keyword">or</span> age <span class="operator">=</span> <span class="number">18</span> <span class="keyword">or</span> age <span class="operator">=</span> <span class="number">20</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="keyword">in</span> (<span class="number">16</span>,<span class="number">18</span>,<span class="number">20</span>);</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> name <span class="keyword">like</span> <span class="string">&#x27;__&#x27;</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> idcard <span class="keyword">like</span> <span class="string">&#x27;%X&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<h4 id="聚合查询"><a href="#聚合查询" class="headerlink" title="聚合查询"></a>聚合查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="operator">*</span>) <span class="keyword">from</span> emp;</span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(idcard) <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">avg</span>(age) <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">max</span>(age) <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">min</span>(age) <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">sum</span>(age) <span class="keyword">from</span> emp <span class="keyword">where</span> workaddress <span class="operator">=</span> <span class="string">&#x27;西安&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<h4 id="分组查询"><a href="#分组查询" class="headerlink" title="分组查询"></a>分组查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> gender, <span class="built_in">count</span>(<span class="operator">*</span>) <span class="string">&#x27;数量&#x27;</span> <span class="keyword">from</span> emp <span class="keyword">group</span> <span class="keyword">by</span> gender;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> gender, <span class="built_in">avg</span>(age) <span class="string">&#x27;年龄&#x27;</span> <span class="keyword">from</span> emp <span class="keyword">group</span> <span class="keyword">by</span> gender;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> workaddress, <span class="built_in">count</span>(<span class="operator">*</span>) <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">&lt;</span> <span class="number">50</span> <span class="keyword">group</span> <span class="keyword">by</span> workaddress <span class="keyword">having</span> <span class="built_in">count</span>(<span class="operator">*</span>) <span class="operator">&gt;</span> <span class="number">3</span>;</span><br></pre></td></tr></table></figure>
-<h4 id="排序查询"><a href="#排序查询" class="headerlink" title="排序查询"></a>排序查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> age ;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> age <span class="keyword">desc</span> ;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> age <span class="keyword">asc</span> , entrydate <span class="keyword">desc</span> ;</span><br></pre></td></tr></table></figure>
-<h4 id="分页查询"><a href="#分页查询" class="headerlink" title="分页查询"></a>分页查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp limit <span class="number">0</span>, <span class="number">10</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp limit <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp limit <span class="number">10</span>, <span class="number">10</span>;</span><br></pre></td></tr></table></figure>
-<h4 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 1．查询年龄为20,21,22,23岁的女性员工信息。</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="keyword">in</span> (<span class="number">20</span>,<span class="number">21</span>,<span class="number">22</span>,<span class="number">23</span>) <span class="keyword">and</span> gender <span class="operator">=</span> <span class="string">&#x27;女&#x27;</span>;</span><br><span class="line"><span class="comment">-- 2．查询性别为男,并且年龄在20-40岁(含)以内的姓名为三个字的员工。</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> gender <span class="operator">=</span> <span class="string">&#x27;男&#x27;</span> <span class="keyword">and</span> age <span class="keyword">between</span> <span class="number">20</span> <span class="keyword">and</span> <span class="number">40</span> <span class="keyword">and</span> name <span class="keyword">like</span> <span class="string">&#x27;___&#x27;</span>;</span><br><span class="line"><span class="comment">-- 3．统计员工表中，年龄小于60岁的,男性员工和女性员工的人数。</span></span><br><span class="line"><span class="keyword">select</span> gender, <span class="built_in">count</span>(<span class="operator">*</span>) <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">&lt;</span> <span class="number">60</span> <span class="keyword">group</span> <span class="keyword">by</span> gender;</span><br><span class="line"><span class="comment">-- 4，查询所有年龄小于等于35岁员工的姓名和年龄，并对查询结果按年龄升序排序，如果年龄相同按入职时间降序排序。</span></span><br><span class="line"><span class="keyword">select</span> name, age <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">&lt;=</span> <span class="number">35</span> <span class="keyword">order</span> <span class="keyword">by</span> age, entrydate <span class="keyword">desc</span> ;</span><br><span class="line"><span class="comment">-- 5．查询性别为男，且年龄在20-40 岁(含)以内的前5个员工信息，对查询的结果按年龄升序排齐，年龄相同按入职时间升序槽序。</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> gender <span class="operator">=</span> <span class="string">&#x27;男&#x27;</span> <span class="keyword">and</span> age <span class="keyword">between</span> <span class="number">20</span> <span class="keyword">and</span> <span class="number">40</span> <span class="keyword">order</span> <span class="keyword">by</span> age, entrydate <span class="keyword">desc</span> limit <span class="number">5</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="执行顺序"><a href="#执行顺序" class="headerlink" title="执行顺序"></a>执行顺序</h4><p><img src="https://s2.loli.net/2023/03/29/SCJkXQ7ftF4lnsh.png"></p>
-<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h4 id="字符串函数"><a href="#字符串函数" class="headerlink" title="字符串函数"></a>字符串函数</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">-- 拼接字符</span></span><br><span class="line"><span class="keyword">select</span> concat(<span class="string">&#x27;Hello&#x27;</span>, <span class="string">&#x27;MySQL&#x27;</span>);</span><br><span class="line"><span class="comment">-- 大小写</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">upper</span>(<span class="string">&#x27;Hello&#x27;</span>);</span><br><span class="line"><span class="keyword">select</span> <span class="built_in">lower</span>(<span class="string">&#x27;Hello&#x27;</span>);</span><br><span class="line"><span class="comment">-- 左右增加字符</span></span><br><span class="line"><span class="keyword">select</span> rpad(<span class="string">&#x27;01&#x27;</span>, <span class="number">5</span>, <span class="string">&#x27;-&#x27;</span>);</span><br><span class="line"><span class="keyword">select</span> lpad(<span class="string">&#x27;01&#x27;</span>, <span class="number">5</span>, <span class="string">&#x27;-&#x27;</span>);</span><br><span class="line"><span class="comment">-- 去前后空格</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">trim</span>(<span class="string">&#x27; Hello MySQL&#x27;</span>);</span><br><span class="line"><span class="comment">-- 截取</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">substring</span>(<span class="string">&#x27;Hello MySQL&#x27;</span>, <span class="number">1</span>, <span class="number">5</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- practice工号前补零</span></span><br><span class="line"><span class="keyword">update</span> emp <span class="keyword">set</span> workno <span class="operator">=</span> lpad(workno, <span class="number">5</span>, <span class="string">&#x27;0&#x27;</span>);</span><br></pre></td></tr></table></figure>
-<h4 id="数值函数"><a href="#数值函数" class="headerlink" title="数值函数"></a>数值函数</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 上下取整</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">ceil</span>(<span class="number">1.1</span>);</span><br><span class="line"><span class="keyword">select</span> <span class="built_in">floor</span>(<span class="number">1.9</span>);</span><br><span class="line"><span class="comment">-- 求模运算</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">mod</span>(<span class="number">7</span>, <span class="number">5</span>);</span><br><span class="line"><span class="comment">-- 0~1随机数</span></span><br><span class="line"><span class="keyword">select</span> rand();</span><br><span class="line"><span class="comment">-- 保留两位小数</span></span><br><span class="line"><span class="keyword">select</span> round(<span class="number">2.345</span>, <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- practice生成一个随机六位数</span></span><br><span class="line"><span class="keyword">select</span> lpad(round(rand()<span class="operator">*</span><span class="number">1000000</span>, <span class="number">0</span>), <span class="number">6</span>, <span class="string">&#x27;0&#x27;</span>);</span><br></pre></td></tr></table></figure>
-<h4 id="日期函数"><a href="#日期函数" class="headerlink" title="日期函数"></a>日期函数</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 日期</span></span><br><span class="line"><span class="keyword">select</span> curdate();</span><br><span class="line"><span class="comment">-- 时间</span></span><br><span class="line"><span class="keyword">select</span> curtime();</span><br><span class="line"><span class="comment">-- 日期和时间</span></span><br><span class="line"><span class="keyword">select</span> now();</span><br><span class="line"><span class="comment">-- 当前年</span></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">year</span>(now());</span><br><span class="line"><span class="comment">-- 当前月</span></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">month</span>(now());</span><br><span class="line"><span class="comment">-- 当前天</span></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">day</span>(now());</span><br><span class="line"><span class="comment">-- 增加时间</span></span><br><span class="line"><span class="keyword">select</span> date_add(now(), <span class="type">interval</span> <span class="number">2</span> <span class="keyword">year</span> );</span><br><span class="line"><span class="comment">-- 时间做差</span></span><br><span class="line"><span class="keyword">select</span> datediff(<span class="string">&#x27;2023-3-30&#x27;</span>, <span class="string">&#x27;2002-9-5&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- demo查询所有员工入职天数，并倒序排序</span></span><br><span class="line"><span class="keyword">select</span> name, datediff(curdate(), entrydate) <span class="keyword">as</span> <span class="string">&#x27;入职天数&#x27;</span> <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> <span class="string">&#x27;入职天数&#x27;</span> <span class="keyword">desc</span> ;</span><br></pre></td></tr></table></figure>
-<h4 id="流程函数"><a href="#流程函数" class="headerlink" title="流程函数"></a>流程函数</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- if判断</span></span><br><span class="line"><span class="keyword">select</span> if(<span class="literal">true</span>, <span class="string">&#x27;y&#x27;</span>, <span class="string">&#x27;n&#x27;</span>);</span><br><span class="line"><span class="keyword">select</span> if(<span class="literal">false</span>, <span class="string">&#x27;y&#x27;</span>, <span class="string">&#x27;n&#x27;</span>);</span><br><span class="line"><span class="comment">-- ifnull是否为空</span></span><br><span class="line"><span class="keyword">select</span> ifnull(<span class="string">&#x27;y&#x27;</span>, <span class="string">&#x27;n&#x27;</span>);</span><br><span class="line"><span class="keyword">select</span> ifnull(<span class="string">&#x27;&#x27;</span>, <span class="string">&#x27;n&#x27;</span>);</span><br><span class="line"><span class="keyword">select</span> ifnull(<span class="keyword">null</span>, <span class="string">&#x27;n&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- demo判断员工工作地址是否为一线城市，不是则为二线城市</span></span><br><span class="line"><span class="keyword">select</span></span><br><span class="line">    name,</span><br><span class="line">    <span class="keyword">case</span> workaddress <span class="keyword">when</span> <span class="string">&#x27;北京&#x27;</span> <span class="keyword">then</span> <span class="string">&#x27;一线城市&#x27;</span> <span class="keyword">when</span> <span class="string">&#x27;上海&#x27;</span> <span class="keyword">then</span> <span class="string">&#x27;一线城市&#x27;</span> <span class="keyword">else</span> <span class="string">&#x27;二线城市&#x27;</span> <span class="keyword">end</span> <span class="keyword">as</span> <span class="string">&#x27;工作地址&#x27;</span></span><br><span class="line"><span class="keyword">from</span> emp;</span><br><span class="line"><span class="comment">-- demo2查询score表各科成绩</span></span><br><span class="line"><span class="keyword">select</span></span><br><span class="line">    name,</span><br><span class="line">    (<span class="keyword">case</span> <span class="keyword">when</span> math <span class="operator">&gt;=</span> <span class="number">85</span> <span class="keyword">then</span> <span class="string">&#x27;优秀&#x27;</span> <span class="keyword">when</span> math <span class="operator">&gt;=</span> <span class="number">60</span> <span class="keyword">then</span> <span class="string">&#x27;合格&#x27;</span> <span class="keyword">else</span> <span class="string">&#x27;不合格&#x27;</span> <span class="keyword">end</span>) <span class="keyword">as</span> <span class="string">&#x27;数学&#x27;</span>,</span><br><span class="line">    (<span class="keyword">case</span> <span class="keyword">when</span> english <span class="operator">&gt;=</span> <span class="number">85</span> <span class="keyword">then</span> <span class="string">&#x27;优秀&#x27;</span> <span class="keyword">when</span> english <span class="operator">&gt;=</span> <span class="number">60</span> <span class="keyword">then</span> <span class="string">&#x27;合格&#x27;</span> <span class="keyword">else</span> <span class="string">&#x27;不合格&#x27;</span> <span class="keyword">end</span>) <span class="keyword">as</span> <span class="string">&#x27;英语&#x27;</span>,</span><br><span class="line">    (<span class="keyword">case</span> <span class="keyword">when</span> chinese <span class="operator">&gt;=</span> <span class="number">85</span> <span class="keyword">then</span> <span class="string">&#x27;优秀&#x27;</span> <span class="keyword">when</span> chinese <span class="operator">&gt;=</span> <span class="number">60</span> <span class="keyword">then</span> <span class="string">&#x27;合格&#x27;</span> <span class="keyword">else</span> <span class="string">&#x27;不合格&#x27;</span> <span class="keyword">end</span>) <span class="keyword">as</span> <span class="string">&#x27;语文&#x27;</span></span><br><span class="line"><span class="keyword">from</span> score;</span><br></pre></td></tr></table></figure>
-
-<h3 id="约束"><a href="#约束" class="headerlink" title="约束"></a>约束</h3><h4 id="基本约束"><a href="#基本约束" class="headerlink" title="基本约束"></a>基本约束</h4><p>建表<br><img src="https://s2.loli.net/2023/03/31/fsZNJXPHObqB6Gm.png"></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> user2(</span><br><span class="line">    id <span class="type">int</span> <span class="keyword">primary</span> key auto_increment comment <span class="string">&#x27;主键&#x27;</span>,</span><br><span class="line">    name <span class="type">varchar</span>(<span class="number">10</span>) <span class="keyword">not</span> <span class="keyword">null</span> <span class="keyword">unique</span> comment <span class="string">&#x27;姓名&#x27;</span>,</span><br><span class="line">    age <span class="type">int</span> <span class="keyword">check</span> ( age <span class="operator">&gt;</span> <span class="number">0</span> <span class="operator">&amp;&amp;</span> age <span class="operator">&lt;=</span> <span class="number">120</span> ) comment <span class="string">&#x27;年龄&#x27;</span>,</span><br><span class="line">    status <span class="type">char</span>(<span class="number">1</span>) <span class="keyword">default</span> <span class="string">&#x27;1&#x27;</span> comment <span class="string">&#x27;状态&#x27;</span>,</span><br><span class="line">    gender <span class="type">char</span>(<span class="number">1</span>) comment <span class="string">&#x27;性别&#x27;</span></span><br><span class="line">) comment <span class="string">&#x27;用户表2&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<p>插入数据</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom1&#x27;</span>, <span class="number">19</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>), (<span class="string">&#x27;Tom2&#x27;</span>, <span class="number">25</span>, <span class="number">0</span>, <span class="string">&#x27;男&#x27;</span>), (<span class="string">&#x27;Tom3&#x27;</span>, <span class="number">19</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="keyword">null</span>, <span class="number">19</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom3&#x27;</span>, <span class="number">19</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom4&#x27;</span>, <span class="number">80</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom5&#x27;</span>, <span class="number">-1</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom6&#x27;</span>, <span class="number">121</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom7&#x27;</span>, <span class="number">120</span>, <span class="string">&#x27;男&#x27;</span>);</span><br></pre></td></tr></table></figure>
-<p>效果展示<br><img src="https://s2.loli.net/2023/03/31/7jxpAtVmO2BPTha.png"></p>
-<h4 id="外键"><a href="#外键" class="headerlink" title="外键"></a>外键</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">add</span> <span class="keyword">constraint</span> emp_emp_id_fk <span class="keyword">foreign</span> key (dept_id) <span class="keyword">references</span> dept(id);</span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">drop</span> <span class="keyword">foreign</span> key emp_emp_id_fk;</span><br></pre></td></tr></table></figure>
-<p>效果<br><img src="https://s2.loli.net/2023/03/31/rQytdHFkISxV6zf.png"></p>
-]]></content>
-      <categories>
-        <category>Learn</category>
-      </categories>
-      <tags>
-        <tag>sql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown</title>
-    <url>/2023/03/09/LearnMarkdown/</url>
-    <content><![CDATA[<p><a href="https://baidu.com/" title="这是一个百度链接">百度链接</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/bj5.jpg"></p>
-<hr>
-<ul>
-<li>无序列表1</li>
-<li>无序列表2<ol>
-<li>有序列表1</li>
-<li>有序列表1</li>
-</ol>
-</li>
-</ul>
-<hr>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><span id="more"></span>
-<p><em>斜体</em><br><strong>加粗</strong><br><code>行内代码</code><br><u>下划线</u></p>
-<blockquote>
-<p>引用</p>
-</blockquote>
-<h3 id="代办"><a href="#代办" class="headerlink" title="代办"></a>代办</h3><ul>
-<li><input checked="" disabled="" type="checkbox"> one</li>
-<li><input disabled="" type="checkbox"> two</li>
-</ul>
-<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><table>
-<thead>
-<tr>
-<th align="left">表头</th>
-<th align="right">表头</th>
-<th align="center">表头</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">左对齐</td>
-<td align="right">右对齐</td>
-<td align="center">剧中</td>
-</tr>
-<tr>
-<td align="left">11</td>
-<td align="right">12</td>
-<td align="center">13</td>
-</tr>
-</tbody></table>
-<p>脚注：<br>一键三连<a href="%E7%82%B9%E8%B5%9E%EF%BC%8C%E6%8A%95%E5%B8%81%E6%94%B6%E8%97%8F">^三连</a></p>
-]]></content>
-      <categories>
-        <category>Learn</category>
-      </categories>
-      <tags>
-        <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ATM</title>
-    <url>/2023/03/20/ATM/</url>
-    <content><![CDATA[<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// A T M </span></span><br><span class="line">        <span class="keyword">var</span> money = <span class="number">100</span>;</span><br><span class="line">        <span class="keyword">var</span> price = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (num != <span class="number">4</span>) &#123;</span><br><span class="line">            <span class="keyword">var</span> num = <span class="title function_">prompt</span>(<span class="string">&#x27;请输入你要的操作:\n1.存钱\n2.取钱\n3.显示余额\n4.退出&#x27;</span>)</span><br><span class="line">            <span class="keyword">switch</span> (num) &#123;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;1&#x27;</span>:</span><br><span class="line">                    price = <span class="title function_">prompt</span>(<span class="string">&#x27;输入要存的钱数；&#x27;</span>);</span><br><span class="line">                    money = money + <span class="built_in">parseFloat</span>(price);</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额；&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;2&#x27;</span>:</span><br><span class="line">                    price = <span class="title function_">prompt</span>(<span class="string">&#x27;输入你要取出的钱: &#x27;</span>);</span><br><span class="line">                    money = money - <span class="built_in">parseFloat</span>(price);</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;3&#x27;</span>:</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额：&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;4&#x27;</span>:</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;正在退出...&#x27;</span>)</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Learn</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-        <tag>demo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2023/03/09/hello-world/</url>
     <content><![CDATA[<p>Welcome to my blog! This is your very first post. If you get any problems when using blog, you can find the answer in <a href="https://github.com/Sangwq">GitHub</a>.</p>
@@ -573,19 +599,280 @@ width和height:高度和宽度,设置之后图片可能会失真。
       </tags>
   </entry>
   <entry>
-    <title>text</title>
-    <url>/2023/03/19/text/</url>
-    <content><![CDATA[<h2 id="first-push"><a href="#first-push" class="headerlink" title="first push"></a>first push</h2><blockquote class="blockquote-center">
-<p>Something</p>
+    <title>前端学习笔记</title>
+    <url>/2023/04/11/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="一、HTML"><a href="#一、HTML" class="headerlink" title="一、HTML"></a>一、HTML</h2><h3 id="1-1-HTML-是什么？"><a href="#1-1-HTML-是什么？" class="headerlink" title="1.1 HTML 是什么？"></a>1.1 HTML 是什么？</h3><p>HTML（HyperText Markup Language）是一种标记语言，用于构建网页的结构和内容。它由一系列的标签（tag）组成，每个标签用于定义网页上的不同元素，如标题、段落、链接、图像等。</p>
+<h3 id="1-2-HTML-基本结构"><a href="#1-2-HTML-基本结构" class="headerlink" title="1.2 HTML 基本结构"></a>1.2 HTML 基本结构</h3><p>一个典型的 HTML 文件通常包含以下几个基本部分：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">html&lt;!DOCTYPE html&gt; &lt;!-- 声明文档类型 --&gt;</span><br><span class="line">&lt;html&gt; &lt;!-- 根元素 --&gt;</span><br><span class="line">&lt;head&gt; &lt;!-- 头部 --&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;!-- 指定字符编码 --&gt;</span><br><span class="line">    &lt;title&gt;Document&lt;/title&gt; &lt;!-- 文档标题 --&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt; &lt;!-- 主体内容 --&gt;</span><br><span class="line">    &lt;!-- 页面内容 --&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
-</blockquote>
+<ul>
+<li><code>&lt;!DOCTYPE html&gt;</code>：声明文档类型，通常是 HTML5。</li>
+<li><code>&lt;html&gt;</code>：根元素，包含整个 HTML 文档的内容。</li>
+<li><code>&lt;head&gt;</code>：头部，用于包含一些不显示在页面上但对页面起重要作用的元信息，如字符编码、标题等。</li>
+<li><code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code>：指定字符编码为 UTF-8，支持多种语言字符集。</li>
+<li><code>&lt;title&gt;</code>：文档标题，显示在浏览器的标题栏或标签页上。</li>
+<li><code>&lt;body&gt;</code>：主体内容，包含页面的实际内容。</li>
+</ul>
+<h3 id="1-3-HTML-常用标签"><a href="#1-3-HTML-常用标签" class="headerlink" title="1.3 HTML 常用标签"></a>1.3 HTML 常用标签</h3><h4 id="1-3-1-文本标签"><a href="#1-3-1-文本标签" class="headerlink" title="1.3.1 文本标签"></a>1.3.1 文本标签</h4><ul>
+<li><code>&lt;h1&gt;</code> ~ <code>&lt;h6&gt;</code>：定义标题，从大到小依次表示一级标题到六级标题。</li>
+<li><code>&lt;p&gt;</code>：定义段落。</li>
+<li><code>&lt;a&gt;</code>：定义链接，用于创建超链接到其他页面或文件。</li>
+<li><code>&lt;span&gt;</code>：定义行内元素，用于包裹一小段文本或其他行内元素。</li>
+</ul>
+<h4 id="1-3-2-列表标签"><a href="#1-3-2-列表标签" class="headerlink" title="1.3.2 列表标签"></a>1.3.2 列表标签</h4><ul>
+<li><code>&lt;ul&gt;</code>：定义无序列表，列表项前没有编号。</li>
+<li><code>&lt;ol&gt;</code>：定义有序列表，列表项前有编号。</li>
+<li><code>&lt;li&gt;</code>：定义列表项。</li>
+</ul>
+<h4 id="1-3-3-图片标签"><a href="#1-3-3-图片标签" class="headerlink" title="1.3.3 图片标签"></a>1.3.3 图片标签</h4><ul>
+<li><code>&lt;img&gt;</code>：定义图像，用于在页面中插入图片。</li>
+<li><code>&lt;figure&gt;</code>：定义一个独立的内容块，通常包含图片和图片的描述。</li>
+</ul>
+<h4 id="1-3-4-表格标签"><a href="#1-3-4-表格标签" class="headerlink" title="1.3.4 表格标签"></a>1.3.4 表格标签</h4><ul>
+<li><code>&lt;table&gt;</code>：定义表格。</li>
+<li><code>&lt;tr&gt;</code>：定义表格中的一行。</li>
+<li><code>&lt;td&gt;</code>：定义表格中的一个单元格。</li>
+<li><code>&lt;th&gt;</code>：定义表格中的表头单元格。</li>
+</ul>
+<h4 id="1-3-5-表单标签"><a href="#1-3-5-表单标签" class="headerlink" title="1.3.5 表单标签"></a>1.3.5 表单标签</h4><ul>
+<li><code>&lt;form&gt;</code>：定义表单，用于接收用户输入的数据。</li>
+<li><code>&lt;input&gt;</code>：定义表单中的输入字段，如文本输入框、复选框、单选框等。</li>
+<li><code>&lt;label&gt;</code>：定义表单中的标签，用于关联输入字段。</li>
+<li><code>&lt;button&gt;</code>：定义按钮，用于提交表单或执行其他操作。</li>
+</ul>
+<h3 id="1-4-HTML-属性"><a href="#1-4-HTML-属性" class="headerlink" title="1.4 HTML 属性"></a>1.4 HTML 属性</h3><p>HTML 标签可以包含属性，属性提供了额外的信息和配置项，通常以键值对的形式出现在标签的开始标记中。</p>
+<p>例如，<code>&lt;a&gt;</code> 标签可以包含 <code>href</code> 属性来指定链接的地址：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;a href=&quot;https://www.example.com&quot;&gt;点击这里&lt;/a&gt;</span><br></pre></td></tr></table></figure>
 
+<p>常用的 HTML 属性包括：</p>
+<ul>
+<li><code>class</code>：定义元素的样式类。</li>
+<li><code>id</code>：定义元素的唯一标识。</li>
+<li><code>src</code>：定义元素的资源地址，如图片的路径、脚本的 URL 等。</li>
+<li><code>alt</code>：定义元素的替代文本，当资源无法加载时显示。</li>
+<li><code>title</code>：定义元素的标题，通常在鼠标悬停时显示。</li>
+<li><code>type</code>：定义输入字段的类型，如文本、密码、按钮等。</li>
+</ul>
+<h3 id="1-5-HTML-注释"><a href="#1-5-HTML-注释" class="headerlink" title="1.5 HTML 注释"></a>1.5 HTML 注释</h3><p>在 HTML 中，注释用于在代码中添加注解或解释，不会在页面上显示。HTML 的注释以 <code>&lt;!--</code> 开始，以 <code>--&gt;</code> 结束。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;!-- 这是一个注释 --&gt;</span><br></pre></td></tr></table></figure>
+
+<p>HTML 注释在编写代码时可以用来对代码进行标注，解释代码的用途、作用或特点，方便其他开发人员理解和维护代码。</p>
+<h2 id="二、CSS"><a href="#二、CSS" class="headerlink" title="二、CSS"></a>二、CSS</h2><h3 id="2-1-CSS-是什么？"><a href="#2-1-CSS-是什么？" class="headerlink" title="2.1 CSS 是什么？"></a>2.1 CSS 是什么？</h3><p>CSS（Cascading Style Sheets）是一种用于控制网页样式和布局的样式表语言。通过 CSS，可以为 HTML 元素设置样式，如颜色、字体、边距、背景等，从而实现网页的美化和布局。</p>
+<h3 id="2-2-CSS-基本语法"><a href="#2-2-CSS-基本语法" class="headerlink" title="2.2 CSS 基本语法"></a>2.2 CSS 基本语法</h3><p>CSS 的基本语法由选择器（Selector）、属性（Property）和值（Value）组成。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cssselector &#123;</span><br><span class="line">    property: value;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>selector</code>：选择器，用于选择 HTML 元素。</li>
+<li><code>property</code>：属性，表示要设置的样式属性，如 <code>color</code>、<code>font-size</code>、<code>margin</code> 等。</li>
+<li><code>value</code>：值，表示要为属性设置的具体样式值，如 <code>red</code>、<code>14px</code>、<code>10px 20px</code> 等。</li>
+</ul>
+<h3 id="2-3-CSS-选择器"><a href="#2-3-CSS-选择器" class="headerlink" title="2.3 CSS 选择器"></a>2.3 CSS 选择器</h3><p>CSS 选择器用于选择 HTML 元素，并对其应用样式。常见的 CSS 选择器包括：</p>
+<ul>
+<li><p>标签选择器：通过 HTML 标签名选择元素，如 <code>p</code> 选择所有的段落元素。</p>
+</li>
+<li><p>类选择器：通过 <code>class</code> 属性选择元素，如 <code>.example</code> 选择所有 <code>class</code> 属性值为 <code>example</code> 的元素。</p>
+</li>
+<li><p>ID 选择器：通过 <code>id</code> 属性选择元素，如 <code>#example</code> 选择所有 <code>id</code> 属性值为 <code>example</code> 的元素。</p>
+</li>
+<li><p>子元素选择器：通过父元素和子元素的关系选择元素，如 <code>parent &gt; child</code> 选择所有作为 <code>parent</code> 子元素的 <code>child</code> 元素。</p>
+</li>
+<li><p>后代元素选择器：通过祖先元素和后代元素的关系选择元素，如 <code>ancestor descendant</code> 选择所有作为 <code>ancestor</code> 后代元素的 <code>descendant</code> 元素。</p>
+</li>
+<li><p>兄弟元素选择器：通过相邻兄弟元素的关系选择元素，如 <code>element + sibling</code> 选择紧接在 <code>element</code> 后面的相邻兄弟元素 <code>sibling</code>。</p>
+</li>
+<li><p>通用选择器：通过 <code>*</code> 选择所有元素。</p>
+</li>
+<li><p>属性选择器：通过元素的属性值选择元素，如 <code>[attribute=value]</code> 选择属性 <code>attribute</code> 值等于 <code>value</code> 的元素。</p>
+</li>
+</ul>
+<h3 id="2-4-CSS-样式优先级"><a href="#2-4-CSS-样式优先级" class="headerlink" title="2.4 CSS 样式优先级"></a>2.4 CSS 样式优先级</h3><p>当多个 CSS 样式同时作用于同一个元素时，根据优先级规则，会选择应用哪个样式。CSS 样式的优先级从高到低分别是：</p>
+<ol>
+<li><code>!important</code>：通过在样式规则中使用 <code>!important</code> 声明，具有最高优先级。</li>
+<li>内联样式：通过 <code>style</code> 属性直接写在 HTML 元素中，具有较高优先级。</li>
+<li>ID 选择器：通过 <code>id</code> 属性选择元素，具有较高优先级。</li>
+<li>类选择器、属性选择器、伪类选择器：具有中等优先级。</li>
+<li>标签选择器、伪元素选择器：具有较低优先级。</li>
+<li>通用选择器：具有最低优先级。</li>
+</ol>
+<h3 id="2-5-CSS-盒模型"><a href="#2-5-CSS-盒模型" class="headerlink" title="2.5 CSS 盒模型"></a>2.5 CSS 盒模型</h3><p>CSS 盒模型是用于布局和定位 HTML 元素的模型。每个 HTML 元素都被视为一个矩形的盒子，包含内容区域、内边距、边框和外边距。</p>
+<p><img src="https://www.example.com/images/box-model.png" alt="CSS 盒模型"></p>
+<ul>
+<li>内容区域（Content）：包含元素的实际内容，如文本、图片等。</li>
+<li>内边距（Padding）：位于内容区域和边框之间，用于设置元素内部的空白区域。</li>
+<li>边框（Border）：位于内边距之外，用于围绕元素的边界线。</li>
+<li>外边距（Margin）：位于边框之外，用于设置元素与其他元素之间的间距。</li>
+</ul>
+<h3 id="2-6-CSS-浮动和定位"><a href="#2-6-CSS-浮动和定位" class="headerlink" title="2.6 CSS 浮动和定位"></a>2.6 CSS 浮动和定位</h3><p>CSS 中的浮动（float）和定位（position）是常用的布局技术，可以用来控制元素的位置和相互关系。</p>
+<h4 id="2-6-1-浮动（float）"><a href="#2-6-1-浮动（float）" class="headerlink" title="2.6.1 浮动（float）"></a>2.6.1 浮动（float）</h4><p>浮动是将元素从正常的文档流中移动，使其脱离原来的位置，可以左浮动或右浮动。浮动的元素会影响其周围元素的位置。</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.float-left</span> &#123;</span><br><span class="line">    <span class="attribute">float</span>: left;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.float-right</span> &#123;</span><br><span class="line">    <span class="attribute">float</span>: right; &#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="code">`float: left`</span>：将元素向左浮动，使其脱离文档流，并靠左对齐。</span><br><span class="line"><span class="bullet">-</span> <span class="code">`float: right`</span>：将元素向右浮动，使其脱离文档流，并靠右对齐。</span><br><span class="line"></span><br><span class="line">浮动元素的特点：</span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> 浮动元素会脱离正常的文档流，不再占据原来的位置，导致其后面的元素紧贴其旁边。</span><br><span class="line"><span class="bullet">-</span> 浮动元素会向左或向右浮动，直到其碰到父元素的边缘或其他浮动元素。</span><br><span class="line"><span class="bullet">-</span> 浮动元素会导致父元素的高度塌陷，父元素的高度不再包含浮动元素。</span><br><span class="line"></span><br><span class="line"><span class="section">#### 2.6.2 定位（position）</span></span><br><span class="line"></span><br><span class="line">定位是通过设置元素的 <span class="code">`position`</span> 属性来控制元素在文档中的位置。常用的定位属性值有：</span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> <span class="code">`position: static`</span>：默认值，元素在正常的文档流中，并根据其在 HTML 中的位置进行布局。</span><br><span class="line"><span class="bullet">-</span> <span class="code">`position: relative`</span>：相对定位，元素在正常的文档流中，并根据其在 HTML 中的位置进行布局，但可以通过设置 <span class="code">`top`</span>、<span class="code">`right`</span>、<span class="code">`bottom`</span>、<span class="code">`left`</span> 等属性来偏移元素的位置。</span><br><span class="line"><span class="bullet">-</span> <span class="code">`position: absolute`</span>：绝对定位，元素脱离正常的文档流，相对于最近的已定位祖先元素（如果没有，则相对于 <span class="code">`body`</span>）进行定位，可以通过设置 <span class="code">`top`</span>、<span class="code">`right`</span>、<span class="code">`bottom`</span>、<span class="code">`left`</span> 等属性来精确控制元素的位置。</span><br><span class="line"><span class="bullet">-</span> <span class="code">`position: fixed`</span>：固定定位，元素在视口中固定位置，不随页面滚动而变化，可以通过设置 <span class="code">`top`</span>、<span class="code">`right`</span>、<span class="code">`bottom`</span>、<span class="code">`left`</span> 等属性来固定元素的位置。</span><br><span class="line"></span><br><span class="line">定位元素的特点：</span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> 定位元素可以脱离正常的文档流，可以在页面上自由定位。</span><br><span class="line"><span class="bullet">-</span> 定位元素可以通过设置 <span class="code">`top`</span>、<span class="code">`right`</span>、<span class="code">`bottom`</span>、<span class="code">`left`</span> 等属性来精确控制其位置。</span><br><span class="line"><span class="bullet">-</span> 定位元素可以相对于最近的已定位祖先元素或视口进行定位。</span><br><span class="line"></span><br><span class="line"><span class="section">### 2.7 CSS 动画和过渡</span></span><br><span class="line"></span><br><span class="line">CSS 动画和过渡是用来在页面中实现动态效果的技术。</span><br><span class="line"></span><br><span class="line"><span class="section">#### 2.7.1 过渡（transition）</span></span><br><span class="line"></span><br><span class="line">过渡是通过设置元素的 <span class="code">`transition`</span> 属性来实现的，可以使元素在状态变化时产生平滑的过渡效果。</span><br><span class="line"></span><br><span class="line"><span class="code">```css</span></span><br><span class="line"><span class="code">.transition &#123;</span></span><br><span class="line"><span class="code">    transition-property: property; /* 指定要过渡的属性 */</span></span><br><span class="line"><span class="code">    transition-duration: duration; /* 指定过渡的持续时间 */</span></span><br><span class="line"><span class="code">    transition-timing-function: timing-function; /* 指定过渡的时间函数，控制过渡速度 */ transition-delay: delay; /* 指定过渡的延迟时间 */ &#125;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">- `<span class="attribute">transition-property</span>`：指定要过渡的属性，可以是单个属性或多个属性的组合，如 `property1, property2, ...`。常见的属性值有 `<span class="attribute">all</span>`（所有属性）、`<span class="attribute">width</span>`（宽度）、`<span class="attribute">height</span>`（高度）、`<span class="attribute">opacity</span>`（透明度）等。</span><br><span class="line">- `<span class="attribute">transition-duration</span>`：指定过渡的持续时间，可以是秒（s）或毫秒（ms）为单位。例如，`<span class="number">0.5s</span>` 表示过渡持续 <span class="number">0.5</span> 秒。</span><br><span class="line">- `<span class="attribute">transition-timing-function</span>`：指定过渡的时间函数，控制过渡速度。常见的时间函数有 `ease`（默认值，缓慢开始，缓慢结束）、`linear`（线性过渡）、`ease-in`（缓慢开始）、`ease-out`（缓慢结束）、`ease-in-out`（缓慢开始，缓慢结束）等。</span><br><span class="line">- `<span class="attribute">transition-delay</span>`：指定过渡的延迟时间，可以是秒（s）或毫秒（ms）为单位。例如，`<span class="number">0.2s</span>` 表示过渡延迟 <span class="number">0.2</span> 秒。</span><br><span class="line"></span><br><span class="line">过渡的使用示例：</span><br><span class="line"></span><br><span class="line">```css</span><br><span class="line"><span class="comment">/* 定义过渡效果 */</span></span><br><span class="line"><span class="selector-class">.transition</span> &#123;</span><br><span class="line">    <span class="attribute">transition-property</span>: width;</span><br><span class="line">    <span class="attribute">transition-duration</span>: <span class="number">0.5s</span>;</span><br><span class="line">    <span class="attribute">transition-timing-function</span>: ease-in-out;</span><br><span class="line">    <span class="attribute">transition-delay</span>: <span class="number">0.2s</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 触发过渡效果 */</span></span><br><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.element</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在上面的示例中，当鼠标悬停在 <code>.element</code> 元素上时，其宽度从 100px 过渡到 200px，过程持续时间为 0.5 秒，使用缓慢开始和缓慢结束的时间函数，延迟 0.2 秒开始过渡。</p>
+<h4 id="2-7-2-动画（animation）"><a href="#2-7-2-动画（animation）" class="headerlink" title="2.7.2 动画（animation）"></a>2.7.2 动画（animation）</h4><p>动画是通过设置元素的 <code>animation</code> 属性来实现的，可以定义一组关键帧（keyframes），描述元素在不同时间点的样式，并通过动画属性控制动画的播放。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.animation &#123;</span><br><span class="line">    animation-name: keyframes; /* 指定关键帧的名称 */</span><br><span class="line">    animation-duration: duration; /* 指定动画的持续时间 */</span><br><span class="line">    animation-timing-function: timing-function; /* 指定动画的时间函数，控制动画速度 */</span><br><span class="line">    animation-delay: delay; /* 指定动画的延迟时间 */</span><br><span class="line">    animation-iteration-count: count; /* 指定动画的播放次数 */</span><br><span class="line">    animation-direction: direction; /* 指定动画的播放方向 */</span><br><span class="line">    animation-fill-mode: fill-mode; /* 指定动画的填充模式 */ </span><br><span class="line">    animation-play-state: play-state; /* 指定动画的播放状态 */ &#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="code">`animation-name`</span>：指定关键帧的名称，可以是一个或多个关键帧的名称，用逗号分隔。关键帧的名称由 <span class="code">`@keyframes`</span> 规则定义。</span><br><span class="line"><span class="bullet">-</span> <span class="code">`animation-duration`</span>：指定动画的持续时间，可以是秒（s）或毫秒（ms）为单位。例如，<span class="code">`1s`</span> 表示动画持续 1 秒。</span><br><span class="line"><span class="bullet">-</span> <span class="code">`animation-timing-function`</span>：指定动画的时间函数，控制动画速度。常见的时间函数有 <span class="code">`ease`</span>（默认值，缓慢开始，缓慢结束）、<span class="code">`linear`</span>（线性过渡）、<span class="code">`ease-in`</span>（缓慢开始）、<span class="code">`ease-out`</span>（缓慢结束）、<span class="code">`ease-in-out`</span>（缓慢开始，缓慢结束）等。</span><br><span class="line"><span class="bullet">-</span> <span class="code">`animation-delay`</span>：指定动画的延迟时间，可以是秒（s）或毫秒（ms）为单位。例如，<span class="code">`0.2s`</span> 表示动画延迟 0.2 秒开始播放。</span><br><span class="line"><span class="bullet">-</span> <span class="code">`animation-iteration-count`</span>：指定动画的播放次数，可以是一个整数或特定的值，如 <span class="code">`infinite`</span>（无限循环播放）。</span><br><span class="line"><span class="bullet">-</span> <span class="code">`animation-direction`</span>：指定动画的播放方向，可以是 <span class="code">`normal`</span>（默认值，正常播放）、<span class="code">`reverse`</span>（反向播放）、<span class="code">`alternate`</span>（正向和反向交替播放）、<span class="code">`alternate-reverse`</span>（反向和正向交替播放）。</span><br><span class="line"><span class="bullet">-</span> <span class="code">`animation-fill-mode`</span>：指定动画的填充模式，控制动画在播放前和播放后的样式。常见的填充模式有 <span class="code">`none`</span>（默认值，不填充）、<span class="code">`forwards`</span>（动画结束时，保持最后一个关键帧的样式）、<span class="code">`backwards`</span>（动画开始前，使用第一个关键帧的样式）、<span class="code">`both`</span>（同时使用 <span class="code">`forwards`</span> 和 <span class="code">`backwards`</span>）。</span><br><span class="line"><span class="bullet">-</span> <span class="code">`animation-play-state`</span>：指定动画的播放状态，可以是 <span class="code">`running`</span>（默认值，播放中）或 <span class="code">`paused`</span>（暂停）。</span><br><span class="line"></span><br><span class="line">动画的使用示例：</span><br><span class="line"></span><br><span class="line"><span class="code">```css</span></span><br><span class="line"><span class="code">/* 定义关键帧 */</span></span><br><span class="line"><span class="code">@keyframes slide &#123;</span></span><br><span class="line"><span class="code">    0% &#123;</span></span><br><span class="line"><span class="code">        transform: translateX(0);</span></span><br><span class="line"><span class="code">    &#125;</span></span><br><span class="line"><span class="code">    100% &#123;</span></span><br><span class="line"><span class="code">        transform: translateX(100%);</span></span><br><span class="line"><span class="code">    &#125;</span></span><br><span class="line"><span class="code">&#125;</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">/* 定义动画效果 */</span></span><br><span class="line"><span class="code">.animation &#123;</span></span><br><span class="line"><span class="code">    animation-name: slide;</span></span><br><span class="line"><span class="code">    animation-duration: 2s;</span></span><br><span class="line"><span class="code">    animation-timing-function: ease-in-out;</span></span><br><span class="line"><span class="code">    animation-delay: 0.5s;</span></span><br><span class="line"><span class="code">    animation-iteration-count: infinite;</span></span><br><span class="line"><span class="code">    animation-direction: alternate;</span></span><br><span class="line"><span class="code">    animation-fill-mode: forwards;</span></span><br><span class="line"><span class="code">    animation-play-state: running;</span></span><br><span class="line"><span class="code">&#125;</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">/* 触发动画效果 */</span></span><br><span class="line"><span class="code">.element &#123;</span></span><br><span class="line"><span class="code">    width: 100px;</span></span><br><span class="line"><span class="code">    height: 100px;</span></span><br><span class="line"><span class="code">    background-color: red;</span></span><br><span class="line"><span class="code">&#125;</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">.element:hover &#123;</span></span><br><span class="line"><span class="code">    animation-play-state: paused;</span></span><br><span class="line"><span class="code">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>在上面的示例中，定义了一个名为 <code>slide</code> 的关键帧，描述了一个从左到右平移的动画效果。然后，通过 <code>.animation</code> 类将该动画应用到一个元素上，设置了动画的持续时间为 2 秒，时间函数为缓入缓出，延迟时间为 0.5 秒，循环播放无限次，交替播放，动画结束时保持最后一个关键帧的样式，初始状态为播放中。</p>
+<p>最后，在一个名为 <code>.element</code> 的元素上使用 <code>:hover</code> 伪类触发动画效果，并在悬停状态下将动画播放状态设置为暂停，实现了鼠标悬停时暂停动画的效果。</p>
+<h3 id="Flexbox-布局"><a href="#Flexbox-布局" class="headerlink" title="Flexbox 布局"></a>Flexbox 布局</h3><p>Flexbox 是一种用于创建灵活的布局的 CSS3 模块，它提供了强大的排列和对齐元素的能力。以下是一些常用的 Flexbox 属性：</p>
+<h4 id="display-flex"><a href="#display-flex" class="headerlink" title="display: flex"></a><code>display: flex</code></h4><p><code>display: flex</code> 属性将一个容器元素设置为 Flexbox 布局。其作用是将容器元素的子元素（也称为 Flex 子项）排列在一条轴线上，称为主轴。同时，容器元素会形成一个 Flex 容器，具有特定的 Flexbox 行为。</p>
+<p>使用示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">css.container &#123;</span><br><span class="line">    display: flex;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="flex-direction"><a href="#flex-direction" class="headerlink" title="flex-direction"></a><code>flex-direction</code></h4><p><code>flex-direction</code> 属性控制 Flexbox 容器内 Flex 子项的排列方向。其值可以是 <code>row</code>（默认值，主轴方向从左到右）、<code>row-reverse</code>（主轴方向从右到左）、<code>column</code>（主轴方向从上到下）或 <code>column-reverse</code>（主轴方向从下到上）。</p>
+<p>使用示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">css.container &#123;</span><br><span class="line">    display: flex;</span><br><span class="line">    flex-direction: row;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="flex-wrap"><a href="#flex-wrap" class="headerlink" title="flex-wrap"></a><code>flex-wrap</code></h4><p><code>flex-wrap</code> 属性控制 Flexbox 容器内 Flex 子项的换行方式。其值可以是 <code>nowrap</code>（默认值，不换行）、<code>wrap</code>（换行）或 <code>wrap-reverse</code>（反向换行）。</p>
+<p>使用示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">css.container &#123;</span><br><span class="line">    display: flex;</span><br><span class="line">    flex-wrap: wrap;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="justify-content"><a href="#justify-content" class="headerlink" title="justify-content"></a><code>justify-content</code></h4><p><code>justify-content</code> 属性控制 Flexbox 容器内 Flex 子项在主轴上的对齐方式。其值可以是 <code>flex-start</code>（默认值，靠左对齐）、<code>flex-end</code>（靠右对齐）、<code>center</code>（居中对齐）、<code>space-between</code>（两端对齐，子项之间间隔相等）、<code>space-around</code>（子项两侧间隔相等，子项之间间隔是子项与容器边距的一半）或 <code>space-evenly</code>（子项之间和子项与容器边距之间间隔相等）。</p>
+<p>使用示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">css.container &#123;</span><br><span class="line">    display: flex;</span><br><span class="line">    justify-content: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="align-items"><a href="#align-items" class="headerlink" title="align-items"></a><code>align-items</code></h4><p><code>align-items</code> 属性</p>
+<p>控制 Flexbox 容器内 Flex 子项在侧轴上的对齐方式。其值可以是 <code>flex-start</code>（靠上对齐）、<code>flex-end</code>（靠下对齐）、<code>center</code>（居中对齐）、<code>baseline</code>（基线对齐，子项的基线对齐）或 <code>stretch</code>（默认值，拉伸对齐，子项在侧轴上拉伸以填满容器高度）。</p>
+<p>使用示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">css.container &#123;</span><br><span class="line">    display: flex;</span><br><span class="line">    align-items: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="align-content"><a href="#align-content" class="headerlink" title="align-content"></a><code>align-content</code></h4><p><code>align-content</code> 属性控制多行 Flexbox 容器内 Flex 子项在侧轴上的对齐方式。其值可以是 <code>flex-start</code>（靠上对齐）、<code>flex-end</code>（靠下对齐）、<code>center</code>（居中对齐）、<code>space-between</code>（两端对齐，子项之间间隔相等）、<code>space-around</code>（子项两侧间隔相等，子项之间间隔是子项与容器边距的一半）或 <code>stretch</code>（默认值，拉伸对齐，子项在侧轴上拉伸以填满容器高度）。</p>
+<p>使用示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">css.container &#123;</span><br><span class="line">    display: flex;</span><br><span class="line">    align-content: space-between;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Grid-布局"><a href="#Grid-布局" class="headerlink" title="Grid 布局"></a>Grid 布局</h3><p>Grid 是一种二维网格布局系统，用于创建复杂的网格布局。以下是一些常用的 Grid 属性：</p>
+<h4 id="display-grid"><a href="#display-grid" class="headerlink" title="display: grid"></a><code>display: grid</code></h4><p><code>display: grid</code> 属性将一个容器元素设置为 Grid 布局。其作用是将容器元素的子元素（也称为 Grid 子项）排列在一个二维网格中，由网格行和网格列组成。</p>
+<p>使用示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">css.container &#123;</span><br><span class="line">    display: grid;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="grid-template-columns-和-grid-template-rows"><a href="#grid-template-columns-和-grid-template-rows" class="headerlink" title="grid-template-columns 和 grid-template-rows"></a><code>grid-template-columns</code> 和 <code>grid-template-rows</code></h4><p><code>grid-template-columns</code> 和 <code>grid-template-rows</code> 属性分别控制 Grid 容器中网格列和网格行的大小和数量。其值可以是长度单位（如 <code>px</code>、<code>em</code>、<code>fr</code> 等）、百分比、自动大小（<code>auto</code>）或网格轨道（<code>repeat()</code> 函数）的组合。</p>
+<p>使用示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">css.container &#123;</span><br><span class="line">    display: grid;</span><br><span class="line">    grid-template-columns: repeat(3, 1fr);</span><br><span class="line">    grid-template-rows: 100px auto 200px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="grid-gap"><a href="#grid-gap" class="headerlink" title="grid-gap"></a><code>grid-gap</code></h4><p><code>grid-gap</code> 属性控制 Grid 容器中网格轨道（网格行和网格列之间的间隔）。其值可以是长度单位、百分比或 <code>normal</code>。</p>
+<p>使用示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">css.container &#123;</span><br><span class="line">    display: grid;</span><br><span class="line">    grid-gap: 10px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="grid-auto-columns-和-grid-auto-rows"><a href="#grid-auto-columns-和-grid-auto-rows" class="headerlink" title="grid-auto-columns 和 grid-auto-rows"></a><code>grid-auto-columns</code> 和 <code>grid-auto-rows</code></h4><p><code>grid-auto-columns</code> 和 <code>grid-auto-rows</code> 属性分别控制 Grid 容器中自动创建的网格列和网格行的大小。其值可以是长度单位、百分比或 <code>auto</code>。</p>
+<p>使用示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">css.container &#123;</span><br><span class="line">    display: grid;</span><br><span class="line">    grid-auto-columns: 100px;</span><br><span class="line">    grid-auto-rows: minmax(200px, auto);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="grid-template-areas"><a href="#grid-template-areas" class="headerlink" title="grid-template-areas"></a><code>grid-template-areas</code></h4><p><code>grid-template-areas</code> 属性通过命名网格区域来定义 Grid 容器中的布局。其值是一个由网格区域名称组成的字符串，用空格分隔，可以通过引号包裹。</p>
+<p>使用示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">css.container &#123;</span><br><span class="line">    display: grid;</span><br><span class="line">    grid-template-areas:</span><br><span class="line">        &quot;header header header&quot;</span><br><span class="line">        &quot;nav content aside&quot;</span><br><span class="line">        &quot;footer footer footer&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="justify-items-和-align-items"><a href="#justify-items-和-align-items" class="headerlink" title="justify-items 和 align-items"></a><code>justify-items</code> 和 <code>align-items</code></h4><p><code>justify-items</code> 和 <code>align-items</code> 属性分别控制 Grid 子项在网格单元格内的水平和垂直对齐方式。其值可以是 <code>start</code>、<code>end</code>、<code>center</code>、<code>stretch</code>（默认值）或 <code>baseline</code>。</p>
+<p>使用示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">css.container &#123;</span><br><span class="line">    display: grid;</span><br><span class="line">    justify-items: center;</span><br><span class="line">    align-items: end;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="justify-content-和-align-content"><a href="#justify-content-和-align-content" class="headerlink" title="justify-content 和 align-content"></a><code>justify-content</code> 和 <code>align-content</code></h4><p><code>justify-content</code> 和 <code>align-content</code> 属性分别控制 Grid 容器内的网格行和网格列在侧轴上的对齐方式。其值可以是 <code>start</code>、<code>end</code>、<code>center</code>、<code>space-between</code>、<code>space-around</code>、<code>space-evenly</code>（子项之间间隔相等，包括首尾子项之间的间隔）或 <code>stretch</code>（默认值）。</p>
+<p>使用示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">css.container &#123;</span><br><span class="line">    display: grid;</span><br><span class="line">    justify-content: center;</span><br><span class="line">    align-content: space-between;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="响应式设计"><a href="#响应式设计" class="headerlink" title="响应式设计"></a>响应式设计</h3><p>响应式设计是一种能够在不同屏幕尺寸和设备上自适应布局的设计方式，使网页在不同的设备上都能良好地展示。以下是一些常用的响应式设计技术：</p>
+<h4 id="媒体查询（Media-Queries）"><a href="#媒体查询（Media-Queries）" class="headerlink" title="媒体查询（Media Queries）"></a>媒体查询（Media Queries）</h4><p>媒体查询是一种使用 CSS 的 <code>@media</code> 规则来根据不同的设备属性（如屏幕宽度、高度、设备类型等）应用不同的样式的方法。通过使用媒体查询，可以根据设备的屏幕尺寸和其他属性来调整网页的布局和样式。</p>
+<p>使用示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">css/* 在屏幕宽度小于等于768px时应用不同的样式 */</span><br><span class="line">@media screen and (max-width: 768px) &#123;</span><br><span class="line">    /* 样式规则 */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="弹性图片（Fluid-Images）"><a href="#弹性图片（Fluid-Images）" class="headerlink" title="弹性图片（Fluid Images）"></a>弹性图片（Fluid Images）</h4><p>弹性图片是一种根据其父容器大小自动调整大小的图片。通过设置图片的宽度为百分比，可以使图片在不同屏幕尺寸下保持相对比例，并且能够适应容器的大小变化。</p>
+<p>使用示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cssimg &#123;</span><br><span class="line">    max-width: 100%;</span><br><span class="line">    height: auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="响应式布局（Responsive-Grids）"><a href="#响应式布局（Responsive-Grids）" class="headerlink" title="响应式布局（Responsive Grids）"></a>响应式布局（Responsive Grids）</h4><p>响应式布局是一种使用网格系统来自适应不同屏幕尺寸的布局方式。通过使用网格系统，可以在不同的屏幕宽度下重新排列和调整网页的布局，以确保在各种设备上都能够呈现良好的用户体验。</p>
+<p>使用示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">css.container &#123;</span><br><span class="line">    display: grid;</span><br><span class="line">    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</span><br><span class="line">    gap: 10px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>以上示例中，<code>grid-template-columns</code> 属性使用 <code>auto-fit</code> 和 <code>minmax</code> 函数来创建一个自适应的网格布局，网格列的最小宽度为 200px，最大宽度为 1fr，即剩余空间的分数单位。</p>
+<h4 id="Flexbox-布局-1"><a href="#Flexbox-布局-1" class="headerlink" title="Flexbox 布局"></a>Flexbox 布局</h4><p>Flexbox（弹性盒子布局）是一种用于创建灵活的布局的 CSS 技术。它允许容器中的子项在主轴（水平方向）和侧轴（垂直方向）上自动调整大小和对齐。</p>
+<p>使用示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">css.container &#123;</span><br><span class="line">    display: flex;</span><br><span class="line">    flex-wrap: wrap;</span><br><span class="line">    justify-content: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>以上示例中，<code>display: flex</code> 将容器设置为 Flexbox 布局，<code>flex-wrap: wrap</code> 允许子项在需要时换行，<code>justify-content: center</code> 将子项在主轴上居中对齐。</p>
+<h3 id="性能优化"><a href="#性能优化" class="headerlink" title="性能优化"></a>性能优化</h3><p>在前端开发中，性能优化是一项重要的任务，可以帮助提升网页的加载速度、用户体验和搜索引擎排名。以下是一些常用的性能优化技术：</p>
+<h4 id="图片优化"><a href="#图片优化" class="headerlink" title="图片优化"></a>图片优化</h4><p>图片是网页中常见的资源，它们可以占据很大的文件大小，因此优化图片可以显著提升网页的加载速度。以下是一些优化图片的方法：</p>
+<ul>
+<li>压缩图片：使用图片压缩工具，如 TinyPNG、JPEGmini 等，可以将图片文件大小减小而不影响其质量。</li>
+<li>使用适当的图片格式：选择合适的图片格式，如 JPEG、PNG、WebP 等，以根据图片内容和用途来最小化文件大小。</li>
+<li>使用懒加载：延迟加载图片，使页面首先加载可见区域的内容，从而加速页面的初始加载。</li>
+</ul>
+<h4 id="CSS-和-JavaScript-文件优化"><a href="#CSS-和-JavaScript-文件优化" class="headerlink" title="CSS 和 JavaScript 文件优化"></a>CSS 和 JavaScript 文件优化</h4><p>CSS 和 JavaScript 文件也可以影响网页的加载速度。以下是一些优化 CSS 和 JavaScript 文件的方法：</p>
+<ul>
+<li><p>合并文件：将多个 CSS 文件或 JavaScript 文件合并成一个文件，减少 HTTP 请求。</p>
+</li>
+<li><p>压缩文件：使用 CSS 和 JavaScript 压缩工具，如 UglifyJS、CSSNano 等，将文件大小减小而不影响其功能。</p>
+</li>
+<li><p>使用异步加载：将不影响页面渲染的 CSS 和JavaScript 文件异步加载，以避免阻塞页面的加载。</p>
+</li>
+<li><p>延迟加载：将不必要的 CSS 和 JavaScript 文件延迟加载，只在需要时才加载，以减小初始加载时的文件大小。</p>
+</li>
+<li><p>使用缓存：将 CSS 和 JavaScript 文件缓存到用户的本地浏览器，以便在后续访问时从缓存中加载，提高加载速度。</p>
+</li>
+</ul>
+<h4 id="网络请求优化"><a href="#网络请求优化" class="headerlink" title="网络请求优化"></a>网络请求优化</h4><p>网络请求是网页加载过程中的一个关键环节，优化网络请求可以减小页面加载时间。以下是一些网络请求优化的方法：</p>
+<ul>
+<li>减少请求次数：合并多个资源请求，减少请求次数，如将多个 CSS 或 JavaScript 文件合并成一个文件。</li>
+<li>使用缓存：使用缓存机制，如浏览器缓存、CDN 缓存等，减少服务器的请求负担和网络传输时间。</li>
+<li>压缩数据：使用 gzip 等压缩算法对服务器返回的数据进行压缩，减小数据传输量。</li>
+<li>使用 CDN：使用内容分发网络（CDN）来分发静态资源，以便更快地从离用户更近的服务器加载资源。</li>
+</ul>
+<h4 id="代码优化"><a href="#代码优化" class="headerlink" title="代码优化"></a>代码优化</h4><p>优化代码可以提升网页的性能和加载速度。以下是一些代码优化的方法：</p>
+<ul>
+<li>避免冗余代码：删除不必要的、重复的或无用的代码，以减小文件大小。</li>
+<li>使用合适的选择器和样式：避免使用复杂的选择器和样式，以减小页面渲染的负担。</li>
+<li>避免过多的 DOM 操作：DOM 操作是耗费性能的，尽量减少 DOM 操作的次数和复杂性。</li>
+<li>使用事件委托：使用事件委托来减少事件处理器的数量，从而提高性能。</li>
+</ul>
+<h3 id="测试和调试"><a href="#测试和调试" class="headerlink" title="测试和调试"></a>测试和调试</h3><p>在前端开发中，测试和调试是不可或缺的步骤，可以帮助发现和修复代码中的错误和问题。以下是一些常用的测试和调试工具和技术：</p>
+<h4 id="开发者工具"><a href="#开发者工具" class="headerlink" title="开发者工具"></a>开发者工具</h4><p>现代浏览器都提供了强大的开发者工具，包括元素检查、网络监控、调试器等功能，可以帮助开发者调试和优化网页。常用的浏览器开发者工具包括 Chrome DevTools、Firefox Developer Tools、Safari Web Inspector 等。</p>
+<h4 id="单元测试"><a href="#单元测试" class="headerlink" title="单元测试"></a>单元测试</h4><p>单元测试是一种用于测试代码中单个独立单元的测试方法，如函数、类等。通过编写单元测试，可以确保代码的正确性和稳定性。常用的 JavaScript 单元测试框架包括 Jest、Mocha、QUnit 等。</p>
+<h4 id="跨浏览器测试"><a href="#跨浏览器测试" class="headerlink" title="跨浏览器测试"></a>跨浏览器测试</h4><p>不同浏览器之间可能存在兼容性问题，因此进行跨浏览器测试是必要的。以下是一些跨浏览器测试的方法：</p>
+<ul>
+<li>多浏览器测试：在不同的浏览器中测试网页的兼容性，包括常用的浏览器如 Chrome、Firefox、Safari、Edge 等，以确保在各种浏览器下都能正常工作。</li>
+<li>特定设备测试：在特定的设备上进行测试，如移动设备（手机、平板）等，以确保网页在不同设备上的兼容性。</li>
+<li>使用跨浏览器测试工具：如 BrowserStack、Sauce Labs 等在线服务，可以模拟多种浏览器和设备环境，进行跨浏览器测试。</li>
+<li>使用 polyfill 和垫片：在网页中使用 polyfill 和垫片来处理浏览器兼容性问题，以确保网页在旧版本浏览器中的正常运行。</li>
+</ul>
+<h4 id="性能监测和优化"><a href="#性能监测和优化" class="headerlink" title="性能监测和优化"></a>性能监测和优化</h4><p>性能监测和优化是前端开发中的重要环节，可以帮助识别和解决性能瓶颈，提升网页的加载速度和用户体验。以下是一些常用的性能监测和优化方法：</p>
+<ul>
+<li>使用性能监测工具：如 Google Analytics、WebPageTest、Lighthouse 等，可以监测网页的加载速度、资源大小、渲染性能等指标，并提供优化建议。</li>
+<li>优化图片：使用合适的图片格式（如 JPEG、PNG、WebP）和压缩算法，对图片进行优化，以减小图片的大小，提高加载速度。</li>
+<li>懒加载和预加载：使用懒加载和预加载技术，只加载当前视窗内的内容或提前加载将要展示的内容，以减小初始加载时的资源大小。</li>
+<li>使用缓存：合理使用浏览器缓存、CDN 缓存等，减少资源的重复加载和网络传输时间。</li>
+<li>减少重绘和回流：避免频繁的 DOM 操作和样式变更，以减少页面的重绘和回流，提高渲染性能。</li>
+<li>使用异步加载和代码分割：使用异步加载和代码分割技术，将大型的 JavaScript 文件拆分成小块进行异步加载，以提高页面的加载速度。</li>
+</ul>
+<h3 id="最佳实践和安全性"><a href="#最佳实践和安全性" class="headerlink" title="最佳实践和安全性"></a>最佳实践和安全性</h3><p>除了性能优化和兼容性测试外，前端开发中还需要遵循一些最佳实践和保障网页的安全性。以下是一些常用的最佳实践和安全性措施：</p>
+<ul>
+<li><p>使用 HTTPS：在网站上使用 HTTPS 加密协议，以保护用户的隐私和数据安全。</p>
+</li>
+<li><p>避免 XSS 和 CSRF 攻击：在编写前端代码时，需要注意避免跨站脚本攻击（XSS）和跨站请求伪造攻击（CSRF）。可以通过对用户输入进行验证和转义，以及使用安全的请求和响应头来防范这些攻击。</p>
+</li>
+<li><p>输入验证和转义：对用户输入的数据进行验证和转义，以防止恶意脚本注入网页，并避免用户输入引起的错误和异常。</p>
+</li>
+<li><p>安全的请求和响应头：使用安全的请求和响应头，如 Content Security Policy（CSP）、Strict-Transport-Security（HSTS）等，以增加网页的安全性，并保护用户数据免受攻击。</p>
+</li>
+<li><p>避免直接操作 DOM：避免直接对 DOM 进行操作，以减少 XSS 攻击的风险。使用现代前端框架或库，如 React、Vue、Angular 等，来处理 DOM 操作，并自动进行 XSS 防护。</p>
+</li>
+<li><p>访问控制和权限管理：对网页中的敏感操作和资源进行访问控制和权限管理，确保只有授权的用户才能进行操作，以防止 CSRF 攻击。</p>
+</li>
+<li><p>更新和升级依赖库：定期检查和更新项目中使用的依赖库，包括前端框架、库和插件，以修复安全漏洞和保持最新的安全性。</p>
+</li>
+</ul>
+<h3 id="文档和团队合作"><a href="#文档和团队合作" class="headerlink" title="文档和团队合作"></a>文档和团队合作</h3><p>前端开发团队通常需要与其他团队、设计师、产品经理等密切合作。以下是一些有助于团队合作和文档管理的最佳实践：</p>
+<ul>
+<li>使用版本控制：使用版本控制工具，如 Git，对前端代码进行管理和版本控制，以便团队成员之间的合作和代码的版本管理。</li>
+<li>编写文档：编写清晰、详细的文档，包括项目文档、代码注释、API 文档等，以便团队成员之间的知识共享和项目的可维护性。</li>
+<li>代码审查：进行代码审查，定期审查团队成员提交的代码，以确保代码质量和遵循最佳实践。</li>
+<li>团队协作工具：使用团队协作工具，如 Slack、Microsoft Teams、Trello 等，以促进团队内部的沟通和合作。</li>
+<li>代码规范：遵循统一的代码规范，如 Airbnb JavaScript Style Guide、Google JavaScript Style Guide 等，以提高代码的可读性和可维护性。</li>
+</ul>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>前端开发是一门充满挑战和创造性的技术，需要不断学习和保持更新的技术栈。通过合理的架构设计、性能优化、兼容性处理和安全防御，可以开发出高质量、稳定和安全的前端应用。</p>
+<p>在本文中，我们介绍了前端开发的一些重要概念和最佳实践，包括前端架构设计、性能优化、兼容性处理、安全防御以及团队合作和文档管理等方面。这些内容对于学习前端开发并构建优秀的前端应用都是非常关键的。</p>
+<p>总结一下，作为前端开发者，我们需要不断学习和保持对新技术的掌握，不断提升自己的技能，积累项目经验，并且遵循最佳实践，保持良好的代码质量和团队合作。希望本文对你学习前端开发有所帮助，能够在你的前端之路上取得更好的成果！</p>
 ]]></content>
-      <categories>
-        <category>Texting</category>
-      </categories>
-      <tags>
-        <tag>text</tag>
-      </tags>
   </entry>
 </search>
