@@ -600,7 +600,7 @@ width和height:高度和宽度,设置之后图片可能会失真。
   </entry>
   <entry>
     <title>前端学习笔记</title>
-    <url>/2023/04/11/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/2023/04/11/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<h2 id="一、HTML"><a href="#一、HTML" class="headerlink" title="一、HTML"></a>一、HTML</h2><h3 id="1-1-HTML-是什么？"><a href="#1-1-HTML-是什么？" class="headerlink" title="1.1 HTML 是什么？"></a>1.1 HTML 是什么？</h3><p>HTML（HyperText Markup Language）是一种标记语言，用于构建网页的结构和内容。它由一系列的标签（tag）组成，每个标签用于定义网页上的不同元素，如标题、段落、链接、图像等。</p>
 <h3 id="1-2-HTML-基本结构"><a href="#1-2-HTML-基本结构" class="headerlink" title="1.2 HTML 基本结构"></a>1.2 HTML 基本结构</h3><p>一个典型的 HTML 文件通常包含以下几个基本部分：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">html&lt;!DOCTYPE html&gt; &lt;!-- 声明文档类型 --&gt;</span><br><span class="line">&lt;html&gt; &lt;!-- 根元素 --&gt;</span><br><span class="line">&lt;head&gt; &lt;!-- 头部 --&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;!-- 指定字符编码 --&gt;</span><br><span class="line">    &lt;title&gt;Document&lt;/title&gt; &lt;!-- 文档标题 --&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt; &lt;!-- 主体内容 --&gt;</span><br><span class="line">    &lt;!-- 页面内容 --&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
@@ -874,5 +874,11 @@ width和height:高度和宽度,设置之后图片可能会失真。
 <p>在本文中，我们介绍了前端开发的一些重要概念和最佳实践，包括前端架构设计、性能优化、兼容性处理、安全防御以及团队合作和文档管理等方面。这些内容对于学习前端开发并构建优秀的前端应用都是非常关键的。</p>
 <p>总结一下，作为前端开发者，我们需要不断学习和保持对新技术的掌握，不断提升自己的技能，积累项目经验，并且遵循最佳实践，保持良好的代码质量和团队合作。希望本文对你学习前端开发有所帮助，能够在你的前端之路上取得更好的成果！</p>
 ]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+      </tags>
   </entry>
 </search>
