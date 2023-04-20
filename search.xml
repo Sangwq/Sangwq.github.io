@@ -56,7 +56,7 @@ CSS的优势：
         <category>Learn</category>
       </categories>
       <tags>
-        <tag>css</tag>
+        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
@@ -88,391 +88,6 @@ CSS的优势：
       </categories>
       <tags>
         <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ATM</title>
-    <url>/2023/03/20/ATM/</url>
-    <content><![CDATA[<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// A T M </span></span><br><span class="line">        <span class="keyword">var</span> money = <span class="number">100</span>;</span><br><span class="line">        <span class="keyword">var</span> price = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (num != <span class="number">4</span>) &#123;</span><br><span class="line">            <span class="keyword">var</span> num = <span class="title function_">prompt</span>(<span class="string">&#x27;请输入你要的操作:\n1.存钱\n2.取钱\n3.显示余额\n4.退出&#x27;</span>)</span><br><span class="line">            <span class="keyword">switch</span> (num) &#123;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;1&#x27;</span>:</span><br><span class="line">                    price = <span class="title function_">prompt</span>(<span class="string">&#x27;输入要存的钱数；&#x27;</span>);</span><br><span class="line">                    money = money + <span class="built_in">parseFloat</span>(price);</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额；&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;2&#x27;</span>:</span><br><span class="line">                    price = <span class="title function_">prompt</span>(<span class="string">&#x27;输入你要取出的钱: &#x27;</span>);</span><br><span class="line">                    money = money - <span class="built_in">parseFloat</span>(price);</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;3&#x27;</span>:</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额：&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;4&#x27;</span>:</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;正在退出...&#x27;</span>)</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Learn</category>
-      </categories>
-      <tags>
-        <tag>demo</tag>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown</title>
-    <url>/2023/03/09/LearnMarkdown/</url>
-    <content><![CDATA[<p><a href="https://baidu.com/" title="这是一个百度链接">百度链接</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/bj5.jpg"></p>
-<hr>
-<ul>
-<li>无序列表1</li>
-<li>无序列表2<ol>
-<li>有序列表1</li>
-<li>有序列表1</li>
-</ol>
-</li>
-</ul>
-<hr>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><span id="more"></span>
-<p><em>斜体</em><br><strong>加粗</strong><br><code>行内代码</code><br><u>下划线</u></p>
-<blockquote>
-<p>引用</p>
-</blockquote>
-<h3 id="代办"><a href="#代办" class="headerlink" title="代办"></a>代办</h3><ul>
-<li><input checked="" disabled="" type="checkbox"> one</li>
-<li><input disabled="" type="checkbox"> two</li>
-</ul>
-<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><table>
-<thead>
-<tr>
-<th align="left">表头</th>
-<th align="right">表头</th>
-<th align="center">表头</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">左对齐</td>
-<td align="right">右对齐</td>
-<td align="center">剧中</td>
-</tr>
-<tr>
-<td align="left">11</td>
-<td align="right">12</td>
-<td align="center">13</td>
-</tr>
-</tbody></table>
-<p>脚注：<br>一键三连<a href="%E7%82%B9%E8%B5%9E%EF%BC%8C%E6%8A%95%E5%B8%81%E6%94%B6%E8%97%8F">^三连</a></p>
-]]></content>
-      <categories>
-        <category>Learn</category>
-      </categories>
-      <tags>
-        <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaScript基础</title>
-    <url>/2023/03/20/JavaScript%E5%9F%BA%E7%A1%80/</url>
-    <content><![CDATA[<h3 id="一、前端知识"><a href="#一、前端知识" class="headerlink" title="一、前端知识"></a>一、前端知识</h3><h4 id="1-1、Web发展史"><a href="#1-1、Web发展史" class="headerlink" title="1.1、Web发展史"></a>1.1、Web发展史</h4><p>Mosaic，是互联网历史上第一个获普遍使用和能够显示图片的网页浏览器。于 1993 年问世。 1994 年 4 月，马克.安德森和 Silicon Graphics（简称为 SGI，中译为“视算科技”或“硅 图”）公司的创始人吉姆·克拉克（Jim Clark）在美国加州设立了“Mosaic Communication Corporation”。 Mosaic 公司成立后，由于伊利诺伊大学拥有 Mosaic 的商标权，且伊利诺伊大学已将 技术转让给 Spy Glass 公司，开发团队必须彻底重新撰写浏览器程式码，且浏览器名 称更改为 Netscape Navigator，公司名字于 1994 年 11 月改名为“Netscape Communication Corporation”，此后沿用至今，中译为“网景”。 微软的Internet Explorer及Mozilla Firefox等，其早期版本皆以Mosaic为基础而开发。 微软随后买下Spy Glass公司的技术开发出Internet Explorer浏览器，而Mozilla Firefox 则是网景通讯家开放源代码后所衍生出的版本。</p>
-<span id="more"></span>
-<h4 id="1-2js历史"><a href="#1-2js历史" class="headerlink" title="1.2js历史"></a>1.2js历史</h4><p>JavaScript 作为 Netscape Navigator 浏览器的一部分首次出现在 1996 年。它最初的设 计目标是改善网页的用户体验。 作者：Brendan Eich 期初 JavaScript 被命名为 LiveScript，后因和 Sun 公司合作，因市场宣传需要改名 JavaScript。后来 Sun 公司被 Oracle 收购，JavaScript 版权归 Oracle 所有。</p>
-<h4 id="1-3浏览器组成"><a href="#1-3浏览器组成" class="headerlink" title="1.3浏览器组成"></a>1.3浏览器组成</h4><p>shell 部分——用户能操作部分(壳)</p>
-<p>内核部分——用户看不到的部分</p>
-<ul>
-<li>渲染引擎（语法规则和渲染）</li>
-<li>js 引擎</li>
-<li>其他模块（如异步）</li>
-</ul>
-<h4 id="1-4js引擎"><a href="#1-4js引擎" class="headerlink" title="1.4js引擎"></a>1.4js引擎</h4><p>2001 年发布 ie6，首次实现对 js 引擎的优化。 2008 年 Google 发布最新浏览器 Chrome，它是采用优化后的 javascript 引擎，引擎代 号 V8，因能把 js 代码直接转化为机械码来执行，进而以速度快而闻名。 后 Firefox 也推出了具备强大功能的 js 引擎 Firefox3.5 TraceMonkey（对频繁执行的代码做了路径优化） Firefox4.0 JeagerMonkey</p>
-<h4 id="1-5js的特色"><a href="#1-5js的特色" class="headerlink" title="1.5js的特色"></a>1.5js的特色</h4><table>
-<thead>
-<tr>
-<th align="center"></th>
-<th align="center">编译型语言</th>
-<th align="center">解释型语言</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">怎么做</td>
-<td align="center">通篇编译后，生成翻译完的文件，程序执行翻译后的文件</td>
-<td align="center">看一行翻译一行，不生成特定文件</td>
-</tr>
-<tr>
-<td align="center">代表语言</td>
-<td align="center">c、c++</td>
-<td align="center">js、php、python</td>
-</tr>
-<tr>
-<td align="center">优点</td>
-<td align="center">快（常用于系统，游戏）</td>
-<td align="center">可以跨平台</td>
-</tr>
-<tr>
-<td align="center">缺点</td>
-<td align="center">移植性不好（不跨平台，windows和linux不能混用）</td>
-<td align="center">稍微慢点</td>
-</tr>
-</tbody></table>
-<ol>
-<li>js 是解释性语言：(不需要编译成文件）跨平台</li>
-<li>java 先通过 javac，编译成.class 文件，通过 jvm（Java 虚拟机）进行解释执行<br>.java→javac→编译→.class→jvm→解释执行（java 可以跨平台）（java 是 oak 语言）</li>
-<li>link rel &#x3D; “”是异步加载</li>
-<li>单线程：同一时间只能做一件事——js 引擎是单线程<br>（同一时间做很多事叫多线程）</li>
-<li>ECMA（欧洲计算机制造联合会）标注：为了取得技术优势，微软推出了 JScript，<br>CEnvi 推出 ScriptEase，与 JavaScript 同样可在浏览器上运行。为了统一规格 JavaScript<br>兼容于 ECMA 标准，因此也称为 ECMAScript。<br>js 是轮转时间片</li>
-</ol>
-<h4 id="1-6js执行队列"><a href="#1-6js执行队列" class="headerlink" title="1.6js执行队列"></a>1.6js执行队列</h4><p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/8fb93cf220bd4a66a4b5107a5e5787f9.png"></p>
-<h4 id="1-7主流浏览器内核"><a href="#1-7主流浏览器内核" class="headerlink" title="1.7主流浏览器内核"></a>1.7主流浏览器内核</h4><p>| 主流浏览器（必须有独立内核）市场份额大于3% |   内核名称   |<br>| :—————————————-: | :———-: |  |<br>|                     IE                     |   trident    |<br>|                   chrome                   | webkit&#x2F;blink |<br>|                  firefox                   |    gecko     |<br>|                   opera                    |    presto    |<br>|                   safari                   |   werbkit    |</p>
-<h3 id="二、引入js"><a href="#二、引入js" class="headerlink" title="二、引入js"></a>二、引入js</h3><h4 id="2-1如何引入js"><a href="#2-1如何引入js" class="headerlink" title="2.1如何引入js"></a>2.1如何引入js</h4><ul>
-<li>第一种：页面内嵌标签,写 head 里面也行,写 body 里面也行<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span> </span><br><span class="line">	<span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-<li>第二种 ：外部 js 文件，引入<blockquote>
-<p>注意：为符合 web 标准（w3c 标准中的一项）结构（html）、行为（js）、样式（css） 相分离，通常会采用外部引入。<br>一个文件中可以包括多个 css，js——不混用</p>
-</blockquote>
-</li>
-</ul>
-<p>特殊写页面，大部分写在外部——不混用</p>
-<p>如果同时写了内部的 js 和外部的 js，那么是外部的 js 文件显示出来</p>
-<h3 id="三、变量"><a href="#三、变量" class="headerlink" title="三、变量"></a>三、变量</h3><p>HTML，css 不是编程语言，是计算机语言，编程语言需要有变量和函数 变量是存放东西，方便后续使用的框</p>
-<h4 id="3-1变量声明"><a href="#3-1变量声明" class="headerlink" title="3.1变量声明"></a>3.1变量声明</h4><p>声明、赋值分解<br>var a; 这个叫变量声明。我们向系统中申请了 var 这个框，命名叫 a 给 a 赋值 100，写作 a &#x3D;100，这里不是等号是赋值 var a ；a &#x3D;100；可以简化写成 var a&#x3D;100；</p>
-<h4 id="3-2单一var声明法"><a href="#3-2单一var声明法" class="headerlink" title="3.2单一var声明法"></a>3.2单一var声明法</h4><p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/b8d65bbf71ab424a9f88cdfa21111e29.png"></p>
-<blockquote>
-<p>如写做：var a &#x3D; 10；a&#x3D;20;那么后面的 20 就会覆盖掉前面的 10<br>命名规则（用接近的英文单词）<br>变量名必须以英文字母、_、$ 开头</p>
-</blockquote>
-<p>变量名可以包括英文字母、_、$、数字</p>
-<p>不可以用系统的关键字、保留字作为变量名</p>
-<p>注意：起变量名一定要以英文语义化</p>
-<h4 id="关键字与保留字"><a href="#关键字与保留字" class="headerlink" title="关键字与保留字"></a>关键字与保留字</h4><p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/7783e53d84694fb4a607f5a16634f8a8.png"></p>
-<h3 id="四、基本语法"><a href="#四、基本语法" class="headerlink" title="四、基本语法"></a>四、基本语法</h3><p>下面是变量,例：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">var</span> b = <span class="number">20</span>;</span><br><span class="line"><span class="keyword">var</span> c;</span><br><span class="line">c = a + b;</span><br></pre></td></tr></table></figure>
-<p>先运算等号右边的 a+b，运算完后，再赋值给左边 c<br>先取值，再赋值</p>
-<h4 id="4-1运算大于赋值的优先级"><a href="#4-1运算大于赋值的优先级" class="headerlink" title="4.1运算大于赋值的优先级"></a>4.1运算大于赋值的优先级</h4><p>js 是动态语言，动态语言基本上都是解释性语言，解释性语言基本上都是脚本语言<br>js 是浮点型语言（带小数点）</p>
-<h4 id="4-2值类型（数据类型）"><a href="#4-2值类型（数据类型）" class="headerlink" title="4.2值类型（数据类型）"></a>4.2值类型（数据类型）</h4><h5 id="1-不可改变的原始值（栈数据）栈-stack"><a href="#1-不可改变的原始值（栈数据）栈-stack" class="headerlink" title="1.不可改变的原始值（栈数据）栈 stack"></a>1.不可改变的原始值（栈数据）栈 stack</h5><blockquote>
-<p>已经放进去的值不可改变，只会改房间编号为 null(硬盘原理)</p>
-</blockquote>
-<pre><code>1.Number 数字,例 var a = 123;
-2.String 字符串,语言放双引号里，例 var a=”语言”，““是空串
-3.Boolean 布尔数字,就两个值，false，true
-4.undefined 是没有定义的，表示还没赋值,仅一个值 underfined
-5.null 代表空，占位用，用空值来覆盖
-</code></pre>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a =<span class="number">10</span>;</span><br><span class="line"><span class="keyword">var</span> b = a;</span><br><span class="line">a = <span class="number">20</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(b)</span><br><span class="line">答案：<span class="number">10</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>原始值是我把一个值放到另一个值里面，改了第一个值，第二个值不变</p>
-</blockquote>
-<h5 id="2-引用值（堆数据）大致上放堆-heap-里面"><a href="#2-引用值（堆数据）大致上放堆-heap-里面" class="headerlink" title="2.引用值（堆数据）大致上放堆 heap 里面"></a>2.引用值（堆数据）大致上放堆 heap 里面</h5><p>array 数组, Object, function … data,RegExp 正则</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="literal">false</span>,”abc”]; <span class="comment">//这是数组</span></span><br><span class="line">例：<span class="keyword">var</span> arr = [<span class="number">1</span>];</span><br><span class="line"><span class="keyword">var</span> arr1 = arr;</span><br><span class="line">arr.<span class="title function_">push</span>(<span class="number">2</span>);</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(arr1);</span><br><span class="line">答案：arr 是 <span class="number">1</span>,<span class="number">2</span>   arr1 是 <span class="number">1</span>,<span class="number">2</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>引用值是把第一个值放到第二个值里面，改第一个值，第二个值也改变</p>
-</blockquote>
-<p>js 由值决定类型。原始值和引用值唯一的不同是赋值形式不同<br><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/41ac78870d2c4440b23d759f997963ba.png"></p>
-<p>var a &#x3D; 10;var b &#x3D;a；是 a 先取出 10，copy 一份放到 b 里面，改变 a 的值，b 的值是不变的，再把 a&#x3D;20;时 b 的值还是 10，不发生改变。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>];</span><br><span class="line"><span class="keyword">var</span> arr1 =arr;</span><br><span class="line">arr.<span class="title function_">push</span>(<span class="number">3</span>);</span><br><span class="line">答案：这往[<span class="number">1</span>,<span class="number">2</span>]放 <span class="number">3</span>，arr 和 arr1 都是[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>引用值是在栈内存里面放堆的地址，拷贝的也是地址，所以改变 arr，arr1 也变了</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>]; </span><br><span class="line"><span class="keyword">var</span> arr1 =arr; </span><br><span class="line">arr = [<span class="number">1</span>,<span class="number">3</span>]; </span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(arr1)</span><br><span class="line">答案：arr = [<span class="number">1</span>,<span class="number">3</span>];</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>新建了一个新的房间。arr1 是 1,2,现在是插入新引入值”房间”,会在堆里面重新申请一间房，并指向新房间</p>
-</blockquote>
-<h5 id="3-js-语句基本规"><a href="#3-js-语句基本规" class="headerlink" title="3.js 语句基本规"></a>3.js 语句基本规</h5><p>语句后面要用分号结束“；”但 function test(){}，for(){}，if(){}后面都不用加分号<br>js 语法错误会引发后续代码终止，但不会影响其它 js 代码块<br>书写格式要规范，“&#x3D; + &#x2F; -”两边都应该有空格<br><strong>错误分为两种</strong><br>1）低级错误（语法解析错误），不能写中文<br>2）逻辑错误（标准错误，情有可原，错的那个执行不了）</p>
-<h3 id="五、js运算符"><a href="#五、js运算符" class="headerlink" title="五、js运算符"></a>五、js运算符</h3><h4 id="5-1-运算操作符"><a href="#5-1-运算操作符" class="headerlink" title="5.1 运算操作符"></a>5.1 运算操作符</h4><ol>
-<li><p>+</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">“+”作用：数学运算、字符串链接</span><br><span class="line">任何数据类型加字符串都等于字符串</span><br><span class="line">例 <span class="keyword">var</span> a = “a”+ <span class="literal">true</span> + <span class="number">1</span>; <span class="comment">//打印 atrue1</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span> + “a” + <span class="number">1</span> + <span class="number">1</span>; <span class="comment">//打印 1a11</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span> + <span class="number">1</span> + “a” + <span class="number">1</span> + <span class="number">1</span>; <span class="comment">//打印 2a11，从左向右运算</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span> + <span class="number">1</span> + “a” +( <span class="number">1</span> + <span class="number">2</span>); <span class="comment">//打印 2a3</span></span><br></pre></td></tr></table></figure></li>
-<li><p>*、- 、&#x2F;</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a = <span class="number">0</span> – <span class="number">1</span>； <span class="comment">//等于-1</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">2</span> * <span class="number">1</span>； <span class="comment">//等于 2</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">0</span> / <span class="number">0</span>； <span class="comment">//答案是 NaN，应该得出一个数字类型的数，但是没法表达，</span></span><br><span class="line">就用 <span class="title class_">NaN</span> (<span class="title class_">NaN</span> 是 <span class="title class_">Not</span> a <span class="title class_">Number</span> 非数，不是数，但是是数字类型</span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span> / <span class="number">0</span>; <span class="comment">//是 infinity</span></span><br><span class="line">例 <span class="keyword">var</span> a = -<span class="number">1</span> / <span class="number">0</span>; /是-infinity</span><br></pre></td></tr></table></figure></li>
-<li><p>%<br>摩尔，模，是取余数的意思</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">5</span>%<span class="number">2</span> <span class="comment">//5%2 是五除二的余数，商二余一</span></span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">5</span>%<span class="number">1</span> <span class="comment">//是五除一的余数，结果是 0</span></span><br><span class="line">例 <span class="keyword">var</span> num = <span class="number">1</span> % <span class="number">5</span>; <span class="comment">//意思是 1 除以 5 的余数。商 0 余 1</span></span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">4</span>%<span class="number">6</span> <span class="comment">//是四除六的余数，结果是 4</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">4</span>;a % = <span class="number">5</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">// 4</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">0</span>;a % = <span class="number">5</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//0</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">10</span>;a %= <span class="number">2</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//0</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">3</span>;a % = <span class="number">4</span>; <span class="comment">//4</span></span><br></pre></td></tr></table></figure>
-<p>优先级”&#x3D;“最弱【赋值符号优先级最低】，”()”优先级较高</p>
-</li>
-<li><p>++</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a = <span class="number">10</span>; a = a + <span class="number">1</span>; <span class="comment">//结果 11</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
-<p>a &#x3D; a + 1;写成 a ++是一种简化形式“++”，是自身加一，再赋值给自身<br>a++是 a&#x3D;a+1 的简化形式</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(++a );<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//答案 11；11</span></span><br><span class="line">是先执行++，再执行本条语句 <span class="variable language_">document</span>.<span class="title function_">write</span>(++a)</span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(a ++);<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//答案 1；2。是先执行</span></span><br><span class="line">语句(<span class="variable language_">document</span>.<span class="title function_">write</span>(a))，再++，所以第一次打印的还是 a，第二次打印 a++后的值</span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>；<span class="keyword">var</span> b=++a -<span class="number">1</span>+a++;<span class="variable language_">document</span>.<span class="title function_">write</span>(b + “ ” + a) <span class="comment">//答案 21 12</span></span><br><span class="line">先++a，这个时候 a=<span class="number">11</span>，再-<span class="number">1</span>，再加 a，b 就是 <span class="number">21</span>，最后++，a 就是 <span class="number">12</span></span><br></pre></td></tr></table></figure>
-<p>赋值的顺序自右向左，计算的顺序自左向右（按数学来）</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>；<span class="keyword">var</span> b = a ++ + <span class="number">1</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(b)； <span class="comment">//答案 2，先执行 var b =a+1，</span></span><br><span class="line">再 a++</span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>；<span class="keyword">var</span> b = a ++ + <span class="number">1</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(a)；<span class="variable language_">document</span>.<span class="title function_">write</span>(b)； <span class="comment">//答案 2，2</span></span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>；<span class="keyword">var</span> b = ++a + <span class="number">1</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(a)；<span class="variable language_">document</span>.<span class="title function_">write</span>(b)； <span class="comment">//答案 2，3</span></span><br><span class="line">例 <span class="keyword">var</span> i = <span class="number">1</span>;<span class="keyword">var</span> a = i++; <span class="comment">//答案 a = 1; 此时 i 先将值 1 赋给 a,然后自己+1，i=2;</span></span><br><span class="line"><span class="keyword">var</span> b = ++i; <span class="comment">//答案 b = 3；此时 i 先自己+1 为 3.再给 b 赋值，b=3;</span></span><br></pre></td></tr></table></figure></li>
-<li><p>–<br>“- -”，是自身减一，在赋值给自身</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="keyword">var</span> b = a-- + -- a;<span class="variable language_">document</span>.<span class="title function_">write</span>(b); <span class="comment">//答案 0，先执行--a;此时 a 变成</span></span><br><span class="line"><span class="number">0</span>，然后第一个 a 也变成 <span class="number">0</span>，那么 b = <span class="number">0</span>-- + --a</span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="keyword">var</span> b = --a + --a;<span class="variable language_">document</span>.<span class="title function_">write</span>(b); <span class="comment">//答案-1</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a++);<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//答案 1；2</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(++a);<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//答案 2；2</span></span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>; <span class="keyword">var</span> b = a ++ +<span class="number">1</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(b); <span class="comment">//答案 2</span></span><br><span class="line">a 写在后面就后运行，先计算 a+<span class="number">1</span>=<span class="number">2</span> 赋值给 b 后再++</span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="keyword">var</span> b= ++a + <span class="number">1</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a);<span class="variable language_">document</span>.<span class="title function_">write</span>(b); <span class="comment">//答案 2；3</span></span><br></pre></td></tr></table></figure></li>
-<li><p>+&#x3D; -&#x3D;</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>;a ++;a ++;a ++;加十个</span><br><span class="line">简化写法：a +=<span class="number">10</span>;也是 a = a+<span class="number">10</span>;</span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>;a += <span class="number">10</span> + <span class="number">1</span>; <span class="comment">//答案 21</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;a = a + <span class="number">10</span>;等于 a+=<span class="number">10</span></span><br><span class="line">a++是 a +=<span class="number">1</span> 的写法</span><br></pre></td></tr></table></figure></li>
-<li><p>&#x2F;&#x3D;</p>
-</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a=<span class="number">10</span>;a/=<span class="number">2</span>; <span class="comment">//答案 5，是除二赋给自身的意思</span></span><br></pre></td></tr></table></figure>
-<ol>
-<li>*&#x3D;</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>;a *=<span class="number">2</span>; <span class="comment">//答案：20，是乘二赋给自身的意思</span></span><br></pre></td></tr></table></figure>
-<ol>
-<li>%&#x3D;</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a=<span class="number">10</span>;a%=<span class="number">2</span>; <span class="comment">//答案：0， 10 能整除 2,余数是 0,取余，余数赋给自身。</span></span><br><span class="line">例 <span class="keyword">var</span> a=<span class="number">3</span>;a%=<span class="number">4</span>; <span class="comment">//答案：3，3 除以 4，余数为 3，余数赋给自身。</span></span><br><span class="line">例 <span class="keyword">var</span> a=<span class="number">0</span>;a%=<span class="number">4</span>; <span class="comment">//答案：0，0 除以 4，余数为 0，余数赋给自身。</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;a% =<span class="number">10</span>; <span class="comment">//答案：1，1 除以 10，余数为 1，余数赋给自身。</span></span><br></pre></td></tr></table></figure>
-<h5 id="10-小测"><a href="#10-小测" class="headerlink" title="10.小测"></a>10.小测</h5><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a =(<span class="number">10</span> * <span class="number">3</span> – <span class="number">4</span> / <span class="number">2</span> + <span class="number">1</span>)%<span class="number">2</span>,b=<span class="number">3</span>;b %= a + <span class="number">3</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(a++);</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">wtite</span>(“&lt;br&gt;”);</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(--b);</span><br><span class="line"><span class="number">2</span>、<span class="keyword">var</span> a =<span class="number">123</span>; <span class="keyword">var</span> b =<span class="number">234</span>;经过计算交换 a，b 的值</span><br></pre></td></tr></table></figure>
-<p>答案</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span>、<span class="variable language_">document</span>.<span class="title function_">write</span>(a++);是 <span class="number">1</span>（先打出 <span class="number">1</span> 再++）</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(--b);是 <span class="number">2</span></span><br><span class="line">b % =a + <span class="number">3</span>,<span class="number">3</span> 的模等于 <span class="number">4</span>，除不开再赋值给 b，b 还是 <span class="number">3</span></span><br><span class="line"><span class="number">2</span>、方法一普通方法：<span class="keyword">var</span> c = a; a = b; b = c;<span class="variable language_">document</span>.<span class="title function_">write</span>(a ,b);</span><br><span class="line">方法二 a = a + b; b = a – b; a = a –b; <span class="variable language_">document</span>.<span class="title function_">write</span>(a ,b);</span><br></pre></td></tr></table></figure>
-<h4 id="5-2-比较运算符"><a href="#5-2-比较运算符" class="headerlink" title="5.2 比较运算符"></a>5.2 比较运算符</h4>]]></content>
-      <categories>
-        <category>Learn</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MySQL</title>
-    <url>/2023/03/28/MySQL/</url>
-    <content><![CDATA[<h3 id="管理MySQL服务"><a href="#管理MySQL服务" class="headerlink" title="管理MySQL服务"></a>管理MySQL服务</h3><p>启动服务</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">net <span class="keyword">start</span> MySQL80</span><br></pre></td></tr></table></figure>
-<p>停止服务</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">net stop MySQL80</span><br></pre></td></tr></table></figure>
-<h4 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h4><p><code>C:\Program Files\MySQL\MySQL Server 8.0\bin</code><br><img src="https://s2.loli.net/2023/03/28/MXLq8tHbJQzc31D.png"></p>
-<h4 id="登录MYSQL"><a href="#登录MYSQL" class="headerlink" title="登录MYSQL"></a>登录MYSQL</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">mysql <span class="operator">-</span>u root <span class="operator">-</span>p</span><br></pre></td></tr></table></figure>
-<h3 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h3><p>查询</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">show</span> databases;         查询所有数据库</span><br><span class="line"><span class="keyword">select</span> database();      查询当前所处数据库</span><br></pre></td></tr></table></figure>
-<p>创建</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> database 数据库名;</span><br></pre></td></tr></table></figure>
-<p>删除</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">drop</span> database 数据库名;</span><br></pre></td></tr></table></figure>
-<p>使用</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">use 数据库名;</span><br></pre></td></tr></table></figure>
-<h3 id="表操作"><a href="#表操作" class="headerlink" title="表操作"></a>表操作</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 增</span></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">user</span>(id, name, gender, age) <span class="keyword">values</span> (<span class="number">1</span>, <span class="string">&#x27;张三&#x27;</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">20</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">user</span> <span class="keyword">values</span> (<span class="number">2</span>, <span class="string">&#x27;李四&#x27;</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">18</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">user</span> <span class="keyword">values</span> (<span class="number">3</span>, <span class="string">&#x27;王麻子&#x27;</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">30</span>),(<span class="number">4</span>, <span class="string">&#x27;赵六&#x27;</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">40</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 删</span></span><br><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> <span class="keyword">user</span> <span class="keyword">where</span> id <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> <span class="keyword">user</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 改</span></span><br><span class="line"><span class="keyword">update</span> <span class="keyword">user</span> <span class="keyword">set</span> name <span class="operator">=</span> <span class="string">&#x27;匿名&#x27;</span> <span class="keyword">where</span> id <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">update</span> <span class="keyword">user</span> <span class="keyword">set</span> name <span class="operator">=</span> <span class="string">&#x27;迪迦&#x27;</span>, gender <span class="operator">=</span> <span class="string">&#x27;女&#x27;</span> <span class="keyword">where</span> id <span class="operator">=</span> <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">update</span> <span class="keyword">user</span> <span class="keyword">set</span> gender <span class="operator">=</span> <span class="string">&#x27;女&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<h3 id="表查询"><a href="#表查询" class="headerlink" title="表查询"></a>表查询</h3><h4 id="基础查询"><a href="#基础查询" class="headerlink" title="基础查询"></a>基础查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> name,gender <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> entrydate <span class="keyword">from</span> emp;</span><br><span class="line"><span class="keyword">select</span> entrydate <span class="keyword">as</span> <span class="string">&#x27;入职时间&#x27;</span> <span class="keyword">from</span> emp;</span><br><span class="line"><span class="keyword">select</span> entrydate <span class="string">&#x27;入职时间&#x27;</span> <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">distinct</span> workaddress <span class="keyword">from</span> emp;</span><br></pre></td></tr></table></figure>
-<h4 id="条件查询"><a href="#条件查询" class="headerlink" title="条件查询"></a>条件查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">&lt;</span> <span class="number">20</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">&gt;=</span> <span class="number">18</span> <span class="keyword">and</span> age <span class="operator">&lt;=</span> <span class="number">30</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="keyword">between</span> <span class="number">16</span> <span class="keyword">and</span> <span class="number">20</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> gender <span class="operator">!=</span> <span class="string">&#x27;男&#x27;</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> idcard <span class="keyword">is</span> <span class="keyword">null</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">=</span> <span class="number">20</span> <span class="keyword">and</span> gender <span class="operator">=</span> <span class="string">&#x27;女&#x27;</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">=</span> <span class="number">16</span> <span class="keyword">or</span> age <span class="operator">=</span> <span class="number">18</span> <span class="keyword">or</span> age <span class="operator">=</span> <span class="number">20</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="keyword">in</span> (<span class="number">16</span>,<span class="number">18</span>,<span class="number">20</span>);</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> name <span class="keyword">like</span> <span class="string">&#x27;__&#x27;</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> idcard <span class="keyword">like</span> <span class="string">&#x27;%X&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<h4 id="聚合查询"><a href="#聚合查询" class="headerlink" title="聚合查询"></a>聚合查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="operator">*</span>) <span class="keyword">from</span> emp;</span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(idcard) <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">avg</span>(age) <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">max</span>(age) <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">min</span>(age) <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">sum</span>(age) <span class="keyword">from</span> emp <span class="keyword">where</span> workaddress <span class="operator">=</span> <span class="string">&#x27;西安&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<h4 id="分组查询"><a href="#分组查询" class="headerlink" title="分组查询"></a>分组查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> gender, <span class="built_in">count</span>(<span class="operator">*</span>) <span class="string">&#x27;数量&#x27;</span> <span class="keyword">from</span> emp <span class="keyword">group</span> <span class="keyword">by</span> gender;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> gender, <span class="built_in">avg</span>(age) <span class="string">&#x27;年龄&#x27;</span> <span class="keyword">from</span> emp <span class="keyword">group</span> <span class="keyword">by</span> gender;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> workaddress, <span class="built_in">count</span>(<span class="operator">*</span>) <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">&lt;</span> <span class="number">50</span> <span class="keyword">group</span> <span class="keyword">by</span> workaddress <span class="keyword">having</span> <span class="built_in">count</span>(<span class="operator">*</span>) <span class="operator">&gt;</span> <span class="number">3</span>;</span><br></pre></td></tr></table></figure>
-<h4 id="排序查询"><a href="#排序查询" class="headerlink" title="排序查询"></a>排序查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> age ;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> age <span class="keyword">desc</span> ;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> age <span class="keyword">asc</span> , entrydate <span class="keyword">desc</span> ;</span><br></pre></td></tr></table></figure>
-<h4 id="分页查询"><a href="#分页查询" class="headerlink" title="分页查询"></a>分页查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp limit <span class="number">0</span>, <span class="number">10</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp limit <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp limit <span class="number">10</span>, <span class="number">10</span>;</span><br></pre></td></tr></table></figure>
-<h4 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 1．查询年龄为20,21,22,23岁的女性员工信息。</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="keyword">in</span> (<span class="number">20</span>,<span class="number">21</span>,<span class="number">22</span>,<span class="number">23</span>) <span class="keyword">and</span> gender <span class="operator">=</span> <span class="string">&#x27;女&#x27;</span>;</span><br><span class="line"><span class="comment">-- 2．查询性别为男,并且年龄在20-40岁(含)以内的姓名为三个字的员工。</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> gender <span class="operator">=</span> <span class="string">&#x27;男&#x27;</span> <span class="keyword">and</span> age <span class="keyword">between</span> <span class="number">20</span> <span class="keyword">and</span> <span class="number">40</span> <span class="keyword">and</span> name <span class="keyword">like</span> <span class="string">&#x27;___&#x27;</span>;</span><br><span class="line"><span class="comment">-- 3．统计员工表中，年龄小于60岁的,男性员工和女性员工的人数。</span></span><br><span class="line"><span class="keyword">select</span> gender, <span class="built_in">count</span>(<span class="operator">*</span>) <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">&lt;</span> <span class="number">60</span> <span class="keyword">group</span> <span class="keyword">by</span> gender;</span><br><span class="line"><span class="comment">-- 4，查询所有年龄小于等于35岁员工的姓名和年龄，并对查询结果按年龄升序排序，如果年龄相同按入职时间降序排序。</span></span><br><span class="line"><span class="keyword">select</span> name, age <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">&lt;=</span> <span class="number">35</span> <span class="keyword">order</span> <span class="keyword">by</span> age, entrydate <span class="keyword">desc</span> ;</span><br><span class="line"><span class="comment">-- 5．查询性别为男，且年龄在20-40 岁(含)以内的前5个员工信息，对查询的结果按年龄升序排齐，年龄相同按入职时间升序槽序。</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> gender <span class="operator">=</span> <span class="string">&#x27;男&#x27;</span> <span class="keyword">and</span> age <span class="keyword">between</span> <span class="number">20</span> <span class="keyword">and</span> <span class="number">40</span> <span class="keyword">order</span> <span class="keyword">by</span> age, entrydate <span class="keyword">desc</span> limit <span class="number">5</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="执行顺序"><a href="#执行顺序" class="headerlink" title="执行顺序"></a>执行顺序</h4><p><img src="https://s2.loli.net/2023/03/29/SCJkXQ7ftF4lnsh.png"></p>
-<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h4 id="字符串函数"><a href="#字符串函数" class="headerlink" title="字符串函数"></a>字符串函数</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">-- 拼接字符</span></span><br><span class="line"><span class="keyword">select</span> concat(<span class="string">&#x27;Hello&#x27;</span>, <span class="string">&#x27;MySQL&#x27;</span>);</span><br><span class="line"><span class="comment">-- 大小写</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">upper</span>(<span class="string">&#x27;Hello&#x27;</span>);</span><br><span class="line"><span class="keyword">select</span> <span class="built_in">lower</span>(<span class="string">&#x27;Hello&#x27;</span>);</span><br><span class="line"><span class="comment">-- 左右增加字符</span></span><br><span class="line"><span class="keyword">select</span> rpad(<span class="string">&#x27;01&#x27;</span>, <span class="number">5</span>, <span class="string">&#x27;-&#x27;</span>);</span><br><span class="line"><span class="keyword">select</span> lpad(<span class="string">&#x27;01&#x27;</span>, <span class="number">5</span>, <span class="string">&#x27;-&#x27;</span>);</span><br><span class="line"><span class="comment">-- 去前后空格</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">trim</span>(<span class="string">&#x27; Hello MySQL&#x27;</span>);</span><br><span class="line"><span class="comment">-- 截取</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">substring</span>(<span class="string">&#x27;Hello MySQL&#x27;</span>, <span class="number">1</span>, <span class="number">5</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- practice工号前补零</span></span><br><span class="line"><span class="keyword">update</span> emp <span class="keyword">set</span> workno <span class="operator">=</span> lpad(workno, <span class="number">5</span>, <span class="string">&#x27;0&#x27;</span>);</span><br></pre></td></tr></table></figure>
-<h4 id="数值函数"><a href="#数值函数" class="headerlink" title="数值函数"></a>数值函数</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 上下取整</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">ceil</span>(<span class="number">1.1</span>);</span><br><span class="line"><span class="keyword">select</span> <span class="built_in">floor</span>(<span class="number">1.9</span>);</span><br><span class="line"><span class="comment">-- 求模运算</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">mod</span>(<span class="number">7</span>, <span class="number">5</span>);</span><br><span class="line"><span class="comment">-- 0~1随机数</span></span><br><span class="line"><span class="keyword">select</span> rand();</span><br><span class="line"><span class="comment">-- 保留两位小数</span></span><br><span class="line"><span class="keyword">select</span> round(<span class="number">2.345</span>, <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- practice生成一个随机六位数</span></span><br><span class="line"><span class="keyword">select</span> lpad(round(rand()<span class="operator">*</span><span class="number">1000000</span>, <span class="number">0</span>), <span class="number">6</span>, <span class="string">&#x27;0&#x27;</span>);</span><br></pre></td></tr></table></figure>
-<h4 id="日期函数"><a href="#日期函数" class="headerlink" title="日期函数"></a>日期函数</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 日期</span></span><br><span class="line"><span class="keyword">select</span> curdate();</span><br><span class="line"><span class="comment">-- 时间</span></span><br><span class="line"><span class="keyword">select</span> curtime();</span><br><span class="line"><span class="comment">-- 日期和时间</span></span><br><span class="line"><span class="keyword">select</span> now();</span><br><span class="line"><span class="comment">-- 当前年</span></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">year</span>(now());</span><br><span class="line"><span class="comment">-- 当前月</span></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">month</span>(now());</span><br><span class="line"><span class="comment">-- 当前天</span></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">day</span>(now());</span><br><span class="line"><span class="comment">-- 增加时间</span></span><br><span class="line"><span class="keyword">select</span> date_add(now(), <span class="type">interval</span> <span class="number">2</span> <span class="keyword">year</span> );</span><br><span class="line"><span class="comment">-- 时间做差</span></span><br><span class="line"><span class="keyword">select</span> datediff(<span class="string">&#x27;2023-3-30&#x27;</span>, <span class="string">&#x27;2002-9-5&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- demo查询所有员工入职天数，并倒序排序</span></span><br><span class="line"><span class="keyword">select</span> name, datediff(curdate(), entrydate) <span class="keyword">as</span> <span class="string">&#x27;入职天数&#x27;</span> <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> <span class="string">&#x27;入职天数&#x27;</span> <span class="keyword">desc</span> ;</span><br></pre></td></tr></table></figure>
-<h4 id="流程函数"><a href="#流程函数" class="headerlink" title="流程函数"></a>流程函数</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- if判断</span></span><br><span class="line"><span class="keyword">select</span> if(<span class="literal">true</span>, <span class="string">&#x27;y&#x27;</span>, <span class="string">&#x27;n&#x27;</span>);</span><br><span class="line"><span class="keyword">select</span> if(<span class="literal">false</span>, <span class="string">&#x27;y&#x27;</span>, <span class="string">&#x27;n&#x27;</span>);</span><br><span class="line"><span class="comment">-- ifnull是否为空</span></span><br><span class="line"><span class="keyword">select</span> ifnull(<span class="string">&#x27;y&#x27;</span>, <span class="string">&#x27;n&#x27;</span>);</span><br><span class="line"><span class="keyword">select</span> ifnull(<span class="string">&#x27;&#x27;</span>, <span class="string">&#x27;n&#x27;</span>);</span><br><span class="line"><span class="keyword">select</span> ifnull(<span class="keyword">null</span>, <span class="string">&#x27;n&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- demo判断员工工作地址是否为一线城市，不是则为二线城市</span></span><br><span class="line"><span class="keyword">select</span></span><br><span class="line">    name,</span><br><span class="line">    <span class="keyword">case</span> workaddress <span class="keyword">when</span> <span class="string">&#x27;北京&#x27;</span> <span class="keyword">then</span> <span class="string">&#x27;一线城市&#x27;</span> <span class="keyword">when</span> <span class="string">&#x27;上海&#x27;</span> <span class="keyword">then</span> <span class="string">&#x27;一线城市&#x27;</span> <span class="keyword">else</span> <span class="string">&#x27;二线城市&#x27;</span> <span class="keyword">end</span> <span class="keyword">as</span> <span class="string">&#x27;工作地址&#x27;</span></span><br><span class="line"><span class="keyword">from</span> emp;</span><br><span class="line"><span class="comment">-- demo2查询score表各科成绩</span></span><br><span class="line"><span class="keyword">select</span></span><br><span class="line">    name,</span><br><span class="line">    (<span class="keyword">case</span> <span class="keyword">when</span> math <span class="operator">&gt;=</span> <span class="number">85</span> <span class="keyword">then</span> <span class="string">&#x27;优秀&#x27;</span> <span class="keyword">when</span> math <span class="operator">&gt;=</span> <span class="number">60</span> <span class="keyword">then</span> <span class="string">&#x27;合格&#x27;</span> <span class="keyword">else</span> <span class="string">&#x27;不合格&#x27;</span> <span class="keyword">end</span>) <span class="keyword">as</span> <span class="string">&#x27;数学&#x27;</span>,</span><br><span class="line">    (<span class="keyword">case</span> <span class="keyword">when</span> english <span class="operator">&gt;=</span> <span class="number">85</span> <span class="keyword">then</span> <span class="string">&#x27;优秀&#x27;</span> <span class="keyword">when</span> english <span class="operator">&gt;=</span> <span class="number">60</span> <span class="keyword">then</span> <span class="string">&#x27;合格&#x27;</span> <span class="keyword">else</span> <span class="string">&#x27;不合格&#x27;</span> <span class="keyword">end</span>) <span class="keyword">as</span> <span class="string">&#x27;英语&#x27;</span>,</span><br><span class="line">    (<span class="keyword">case</span> <span class="keyword">when</span> chinese <span class="operator">&gt;=</span> <span class="number">85</span> <span class="keyword">then</span> <span class="string">&#x27;优秀&#x27;</span> <span class="keyword">when</span> chinese <span class="operator">&gt;=</span> <span class="number">60</span> <span class="keyword">then</span> <span class="string">&#x27;合格&#x27;</span> <span class="keyword">else</span> <span class="string">&#x27;不合格&#x27;</span> <span class="keyword">end</span>) <span class="keyword">as</span> <span class="string">&#x27;语文&#x27;</span></span><br><span class="line"><span class="keyword">from</span> score;</span><br></pre></td></tr></table></figure>
-
-<h3 id="约束"><a href="#约束" class="headerlink" title="约束"></a>约束</h3><h4 id="基本约束"><a href="#基本约束" class="headerlink" title="基本约束"></a>基本约束</h4><p>建表<br><img src="https://s2.loli.net/2023/03/31/fsZNJXPHObqB6Gm.png"></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> user2(</span><br><span class="line">    id <span class="type">int</span> <span class="keyword">primary</span> key auto_increment comment <span class="string">&#x27;主键&#x27;</span>,</span><br><span class="line">    name <span class="type">varchar</span>(<span class="number">10</span>) <span class="keyword">not</span> <span class="keyword">null</span> <span class="keyword">unique</span> comment <span class="string">&#x27;姓名&#x27;</span>,</span><br><span class="line">    age <span class="type">int</span> <span class="keyword">check</span> ( age <span class="operator">&gt;</span> <span class="number">0</span> <span class="operator">&amp;&amp;</span> age <span class="operator">&lt;=</span> <span class="number">120</span> ) comment <span class="string">&#x27;年龄&#x27;</span>,</span><br><span class="line">    status <span class="type">char</span>(<span class="number">1</span>) <span class="keyword">default</span> <span class="string">&#x27;1&#x27;</span> comment <span class="string">&#x27;状态&#x27;</span>,</span><br><span class="line">    gender <span class="type">char</span>(<span class="number">1</span>) comment <span class="string">&#x27;性别&#x27;</span></span><br><span class="line">) comment <span class="string">&#x27;用户表2&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<p>插入数据</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom1&#x27;</span>, <span class="number">19</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>), (<span class="string">&#x27;Tom2&#x27;</span>, <span class="number">25</span>, <span class="number">0</span>, <span class="string">&#x27;男&#x27;</span>), (<span class="string">&#x27;Tom3&#x27;</span>, <span class="number">19</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="keyword">null</span>, <span class="number">19</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom3&#x27;</span>, <span class="number">19</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom4&#x27;</span>, <span class="number">80</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom5&#x27;</span>, <span class="number">-1</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom6&#x27;</span>, <span class="number">121</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom7&#x27;</span>, <span class="number">120</span>, <span class="string">&#x27;男&#x27;</span>);</span><br></pre></td></tr></table></figure>
-<p>效果展示<br><img src="https://s2.loli.net/2023/03/31/7jxpAtVmO2BPTha.png"></p>
-<h4 id="外键"><a href="#外键" class="headerlink" title="外键"></a>外键</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">add</span> <span class="keyword">constraint</span> emp_emp_id_fk <span class="keyword">foreign</span> key (dept_id) <span class="keyword">references</span> dept(id);</span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">drop</span> <span class="keyword">foreign</span> key emp_emp_id_fk;</span><br></pre></td></tr></table></figure>
-<p>效果<br><img src="https://s2.loli.net/2023/03/31/rQytdHFkISxV6zf.png"></p>
-]]></content>
-      <categories>
-        <category>Learn</category>
-      </categories>
-      <tags>
-        <tag>sql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Stable Diffusion</title>
-    <url>/2023/04/18/Stable-Diffusion/</url>
-    <content><![CDATA[<p><img src="https://s2.loli.net/2023/04/18/nmHiVNyG1QvWha6.png" alt="image-20230418190503271"></p>
-<p>Stable Diffusion的大致工作流程如下：</p>
-<p>首先，Stable Diffusion模型将潜在种子和文本提示作为输入。 然后使用潜在种子生成大小为 64×64 的随机潜在图像表示，而文本提示通过 CLIP 文本编码器转换为 77×768 的文本嵌入。</p>
-<p>接下来，U-Net 以文本嵌入为条件迭代地对随机潜在图像表示进行去噪。 U-Net 的输出是噪声残差，用于通过调度算法计算去噪的潜在图像表示。 调度算法根据先前的噪声表示和预测的噪声残差计算预测的去噪图像表示。这里可选用的调度算法很多，每个算法各有优劣，对Stable Diffusion来说建议用以下几个：</p>
-<p>PNDM scheduler（默认）<br>DDIM scheduler<br>K-LMS scheduler<br>去噪过程重复大约 50 次以逐步检索更好的潜在图像表示。 完成后，潜在图像表示由变分自动编码器的解码器部分解码。</p>
-<h2 id="本地部署Stable-Diffusion"><a href="#本地部署Stable-Diffusion" class="headerlink" title="本地部署Stable Diffusion"></a>本地部署Stable Diffusion</h2><p>本地部署Stable Diffusion最简单的方法是使用Stable Diffusion Web Ui。</p>
-<p>Stable Diffusion Web Ui是一套无代码、可视化的Stable Diffusion集成运行环境。它将Stable Diffusion的安装部署集成打包，提供一键安装脚本，并提供Web界面操作界面，极大简化了Stable Diffusion的操作和使用，让没有不懂代码的小白也能轻松上手使用Stable Diffusion模型。</p>
-<h2 id="使用Stable-Diffusion-Web-Ui"><a href="#使用Stable-Diffusion-Web-Ui" class="headerlink" title="使用Stable Diffusion Web Ui"></a>使用Stable Diffusion Web Ui</h2><h3 id="界面介绍"><a href="#界面介绍" class="headerlink" title="界面介绍"></a>界面介绍</h3><p>Stable Diffusion Web Ui整体上分为2个部分，最上面是<strong>模型选择</strong>，可以从下拉列表中选择已下载的预训练模型<img src="https://img-blog.csdnimg.cn/50b616d90b334b1a9662986a7230e57a.png#pic_center" alt="在这里插入图片描述"></p>
-<p>模型选择下面是一个Tab栏，这里是Stable Diffusion Web Ui提供的所有功能。<img src="https://img-blog.csdnimg.cn/7e8a631509bd44fab5b70abdb31e91f1.png#pic_center" alt="在这里插入图片描述"></p>
-<ul>
-<li><strong>txt2img</strong> — 根据文本提示生成图像；</li>
-<li><strong>img2img</strong> — 根据提供的图像作为范本、结合文本提示生成图像；</li>
-<li><strong>Extras</strong> — 优化(清晰、扩展)图像；</li>
-<li><strong>PNG Info</strong> — 显示图像基本信息</li>
-<li><strong>Checkpoint Merger</strong> — 模型合并</li>
-<li><strong>Train</strong> — 根据提供的图片训练具有某种图像风格的模型</li>
-<li><strong>Settings</strong> — 系统设置</li>
-</ul>
-<p> 平时使用最多的是<strong>txt2img</strong> 和 <strong>img2img</strong>，下面针对这2大块功能详细讲解。</p>
-<h4 id="txt2img"><a href="#txt2img" class="headerlink" title="txt2img"></a>txt2img</h4><p>txt2img有三个区域：</p>
-<ul>
-<li>提示区</li>
-<li>参数调节区</li>
-<li>输出浏览区<img src="https://img-blog.csdnimg.cn/5b2d46b240ba4979a4a6a099553a6171.png#pic_center" alt="在这里插入图片描述"></li>
-</ul>
-<p>提示区主要是2个文本框，可以输入提示文本。其中：</p>
-<p><strong>prompt</strong>: 主要是对于图像进行描述。prompt对Stable Diffusion图像生成质量至关重要，因此如果想生成高质量图片，一定要在提示设计上下功夫。一个好的提示需要详细和具体，后面会专门讲解如何设计一个好的提示。</p>
-<p><strong>Negative prompt</strong>：主要是告诉模型我不想要什么样的风格或元素；</p>
-<p>参数调节区提供了大量参数用于控制和优化生成过程：</p>
-<p><strong>Sampling method</strong>：扩散去噪算法的采样模式，不同采样模式会带来不一样的效果，具体需要在实际使用中测试；</p>
-<p><strong>Sampling steps</strong>：模型生成图片的迭代步数，每多一次迭代都会给 AI 更多的机会去对比 prompt 和 当前结果，从而进一步调整图片。更高的步数需要花费更多的计算时间，但却不一定意味着会有更好的结果。当然迭代步数不足肯定会降低输出的图像质量；</p>
-<p><strong>Width、Height</strong>：输出图像宽高，图片尺寸越大越消耗资源，显存小的要特别注意。一般不建议设置的太大，因为生成后可以通过 Extras 进行放大；</p>
-<p><strong>Batch count、 Batch size</strong>：控制生成几张图，前者计算时间长，后者需要显存大；</p>
-<p><strong>CFG Scale</strong>：分类器自由引导尺度，用于控制图像与提示的一致程度，值越低产生的内容越有创意；</p>
-<p><strong>Seed</strong>：随机种子，只要种子一样，参数和模型不变，生成的图像主体就不会剧烈变化，适用于对生成图像进行微调；</p>
-<p><strong>Restore faces</strong>：优化面部，当对生成的面部不满意时可以勾选该选项；</p>
-<p><strong>Tiling</strong>：生成一张可以平铺的图像；</p>
-<p><strong>Highres. fix</strong>：使用两个步骤的过程进行生成，以较小的分辨率创建图像，然后在不改变构图的情况下改进其中的细节，选中该选项会有一系列新的参数，其中重要的是：</p>
-<p> <strong>Upscaler</strong>：缩放算法；</p>
-<p> <strong>Upscale by</strong>：放大倍数；</p>
-<p> <strong>Denoising strength</strong>：决定算法对图像内容的保留程度。0什么都不会改变，1会得到一个完全不同的图像；</p>
-<h4 id="img2img"><a href="#img2img" class="headerlink" title="img2img"></a>img2img</h4><p>img2img跟txt2img界面类似，不同的是没有了txt2img中的参数调节区，取而代之的是图像范本区。<img src="https://img-blog.csdnimg.cn/49d1b13ee3f94e6f96b4377b8edbf857.png#pic_center" alt="在这里插入图片描述"></p>
-<p>我们可以上传范本图片让Stable Diffusion模仿，其他地方跟txt2img相同</p>
-<h3 id="界面汉化"><a href="#界面汉化" class="headerlink" title="界面汉化"></a>界面汉化</h3><p>通过<a href="https://download.csdn.net/download/JarodYv/87542257">这里</a>下载简体中文语言文件，下载完成后将其复制到项目文件夹的“localizations”目录中。之后在Settings -&gt; User interface -&gt; Localization (requires restart)，在下拉菜单中选择zh_CN。如果下拉列表中看不到zh_CN，请先点击右侧的刷新按钮，然后就能在下拉列表中看到了。设置完成后记得点击页面上方的“Apply settings”按钮保存设置。<br><img src="https://img-blog.csdnimg.cn/a6543281d36941eaba303c0bd9cfe06d.png#pic_center" alt="在这里插入图片描述"></p>
-<p>语言设置需要重启才能生效。<code>Ctrl + C</code>先终止Stable Diffusion Web Ui服务，然后再运行<code>webui.bat</code>或<code>webui.sh</code>，重启后刷新浏览器页面就能看到语言变成了简体中文了。<img src="https://img-blog.csdnimg.cn/797cba1ab85b41f789f60034e5156bec.png#pic_center" alt="在这里插入图片描述"></p>
-<h4 id="prompt语法"><a href="#prompt语法" class="headerlink" title="prompt语法"></a>prompt语法</h4><p>为了产生具有特定风格的图像，必须以特定格式提供文本提示。 这通常需要添加提示修饰符或添加更多关键字或关键短语来实现。下面为大家介绍一下Stable Diffusion的prompt语法规则。</p>
-<p>Stable Diffusion提示文本中的关键字或关键短语通过半角逗号分割，一般越靠前权重越高。我们可以通过提示修饰符来认为修改权重。</p>
-<ul>
-<li>(tag)：增加权重5%</li>
-<li>[tag]：降低权重5%</li>
-<li>(tag: weight)：设置具体权重值</li>
-</ul>
-<h3 id="Stable-Diffusion资源列表"><a href="#Stable-Diffusion资源列表" class="headerlink" title="Stable Diffusion资源列表"></a>Stable Diffusion资源列表</h3><p>好的生成质量离不开好的模型，这里为大家列出了Stable Diffusion预训练模型资源的获取来源。</p>
-<h4 id="1-Hugging-Face"><a href="#1-Hugging-Face" class="headerlink" title="1.Hugging Face"></a>1.Hugging Face</h4><p><a href="https://huggingface.co/">Hugging Face</a>是一个专注于构建、训练和部署先进开源机器学习模型的网站。</p>
-<p>HuggingFace是Stable Diffusion模型创作的首选平台，目前平台上有270多个与Stable Diffusion相关的模型，用”Stable Diffusion”作为关键字就能搜到。<br> <img src="https://img-blog.csdnimg.cn/img_convert/6d0ae952095037d2731835a245e676d9.png" alt="hugging face Stable Diffusion models search results"></p>
-<h3 id="2-Civitai"><a href="#2-Civitai" class="headerlink" title="2. Civitai"></a>2. Civitai</h3><p><a href="https://civitai.com/">Civitai</a>是一个专为Stable Diffusion AI艺术模型设计的网站。该平台目前有来自250+创作者上传的1700个模型。这是迄今为止我所知的最大的AI模型库。你可以在上面分享自己的模型或生成作品。<img src="https://img-blog.csdnimg.cn/cab367f7c9bc4d84b3805aa5738def98.png#pic_center" alt="在这里插入图片描述"></p>
-<h3 id="3-Discord"><a href="#3-Discord" class="headerlink" title="3. Discord"></a>3. Discord</h3><p>在Stable Diffusion的Discord页面中有一个名为“Models-Embeddings”的专属频道，里面提供了很多可以免费下载的各种模型。<img src="https://img-blog.csdnimg.cn/img_convert/363a2d1497e04d3ecdc160b290e9d318.png#pic_center" alt="Models-embeddings Discord channel Discord page for Stable Diffusion"></p>
-]]></content>
-      <categories>
-        <category>Learn</category>
-      </categories>
-      <tags>
-        <tag>ai</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>eNSP</title>
-    <url>/2023/04/06/eNSP/</url>
-    <content><![CDATA[<h6 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h6><p><img src="https://s2.loli.net/2023/04/09/56i2AEgjn3NsBdf.png" alt="image-20230409163311555"></p>
-<p>当前位置所作配置</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">display this</span><br></pre></td></tr></table></figure>
-
-
-
-<h6 id="05-ip地址配置"><a href="#05-ip地址配置" class="headerlink" title="05-ip地址配置"></a>05-ip地址配置</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ip address 192.168.1.1 255.255.255.0</span><br></pre></td></tr></table></figure>
-
-<p>改名</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sysname AR2</span><br></pre></td></tr></table></figure>
-
-<h6 id="06-DHCP地址池"><a href="#06-DHCP地址池" class="headerlink" title="06-DHCP地址池"></a>06-DHCP地址池</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dhcp enable</span><br><span class="line">int g0/0/0</span><br><span class="line">dhcp select interface </span><br></pre></td></tr></table></figure>
-
-<h6 id="07-DNS域名系统"><a href="#07-DNS域名系统" class="headerlink" title="07-DNS域名系统"></a>07-DNS域名系统</h6><p><img src="https://s2.loli.net/2023/04/06/fvgz4mOFyDPhVUd.png" alt="image-20230406200841622"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dhcp server dns-list 192.168.1.100</span><br></pre></td></tr></table></figure>
-
-<h6 id="08-网关入门"><a href="#08-网关入门" class="headerlink" title="08-网关入门"></a>08-网关入门</h6><p><img src="https://s2.loli.net/2023/04/06/mbQpcC3VLzDg4dt.png" alt="image-20230406200632434"></p>
-<h6 id="09-静态路由"><a href="#09-静态路由" class="headerlink" title="09-静态路由"></a>09-静态路由</h6><p><img src="https://s2.loli.net/2023/04/06/fkHawtNGxpKqEmQ.png" alt="image-20230406202420122"></p>
-<p>查路由表</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">display ip routing-table 192.168.3.10</span><br></pre></td></tr></table></figure>
-
-<p>下一跳——去R1</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ip route-static 192.168.3.0 255.255.255.0 192.168.2.10</span><br></pre></td></tr></table></figure>
-
-<p>下一跳——回R2</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ip route-static 192.168.1.0 255.255.255.0 192.168.2.1</span><br></pre></td></tr></table></figure>
-
-<h6 id="10-TCP和UDP"><a href="#10-TCP和UDP" class="headerlink" title="10-TCP和UDP"></a>10-TCP和UDP</h6><p>Tcp：可靠性高。<br>适合对文件传输的完整性要求高，但是对延迟不敏感<br>电子邮件</p>
-<p>更新客户端<br>Udp:速度快</p>
-<h6 id="11-划分vlan"><a href="#11-划分vlan" class="headerlink" title="11-划分vlan"></a>11-划分vlan</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vlan 10</span><br><span class="line">int g0/0/1</span><br><span class="line">port link-type access</span><br><span class="line">port default vlan 10</span><br><span class="line">display vlan</span><br></pre></td></tr></table></figure>
-
-<h6 id="12-Trunk模式"><a href="#12-Trunk模式" class="headerlink" title="12-Trunk模式"></a>12-Trunk模式</h6><p><img src="https://s2.loli.net/2023/04/06/ZrQHNlCmEWxBGdw.png" alt="image-20230406211246144"></p>
-<p>注：交换机根据trunk接口打标签来回包</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">port link-type trunk </span><br><span class="line">port trunk allow-pass vlan all</span><br></pre></td></tr></table></figure>
-
-<h6 id="13-三层交换"><a href="#13-三层交换" class="headerlink" title="13-三层交换"></a>13-三层交换</h6><p>注：用三层配置vlan的ip作为网关</p>
-<p><img src="https://s2.loli.net/2023/04/06/uaBsm2IPYhTbRl4.png" alt="image-20230406214540804"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int vlan 20</span><br><span class="line">ip add 2.2.2.254 255.255.255.0</span><br></pre></td></tr></table></figure>
-
-<h6 id="14-单臂路由"><a href="#14-单臂路由" class="headerlink" title="14-单臂路由"></a>14-单臂路由</h6><p>注：用路由器接口分两个子接口配置网关</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Huawei]int g0/0/0.10</span><br><span class="line">dot1q termination vid 10</span><br><span class="line">ip address 1.1.1.254 255.255.255.0 </span><br><span class="line">arp broadcast enable</span><br></pre></td></tr></table></figure>
-
-<h6 id="15-ACL访问列表控制"><a href="#15-ACL访问列表控制" class="headerlink" title="15-ACL访问列表控制"></a>15-ACL访问列表控制</h6><p><img src="https://s2.loli.net/2023/04/11/7AXrYJ4NOSx1RWT.png" alt="image-20230411193401023"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Huawei]acl name text</span><br><span class="line">[Huawei-acl-adv-text]rule deny ip source 192.168.10.0 0.0.0.255 destination 192.</span><br><span class="line">168.30.0 0.0.0.255</span><br><span class="line">[Huawei-acl-adv-text]rule permit ip source any destination any </span><br><span class="line">[Huawei-acl-adv-text]q</span><br><span class="line">[Huawei]in g0/0/1</span><br><span class="line">[Huawei-GigabitEthernet0/0/1]traffic-filter inbound acl name text</span><br></pre></td></tr></table></figure>
-
-<h6 id="16-NAT网络地址转换"><a href="#16-NAT网络地址转换" class="headerlink" title="16-NAT网络地址转换"></a>16-NAT网络地址转换</h6><p><img src="https://s2.loli.net/2023/04/11/YvlkgC81pSt29MG.png"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Huawei]acl name neiwang basic</span><br><span class="line">[Huawei-acl-basic-neiwang]rule permit source 192.168.0.0 0.0.255.255</span><br><span class="line"></span><br><span class="line">[Huawei]nat address-group 1 64.1.1.2 64.1.1.5 </span><br><span class="line">[Huawei]dis acl all</span><br></pre></td></tr></table></figure>
-<p> Total quantity of nonempty ACL number is 1 </p>
-<p>Basic ACL neiwang 2999, 1 rule<br>Acl’s step is 5<br> rule 5 permit source 192.168.0.0 0.0.255.255<br> <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"> </span><br><span class="line">[Huawei-GigabitEthernet0/0/1]nat outbound 2999 address-group 1 </span><br></pre></td></tr></table></figure></p>
-]]></content>
-      <categories>
-        <category>Learn</category>
-      </categories>
-      <tags>
-        <tag>HCIP</tag>
       </tags>
   </entry>
   <entry>
@@ -630,7 +245,396 @@ width和height:高度和宽度,设置之后图片可能会失真。
         <category>Learn</category>
       </categories>
       <tags>
-        <tag>html</tag>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ATM</title>
+    <url>/2023/03/20/ATM/</url>
+    <content><![CDATA[<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// A T M </span></span><br><span class="line">        <span class="keyword">var</span> money = <span class="number">100</span>;</span><br><span class="line">        <span class="keyword">var</span> price = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (num != <span class="number">4</span>) &#123;</span><br><span class="line">            <span class="keyword">var</span> num = <span class="title function_">prompt</span>(<span class="string">&#x27;请输入你要的操作:\n1.存钱\n2.取钱\n3.显示余额\n4.退出&#x27;</span>)</span><br><span class="line">            <span class="keyword">switch</span> (num) &#123;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;1&#x27;</span>:</span><br><span class="line">                    price = <span class="title function_">prompt</span>(<span class="string">&#x27;输入要存的钱数；&#x27;</span>);</span><br><span class="line">                    money = money + <span class="built_in">parseFloat</span>(price);</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额；&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;2&#x27;</span>:</span><br><span class="line">                    price = <span class="title function_">prompt</span>(<span class="string">&#x27;输入你要取出的钱: &#x27;</span>);</span><br><span class="line">                    money = money - <span class="built_in">parseFloat</span>(price);</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;3&#x27;</span>:</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额：&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;4&#x27;</span>:</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;正在退出...&#x27;</span>)</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>demo</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScript基础</title>
+    <url>/2023/03/20/JavaScript%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<h3 id="一、前端知识"><a href="#一、前端知识" class="headerlink" title="一、前端知识"></a>一、前端知识</h3><h4 id="1-1、Web发展史"><a href="#1-1、Web发展史" class="headerlink" title="1.1、Web发展史"></a>1.1、Web发展史</h4><p>Mosaic，是互联网历史上第一个获普遍使用和能够显示图片的网页浏览器。于 1993 年问世。 1994 年 4 月，马克.安德森和 Silicon Graphics（简称为 SGI，中译为“视算科技”或“硅 图”）公司的创始人吉姆·克拉克（Jim Clark）在美国加州设立了“Mosaic Communication Corporation”。 Mosaic 公司成立后，由于伊利诺伊大学拥有 Mosaic 的商标权，且伊利诺伊大学已将 技术转让给 Spy Glass 公司，开发团队必须彻底重新撰写浏览器程式码，且浏览器名 称更改为 Netscape Navigator，公司名字于 1994 年 11 月改名为“Netscape Communication Corporation”，此后沿用至今，中译为“网景”。 微软的Internet Explorer及Mozilla Firefox等，其早期版本皆以Mosaic为基础而开发。 微软随后买下Spy Glass公司的技术开发出Internet Explorer浏览器，而Mozilla Firefox 则是网景通讯家开放源代码后所衍生出的版本。</p>
+<span id="more"></span>
+<h4 id="1-2js历史"><a href="#1-2js历史" class="headerlink" title="1.2js历史"></a>1.2js历史</h4><p>JavaScript 作为 Netscape Navigator 浏览器的一部分首次出现在 1996 年。它最初的设 计目标是改善网页的用户体验。 作者：Brendan Eich 期初 JavaScript 被命名为 LiveScript，后因和 Sun 公司合作，因市场宣传需要改名 JavaScript。后来 Sun 公司被 Oracle 收购，JavaScript 版权归 Oracle 所有。</p>
+<h4 id="1-3浏览器组成"><a href="#1-3浏览器组成" class="headerlink" title="1.3浏览器组成"></a>1.3浏览器组成</h4><p>shell 部分——用户能操作部分(壳)</p>
+<p>内核部分——用户看不到的部分</p>
+<ul>
+<li>渲染引擎（语法规则和渲染）</li>
+<li>js 引擎</li>
+<li>其他模块（如异步）</li>
+</ul>
+<h4 id="1-4js引擎"><a href="#1-4js引擎" class="headerlink" title="1.4js引擎"></a>1.4js引擎</h4><p>2001 年发布 ie6，首次实现对 js 引擎的优化。 2008 年 Google 发布最新浏览器 Chrome，它是采用优化后的 javascript 引擎，引擎代 号 V8，因能把 js 代码直接转化为机械码来执行，进而以速度快而闻名。 后 Firefox 也推出了具备强大功能的 js 引擎 Firefox3.5 TraceMonkey（对频繁执行的代码做了路径优化） Firefox4.0 JeagerMonkey</p>
+<h4 id="1-5js的特色"><a href="#1-5js的特色" class="headerlink" title="1.5js的特色"></a>1.5js的特色</h4><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">编译型语言</th>
+<th align="center">解释型语言</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">怎么做</td>
+<td align="center">通篇编译后，生成翻译完的文件，程序执行翻译后的文件</td>
+<td align="center">看一行翻译一行，不生成特定文件</td>
+</tr>
+<tr>
+<td align="center">代表语言</td>
+<td align="center">c、c++</td>
+<td align="center">js、php、python</td>
+</tr>
+<tr>
+<td align="center">优点</td>
+<td align="center">快（常用于系统，游戏）</td>
+<td align="center">可以跨平台</td>
+</tr>
+<tr>
+<td align="center">缺点</td>
+<td align="center">移植性不好（不跨平台，windows和linux不能混用）</td>
+<td align="center">稍微慢点</td>
+</tr>
+</tbody></table>
+<ol>
+<li>js 是解释性语言：(不需要编译成文件）跨平台</li>
+<li>java 先通过 javac，编译成.class 文件，通过 jvm（Java 虚拟机）进行解释执行<br>.java→javac→编译→.class→jvm→解释执行（java 可以跨平台）（java 是 oak 语言）</li>
+<li>link rel &#x3D; “”是异步加载</li>
+<li>单线程：同一时间只能做一件事——js 引擎是单线程<br>（同一时间做很多事叫多线程）</li>
+<li>ECMA（欧洲计算机制造联合会）标注：为了取得技术优势，微软推出了 JScript，<br>CEnvi 推出 ScriptEase，与 JavaScript 同样可在浏览器上运行。为了统一规格 JavaScript<br>兼容于 ECMA 标准，因此也称为 ECMAScript。<br>js 是轮转时间片</li>
+</ol>
+<h4 id="1-6js执行队列"><a href="#1-6js执行队列" class="headerlink" title="1.6js执行队列"></a>1.6js执行队列</h4><p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/8fb93cf220bd4a66a4b5107a5e5787f9.png"></p>
+<h4 id="1-7主流浏览器内核"><a href="#1-7主流浏览器内核" class="headerlink" title="1.7主流浏览器内核"></a>1.7主流浏览器内核</h4><p>| 主流浏览器（必须有独立内核）市场份额大于3% |   内核名称   |<br>| :—————————————-: | :———-: |  |<br>|                     IE                     |   trident    |<br>|                   chrome                   | webkit&#x2F;blink |<br>|                  firefox                   |    gecko     |<br>|                   opera                    |    presto    |<br>|                   safari                   |   werbkit    |</p>
+<h3 id="二、引入js"><a href="#二、引入js" class="headerlink" title="二、引入js"></a>二、引入js</h3><h4 id="2-1如何引入js"><a href="#2-1如何引入js" class="headerlink" title="2.1如何引入js"></a>2.1如何引入js</h4><ul>
+<li>第一种：页面内嵌标签,写 head 里面也行,写 body 里面也行<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span> </span><br><span class="line">	<span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>第二种 ：外部 js 文件，引入<blockquote>
+<p>注意：为符合 web 标准（w3c 标准中的一项）结构（html）、行为（js）、样式（css） 相分离，通常会采用外部引入。<br>一个文件中可以包括多个 css，js——不混用</p>
+</blockquote>
+</li>
+</ul>
+<p>特殊写页面，大部分写在外部——不混用</p>
+<p>如果同时写了内部的 js 和外部的 js，那么是外部的 js 文件显示出来</p>
+<h3 id="三、变量"><a href="#三、变量" class="headerlink" title="三、变量"></a>三、变量</h3><p>HTML，css 不是编程语言，是计算机语言，编程语言需要有变量和函数 变量是存放东西，方便后续使用的框</p>
+<h4 id="3-1变量声明"><a href="#3-1变量声明" class="headerlink" title="3.1变量声明"></a>3.1变量声明</h4><p>声明、赋值分解<br>var a; 这个叫变量声明。我们向系统中申请了 var 这个框，命名叫 a 给 a 赋值 100，写作 a &#x3D;100，这里不是等号是赋值 var a ；a &#x3D;100；可以简化写成 var a&#x3D;100；</p>
+<h4 id="3-2单一var声明法"><a href="#3-2单一var声明法" class="headerlink" title="3.2单一var声明法"></a>3.2单一var声明法</h4><p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/b8d65bbf71ab424a9f88cdfa21111e29.png"></p>
+<blockquote>
+<p>如写做：var a &#x3D; 10；a&#x3D;20;那么后面的 20 就会覆盖掉前面的 10<br>命名规则（用接近的英文单词）<br>变量名必须以英文字母、_、$ 开头</p>
+</blockquote>
+<p>变量名可以包括英文字母、_、$、数字</p>
+<p>不可以用系统的关键字、保留字作为变量名</p>
+<p>注意：起变量名一定要以英文语义化</p>
+<h4 id="关键字与保留字"><a href="#关键字与保留字" class="headerlink" title="关键字与保留字"></a>关键字与保留字</h4><p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/7783e53d84694fb4a607f5a16634f8a8.png"></p>
+<h3 id="四、基本语法"><a href="#四、基本语法" class="headerlink" title="四、基本语法"></a>四、基本语法</h3><p>下面是变量,例：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">var</span> b = <span class="number">20</span>;</span><br><span class="line"><span class="keyword">var</span> c;</span><br><span class="line">c = a + b;</span><br></pre></td></tr></table></figure>
+<p>先运算等号右边的 a+b，运算完后，再赋值给左边 c<br>先取值，再赋值</p>
+<h4 id="4-1运算大于赋值的优先级"><a href="#4-1运算大于赋值的优先级" class="headerlink" title="4.1运算大于赋值的优先级"></a>4.1运算大于赋值的优先级</h4><p>js 是动态语言，动态语言基本上都是解释性语言，解释性语言基本上都是脚本语言<br>js 是浮点型语言（带小数点）</p>
+<h4 id="4-2值类型（数据类型）"><a href="#4-2值类型（数据类型）" class="headerlink" title="4.2值类型（数据类型）"></a>4.2值类型（数据类型）</h4><h5 id="1-不可改变的原始值（栈数据）栈-stack"><a href="#1-不可改变的原始值（栈数据）栈-stack" class="headerlink" title="1.不可改变的原始值（栈数据）栈 stack"></a>1.不可改变的原始值（栈数据）栈 stack</h5><blockquote>
+<p>已经放进去的值不可改变，只会改房间编号为 null(硬盘原理)</p>
+</blockquote>
+<pre><code>1.Number 数字,例 var a = 123;
+2.String 字符串,语言放双引号里，例 var a=”语言”，““是空串
+3.Boolean 布尔数字,就两个值，false，true
+4.undefined 是没有定义的，表示还没赋值,仅一个值 underfined
+5.null 代表空，占位用，用空值来覆盖
+</code></pre>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a =<span class="number">10</span>;</span><br><span class="line"><span class="keyword">var</span> b = a;</span><br><span class="line">a = <span class="number">20</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(b)</span><br><span class="line">答案：<span class="number">10</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>原始值是我把一个值放到另一个值里面，改了第一个值，第二个值不变</p>
+</blockquote>
+<h5 id="2-引用值（堆数据）大致上放堆-heap-里面"><a href="#2-引用值（堆数据）大致上放堆-heap-里面" class="headerlink" title="2.引用值（堆数据）大致上放堆 heap 里面"></a>2.引用值（堆数据）大致上放堆 heap 里面</h5><p>array 数组, Object, function … data,RegExp 正则</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="literal">false</span>,”abc”]; <span class="comment">//这是数组</span></span><br><span class="line">例：<span class="keyword">var</span> arr = [<span class="number">1</span>];</span><br><span class="line"><span class="keyword">var</span> arr1 = arr;</span><br><span class="line">arr.<span class="title function_">push</span>(<span class="number">2</span>);</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(arr1);</span><br><span class="line">答案：arr 是 <span class="number">1</span>,<span class="number">2</span>   arr1 是 <span class="number">1</span>,<span class="number">2</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>引用值是把第一个值放到第二个值里面，改第一个值，第二个值也改变</p>
+</blockquote>
+<p>js 由值决定类型。原始值和引用值唯一的不同是赋值形式不同<br><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/41ac78870d2c4440b23d759f997963ba.png"></p>
+<p>var a &#x3D; 10;var b &#x3D;a；是 a 先取出 10，copy 一份放到 b 里面，改变 a 的值，b 的值是不变的，再把 a&#x3D;20;时 b 的值还是 10，不发生改变。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>];</span><br><span class="line"><span class="keyword">var</span> arr1 =arr;</span><br><span class="line">arr.<span class="title function_">push</span>(<span class="number">3</span>);</span><br><span class="line">答案：这往[<span class="number">1</span>,<span class="number">2</span>]放 <span class="number">3</span>，arr 和 arr1 都是[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>引用值是在栈内存里面放堆的地址，拷贝的也是地址，所以改变 arr，arr1 也变了</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>]; </span><br><span class="line"><span class="keyword">var</span> arr1 =arr; </span><br><span class="line">arr = [<span class="number">1</span>,<span class="number">3</span>]; </span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(arr1)</span><br><span class="line">答案：arr = [<span class="number">1</span>,<span class="number">3</span>];</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>新建了一个新的房间。arr1 是 1,2,现在是插入新引入值”房间”,会在堆里面重新申请一间房，并指向新房间</p>
+</blockquote>
+<h5 id="3-js-语句基本规"><a href="#3-js-语句基本规" class="headerlink" title="3.js 语句基本规"></a>3.js 语句基本规</h5><p>语句后面要用分号结束“；”但 function test(){}，for(){}，if(){}后面都不用加分号<br>js 语法错误会引发后续代码终止，但不会影响其它 js 代码块<br>书写格式要规范，“&#x3D; + &#x2F; -”两边都应该有空格<br><strong>错误分为两种</strong><br>1）低级错误（语法解析错误），不能写中文<br>2）逻辑错误（标准错误，情有可原，错的那个执行不了）</p>
+<h3 id="五、js运算符"><a href="#五、js运算符" class="headerlink" title="五、js运算符"></a>五、js运算符</h3><h4 id="5-1-运算操作符"><a href="#5-1-运算操作符" class="headerlink" title="5.1 运算操作符"></a>5.1 运算操作符</h4><ol>
+<li><p>+</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">“+”作用：数学运算、字符串链接</span><br><span class="line">任何数据类型加字符串都等于字符串</span><br><span class="line">例 <span class="keyword">var</span> a = “a”+ <span class="literal">true</span> + <span class="number">1</span>; <span class="comment">//打印 atrue1</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span> + “a” + <span class="number">1</span> + <span class="number">1</span>; <span class="comment">//打印 1a11</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span> + <span class="number">1</span> + “a” + <span class="number">1</span> + <span class="number">1</span>; <span class="comment">//打印 2a11，从左向右运算</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span> + <span class="number">1</span> + “a” +( <span class="number">1</span> + <span class="number">2</span>); <span class="comment">//打印 2a3</span></span><br></pre></td></tr></table></figure></li>
+<li><p>*、- 、&#x2F;</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a = <span class="number">0</span> – <span class="number">1</span>； <span class="comment">//等于-1</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">2</span> * <span class="number">1</span>； <span class="comment">//等于 2</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">0</span> / <span class="number">0</span>； <span class="comment">//答案是 NaN，应该得出一个数字类型的数，但是没法表达，</span></span><br><span class="line">就用 <span class="title class_">NaN</span> (<span class="title class_">NaN</span> 是 <span class="title class_">Not</span> a <span class="title class_">Number</span> 非数，不是数，但是是数字类型</span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span> / <span class="number">0</span>; <span class="comment">//是 infinity</span></span><br><span class="line">例 <span class="keyword">var</span> a = -<span class="number">1</span> / <span class="number">0</span>; /是-infinity</span><br></pre></td></tr></table></figure></li>
+<li><p>%<br>摩尔，模，是取余数的意思</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">5</span>%<span class="number">2</span> <span class="comment">//5%2 是五除二的余数，商二余一</span></span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">5</span>%<span class="number">1</span> <span class="comment">//是五除一的余数，结果是 0</span></span><br><span class="line">例 <span class="keyword">var</span> num = <span class="number">1</span> % <span class="number">5</span>; <span class="comment">//意思是 1 除以 5 的余数。商 0 余 1</span></span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">4</span>%<span class="number">6</span> <span class="comment">//是四除六的余数，结果是 4</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">4</span>;a % = <span class="number">5</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">// 4</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">0</span>;a % = <span class="number">5</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//0</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">10</span>;a %= <span class="number">2</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//0</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">3</span>;a % = <span class="number">4</span>; <span class="comment">//4</span></span><br></pre></td></tr></table></figure>
+<p>优先级”&#x3D;“最弱【赋值符号优先级最低】，”()”优先级较高</p>
+</li>
+<li><p>++</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a = <span class="number">10</span>; a = a + <span class="number">1</span>; <span class="comment">//结果 11</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+<p>a &#x3D; a + 1;写成 a ++是一种简化形式“++”，是自身加一，再赋值给自身<br>a++是 a&#x3D;a+1 的简化形式</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(++a );<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//答案 11；11</span></span><br><span class="line">是先执行++，再执行本条语句 <span class="variable language_">document</span>.<span class="title function_">write</span>(++a)</span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(a ++);<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//答案 1；2。是先执行</span></span><br><span class="line">语句(<span class="variable language_">document</span>.<span class="title function_">write</span>(a))，再++，所以第一次打印的还是 a，第二次打印 a++后的值</span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>；<span class="keyword">var</span> b=++a -<span class="number">1</span>+a++;<span class="variable language_">document</span>.<span class="title function_">write</span>(b + “ ” + a) <span class="comment">//答案 21 12</span></span><br><span class="line">先++a，这个时候 a=<span class="number">11</span>，再-<span class="number">1</span>，再加 a，b 就是 <span class="number">21</span>，最后++，a 就是 <span class="number">12</span></span><br></pre></td></tr></table></figure>
+<p>赋值的顺序自右向左，计算的顺序自左向右（按数学来）</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>；<span class="keyword">var</span> b = a ++ + <span class="number">1</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(b)； <span class="comment">//答案 2，先执行 var b =a+1，</span></span><br><span class="line">再 a++</span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>；<span class="keyword">var</span> b = a ++ + <span class="number">1</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(a)；<span class="variable language_">document</span>.<span class="title function_">write</span>(b)； <span class="comment">//答案 2，2</span></span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>；<span class="keyword">var</span> b = ++a + <span class="number">1</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(a)；<span class="variable language_">document</span>.<span class="title function_">write</span>(b)； <span class="comment">//答案 2，3</span></span><br><span class="line">例 <span class="keyword">var</span> i = <span class="number">1</span>;<span class="keyword">var</span> a = i++; <span class="comment">//答案 a = 1; 此时 i 先将值 1 赋给 a,然后自己+1，i=2;</span></span><br><span class="line"><span class="keyword">var</span> b = ++i; <span class="comment">//答案 b = 3；此时 i 先自己+1 为 3.再给 b 赋值，b=3;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>–<br>“- -”，是自身减一，在赋值给自身</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="keyword">var</span> b = a-- + -- a;<span class="variable language_">document</span>.<span class="title function_">write</span>(b); <span class="comment">//答案 0，先执行--a;此时 a 变成</span></span><br><span class="line"><span class="number">0</span>，然后第一个 a 也变成 <span class="number">0</span>，那么 b = <span class="number">0</span>-- + --a</span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="keyword">var</span> b = --a + --a;<span class="variable language_">document</span>.<span class="title function_">write</span>(b); <span class="comment">//答案-1</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a++);<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//答案 1；2</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(++a);<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//答案 2；2</span></span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>; <span class="keyword">var</span> b = a ++ +<span class="number">1</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(b); <span class="comment">//答案 2</span></span><br><span class="line">a 写在后面就后运行，先计算 a+<span class="number">1</span>=<span class="number">2</span> 赋值给 b 后再++</span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="keyword">var</span> b= ++a + <span class="number">1</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a);<span class="variable language_">document</span>.<span class="title function_">write</span>(b); <span class="comment">//答案 2；3</span></span><br></pre></td></tr></table></figure></li>
+<li><p>+&#x3D; -&#x3D;</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>;a ++;a ++;a ++;加十个</span><br><span class="line">简化写法：a +=<span class="number">10</span>;也是 a = a+<span class="number">10</span>;</span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>;a += <span class="number">10</span> + <span class="number">1</span>; <span class="comment">//答案 21</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;a = a + <span class="number">10</span>;等于 a+=<span class="number">10</span></span><br><span class="line">a++是 a +=<span class="number">1</span> 的写法</span><br></pre></td></tr></table></figure></li>
+<li><p>&#x2F;&#x3D;</p>
+</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a=<span class="number">10</span>;a/=<span class="number">2</span>; <span class="comment">//答案 5，是除二赋给自身的意思</span></span><br></pre></td></tr></table></figure>
+<ol>
+<li>*&#x3D;</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>;a *=<span class="number">2</span>; <span class="comment">//答案：20，是乘二赋给自身的意思</span></span><br></pre></td></tr></table></figure>
+<ol>
+<li>%&#x3D;</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a=<span class="number">10</span>;a%=<span class="number">2</span>; <span class="comment">//答案：0， 10 能整除 2,余数是 0,取余，余数赋给自身。</span></span><br><span class="line">例 <span class="keyword">var</span> a=<span class="number">3</span>;a%=<span class="number">4</span>; <span class="comment">//答案：3，3 除以 4，余数为 3，余数赋给自身。</span></span><br><span class="line">例 <span class="keyword">var</span> a=<span class="number">0</span>;a%=<span class="number">4</span>; <span class="comment">//答案：0，0 除以 4，余数为 0，余数赋给自身。</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;a% =<span class="number">10</span>; <span class="comment">//答案：1，1 除以 10，余数为 1，余数赋给自身。</span></span><br></pre></td></tr></table></figure>
+<h5 id="10-小测"><a href="#10-小测" class="headerlink" title="10.小测"></a>10.小测</h5><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a =(<span class="number">10</span> * <span class="number">3</span> – <span class="number">4</span> / <span class="number">2</span> + <span class="number">1</span>)%<span class="number">2</span>,b=<span class="number">3</span>;b %= a + <span class="number">3</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(a++);</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">wtite</span>(“&lt;br&gt;”);</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(--b);</span><br><span class="line"><span class="number">2</span>、<span class="keyword">var</span> a =<span class="number">123</span>; <span class="keyword">var</span> b =<span class="number">234</span>;经过计算交换 a，b 的值</span><br></pre></td></tr></table></figure>
+<p>答案</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span>、<span class="variable language_">document</span>.<span class="title function_">write</span>(a++);是 <span class="number">1</span>（先打出 <span class="number">1</span> 再++）</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(--b);是 <span class="number">2</span></span><br><span class="line">b % =a + <span class="number">3</span>,<span class="number">3</span> 的模等于 <span class="number">4</span>，除不开再赋值给 b，b 还是 <span class="number">3</span></span><br><span class="line"><span class="number">2</span>、方法一普通方法：<span class="keyword">var</span> c = a; a = b; b = c;<span class="variable language_">document</span>.<span class="title function_">write</span>(a ,b);</span><br><span class="line">方法二 a = a + b; b = a – b; a = a –b; <span class="variable language_">document</span>.<span class="title function_">write</span>(a ,b);</span><br></pre></td></tr></table></figure>
+<h4 id="5-2-比较运算符"><a href="#5-2-比较运算符" class="headerlink" title="5.2 比较运算符"></a>5.2 比较运算符</h4>]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown</title>
+    <url>/2023/03/09/LearnMarkdown/</url>
+    <content><![CDATA[<p><a href="https://baidu.com/" title="这是一个百度链接">百度链接</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/bj5.jpg"></p>
+<hr>
+<ul>
+<li>无序列表1</li>
+<li>无序列表2<ol>
+<li>有序列表1</li>
+<li>有序列表1</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><span id="more"></span>
+<p><em>斜体</em><br><strong>加粗</strong><br><code>行内代码</code><br><u>下划线</u></p>
+<blockquote>
+<p>引用</p>
+</blockquote>
+<h3 id="代办"><a href="#代办" class="headerlink" title="代办"></a>代办</h3><ul>
+<li><input checked="" disabled="" type="checkbox"> one</li>
+<li><input disabled="" type="checkbox"> two</li>
+</ul>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><table>
+<thead>
+<tr>
+<th align="left">表头</th>
+<th align="right">表头</th>
+<th align="center">表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">左对齐</td>
+<td align="right">右对齐</td>
+<td align="center">剧中</td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td align="right">12</td>
+<td align="center">13</td>
+</tr>
+</tbody></table>
+<p>脚注：<br>一键三连<a href="%E7%82%B9%E8%B5%9E%EF%BC%8C%E6%8A%95%E5%B8%81%E6%94%B6%E8%97%8F">^三连</a></p>
+]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MySQL</title>
+    <url>/2023/03/28/MySQL/</url>
+    <content><![CDATA[<h3 id="管理MySQL服务"><a href="#管理MySQL服务" class="headerlink" title="管理MySQL服务"></a>管理MySQL服务</h3><p>启动服务</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">net <span class="keyword">start</span> MySQL80</span><br></pre></td></tr></table></figure>
+<p>停止服务</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">net stop MySQL80</span><br></pre></td></tr></table></figure>
+<h4 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h4><p><code>C:\Program Files\MySQL\MySQL Server 8.0\bin</code><br><img src="https://s2.loli.net/2023/03/28/MXLq8tHbJQzc31D.png"></p>
+<h4 id="登录MYSQL"><a href="#登录MYSQL" class="headerlink" title="登录MYSQL"></a>登录MYSQL</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">mysql <span class="operator">-</span>u root <span class="operator">-</span>p</span><br></pre></td></tr></table></figure>
+<h3 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h3><p>查询</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">show</span> databases;         查询所有数据库</span><br><span class="line"><span class="keyword">select</span> database();      查询当前所处数据库</span><br></pre></td></tr></table></figure>
+<p>创建</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> database 数据库名;</span><br></pre></td></tr></table></figure>
+<p>删除</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">drop</span> database 数据库名;</span><br></pre></td></tr></table></figure>
+<p>使用</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">use 数据库名;</span><br></pre></td></tr></table></figure>
+<h3 id="表操作"><a href="#表操作" class="headerlink" title="表操作"></a>表操作</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 增</span></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">user</span>(id, name, gender, age) <span class="keyword">values</span> (<span class="number">1</span>, <span class="string">&#x27;张三&#x27;</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">20</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">user</span> <span class="keyword">values</span> (<span class="number">2</span>, <span class="string">&#x27;李四&#x27;</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">18</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">user</span> <span class="keyword">values</span> (<span class="number">3</span>, <span class="string">&#x27;王麻子&#x27;</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">30</span>),(<span class="number">4</span>, <span class="string">&#x27;赵六&#x27;</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">40</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 删</span></span><br><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> <span class="keyword">user</span> <span class="keyword">where</span> id <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> <span class="keyword">user</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 改</span></span><br><span class="line"><span class="keyword">update</span> <span class="keyword">user</span> <span class="keyword">set</span> name <span class="operator">=</span> <span class="string">&#x27;匿名&#x27;</span> <span class="keyword">where</span> id <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">update</span> <span class="keyword">user</span> <span class="keyword">set</span> name <span class="operator">=</span> <span class="string">&#x27;迪迦&#x27;</span>, gender <span class="operator">=</span> <span class="string">&#x27;女&#x27;</span> <span class="keyword">where</span> id <span class="operator">=</span> <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">update</span> <span class="keyword">user</span> <span class="keyword">set</span> gender <span class="operator">=</span> <span class="string">&#x27;女&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="表查询"><a href="#表查询" class="headerlink" title="表查询"></a>表查询</h3><h4 id="基础查询"><a href="#基础查询" class="headerlink" title="基础查询"></a>基础查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> name,gender <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> entrydate <span class="keyword">from</span> emp;</span><br><span class="line"><span class="keyword">select</span> entrydate <span class="keyword">as</span> <span class="string">&#x27;入职时间&#x27;</span> <span class="keyword">from</span> emp;</span><br><span class="line"><span class="keyword">select</span> entrydate <span class="string">&#x27;入职时间&#x27;</span> <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">distinct</span> workaddress <span class="keyword">from</span> emp;</span><br></pre></td></tr></table></figure>
+<h4 id="条件查询"><a href="#条件查询" class="headerlink" title="条件查询"></a>条件查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">&lt;</span> <span class="number">20</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">&gt;=</span> <span class="number">18</span> <span class="keyword">and</span> age <span class="operator">&lt;=</span> <span class="number">30</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="keyword">between</span> <span class="number">16</span> <span class="keyword">and</span> <span class="number">20</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> gender <span class="operator">!=</span> <span class="string">&#x27;男&#x27;</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> idcard <span class="keyword">is</span> <span class="keyword">null</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">=</span> <span class="number">20</span> <span class="keyword">and</span> gender <span class="operator">=</span> <span class="string">&#x27;女&#x27;</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">=</span> <span class="number">16</span> <span class="keyword">or</span> age <span class="operator">=</span> <span class="number">18</span> <span class="keyword">or</span> age <span class="operator">=</span> <span class="number">20</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="keyword">in</span> (<span class="number">16</span>,<span class="number">18</span>,<span class="number">20</span>);</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> name <span class="keyword">like</span> <span class="string">&#x27;__&#x27;</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> idcard <span class="keyword">like</span> <span class="string">&#x27;%X&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<h4 id="聚合查询"><a href="#聚合查询" class="headerlink" title="聚合查询"></a>聚合查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="operator">*</span>) <span class="keyword">from</span> emp;</span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(idcard) <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">avg</span>(age) <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">max</span>(age) <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">min</span>(age) <span class="keyword">from</span> emp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">sum</span>(age) <span class="keyword">from</span> emp <span class="keyword">where</span> workaddress <span class="operator">=</span> <span class="string">&#x27;西安&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<h4 id="分组查询"><a href="#分组查询" class="headerlink" title="分组查询"></a>分组查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> gender, <span class="built_in">count</span>(<span class="operator">*</span>) <span class="string">&#x27;数量&#x27;</span> <span class="keyword">from</span> emp <span class="keyword">group</span> <span class="keyword">by</span> gender;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> gender, <span class="built_in">avg</span>(age) <span class="string">&#x27;年龄&#x27;</span> <span class="keyword">from</span> emp <span class="keyword">group</span> <span class="keyword">by</span> gender;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> workaddress, <span class="built_in">count</span>(<span class="operator">*</span>) <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">&lt;</span> <span class="number">50</span> <span class="keyword">group</span> <span class="keyword">by</span> workaddress <span class="keyword">having</span> <span class="built_in">count</span>(<span class="operator">*</span>) <span class="operator">&gt;</span> <span class="number">3</span>;</span><br></pre></td></tr></table></figure>
+<h4 id="排序查询"><a href="#排序查询" class="headerlink" title="排序查询"></a>排序查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> age ;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> age <span class="keyword">desc</span> ;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> age <span class="keyword">asc</span> , entrydate <span class="keyword">desc</span> ;</span><br></pre></td></tr></table></figure>
+<h4 id="分页查询"><a href="#分页查询" class="headerlink" title="分页查询"></a>分页查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp limit <span class="number">0</span>, <span class="number">10</span>;</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp limit <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp limit <span class="number">10</span>, <span class="number">10</span>;</span><br></pre></td></tr></table></figure>
+<h4 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 1．查询年龄为20,21,22,23岁的女性员工信息。</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="keyword">in</span> (<span class="number">20</span>,<span class="number">21</span>,<span class="number">22</span>,<span class="number">23</span>) <span class="keyword">and</span> gender <span class="operator">=</span> <span class="string">&#x27;女&#x27;</span>;</span><br><span class="line"><span class="comment">-- 2．查询性别为男,并且年龄在20-40岁(含)以内的姓名为三个字的员工。</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> gender <span class="operator">=</span> <span class="string">&#x27;男&#x27;</span> <span class="keyword">and</span> age <span class="keyword">between</span> <span class="number">20</span> <span class="keyword">and</span> <span class="number">40</span> <span class="keyword">and</span> name <span class="keyword">like</span> <span class="string">&#x27;___&#x27;</span>;</span><br><span class="line"><span class="comment">-- 3．统计员工表中，年龄小于60岁的,男性员工和女性员工的人数。</span></span><br><span class="line"><span class="keyword">select</span> gender, <span class="built_in">count</span>(<span class="operator">*</span>) <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">&lt;</span> <span class="number">60</span> <span class="keyword">group</span> <span class="keyword">by</span> gender;</span><br><span class="line"><span class="comment">-- 4，查询所有年龄小于等于35岁员工的姓名和年龄，并对查询结果按年龄升序排序，如果年龄相同按入职时间降序排序。</span></span><br><span class="line"><span class="keyword">select</span> name, age <span class="keyword">from</span> emp <span class="keyword">where</span> age <span class="operator">&lt;=</span> <span class="number">35</span> <span class="keyword">order</span> <span class="keyword">by</span> age, entrydate <span class="keyword">desc</span> ;</span><br><span class="line"><span class="comment">-- 5．查询性别为男，且年龄在20-40 岁(含)以内的前5个员工信息，对查询的结果按年龄升序排齐，年龄相同按入职时间升序槽序。</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> emp <span class="keyword">where</span> gender <span class="operator">=</span> <span class="string">&#x27;男&#x27;</span> <span class="keyword">and</span> age <span class="keyword">between</span> <span class="number">20</span> <span class="keyword">and</span> <span class="number">40</span> <span class="keyword">order</span> <span class="keyword">by</span> age, entrydate <span class="keyword">desc</span> limit <span class="number">5</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="执行顺序"><a href="#执行顺序" class="headerlink" title="执行顺序"></a>执行顺序</h4><p><img src="https://s2.loli.net/2023/03/29/SCJkXQ7ftF4lnsh.png"></p>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h4 id="字符串函数"><a href="#字符串函数" class="headerlink" title="字符串函数"></a>字符串函数</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">-- 拼接字符</span></span><br><span class="line"><span class="keyword">select</span> concat(<span class="string">&#x27;Hello&#x27;</span>, <span class="string">&#x27;MySQL&#x27;</span>);</span><br><span class="line"><span class="comment">-- 大小写</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">upper</span>(<span class="string">&#x27;Hello&#x27;</span>);</span><br><span class="line"><span class="keyword">select</span> <span class="built_in">lower</span>(<span class="string">&#x27;Hello&#x27;</span>);</span><br><span class="line"><span class="comment">-- 左右增加字符</span></span><br><span class="line"><span class="keyword">select</span> rpad(<span class="string">&#x27;01&#x27;</span>, <span class="number">5</span>, <span class="string">&#x27;-&#x27;</span>);</span><br><span class="line"><span class="keyword">select</span> lpad(<span class="string">&#x27;01&#x27;</span>, <span class="number">5</span>, <span class="string">&#x27;-&#x27;</span>);</span><br><span class="line"><span class="comment">-- 去前后空格</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">trim</span>(<span class="string">&#x27; Hello MySQL&#x27;</span>);</span><br><span class="line"><span class="comment">-- 截取</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">substring</span>(<span class="string">&#x27;Hello MySQL&#x27;</span>, <span class="number">1</span>, <span class="number">5</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- practice工号前补零</span></span><br><span class="line"><span class="keyword">update</span> emp <span class="keyword">set</span> workno <span class="operator">=</span> lpad(workno, <span class="number">5</span>, <span class="string">&#x27;0&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<h4 id="数值函数"><a href="#数值函数" class="headerlink" title="数值函数"></a>数值函数</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 上下取整</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">ceil</span>(<span class="number">1.1</span>);</span><br><span class="line"><span class="keyword">select</span> <span class="built_in">floor</span>(<span class="number">1.9</span>);</span><br><span class="line"><span class="comment">-- 求模运算</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">mod</span>(<span class="number">7</span>, <span class="number">5</span>);</span><br><span class="line"><span class="comment">-- 0~1随机数</span></span><br><span class="line"><span class="keyword">select</span> rand();</span><br><span class="line"><span class="comment">-- 保留两位小数</span></span><br><span class="line"><span class="keyword">select</span> round(<span class="number">2.345</span>, <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- practice生成一个随机六位数</span></span><br><span class="line"><span class="keyword">select</span> lpad(round(rand()<span class="operator">*</span><span class="number">1000000</span>, <span class="number">0</span>), <span class="number">6</span>, <span class="string">&#x27;0&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<h4 id="日期函数"><a href="#日期函数" class="headerlink" title="日期函数"></a>日期函数</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 日期</span></span><br><span class="line"><span class="keyword">select</span> curdate();</span><br><span class="line"><span class="comment">-- 时间</span></span><br><span class="line"><span class="keyword">select</span> curtime();</span><br><span class="line"><span class="comment">-- 日期和时间</span></span><br><span class="line"><span class="keyword">select</span> now();</span><br><span class="line"><span class="comment">-- 当前年</span></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">year</span>(now());</span><br><span class="line"><span class="comment">-- 当前月</span></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">month</span>(now());</span><br><span class="line"><span class="comment">-- 当前天</span></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">day</span>(now());</span><br><span class="line"><span class="comment">-- 增加时间</span></span><br><span class="line"><span class="keyword">select</span> date_add(now(), <span class="type">interval</span> <span class="number">2</span> <span class="keyword">year</span> );</span><br><span class="line"><span class="comment">-- 时间做差</span></span><br><span class="line"><span class="keyword">select</span> datediff(<span class="string">&#x27;2023-3-30&#x27;</span>, <span class="string">&#x27;2002-9-5&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- demo查询所有员工入职天数，并倒序排序</span></span><br><span class="line"><span class="keyword">select</span> name, datediff(curdate(), entrydate) <span class="keyword">as</span> <span class="string">&#x27;入职天数&#x27;</span> <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> <span class="string">&#x27;入职天数&#x27;</span> <span class="keyword">desc</span> ;</span><br></pre></td></tr></table></figure>
+<h4 id="流程函数"><a href="#流程函数" class="headerlink" title="流程函数"></a>流程函数</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- if判断</span></span><br><span class="line"><span class="keyword">select</span> if(<span class="literal">true</span>, <span class="string">&#x27;y&#x27;</span>, <span class="string">&#x27;n&#x27;</span>);</span><br><span class="line"><span class="keyword">select</span> if(<span class="literal">false</span>, <span class="string">&#x27;y&#x27;</span>, <span class="string">&#x27;n&#x27;</span>);</span><br><span class="line"><span class="comment">-- ifnull是否为空</span></span><br><span class="line"><span class="keyword">select</span> ifnull(<span class="string">&#x27;y&#x27;</span>, <span class="string">&#x27;n&#x27;</span>);</span><br><span class="line"><span class="keyword">select</span> ifnull(<span class="string">&#x27;&#x27;</span>, <span class="string">&#x27;n&#x27;</span>);</span><br><span class="line"><span class="keyword">select</span> ifnull(<span class="keyword">null</span>, <span class="string">&#x27;n&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- demo判断员工工作地址是否为一线城市，不是则为二线城市</span></span><br><span class="line"><span class="keyword">select</span></span><br><span class="line">    name,</span><br><span class="line">    <span class="keyword">case</span> workaddress <span class="keyword">when</span> <span class="string">&#x27;北京&#x27;</span> <span class="keyword">then</span> <span class="string">&#x27;一线城市&#x27;</span> <span class="keyword">when</span> <span class="string">&#x27;上海&#x27;</span> <span class="keyword">then</span> <span class="string">&#x27;一线城市&#x27;</span> <span class="keyword">else</span> <span class="string">&#x27;二线城市&#x27;</span> <span class="keyword">end</span> <span class="keyword">as</span> <span class="string">&#x27;工作地址&#x27;</span></span><br><span class="line"><span class="keyword">from</span> emp;</span><br><span class="line"><span class="comment">-- demo2查询score表各科成绩</span></span><br><span class="line"><span class="keyword">select</span></span><br><span class="line">    name,</span><br><span class="line">    (<span class="keyword">case</span> <span class="keyword">when</span> math <span class="operator">&gt;=</span> <span class="number">85</span> <span class="keyword">then</span> <span class="string">&#x27;优秀&#x27;</span> <span class="keyword">when</span> math <span class="operator">&gt;=</span> <span class="number">60</span> <span class="keyword">then</span> <span class="string">&#x27;合格&#x27;</span> <span class="keyword">else</span> <span class="string">&#x27;不合格&#x27;</span> <span class="keyword">end</span>) <span class="keyword">as</span> <span class="string">&#x27;数学&#x27;</span>,</span><br><span class="line">    (<span class="keyword">case</span> <span class="keyword">when</span> english <span class="operator">&gt;=</span> <span class="number">85</span> <span class="keyword">then</span> <span class="string">&#x27;优秀&#x27;</span> <span class="keyword">when</span> english <span class="operator">&gt;=</span> <span class="number">60</span> <span class="keyword">then</span> <span class="string">&#x27;合格&#x27;</span> <span class="keyword">else</span> <span class="string">&#x27;不合格&#x27;</span> <span class="keyword">end</span>) <span class="keyword">as</span> <span class="string">&#x27;英语&#x27;</span>,</span><br><span class="line">    (<span class="keyword">case</span> <span class="keyword">when</span> chinese <span class="operator">&gt;=</span> <span class="number">85</span> <span class="keyword">then</span> <span class="string">&#x27;优秀&#x27;</span> <span class="keyword">when</span> chinese <span class="operator">&gt;=</span> <span class="number">60</span> <span class="keyword">then</span> <span class="string">&#x27;合格&#x27;</span> <span class="keyword">else</span> <span class="string">&#x27;不合格&#x27;</span> <span class="keyword">end</span>) <span class="keyword">as</span> <span class="string">&#x27;语文&#x27;</span></span><br><span class="line"><span class="keyword">from</span> score;</span><br></pre></td></tr></table></figure>
+
+<h3 id="约束"><a href="#约束" class="headerlink" title="约束"></a>约束</h3><h4 id="基本约束"><a href="#基本约束" class="headerlink" title="基本约束"></a>基本约束</h4><p>建表<br><img src="https://s2.loli.net/2023/03/31/fsZNJXPHObqB6Gm.png"></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> user2(</span><br><span class="line">    id <span class="type">int</span> <span class="keyword">primary</span> key auto_increment comment <span class="string">&#x27;主键&#x27;</span>,</span><br><span class="line">    name <span class="type">varchar</span>(<span class="number">10</span>) <span class="keyword">not</span> <span class="keyword">null</span> <span class="keyword">unique</span> comment <span class="string">&#x27;姓名&#x27;</span>,</span><br><span class="line">    age <span class="type">int</span> <span class="keyword">check</span> ( age <span class="operator">&gt;</span> <span class="number">0</span> <span class="operator">&amp;&amp;</span> age <span class="operator">&lt;=</span> <span class="number">120</span> ) comment <span class="string">&#x27;年龄&#x27;</span>,</span><br><span class="line">    status <span class="type">char</span>(<span class="number">1</span>) <span class="keyword">default</span> <span class="string">&#x27;1&#x27;</span> comment <span class="string">&#x27;状态&#x27;</span>,</span><br><span class="line">    gender <span class="type">char</span>(<span class="number">1</span>) comment <span class="string">&#x27;性别&#x27;</span></span><br><span class="line">) comment <span class="string">&#x27;用户表2&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<p>插入数据</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom1&#x27;</span>, <span class="number">19</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>), (<span class="string">&#x27;Tom2&#x27;</span>, <span class="number">25</span>, <span class="number">0</span>, <span class="string">&#x27;男&#x27;</span>), (<span class="string">&#x27;Tom3&#x27;</span>, <span class="number">19</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="keyword">null</span>, <span class="number">19</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom3&#x27;</span>, <span class="number">19</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom4&#x27;</span>, <span class="number">80</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom5&#x27;</span>, <span class="number">-1</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, status, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom6&#x27;</span>, <span class="number">121</span>, <span class="number">1</span>, <span class="string">&#x27;男&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> user2(name, age, gender) <span class="keyword">values</span> (<span class="string">&#x27;Tom7&#x27;</span>, <span class="number">120</span>, <span class="string">&#x27;男&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<p>效果展示<br><img src="https://s2.loli.net/2023/03/31/7jxpAtVmO2BPTha.png"></p>
+<h4 id="外键"><a href="#外键" class="headerlink" title="外键"></a>外键</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">add</span> <span class="keyword">constraint</span> emp_emp_id_fk <span class="keyword">foreign</span> key (dept_id) <span class="keyword">references</span> dept(id);</span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">drop</span> <span class="keyword">foreign</span> key emp_emp_id_fk;</span><br></pre></td></tr></table></figure>
+<p>效果<br><img src="https://s2.loli.net/2023/03/31/rQytdHFkISxV6zf.png"></p>
+]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>sql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>eNSP</title>
+    <url>/2023/04/06/eNSP/</url>
+    <content><![CDATA[<h6 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h6><p><img src="https://s2.loli.net/2023/04/09/56i2AEgjn3NsBdf.png" alt="image-20230409163311555"></p>
+<p>当前位置所作配置</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">display this</span><br></pre></td></tr></table></figure>
+
+
+
+<h6 id="05-ip地址配置"><a href="#05-ip地址配置" class="headerlink" title="05-ip地址配置"></a>05-ip地址配置</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ip address 192.168.1.1 255.255.255.0</span><br></pre></td></tr></table></figure>
+
+<p>改名</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sysname AR2</span><br></pre></td></tr></table></figure>
+
+<h6 id="06-DHCP地址池"><a href="#06-DHCP地址池" class="headerlink" title="06-DHCP地址池"></a>06-DHCP地址池</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dhcp enable</span><br><span class="line">int g0/0/0</span><br><span class="line">dhcp select interface </span><br></pre></td></tr></table></figure>
+
+<h6 id="07-DNS域名系统"><a href="#07-DNS域名系统" class="headerlink" title="07-DNS域名系统"></a>07-DNS域名系统</h6><p><img src="https://s2.loli.net/2023/04/06/fvgz4mOFyDPhVUd.png" alt="image-20230406200841622"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dhcp server dns-list 192.168.1.100</span><br></pre></td></tr></table></figure>
+
+<h6 id="08-网关入门"><a href="#08-网关入门" class="headerlink" title="08-网关入门"></a>08-网关入门</h6><p><img src="https://s2.loli.net/2023/04/06/mbQpcC3VLzDg4dt.png" alt="image-20230406200632434"></p>
+<h6 id="09-静态路由"><a href="#09-静态路由" class="headerlink" title="09-静态路由"></a>09-静态路由</h6><p><img src="https://s2.loli.net/2023/04/06/fkHawtNGxpKqEmQ.png" alt="image-20230406202420122"></p>
+<p>查路由表</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">display ip routing-table 192.168.3.10</span><br></pre></td></tr></table></figure>
+
+<p>下一跳——去R1</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ip route-static 192.168.3.0 255.255.255.0 192.168.2.10</span><br></pre></td></tr></table></figure>
+
+<p>下一跳——回R2</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ip route-static 192.168.1.0 255.255.255.0 192.168.2.1</span><br></pre></td></tr></table></figure>
+
+<h6 id="10-TCP和UDP"><a href="#10-TCP和UDP" class="headerlink" title="10-TCP和UDP"></a>10-TCP和UDP</h6><p>Tcp：可靠性高。<br>适合对文件传输的完整性要求高，但是对延迟不敏感<br>电子邮件</p>
+<p>更新客户端<br>Udp:速度快</p>
+<h6 id="11-划分vlan"><a href="#11-划分vlan" class="headerlink" title="11-划分vlan"></a>11-划分vlan</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vlan 10</span><br><span class="line">int g0/0/1</span><br><span class="line">port link-type access</span><br><span class="line">port default vlan 10</span><br><span class="line">display vlan</span><br></pre></td></tr></table></figure>
+
+<h6 id="12-Trunk模式"><a href="#12-Trunk模式" class="headerlink" title="12-Trunk模式"></a>12-Trunk模式</h6><p><img src="https://s2.loli.net/2023/04/06/ZrQHNlCmEWxBGdw.png" alt="image-20230406211246144"></p>
+<p>注：交换机根据trunk接口打标签来回包</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">port link-type trunk </span><br><span class="line">port trunk allow-pass vlan all</span><br></pre></td></tr></table></figure>
+
+<h6 id="13-三层交换"><a href="#13-三层交换" class="headerlink" title="13-三层交换"></a>13-三层交换</h6><p>注：</p>
+<p>用三层交换技术,先用vlan把用户隔离开,再用某种技术，把隔离开用户连起来</p>
+<p>隔离:隔离是故障</p>
+<p>连通︰是正常通信</p>
+<p>用三层配置vlan的ip作为网关</p>
+<p><img src="https://s2.loli.net/2023/04/06/uaBsm2IPYhTbRl4.png" alt="image-20230406214540804"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int vlan 20</span><br><span class="line">ip add 2.2.2.254 255.255.255.0</span><br></pre></td></tr></table></figure>
+
+<h6 id="14-单臂路由"><a href="#14-单臂路由" class="headerlink" title="14-单臂路由"></a>14-单臂路由</h6><p>注：用路由器接口分两个子接口配置网关</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Huawei]int g0/0/0.10</span><br><span class="line">dot1q termination vid 10</span><br><span class="line">ip address 1.1.1.254 255.255.255.0 </span><br><span class="line">arp broadcast enable</span><br></pre></td></tr></table></figure>
+
+<h6 id="15-ACL访问列表控制"><a href="#15-ACL访问列表控制" class="headerlink" title="15-ACL访问列表控制"></a>15-ACL访问列表控制</h6><p><img src="https://s2.loli.net/2023/04/11/7AXrYJ4NOSx1RWT.png" alt="image-20230411193401023"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Huawei]acl name text</span><br><span class="line">[Huawei-acl-adv-text]rule deny ip source 192.168.10.0 0.0.0.255 destination 192.</span><br><span class="line">168.30.0 0.0.0.255</span><br><span class="line">[Huawei-acl-adv-text]rule permit ip source any destination any </span><br><span class="line">[Huawei-acl-adv-text]q</span><br><span class="line">[Huawei]in g0/0/1</span><br><span class="line">[Huawei-GigabitEthernet0/0/1]traffic-filter inbound acl name text</span><br></pre></td></tr></table></figure>
+
+<h6 id="16-NAT网络地址转换"><a href="#16-NAT网络地址转换" class="headerlink" title="16-NAT网络地址转换"></a>16-NAT网络地址转换</h6><p><img src="https://s2.loli.net/2023/04/11/YvlkgC81pSt29MG.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Huawei]acl name neiwang basic</span><br><span class="line">[Huawei-acl-basic-neiwang]rule permit source 192.168.0.0 0.0.255.255</span><br><span class="line"></span><br><span class="line">[Huawei]nat address-group 1 64.1.1.2 64.1.1.5 </span><br><span class="line">[Huawei]dis acl all</span><br></pre></td></tr></table></figure>
+<p> Total quantity of nonempty ACL number is 1 </p>
+<p>Basic ACL neiwang 2999, 1 rule<br>Acl’s step is 5<br> rule 5 permit source 192.168.0.0 0.0.255.255<br> <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"> </span><br><span class="line">[Huawei-GigabitEthernet0/0/1]nat outbound 2999 address-group 1 </span><br></pre></td></tr></table></figure></p>
+]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>eNSP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Stable Diffusion</title>
+    <url>/2023/04/18/Stable-Diffusion/</url>
+    <content><![CDATA[<p><img src="https://s2.loli.net/2023/04/18/nmHiVNyG1QvWha6.png" alt="image-20230418190503271"></p>
+<p>Stable Diffusion的大致工作流程如下：</p>
+<p>首先，Stable Diffusion模型将潜在种子和文本提示作为输入。 然后使用潜在种子生成大小为 64×64 的随机潜在图像表示，而文本提示通过 CLIP 文本编码器转换为 77×768 的文本嵌入。</p>
+<p>接下来，U-Net 以文本嵌入为条件迭代地对随机潜在图像表示进行去噪。 U-Net 的输出是噪声残差，用于通过调度算法计算去噪的潜在图像表示。 调度算法根据先前的噪声表示和预测的噪声残差计算预测的去噪图像表示。这里可选用的调度算法很多，每个算法各有优劣，对Stable Diffusion来说建议用以下几个：</p>
+<p>PNDM scheduler（默认）<br>DDIM scheduler<br>K-LMS scheduler<br>去噪过程重复大约 50 次以逐步检索更好的潜在图像表示。 完成后，潜在图像表示由变分自动编码器的解码器部分解码。</p>
+<h2 id="本地部署Stable-Diffusion"><a href="#本地部署Stable-Diffusion" class="headerlink" title="本地部署Stable Diffusion"></a>本地部署Stable Diffusion</h2><p>本地部署Stable Diffusion最简单的方法是使用Stable Diffusion Web Ui。</p>
+<p>Stable Diffusion Web Ui是一套无代码、可视化的Stable Diffusion集成运行环境。它将Stable Diffusion的安装部署集成打包，提供一键安装脚本，并提供Web界面操作界面，极大简化了Stable Diffusion的操作和使用，让没有不懂代码的小白也能轻松上手使用Stable Diffusion模型。</p>
+<h2 id="使用Stable-Diffusion-Web-Ui"><a href="#使用Stable-Diffusion-Web-Ui" class="headerlink" title="使用Stable Diffusion Web Ui"></a>使用Stable Diffusion Web Ui</h2><h3 id="界面介绍"><a href="#界面介绍" class="headerlink" title="界面介绍"></a>界面介绍</h3><p>Stable Diffusion Web Ui整体上分为2个部分，最上面是<strong>模型选择</strong>，可以从下拉列表中选择已下载的预训练模型<img src="https://img-blog.csdnimg.cn/50b616d90b334b1a9662986a7230e57a.png#pic_center" alt="在这里插入图片描述"></p>
+<p>模型选择下面是一个Tab栏，这里是Stable Diffusion Web Ui提供的所有功能。<img src="https://img-blog.csdnimg.cn/7e8a631509bd44fab5b70abdb31e91f1.png#pic_center" alt="在这里插入图片描述"></p>
+<ul>
+<li><strong>txt2img</strong> — 根据文本提示生成图像；</li>
+<li><strong>img2img</strong> — 根据提供的图像作为范本、结合文本提示生成图像；</li>
+<li><strong>Extras</strong> — 优化(清晰、扩展)图像；</li>
+<li><strong>PNG Info</strong> — 显示图像基本信息</li>
+<li><strong>Checkpoint Merger</strong> — 模型合并</li>
+<li><strong>Train</strong> — 根据提供的图片训练具有某种图像风格的模型</li>
+<li><strong>Settings</strong> — 系统设置</li>
+</ul>
+<p> 平时使用最多的是<strong>txt2img</strong> 和 <strong>img2img</strong>，下面针对这2大块功能详细讲解。</p>
+<h4 id="txt2img"><a href="#txt2img" class="headerlink" title="txt2img"></a>txt2img</h4><p>txt2img有三个区域：</p>
+<ul>
+<li>提示区</li>
+<li>参数调节区</li>
+<li>输出浏览区<img src="https://img-blog.csdnimg.cn/5b2d46b240ba4979a4a6a099553a6171.png#pic_center" alt="在这里插入图片描述"></li>
+</ul>
+<p>提示区主要是2个文本框，可以输入提示文本。其中：</p>
+<p><strong>prompt</strong>: 主要是对于图像进行描述。prompt对Stable Diffusion图像生成质量至关重要，因此如果想生成高质量图片，一定要在提示设计上下功夫。一个好的提示需要详细和具体，后面会专门讲解如何设计一个好的提示。</p>
+<p><strong>Negative prompt</strong>：主要是告诉模型我不想要什么样的风格或元素；</p>
+<p>参数调节区提供了大量参数用于控制和优化生成过程：</p>
+<p><strong>Sampling method</strong>：扩散去噪算法的采样模式，不同采样模式会带来不一样的效果，具体需要在实际使用中测试；</p>
+<p><strong>Sampling steps</strong>：模型生成图片的迭代步数，每多一次迭代都会给 AI 更多的机会去对比 prompt 和 当前结果，从而进一步调整图片。更高的步数需要花费更多的计算时间，但却不一定意味着会有更好的结果。当然迭代步数不足肯定会降低输出的图像质量；</p>
+<p><strong>Width、Height</strong>：输出图像宽高，图片尺寸越大越消耗资源，显存小的要特别注意。一般不建议设置的太大，因为生成后可以通过 Extras 进行放大；</p>
+<p><strong>Batch count、 Batch size</strong>：控制生成几张图，前者计算时间长，后者需要显存大；</p>
+<p><strong>CFG Scale</strong>：分类器自由引导尺度，用于控制图像与提示的一致程度，值越低产生的内容越有创意；</p>
+<p><strong>Seed</strong>：随机种子，只要种子一样，参数和模型不变，生成的图像主体就不会剧烈变化，适用于对生成图像进行微调；</p>
+<p><strong>Restore faces</strong>：优化面部，当对生成的面部不满意时可以勾选该选项；</p>
+<p><strong>Tiling</strong>：生成一张可以平铺的图像；</p>
+<p><strong>Highres. fix</strong>：使用两个步骤的过程进行生成，以较小的分辨率创建图像，然后在不改变构图的情况下改进其中的细节，选中该选项会有一系列新的参数，其中重要的是：</p>
+<p> <strong>Upscaler</strong>：缩放算法；</p>
+<p> <strong>Upscale by</strong>：放大倍数；</p>
+<p> <strong>Denoising strength</strong>：决定算法对图像内容的保留程度。0什么都不会改变，1会得到一个完全不同的图像；</p>
+<h4 id="img2img"><a href="#img2img" class="headerlink" title="img2img"></a>img2img</h4><p>img2img跟txt2img界面类似，不同的是没有了txt2img中的参数调节区，取而代之的是图像范本区。<img src="https://img-blog.csdnimg.cn/49d1b13ee3f94e6f96b4377b8edbf857.png#pic_center" alt="在这里插入图片描述"></p>
+<p>我们可以上传范本图片让Stable Diffusion模仿，其他地方跟txt2img相同</p>
+<h3 id="界面汉化"><a href="#界面汉化" class="headerlink" title="界面汉化"></a>界面汉化</h3><p>通过<a href="https://download.csdn.net/download/JarodYv/87542257">这里</a>下载简体中文语言文件，下载完成后将其复制到项目文件夹的“localizations”目录中。之后在Settings -&gt; User interface -&gt; Localization (requires restart)，在下拉菜单中选择zh_CN。如果下拉列表中看不到zh_CN，请先点击右侧的刷新按钮，然后就能在下拉列表中看到了。设置完成后记得点击页面上方的“Apply settings”按钮保存设置。<br><img src="https://img-blog.csdnimg.cn/a6543281d36941eaba303c0bd9cfe06d.png#pic_center" alt="在这里插入图片描述"></p>
+<p>语言设置需要重启才能生效。<code>Ctrl + C</code>先终止Stable Diffusion Web Ui服务，然后再运行<code>webui.bat</code>或<code>webui.sh</code>，重启后刷新浏览器页面就能看到语言变成了简体中文了。<img src="https://img-blog.csdnimg.cn/797cba1ab85b41f789f60034e5156bec.png#pic_center" alt="在这里插入图片描述"></p>
+<h4 id="prompt语法"><a href="#prompt语法" class="headerlink" title="prompt语法"></a>prompt语法</h4><p>为了产生具有特定风格的图像，必须以特定格式提供文本提示。 这通常需要添加提示修饰符或添加更多关键字或关键短语来实现。下面为大家介绍一下Stable Diffusion的prompt语法规则。</p>
+<p>Stable Diffusion提示文本中的关键字或关键短语通过半角逗号分割，一般越靠前权重越高。我们可以通过提示修饰符来认为修改权重。</p>
+<ul>
+<li>(tag)：增加权重5%</li>
+<li>[tag]：降低权重5%</li>
+<li>(tag: weight)：设置具体权重值</li>
+</ul>
+<h3 id="Stable-Diffusion资源列表"><a href="#Stable-Diffusion资源列表" class="headerlink" title="Stable Diffusion资源列表"></a>Stable Diffusion资源列表</h3><p>好的生成质量离不开好的模型，这里为大家列出了Stable Diffusion预训练模型资源的获取来源。</p>
+<h4 id="1-Hugging-Face"><a href="#1-Hugging-Face" class="headerlink" title="1.Hugging Face"></a>1.Hugging Face</h4><p><a href="https://huggingface.co/">Hugging Face</a>是一个专注于构建、训练和部署先进开源机器学习模型的网站。</p>
+<p>HuggingFace是Stable Diffusion模型创作的首选平台，目前平台上有270多个与Stable Diffusion相关的模型，用”Stable Diffusion”作为关键字就能搜到。<br> <img src="https://img-blog.csdnimg.cn/img_convert/6d0ae952095037d2731835a245e676d9.png" alt="hugging face Stable Diffusion models search results"></p>
+<h3 id="2-Civitai"><a href="#2-Civitai" class="headerlink" title="2. Civitai"></a>2. Civitai</h3><p><a href="https://civitai.com/">Civitai</a>是一个专为Stable Diffusion AI艺术模型设计的网站。该平台目前有来自250+创作者上传的1700个模型。这是迄今为止我所知的最大的AI模型库。你可以在上面分享自己的模型或生成作品。<img src="https://img-blog.csdnimg.cn/cab367f7c9bc4d84b3805aa5738def98.png#pic_center" alt="在这里插入图片描述"></p>
+<h3 id="3-Discord"><a href="#3-Discord" class="headerlink" title="3. Discord"></a>3. Discord</h3><p>在Stable Diffusion的Discord页面中有一个名为“Models-Embeddings”的专属频道，里面提供了很多可以免费下载的各种模型。<img src="https://img-blog.csdnimg.cn/img_convert/363a2d1497e04d3ecdc160b290e9d318.png#pic_center" alt="Models-embeddings Discord channel Discord page for Stable Diffusion"></p>
+]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>ai</tag>
       </tags>
   </entry>
   <entry>
@@ -675,6 +679,22 @@ width和height:高度和宽度,设置之后图片可能会失真。
       </categories>
       <tags>
         <tag>ai</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>text</title>
+    <url>/2023/03/19/text/</url>
+    <content><![CDATA[<h2 id="first-push"><a href="#first-push" class="headerlink" title="first push"></a>first push</h2><blockquote class="blockquote-center">
+<p>Something</p>
+
+</blockquote>
+
+]]></content>
+      <categories>
+        <category>Texting</category>
+      </categories>
+      <tags>
+        <tag>text</tag>
       </tags>
   </entry>
   <entry>
@@ -961,19 +981,79 @@ width和height:高度和宽度,设置之后图片可能会失真。
       </tags>
   </entry>
   <entry>
-    <title>text</title>
-    <url>/2023/03/19/text/</url>
-    <content><![CDATA[<h2 id="first-push"><a href="#first-push" class="headerlink" title="first push"></a>first push</h2><blockquote class="blockquote-center">
-<p>Something</p>
-
-</blockquote>
-
+    <title>马克思为什么是对的</title>
+    <url>/2023/04/20/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E5%AF%B9%E7%9A%84/</url>
+    <content><![CDATA[<p>2020 年的今天，作为一个理性的人，你很难不承认的一个事实是，排除表面上的政治、文化和社会差异，整个人类社会所运行的最基础、最核心的系统仍然是资本主义。无论各国政府依照自身形势运行的是这套系统的哪个变种，毫无疑问的是，他们都无法脱离这套系统而独立存在。然而，如果你认为这种资本主义的扩张和胜利就是不研究马克思的理由，你可能就大错特错了。</p>
+<p>事实上，早在近两个世纪前，马克思就预演了今天的这般局面。在共产党宣言中，马克思曾写道，那些渴望扩大自身产品市场的需要，将资产阶级追逐至全球的每个角落。资产阶级通过迅速改进所有的生产工具，通过极为便利的通讯手段，把所有的民族甚至是最野蛮的民族都吸引到文明社会中来。</p>
+<p>这些廉价产品的代价是打开中国城墙的重炮，他们迫使那些对外国人怀有强烈仇恨的民族投降，它迫使所有国家即使面临灭绝的危险，也要采取资产阶级的生产方式。它迫使他们把所谓的文明引进他们中间，也就是说使他们自己变成资产阶级。一句话，他根据自己的形象创造了一个世界。</p>
+<p>没错，马克思在 19 世纪中叶写下了对今天全球经济的展望。资本主义的扩张及其需要拥有越来越大的商品，全球市场的本质需求创造了资本主义社会。这些社会的进步取决于其主导阶级适应资本主义文化的程度，也就是说取决于其主导阶级如何通过为国内和全球消费生产商品来满足资本主义的需求的程度。今天，西方资本主义已经扩大并创造了一个全球化的资本主义世界，而消费品不仅是全球经济的命脉，更是全球通用的政治和文化货币。无论你是在中国、俄罗斯、日本，还是中东的阿拉伯世界，还是非洲大陆，你都无法逃避资本主义的罗网。然而，种种迹象告诉我们，无论是正在适应和赶超这套系统的中国，还是在这套系统里稳居老大的美国，都无法想当然地将这套系统视为所谓的历史的终结。</p>
+<p>在中国改革开放和入世所带来的资本蜜月期地大物博所带来的人口红利，新兴互联网产业所带来的巨量财富和新潮刺激似乎都无法服务这个世代的年轻人。资本的蜜月期被父辈中的佼佼者蚕食，留下的是高企的房价和沉重的生活成本。人口红利换来的是残酷的 996 机制和内卷社会。新兴互联网产业带来的是一地鸡毛的奶头乐和消费主义陷阱。在美国，剧烈的贫富分化带来了长期的种族和政党矛盾，消费主义的意识形态导致了透支消费的年轻一代。巨大的金融机器不断刺激着军工复合体在全球实行霸权统治以便收割财富。被资本家和全球产业链迁移所倾轧的锈带工人带来了史上最癫狂的总统。在全球范围看来，所有的主要国家的增长率都远低于上个世纪的 80 年代和 90 年代，怎么看，这都不是一个宜人的世界。</p>
+<p>巧的是，这些问题马克思也几乎一一预言到了。也正因为这些棘手且与我们息息相关的问题，在当下的世界里，研究马克思的思想才具有如此重要且紧迫的意义。马克思为什么是对的？欢迎你一起放下既有的偏见或崇拜，严肃的、务实的、带有好奇心的走进马克思，走进这个人类历史上最后一个思想上的全才。</p>
+<h4 id="人性论"><a href="#人性论" class="headerlink" title="人性论"></a>人性论</h4><p>作为一个哲学家，而非一个简单的经济学家或政治学家。马克思拥有一套完整的 theory of everything，而与许多其他哲学家一样，它所面临的第一个也是最决定性的问题就是，人到底是什么？换言之，什么是人性？在笛卡尔和柏拉图看来，人性的核心本质是理性。这个观点也深刻地影响了亚当斯密。</p>
+<p>在边沁看来，人性的本质是自由意志。在加缪看来，人性的本质是反抗，而在马克思看来，人性的本质其实是工作。没错，马克思对人性的判断非常的奇妙，也因此，马克思的人性观经常被误解。事实上，由于马克思对资本主义社会中的不平等现象持批判态度，许多没有研究过他的人反倒认为他反对工作这个概念，甚至有人将马克思的经济学观点与高福利制度下出现的消极怠工现象相联系。换言之，他们认为马克思只想让人过上平等而懒惰的生活。然而，这远非事实上，马克思对劳动有一个非常积极的看法，他认为个人的生产技能和能力是人类不可或缺的一部分。马克思认为，工作代表着人类最基础的能力，那就是一种参与自然和改变自然的能力，通过这个能力，个体才能表现出人类物种独有的高级意识。在德意志意识形态一书中，马克思赞美了那些独特的人性特征。他强调人类与动物的区别在于其意识，人类一旦开始产生自己的谋生手段，就开始将自己与动物区分开来，通过创造性的处理和改造他们的物质自然环境，以创造生计个人们形成集体，并间接地创造了他们的实际物质生活。</p>
+<p>个人在创造物质生活方面所表现出来的创造力，是整个人类在适应和利用任何特定地理环境的物质条件时所必然发生的，也是人类物种所独有的。参与这个改造自然的过程是马克思所说的人性的组成部分。我们不仅仅是简单的旅行，基本的身体功能，例如吃饭、睡觉、繁殖，我们也创造性的在我们的物理和社会环境中工作，并使之适应我们的需要。</p>
+<p>总之，马克思强调我们创造经济和社会存在的能力，例如食物、工具、娱乐是我们人类的不同之处。马克思详细阐述到人们生产生活资料的方式，首先取决于他们在现实生活中所发现并必须生产的实际生活资料的性质。这种生产方式不能简单的被认为是这些物质存在的再现。相反，生产方式是这些个体的一种明确的活动和创造形式，也是一种表达他们独特生活的明确形式。换言之，作为个体，人类通过生产表达自己的生活因此存在。因此，人们存在的本质与他们的生产及他们的生产方式和他们所生产的物品是一致的，是生产预先假定了个人之间的交往。</p>
+<p>所以我们能看到，在马克思眼里，生产各种生活资料以适应自然环境与社会环境是人类最本质的天性，是生产和工作决定了我们何以为人，也是从生产关系出发，人类才组建了属于我们的社会。也正因此，马克思所指认的资本主义社会的第一大原罪，也是最重要的原罪，既是对工作和生产直接决定人性的事物的异化。</p>
+<p>而在将生产确定为人性本质后，马克思进一步论述到，作为人类，我们是物质的存在，但由于生产合作的缘故，我们从一开始便不是孤立的存在。也因此，我们逐渐生发出了一种意识，它允许我们意识到我们与其他个体共同存在，并且我们通过产生和与其他个体互动来维持这种共同存在。同时，通过生产，我们不断创造一种与我们作为一个物种的身份相适应的存在方式。</p>
+<p>换言之，就如那句经典的，人是一切社会关系的总和所说，在马克思的定义里，人类的本质是由生产定义的，而人类的身份则是由基于生产关系而产生的。社会关系定义的人无法切割于社会环境而产生独立的本质或身份。马克思详细阐述道，在生产中，人们不仅对自然采取行动，而且还对彼此采取行动。他们只有通过某种方式的合作和相互交换他们的活动和所得，才能完成生产。为了生产，他们彼此必须进入明确的联系和关系，只有在一定的社会联系和关系中，他们才能改变自然，完成生产、生根发芽。这样个人的社会关系、生产的社会关系、变化的社会关系，都随着生产的物质手段、生产力的变化和发展而变化生产关系在总体上构成了所谓的社会关系和社会。具体的说就是处于历史发展的一定阶段的社会都会具有特殊的独特性质，如奴隶制的、封建的、资本的。</p>
+<p>纵观历史，个体始终存在于与其他个体的关系中，无论是在身体层面还是社会层面，正如马克思所指出的，这个世界上根本不存在鲁滨逊、探险家、定居者、移民并不孤单，他们总是通过集体努力来改变他们的周围环境，并在创造社会的过程中来适应他们的周围环境。社会是由真正的个体所组成的，他们的实践活动和他们生活的物质条件，包括他们发现的那些已经存在的事物和那些由他们的活动产生的事物一起组成了社会，意识不决定生活，而是生活决定的意识。真正活着的个体，他们的自我不是在任何荒诞的孤立和僵化中存在，而是在实际的经验上、可预见的发展过程中存在的。</p>
+<p>对于马克思来说，存在不是抽象的或哲学的东西，他希望关注的是存在的现实性，即我们所做的具体事情，以及日常现实里的生活条件和实践。因此，个人的物质存在，人们在日常生活中做什么，以及他们如何做才是最重要的。我们需要关注的是这种实践活动和生产关系。最终，马克思提出，在实践活动里进行生产的个人，终将以确定的方式进入确定的社会和政治关系。因此，如果我们想要理解社会中正在发生的事情，即社会结构和社会关系的本质。我们必须研究确定的真实的个人的生命过程，以及这些个人如何进行物质生产，并在确定的物质限制下积极活动。</p>
+<p>因此，马克思主义理论不仅是极其具有现实意义，更是随着时间的推演，尤其是随着生产关系的改变不断改变的 19 世纪和 20 世纪的马克思理论，尽管在资本主义的总体批判上给出了提纲挈领的框架，但如果奢望这套在重工业大工厂的全球资本化第一阶段提出的理论，可以在当下由消费品、轻工业和互联网行业为主、以消费自由、意识形态为主导的金融性全球化时代给出最准确的解答，则无异于是刻舟求剑。</p>
+<p>而这也是我希望先以马克思观察人类和社会的最基本方法论为开头的最主要原因，因为这套方法论的核心就在于体认生产、创造和社会关系基于人类本质的创造性运动所带来的不断流变。也只有先理解这个最基本的框架，我们才能更从容的走进马克思对资本主义的批判和颠覆中去，也才能避免及其致命的马克思的宗教式教条主义的局限和做题思维。</p>
+<h4 id="资本主义之性质"><a href="#资本主义之性质" class="headerlink" title="资本主义之性质"></a>资本主义之性质</h4><p>在马克思为自己的万物理论打下坚实的哲学基础之后，他自然地转向了自己更关心的事物，即所谓整体人类的生存状况，易即所谓的资本主义制度。首先，我们必须强调马克思想有极其浓烈的进步史观色彩和与之配套的哲学理念，这意味着它绝对不是任何意义上的复古主义者，尽管这种观点是目前世界上最流行的关于马克思主义的偏见之一。事实是，马克思从未幻想过资本主义之前的任何社会制度比资本主义更优越或者更平等。共产主义不是一种如伊甸园般存在于古早黄金时代的理想乡，而是一个更加先进、更加向前，也在过去的世界里根本不可能被实现的制度。</p>
+<p>本质上，马克思把历史理解为社会中物质或经济力量的逐步扩张，即社会在组织起物质生产方面所取得的进步。这套理论通常被称为历史唯物主义，因为马克思所关注的是社会的物质和经济条件，以及这些条件如何决定和改变社会结构和社会关系。同时，正如恩格斯所阐述的那样，唯物主义的历史观始于这样一个命题，既维持人类生命的手段的生产和仅次于生产的物品的交换，是所有社会结构的基础。在历史上发生过的每一个社会中，财富的分配方式和社会划分阶级和秩序的方式取决于我们生产什么、生产方式以及产品的交换方式。</p>
+<p>对马克思来说，历史并不是一帆风顺的。每一个历史经济时代，如奴隶社会、封建制度、资本主义，都有自己独特的紧张或矛盾关系。只有当这些矛盾以及产生这些矛盾的社会力量和关系通过社会革命暴露和破裂时，变革才会出现。马克思的历史观强调，在特定的历史时刻，人类创造的经济条件产生了特定的经济和社会实践，这些做法激励特征的群体，挑战他们生存的不平等条件，这为新的物质经济条件和社会关系的发展开辟了新道路。基于此，马克思认为，历史变化及社会物质条件的变化和经济社会关系的组织方式的变化产生于现有经济和社会安排所带来的矛盾。因此，在法国大革命中，资产阶级推翻了封建君主和贵族的专制制度，建立了以民主原则和资本主义为基础的、相对前者而言无比进步的经济和社会制度。换言之，马克思认为资本主义制度相比于奴隶制、封建制、皇权制等各种制度而言，已经是一套极其先进、改良和平等的制度了。对资本主义的批判是对历史的发展和探索，而非对原始乌托邦的复古幻梦。批判并不源自于资本主义没有过去的制度好，而源自于他和所有过去的制度一样，尽管有着往日的辉煌，却走到尽头了。</p>
+<p>事实上，马克思曾高度评价资本主义取得的经济和技术进步，并承认它是对以前的生产方式的一种推进。但他强调，资本主义本质上是一种商品生产制度，其根本目的是生产商品，让商品在市场上的销售产生资本，便使资本家获得利润。因此，在资本主义社会，资本和利润的生产是首要目标。一切更人性的事物都要让位于利润的生产，这意味着个人之间的联系和情感纯粹受到经济利益的制约。资本主义需要大量的自愿出售自身劳动力的个人，而这些工资劳动者与资本家的唯一关联则是他们能够被雇佣并为资本家创造利润。</p>
+<p>马克思认为，这就是资本主义社会关系与此前的所有制度最大的区别，即它是一个经济性大于政治性的制度。在罗马社会，奴隶制是一种政治上的社会范式。奴隶和主人之间明显存在着不平等。然而，尽管存在这种不平等，奴隶主对他们奴隶的福利还是有一定的承诺，封建领主对他们的农奴也是如此。即使这些承诺主要是出于自身利益，例如，封建领主在饥荒时期并没有抛弃农奴，而且仍然感到有义务养活农奴，即使农奴暂时无法为庄园产生粮食。</p>
+<p>相反，在资本主义制度下，当经济衰退或利润下降时，工厂主和企业会解雇许多工人，他们会裁员和缩减开支，如此生活 30 年，直到大厦崩塌。在这个时代不是特例，而是必然的现状。相信了解或经历过东北下岗潮的人对此有更深的理解。因此，尽管一个特定的资本家可能会有任何个人上的情感的牵绊或遗憾，但他有绝对的义务、权力甚至道德优势来对一个工人的就业进行删减和消灭。</p>
+<p>而当华尔街或伦敦金融城金融家以及各种卫视经济学家对这些事情发表意见时，他们常说这就是经济。事实上，通过使用类似这就是经济这样的术语或俚语。人们开始普遍将资本主义及其金融机构和过程抽象化。这种语言使我们认为经济过程是与有权势的个人的集体经济和政治决策相分离或超出控制的事物，而不是资本主义结构和社会关系的产物。换言之，这种语言产生的意识形态告诉我们，这些事情超出了具体个人的控制，且永远不能被改变。更可悲的是，大多数人根本无法确定这到底是真是假。</p>
+<p>的确，资本主义作为一种利润生产和积累体系，它要求工厂所有者或公司相对于其他公司保持经济竞争力，从而削减生产成本，包括雇员，以保持主要盈利能力和经济生存能力。但这是否意味着具体的个人在其中就没有任何的话语权，或者说所谓的话语权被剥夺究竟是现实还是遮掩特权阶级不作为的遮羞布，甚至是禁止一部分特权阶级背叛其阶级属性，向底层展现同情的无形铁拳。</p>
+<p>事实上，和马克思同时期的另一位著名德国社会学家奇梅尔就讨论过这个问题。和马克思类似，格奥尔格·奇美尔的研究核心在于货币与经济交换在现代社会的中心地位，以及货币和经济交换如何塑造现代社会的特定社会关系。对于奇美尔来说，货币交易反映并强化了现代社会关系的冷漠、流动性和情感上的脱离，以及对效用价值的强调与对个人独特个性特征的冷漠。他以卖淫为例，说明了在货币交换关系中更普遍存在的精心设计的、客观的超然态度。进一步延伸奇美尔认为，雇佣和解雇员工在现代社会本质上是卖淫关系的延伸。奇梅尔认为，金钱交易允许一种不留痕迹的纯粹的短暂关系，因为金钱不会建立任何联系。金钱服务于大多数事物，最终完全是为了贪婪的快乐，拒绝任何超越感官满足的关系的延续。金钱与人完全分离，结束任何进一步的分歧。当一个人付了钱，就完全逃离了一段社会关系，就像一个人在得到满足之后就和继女结束了一样。</p>
+<p>在所有的人际关系中，卖淫也许是两个人相互降低到经济是手段的地位的最重要的情况。金钱只关心所有人的共同点，也就是说交换价值，将所有的质量和个性降低到最纯粹的数量水平，而这也就是现代资本主义社会劳工关系的核心。我们每个人本质上都在从事卖淫工作。</p>
+<h4 id="劳动分工"><a href="#劳动分工" class="headerlink" title="劳动分工"></a>劳动分工</h4><p>没错，就如齐梅尔所说，在资本主义社会，资本家只关心工人的使用价值，即他们可以用来生产资本和利润的程度。对此，马克思阐述道，资本家购买劳动力是为了使用它。劳动力的购买者通过让劳动力的销售者在有用的事物上工作来消费这些劳动力。因此，一个人的使用价值在多大程度上转化为资本，转化为利润，成为决定资本主义社会中社会关系的标准。</p>
+<p>个人之间的联系是建立在赤裸裸的自我利益的基础上的情感和荣誉，则被这种近乎唯一性的价值所替代。然而，资本主义最大的错觉就是，与历史上的其他不平等制度相比，在资本主义制度下，工人至少是自由的，他们至少不再为主人所拥有，而这常常被视作是进步的标志。</p>
+<p>当然，在事实上，各种变形的奴隶制始终是资本主义扩张不可或缺的组成部分。无论是泛美洲大陆的种族奴隶制度，还是各种公然违背本国劳动法规的加班制度，从任何程度上来说，各种变形的奴隶制到今天都并未彻底灭绝，而是更换了各种福报的外衣，以全新的生态活了下来。毕竟，就如同马克思所说的那样，努力至最坏的地方就在于，你无法随意辞退奴隶，而你却可以随时辞退工人。</p>
+<p>然而，就算抛开各种变相的努力制度所带来的糟糕劳工环境不谈，我们就假设一切劳动力都获得了资本主义法律所规定的对待。但即使这样，我们也会发现，所有名为自有的工人仍然必须在市场上畸形的出售他们的劳动力。他们必须把自己变成可以被买卖的商品才能获得生存的基本条件，同时他们也必须无时不刻的出售他们。整个资本主义体系就建立在这种劳动力商品化的基础上。工资劳动者在市场上交换和交易，他们的市场价值和其他商品一样是有价格的。尽管有新工人不像奴隶和农奴那样，他们可以自由的离开某个雇主，但这种自由总是受到限制。劳动力的流动表面上看起来是自由的，但哪怕是这种自由，实际上是资本主义所要求和强制的。在自由这张硬币的反面写的是， we can fire you at any moment。因此，资本主义制度下的自由实际上是一种幻觉，它实际上是一种强制性的劳动剥削制度。</p>
+<p>对此，马克思解释道，工人随时可以离开他雇佣自己的资本家，而资本家则随时可以在他认为合适的时候解雇他。只要他不再为资本家创造任何利润，或者不再创造预期的利润。但是，以出售劳动力为唯一生计来源的工人却不能离开整个购买他的劳动力的阶级及资产阶级。他不属于这个或那个资本家，而是属于资本家阶级，他的工作就是把自己处理掉，也就是在这个资本家阶级中找一个买主。因此，对于马克思来说，奴隶制是直接强迫劳动，而雇佣劳动则是间接强迫劳动。在资本主义制度下，工人有义务向未来的雇主展示他们的劳动力，即一种内涵与商品性的人的价值。这些劳动者必须将自己完整的人格切的零碎，而后出售自己。他们越像一个商品，他们就越能获得好的优待。</p>
+<p>基于此，马克思进一步提出，资本主义的工作完全拆分和分裂了工作和生活的一致性和平衡感。工作或者说本该被称为创作的活动，如今成为了出售的商品，既无法带来愉悦，也无法带来意义，无论是除草、纺纱、装修，亦或是买卖股票、设计程序、开展会议，我们不会将其称之为生活或者说任何生命的表现。相反，当这些活动结束后，我们才称我们的生活开始了。</p>
+<p>自此，我们可以看出，在资本主义制度下，工作失去了作为反映人类更高意识的创造性和合作性活动的潜力。相反，人的价值开始只取决于他在资本主义利润生产中的作用。同时，我们也不断被我们牺牲生命所换来的事物基于各种消费品和所谓的经济自由的价值所迷惑。而事实上，这恰恰是资本主义最大的骗局。因为正如马克思告诉我们的那样，我们信奉我们所生活的资本主义时代的幻想，即他对自由、平等、金钱和消费的肯定和颂扬我们自愿的、自由的出售自己，因为我们相信我们正在通过自己的特定行为获利。</p>
+<p>然而，根据马克思的定义，工资劳动者本质上是在历史上产生的错觉下工作。 即认为资本主义是一种自然的经济制度，而不是一种属于特定历史阶段的人为创造出来的经济制度，且这种制度有利于一些具有特定禀赋或渠道的个体。因此，在资本主义制度下，雇佣劳动者无法真正意识到他们的经济利益与资本主义的利益之间的矛盾。他们看不出他们的客观阶级地位和经济利益与资本家的阶级地位和经济利益是相矛盾的。</p>
+<p>在他们看来，资本主义是自然的，是必然的，甚至是完美的，而这恰恰是资本主义制度最大的魔力之一，它不仅不让人们感受到自己被异化，相反，他在一个普遍趣味的世界里将异化赋美，并让它成为了这个世界最重要的伦理准则。人们开始将自身被异化和扭曲的程度视为一种军功章，大家不仅在比拼自己睡得有多少，加班有多，甚至开始比拼谁在职场中更专业、更流程、更大厂范儿。与此，某知名企业家兼农民的儿子炒掉正在怀孕的女高管而被业内所称道，也算不上是什么多怪事了。</p>
+<h4 id="四种异化"><a href="#四种异化" class="headerlink" title="四种异化"></a>四种异化</h4><p>除了劳动力的商品化之外，劳动分工或者说职业专业化是现代资本主义社会的第二个显性特征，并且实际上随着时间的推移，自马克思的时代开始逐渐加剧，亚当斯密，人类历史上最重要的经济学家和哲学家之一，同时也是自由市场资本主义之父。强调基于职业专业化和劳动分工的交换所带来的物质优势。他认为在资本主义制度下，劳动分工将会把各个部门，如农业、制造业、服务业和工人分割成越来越专业化的离散领域，并带来更高的效率和水准。因此，在现实中，资本主义生产的组织，无论是在工厂、建筑工地还是办公室，都必须确保工人在创造剩余价值、资本主义利润方面的效用或效率。因此，工人的任务被分成许多细小的部分，因此，每个人都要对生产过程的一个非常具体的方面负责。</p>
+<p>任何工业化国家都存在着职业的多样性，这突出表明要在当今的经济中谋生，工人必须专门从事高度专业化且确定的活动。随便翻一页任一国家人口普查的职业编码，我们就能看到以下及其专业化的工作，比如飞机清洁工、飞机通讯员、飞机设计师、飞机电工、飞机引擎专家、飞机仪表测试员、飞机布局工人、飞机日志管理员、飞机机械师、飞机金属工匠、飞机油漆工、飞机铆工、飞机压力分析师等等。</p>
+<p>没错，我们快速流动的装配线生产与商品制造，无论是汽车、食品还是特定的服务，都集中体现了资本主义制度下的劳动分工。人们开始相信，流水线生产给每个工人或团队分配特定的任务，对于商品的顺利生产和不间断运作至关重要。当这种观念运行了近 200 年后，尽管大量新兴研究数据都表明，劳动分工制度在分配社会中需要完成的许多复杂工作的责任和专业知识，以及确保劳动力被有效的用于生产满足消费者需求所需的大量商品。这一方面在后重工业时代已经不再关键。尽管无数专家提出以人工智能为首的新机械化已经完全可以取代过分专业化的社会制度，尽管无数人被这套制度所折磨，尽管我们最优秀的科学家都诞生于全科教育和通识教育的时代，我们也倾向于无视这些声音，沉浸在专业化的宗教里不能自拔，并自诩匠人。于斯，我们不得不钦佩马克思，他早在百余年前就将劳动分工看作是对个人和社会的异化与非人化，并终将被科技取代和淘汰。诚如马克思所说，个人有能力做许多事情，有许多创造的兴趣和爱好。但是，当劳动分工成为一种被资本主义具体化和客观化的结构，尤其是一种无法违逆的结构后，人类的经济系统开始将人类简化为各自在资本生产中具有最大使用价值的专门活动的工具。</p>
+<p>对此，马克思说道，一旦劳动被分配，每个人都有一个独特的活动领域，这是强加给他的，他无法逃脱。他是一个猎人，一个渔夫，一个牧羊人，或者一个批评家。如果他不想失去他的谋生手段，他必须保持这样。而在共产主义社会里，没有人有一个独特的活动领域，但每个人都可以在他希望的任何一个分支上成就事业。它将使我有可能在今天和明天做一件不同的事，早上打猎，下午捕鱼，晚上放牛，晚饭后批评，而从来不必成为猎人、渔夫、牧羊人或批评家。</p>
+<p>正因为人类原本具有的潜力是如此的多样化和茂盛，马克思认为，细节化的职业分工剥夺了人类这项本性，使工人们沦为仅具有交换和使用价值的工具，并将本应释放人类多方面创造力的劳动异化。在此，马克思进一步论证到，有四种异化是资本主义所固有的。异化的第一步来自于生产者与其所生产的产品的脱离。在资本主义私有制度下，工人的劳动和劳动产品在所有权上外在于他们，因为他们的劳动从一开始就是不属于他们自己的，他无法真正获得和分配他所创造的事物。换言之，当产品被生产出来之后，他便在法律上只属于销售产品的雇主和购买产品的消费者。</p>
+<p>工人劳动的产品变成了一种供他人在市场上处置的物品，他独立的存在于他之外，成为了他所不熟悉的东西，甚至他演变和生发了一种与其创造者对抗的力量及资本，它便不仅是陌生，而且更是敌对于工人的存在。异化的第二步则源于早在生产过程中，工人就已经被异化了。生产的过程是马克思所说的主动的异化，即工人自己的身体和精神能量被转向反对他并造成痛苦的体验。因为劳动本身并不是工人的目的，也不是他们自由选择的结果，而是被其他人所强迫和实施的。本质上，雇佣劳动是在他人的支配、胁迫和束缚下从事的服务活动。简而言之，公司劳动者并不决定他们生产什么或如何生产，他们只是生产过程中的对象。正如那些在餐厅工作过的人所知道的，你的日常工作安排和你所服务的桌子。顾客的数量不是你自发的决定的，而是你的雇主决定的，因为客户提供服务的速度也不是你能决定的。每个雇主都会制定你必须遵守的规则和标准，不管你一天可能有多少精力，如果你能做，你就做不了，你就滚蛋。</p>
+<p>事实上，在资本社会里，上层越剥削，底层的经济情况越差，他们就更愿意从事更痛苦的工作。因此，哪怕有个别个体选择放弃某份工作，无论他多痛苦，都有人愿意接替他。换言之，剥削或者说，加重工作负担，在不考虑任何严肃的工人抗议的情况下，对资本家反而是正向循环。只要资本阶级联手加重工作负担便减少，社会救济，就会有源源不断的韭菜送上门来给自己打工。因此，工人们只能竞相异化自己，无论是选择无偿加班成为 996 奋斗逼，还是拍老板的马屁做个打工人，他们必须成为那个最异化的人，才能留下来。此时，异化已经成为了一项特权，你不仅需要被剥削，我们还得请你充满感激的被剥削。而不幸的是，马克思百余年前的预言在这片最爱他的土地上成为了最真实的存在。总体而言，马克思把这个异化过程称为劳动的客体化和对象化。工人必须不断生产越来越多的与他们的人生和兴趣毫无关系的产品，必将这种额外的工作的价值回报给资本家，而不是他们自己。因此，工人生产的商品越多，它不仅将在物质上变得贫瘠，在精神上，它也将被剥夺一切的创造力和能动性，成为只会听取命令的工具人。而这在马克思对人性的定义中，是对人生而为人的第一原则，即创造性的参与和改变自然与社会的关系。</p>
+<p>最大的讽刺和背叛。这种机械的重复和言不由衷心不由心的生活，是资本主义工业化体制下大多数人类的现实状况。更要命的是，这种情况并未随着科技的提高而改善。在互联网大厂， 996 肝命只能听上司的命令，修改几千万条代码中某一条所出现的 bug 的员工，在本质上真的和 7 零年代国营纺织厂里弹棉花修机器的女工有任何区别吗？我们所处在的这个时代，是一个庞杂到难以洞悉本质的时代，互联网所带来的新兴行业和全球化资本体系的新兴红利，都带给了人们一个假象，那就是仿佛你可以在一片全新的土壤里 start from the scratch，去创造一个完全不存在的新鲜且伟大的事物。</p>
+<p>乔布斯、比尔盖茨、马云、扎克伯格他们的故事都为我们这一代人营造了这个幻象，一个劳动者与自我造物的完美融合，如艺术般精密且优雅的存在着的幻象，乔布斯是其中最杰出的代表。然而在互联网兴盛了 30 年之后，事实究竟是什么呢？事实是，这一波新兴的浪潮与资本主义前 300 年，每一波浪潮都没有本质的差别。在这个体制下，只有那些哪怕在资本阶级里都是最顶尖的人，才能逃离被自己工作所异化的命运。只有他们能不被隔离于自己的生产过程和成果之外，他们不仅能决定自己生产什么，在哪里生产，怎么生产，还能牢牢的把成果抓在自己的手里。而大多数人都是被命运碾过之后，都被训练好不发出一丝声响的螺丝钉。</p>
+<p>第三，工作中的异化并不仅仅作用于工作这一个层面之上。在马克思看来，资本主义生产过程通过将工人降低为产品生产中具有使用价值的对象，也就使他们在本质上远离了他们的物种的存在，即远离了区分人类与动物创造力和更高的意识，而成为了彻底的游魂和行尸走肉。如今所述，在马克思看来，工作是一项极其崇高的区分人与动物的、发挥人独有的伟大创造力和自我意识的事业。然而，工资劳动就强迫我们将工作仅仅作为我们物质存在的一种手段，而不是通过工作来利用我们的物质的存在来实现我们的人性，并从事我们人类能够自由选择的物质和精神活动。因此，虽然原则上工作可以是我们自我的创造性延伸。如马克思所言，生产型活动是我们这个物种的生活，它是生命的产物，它在资本主义制度下，生命本身只是一种生命的手段。换言之，工作本身应该是活着的目的，而此时却成为了活着的工具。这是一个令人作呕的莫比乌斯环，他暗示着，我们活着的目的也仅仅是为了活着，而非为了更高的事物。</p>
+<p>异化劳动剥离了人类固有的意义和表达人类的创造力的潜力。在这个过程中，人类基本上沦为动物一样的地位，他们被异化与区分，他们作为人类的特征本身脱节。对此，马克思写道，事实是，劳动是外在于工人的，它不属于它的本质存在。因此，在他的工作中，他不能肯定自己而必须否定自己。他进而因感受不到满足而不快乐。他不能自由地发展他的身体和精神能量，这压抑着他的身体，毁灭他的心灵。它不是一种本质需求的满足，而仅仅是满足其外在需求的一种手段。</p>
+<p>人不再感到自己在任何事情上自由活动，除了它的动物功能，吃喝升值，或者最多在他的住所和打扮。在他的人类功能中，他感到自己是除了动物以外什么都不是。人变成了动物。当然，吃喝生育也是人类真正的功能，但是我们已经把它从所有其他人类活动的范围中分离出来，并把它们变成唯一和最终的目的，于是我们也成为了动物。</p>
+<p>最后，马克思提出最大的异化乃是人与人之间的异化。人类是一个社会物种，与他人相关，并且互相合作，烙印在我们的基因里。然而，资本主义制造了个体之间的人与人之间的隔阂，工作成为个人生活的目的，而不是个人与他人一起生活的手段。工人之间相互异化的一种方式是工作场所的竞争性。谁将成为本月的最佳雇员，谁会得到奖金？谁将获得最有价值奖，这些都是竞争性的奖项，有赢家和输家。因此，工人之间相互竞争，他们存在于所有的工作部门。从快餐店到银行业，获得奖励的员工将是在一定时间间隔内撑产率最高，既创造了最多剩余价值的员工。</p>
+<p>因此，尽管企业似乎通过给员工奖金和奖励以表示他们对员工很友好，但从马克思主义的角度来看，这些激励措施只不过是另一种资本主义战略，目的是确保员工为各自的雇主和整个资本家阶级创造越来越多的剩余价值和利润，并保证工人们向彼此发动无休止的战争。此外，资本主义生产结构使得就业工人的生计不断受到其他潜在可雇佣对象的威胁，例如季结新工作、失业潮、移民潮等等。然而，资本家总是可以获得新的劳动力，现有的雇员随时可以被解雇，由其他人所取代。此外，工人之间的竞争是全球化的，美国或英国的工人被剥夺了对中国血汗工厂同阶级工人的同情，他们认为这些本质上和他们处在同一阶级的人破坏了他们自己持续的就业。通过这种方式，资本主义可以说是几乎完美的。在工人联盟问题上抑制了马克思所设想的无产阶级意识的发展，而可悲的是，这在可见的未来几乎是不可逆的，而这也构成了资本主义无法被推翻的最大堡垒之一。</p>
+<h4 id="剩余价值理论"><a href="#剩余价值理论" class="headerlink" title="剩余价值理论"></a>剩余价值理论</h4><p>在分析完异化现象后，问题随即来了。如果异化，那么不好，为什么它还存在？或者说，在工作的异化中，到底是谁得利了？答案是那些掌握了剩余价值的人得利了。这里就牵扯到马克思经济学中最重要的理论之一，剩余价值理论。马克思提出了一个提纲挈领的问题，如果说资本主义的最底层逻辑是利润的积累，那么这种利润必然来自某个地方。与其他经济学家不同，马克思认为，即使存在创新，在历史的每一个 fixed point，经济存量都是固定的，因此利润必须来自于剩余价值，即被剥削的价值。而我们想要理解剩余价值理论，就先要明确一个概念，那就是实际生产成本。的确供求关系影响着一个特定的工人，或者一群或者一个阶级的工人在特定的时间和特定的地点能赚多少钱，经济状况如何以及是否有合格的工人、供应不足或过剩市场对待特定商品的需求，都会影响工人们从他们的劳动力中获得多少钱。马克思在确定工资时承认了这些因素，但他也强调了一种更基本的确定工资的方法。实际生产成本马克思认为，劳动力的价格将取决于生产成本，取决于生产这种商品的劳动力所需的劳动时间。那么，劳动力的生产成本是多少？这是维持工人作为一个工人和发展它成为一个工人所需的成本。因此，它的劳动力价格将由必要的生存质量的价格决定。另一个考虑，在计算简单劳动力的生产成本时，必须包括再生产成本，即使工人群体能够增加，并用新的劳动力取代疲惫不堪的工人。也就是说，工人的折旧与机器的折旧一样考虑在内。所以，简单劳动力的生产成本等于工人的生存和再生产成本。这种生存和再生产的代价构成了工资。这样确定的工资成为最低工资。换句话说，除非必要资本主义则是寻求向工人支付最低限度的必要费用。只要这份工资能够确保工人作为工人的物质生活以及它的社会存在，并使其能够繁衍下一代工人。</p>
+<p>今天在美国，联邦政府规定的最低工资是每小时 7. 25 美元，这个数字还不到一个大批菜饼的价格。而在一些国家和地区，最低工资标准甚至很难被恰当的践行。工资成本是资本家在繁衍当前和未来的工人时所需要的必要成本。这些工人可以用于创造资本和利润的工作。作为这些工资的回报，资本家得到工人的生产活动及创造力。然而，工人超越了他所被支付的成本，进而开始生产资本，这种资本则具有超过资本家所支付的工人的生产成本的价值，因此，我们称其为剩余价值。</p>
+<p>马克思把剩余价值解释为一个工人的交换价值。记，一个工人的工资，或者说是工人劳动的市场价值和它的实际使用价值之间的区别在于，日常维护劳动力的成本和日常工作所得是两个完全不同的东西，前者决定了劳动力的交换价值，后者决定了它的使用价值。因此，劳动力的价值和劳动力在劳动过程中创造的价值是两个完全不同的数量。</p>
+<p>这两种价值的差别正是资本家在购买劳动历史所追求的，真正影响它的是这种商品所具有的具体使用价值。它不仅是价值的来源，而且比商品及劳动力本身更有价值，这是资本家对劳动力的特殊要求。在这种交易中，资本家按照商品交换的永恒法则形式，劳动力的出卖者同其他任何商品的出卖者一样，实现了其交换价值并获得了其使用价值的部分。</p>
+<p>劳动力的使用价值几乎不属于败方，就像石油出售后的使用价值不属于出售者一样。基于剩余价值理论，工人的报酬、他们的收入、市场价值或交换价值和他们所应得的报酬及他们的劳动力使用价值。他们在创造资本利润方面的用处是两个完全不同的东西，资本家支付 20 小时劳动力的交换价值，即工资，但获得 40 小时等于劳动力的使用价值，这之间的差额就是利润。</p>
+<p>对于工人来说，为了维持生活和身体上维持自己的工作，他们可能只需要每天工作 4 小时，但他们每天必须工作 8 小时。一个工人每天可能需要准备和烹饪 12 份盖饭来换取餐馆老板付给他的工资，但事实上，他每天必须做 48 份盖饭。工人额外工作的时间，除去他对资本家造成的生产成本，就是资本家获得的剩余价值。因此，生产率越高的工人，他们为资本家创造的剩余价值就越多，进而他们劳动力成本比例对资本家来说就越便宜。正如马克思所说，工人创造的财富越多，他们就越贫穷。</p>
+<p>工人创造的商品越多，他们就越便宜。工人对资本家的使用价值增加了，但他们的交换价值既维持他们作为工人的成本与他们的使用价值成反比的减少了，此即是资本主义制度下阶级产生的最大经济基础。</p>
+<h4 id="我们为什么不反抗"><a href="#我们为什么不反抗" class="headerlink" title="我们为什么不反抗"></a>我们为什么不反抗</h4><p>在马克思看来，资本家和工人客观上占据了与资本有关的不同地位，这产生了马克思认为资本主义固有的对立立场和两极化的阶级结构。因此，当政治家们把工人的生产力和就业机会的创造视为经济强劲的标志时，马克思提供了一个不同的观点。他认为，产业越繁荣，工人的数量就越多，资本的支配地位延伸到更多的个人。对于马克思来说，增加就业和提高生产力即使伴随着工资的增加，意味着从更多的工人中提取更多的剩余劳动力，为资产阶级提供更多的财富。结果是资本家和工人之间的经济和社会鸿沟扩大了。</p>
+<p>马克思认为，工资上涨并不能改变资本主义固有的结构性不平等，即资本家和工人之间的不平等也不能削弱资本家获得资本的特权。这种特权可以在企业高管薪酬中看到。这种不平等源于这样一个事实，即一个有且只有劳动能力并且不计较任何思考的阶级的存在，是资本的必要前提。因此，工人阶级增长和扩大敌对的力量也会增长，那就是不属于工人并支配着工人的财富。这种扩大越快，就越有利于增加资产阶级的财富，扩大资本的力量。</p>
+<p>工人所处的枷锁在马克思时代更加生动的显现出来。他写作的时候，工厂条件不安全，不卫生，童工是家常便饭。在人口越来越多的城市的街道和住房里，极端贫困的现象随处可见。在 20 世纪，尽管许多工作场所仍然存在危险的工作条件，特别是在工厂和矿山，但大多数经济部门的工作条件都有所改善，而这也构成了马克思主义在理论上最大的一个危机，即他所号召的群众基础发生了改变。在当下，虽然我们前文论述了诸多马克思对资本主义的批判，而其中绝大一部分都成为了现实。我们仍然无法回答一个问题，那就是为什么马克思严重的革命主力，即工资劳动者似乎极度满足于现状，为什么明知说的剥削工人们仍然不要命般努力工作？为什么我们今天没有看到阶级对立成为社会前进或改良的主要动力？甚至为什么大多数人仍然嘴上讨厌内卷，自己却情愿加班到深夜争当奋斗逼？这是很多人今天感到疑惑的一点。</p>
+<p>许多人嘴上说着马克思是对的，而在现实生活中却仍然践行与之截然相反的方法论，为什么？原因有很多，在下一章，我们将从意识形态、消费主义、剥削认知和历史理论等四个方面更详细的分析这个问题。但在这里，我认为有必要在经济层面开一个先声，给大家一个基本的框架。首先，二战后教育的大规模扩张、服务行业的扩张、职业流动性以及不断壮大的中产阶级，使西方社会的大部分人口，尤其是美国的大部分人都能享受到相对富裕的消费生活方式，这让他们脱离了马克思时期极其危难和不稳定的受挫状态。从某种程度上来说，这迫使了哪怕最激进的马克思主义者都不得不对资本主义体制采取绥靖政策。</p>
+<p>第二，即使在工人阶级中，越来越多的雇佣工人家庭也开始并不完全依赖工资维持生计。在今天，一半的美国家庭和大约 1&#x2F; 4 的英国家庭拥有投资股票。在上世纪末，资本主义从家庭或个人公司所有制向股东社会转变，这代表着公司股票在证券交易所公开上市成为了企业的潮流，也意味着许多公司劳动者通过个人投资或与工作有关的养老金投资，在整个资本主义体系中开始拥有了特定的经济利益。尽管公然拥有的股份比公司高管少，但他们的股份可以在有薪工人的总体经济资产中占很大比例，从而使他们高度保护公司利益，让他们与这个经济体的积极运作捆绑在一起。简而言之，许多领工资的无产阶级在当下都或多或少地成为了资本的拥有者。因此，资本主义者和雇佣工人之间的界限不像马克思时代和 20 世纪的大部分时间那样明确，那时资本家和工人与财产和资本的关系比较直截了当，而在当下，我们都向着拥有股票和金融资本的社会转变。</p>
+<p>而这意味着，尽管工人们可以会抱怨公司高管获得的超高工资和福利，但他们也敏锐地意识到，某家公司的财富和总体经济增长将直接影响到他们的财富以及他们的股票或养老基金的价值。因此，以股票和基金投资为代表的社会泛金融化使工人在资本的生产和再生产中拥有特殊的利益，也让阶级间的矛盾不再明确。</p>
+<p>第三，国家干预不仅通过扶持金融机构和市场来抑制资本主义危机的一些最严重的影响，还通过缓冲个人对资本主义利润逻辑的抵抗，例如提供失业救济。因此，当代国家在资本主义社会中的作用比马克思所设想的更为积极，国家政府一方面允许其人民长期维持经济不平等的现状和在某些特定领域，比如房地产和工作时间上的恶劣条件，却又同时似乎站在公薪阶层一边，所以政治家们经常表示支持帮助辛勤工作的普通个人的经济政策。</p>
+<p>然而，这些政策最终导向的还是资本主义制度下的不平等。同时，国家有时也会推出一些被冠以人民富豪之称的象征性人物或吉祥物，来为贫富差距的巨大做上道德辩护。所有这些对资本主义的适应都有助于工人接受经济和社会的不平等。当然，除此之外，劳动者接受现状的另一个原因或许也是最强有力的原因，是他们沉浸在一个掩盖了不平等的意识形态和文化体系中，他们让资本主义变得顺其自然，无可挑剔，而这也就是我们下一章的内容。下一章将是马克思想错了吗？马克思主义的挑战与危机。</p>
 ]]></content>
       <categories>
-        <category>Texting</category>
+        <category>Notes</category>
       </categories>
       <tags>
-        <tag>text</tag>
+        <tag>经济</tag>
       </tags>
   </entry>
 </search>
