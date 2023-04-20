@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>ATM</title>
+    <url>/2023/03/20/ATM/</url>
+    <content><![CDATA[<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// A T M </span></span><br><span class="line">        <span class="keyword">var</span> money = <span class="number">100</span>;</span><br><span class="line">        <span class="keyword">var</span> price = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (num != <span class="number">4</span>) &#123;</span><br><span class="line">            <span class="keyword">var</span> num = <span class="title function_">prompt</span>(<span class="string">&#x27;请输入你要的操作:\n1.存钱\n2.取钱\n3.显示余额\n4.退出&#x27;</span>)</span><br><span class="line">            <span class="keyword">switch</span> (num) &#123;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;1&#x27;</span>:</span><br><span class="line">                    price = <span class="title function_">prompt</span>(<span class="string">&#x27;输入要存的钱数；&#x27;</span>);</span><br><span class="line">                    money = money + <span class="built_in">parseFloat</span>(price);</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额；&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;2&#x27;</span>:</span><br><span class="line">                    price = <span class="title function_">prompt</span>(<span class="string">&#x27;输入你要取出的钱: &#x27;</span>);</span><br><span class="line">                    money = money - <span class="built_in">parseFloat</span>(price);</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;3&#x27;</span>:</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额：&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;4&#x27;</span>:</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;正在退出...&#x27;</span>)</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>demo</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CSS基础</title>
     <url>/2023/03/21/CSS%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<h3 id="一、初识CSS"><a href="#一、初识CSS" class="headerlink" title="一、初识CSS"></a>一、初识CSS</h3><h4 id="1-1-CSS是什么"><a href="#1-1-CSS是什么" class="headerlink" title="1.1 CSS是什么"></a>1.1 CSS是什么</h4><pre><code>CSS：Cascading Style Sheet 层叠级联样式表
@@ -91,285 +103,6 @@ CSS的优势：
       </tags>
   </entry>
   <entry>
-    <title>ATM</title>
-    <url>/2023/03/20/ATM/</url>
-    <content><![CDATA[<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// A T M </span></span><br><span class="line">        <span class="keyword">var</span> money = <span class="number">100</span>;</span><br><span class="line">        <span class="keyword">var</span> price = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (num != <span class="number">4</span>) &#123;</span><br><span class="line">            <span class="keyword">var</span> num = <span class="title function_">prompt</span>(<span class="string">&#x27;请输入你要的操作:\n1.存钱\n2.取钱\n3.显示余额\n4.退出&#x27;</span>)</span><br><span class="line">            <span class="keyword">switch</span> (num) &#123;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;1&#x27;</span>:</span><br><span class="line">                    price = <span class="title function_">prompt</span>(<span class="string">&#x27;输入要存的钱数；&#x27;</span>);</span><br><span class="line">                    money = money + <span class="built_in">parseFloat</span>(price);</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额；&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;2&#x27;</span>:</span><br><span class="line">                    price = <span class="title function_">prompt</span>(<span class="string">&#x27;输入你要取出的钱: &#x27;</span>);</span><br><span class="line">                    money = money - <span class="built_in">parseFloat</span>(price);</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;3&#x27;</span>:</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;您的余额：&#x27;</span> + money);</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;4&#x27;</span>:</span><br><span class="line">                    <span class="title function_">alert</span>(<span class="string">&#x27;正在退出...&#x27;</span>)</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Learn</category>
-      </categories>
-      <tags>
-        <tag>demo</tag>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown</title>
-    <url>/2023/03/09/LearnMarkdown/</url>
-    <content><![CDATA[<p><a href="https://baidu.com/" title="这是一个百度链接">百度链接</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/bj5.jpg"></p>
-<hr>
-<ul>
-<li>无序列表1</li>
-<li>无序列表2<ol>
-<li>有序列表1</li>
-<li>有序列表1</li>
-</ol>
-</li>
-</ul>
-<hr>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><span id="more"></span>
-<p><em>斜体</em><br><strong>加粗</strong><br><code>行内代码</code><br><u>下划线</u></p>
-<blockquote>
-<p>引用</p>
-</blockquote>
-<h3 id="代办"><a href="#代办" class="headerlink" title="代办"></a>代办</h3><ul>
-<li><input checked="" disabled="" type="checkbox"> one</li>
-<li><input disabled="" type="checkbox"> two</li>
-</ul>
-<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><table>
-<thead>
-<tr>
-<th align="left">表头</th>
-<th align="right">表头</th>
-<th align="center">表头</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">左对齐</td>
-<td align="right">右对齐</td>
-<td align="center">剧中</td>
-</tr>
-<tr>
-<td align="left">11</td>
-<td align="right">12</td>
-<td align="center">13</td>
-</tr>
-</tbody></table>
-<p>脚注：<br>一键三连<a href="%E7%82%B9%E8%B5%9E%EF%BC%8C%E6%8A%95%E5%B8%81%E6%94%B6%E8%97%8F">^三连</a></p>
-]]></content>
-      <categories>
-        <category>Learn</category>
-      </categories>
-      <tags>
-        <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaScript基础</title>
-    <url>/2023/03/20/JavaScript%E5%9F%BA%E7%A1%80/</url>
-    <content><![CDATA[<h3 id="一、前端知识"><a href="#一、前端知识" class="headerlink" title="一、前端知识"></a>一、前端知识</h3><h4 id="1-1、Web发展史"><a href="#1-1、Web发展史" class="headerlink" title="1.1、Web发展史"></a>1.1、Web发展史</h4><p>Mosaic，是互联网历史上第一个获普遍使用和能够显示图片的网页浏览器。于 1993 年问世。 1994 年 4 月，马克.安德森和 Silicon Graphics（简称为 SGI，中译为“视算科技”或“硅 图”）公司的创始人吉姆·克拉克（Jim Clark）在美国加州设立了“Mosaic Communication Corporation”。 Mosaic 公司成立后，由于伊利诺伊大学拥有 Mosaic 的商标权，且伊利诺伊大学已将 技术转让给 Spy Glass 公司，开发团队必须彻底重新撰写浏览器程式码，且浏览器名 称更改为 Netscape Navigator，公司名字于 1994 年 11 月改名为“Netscape Communication Corporation”，此后沿用至今，中译为“网景”。 微软的Internet Explorer及Mozilla Firefox等，其早期版本皆以Mosaic为基础而开发。 微软随后买下Spy Glass公司的技术开发出Internet Explorer浏览器，而Mozilla Firefox 则是网景通讯家开放源代码后所衍生出的版本。</p>
-<span id="more"></span>
-<h4 id="1-2js历史"><a href="#1-2js历史" class="headerlink" title="1.2js历史"></a>1.2js历史</h4><p>JavaScript 作为 Netscape Navigator 浏览器的一部分首次出现在 1996 年。它最初的设 计目标是改善网页的用户体验。 作者：Brendan Eich 期初 JavaScript 被命名为 LiveScript，后因和 Sun 公司合作，因市场宣传需要改名 JavaScript。后来 Sun 公司被 Oracle 收购，JavaScript 版权归 Oracle 所有。</p>
-<h4 id="1-3浏览器组成"><a href="#1-3浏览器组成" class="headerlink" title="1.3浏览器组成"></a>1.3浏览器组成</h4><p>shell 部分——用户能操作部分(壳)</p>
-<p>内核部分——用户看不到的部分</p>
-<ul>
-<li>渲染引擎（语法规则和渲染）</li>
-<li>js 引擎</li>
-<li>其他模块（如异步）</li>
-</ul>
-<h4 id="1-4js引擎"><a href="#1-4js引擎" class="headerlink" title="1.4js引擎"></a>1.4js引擎</h4><p>2001 年发布 ie6，首次实现对 js 引擎的优化。 2008 年 Google 发布最新浏览器 Chrome，它是采用优化后的 javascript 引擎，引擎代 号 V8，因能把 js 代码直接转化为机械码来执行，进而以速度快而闻名。 后 Firefox 也推出了具备强大功能的 js 引擎 Firefox3.5 TraceMonkey（对频繁执行的代码做了路径优化） Firefox4.0 JeagerMonkey</p>
-<h4 id="1-5js的特色"><a href="#1-5js的特色" class="headerlink" title="1.5js的特色"></a>1.5js的特色</h4><table>
-<thead>
-<tr>
-<th align="center"></th>
-<th align="center">编译型语言</th>
-<th align="center">解释型语言</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">怎么做</td>
-<td align="center">通篇编译后，生成翻译完的文件，程序执行翻译后的文件</td>
-<td align="center">看一行翻译一行，不生成特定文件</td>
-</tr>
-<tr>
-<td align="center">代表语言</td>
-<td align="center">c、c++</td>
-<td align="center">js、php、python</td>
-</tr>
-<tr>
-<td align="center">优点</td>
-<td align="center">快（常用于系统，游戏）</td>
-<td align="center">可以跨平台</td>
-</tr>
-<tr>
-<td align="center">缺点</td>
-<td align="center">移植性不好（不跨平台，windows和linux不能混用）</td>
-<td align="center">稍微慢点</td>
-</tr>
-</tbody></table>
-<ol>
-<li>js 是解释性语言：(不需要编译成文件）跨平台</li>
-<li>java 先通过 javac，编译成.class 文件，通过 jvm（Java 虚拟机）进行解释执行<br>.java→javac→编译→.class→jvm→解释执行（java 可以跨平台）（java 是 oak 语言）</li>
-<li>link rel &#x3D; “”是异步加载</li>
-<li>单线程：同一时间只能做一件事——js 引擎是单线程<br>（同一时间做很多事叫多线程）</li>
-<li>ECMA（欧洲计算机制造联合会）标注：为了取得技术优势，微软推出了 JScript，<br>CEnvi 推出 ScriptEase，与 JavaScript 同样可在浏览器上运行。为了统一规格 JavaScript<br>兼容于 ECMA 标准，因此也称为 ECMAScript。<br>js 是轮转时间片</li>
-</ol>
-<h4 id="1-6js执行队列"><a href="#1-6js执行队列" class="headerlink" title="1.6js执行队列"></a>1.6js执行队列</h4><p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/8fb93cf220bd4a66a4b5107a5e5787f9.png"></p>
-<h4 id="1-7主流浏览器内核"><a href="#1-7主流浏览器内核" class="headerlink" title="1.7主流浏览器内核"></a>1.7主流浏览器内核</h4><p>| 主流浏览器（必须有独立内核）市场份额大于3% |   内核名称   |<br>| :—————————————-: | :———-: |  |<br>|                     IE                     |   trident    |<br>|                   chrome                   | webkit&#x2F;blink |<br>|                  firefox                   |    gecko     |<br>|                   opera                    |    presto    |<br>|                   safari                   |   werbkit    |</p>
-<h3 id="二、引入js"><a href="#二、引入js" class="headerlink" title="二、引入js"></a>二、引入js</h3><h4 id="2-1如何引入js"><a href="#2-1如何引入js" class="headerlink" title="2.1如何引入js"></a>2.1如何引入js</h4><ul>
-<li>第一种：页面内嵌标签,写 head 里面也行,写 body 里面也行<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span> </span><br><span class="line">	<span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-<li>第二种 ：外部 js 文件，引入<blockquote>
-<p>注意：为符合 web 标准（w3c 标准中的一项）结构（html）、行为（js）、样式（css） 相分离，通常会采用外部引入。<br>一个文件中可以包括多个 css，js——不混用</p>
-</blockquote>
-</li>
-</ul>
-<p>特殊写页面，大部分写在外部——不混用</p>
-<p>如果同时写了内部的 js 和外部的 js，那么是外部的 js 文件显示出来</p>
-<h3 id="三、变量"><a href="#三、变量" class="headerlink" title="三、变量"></a>三、变量</h3><p>HTML，css 不是编程语言，是计算机语言，编程语言需要有变量和函数 变量是存放东西，方便后续使用的框</p>
-<h4 id="3-1变量声明"><a href="#3-1变量声明" class="headerlink" title="3.1变量声明"></a>3.1变量声明</h4><p>声明、赋值分解<br>var a; 这个叫变量声明。我们向系统中申请了 var 这个框，命名叫 a 给 a 赋值 100，写作 a &#x3D;100，这里不是等号是赋值 var a ；a &#x3D;100；可以简化写成 var a&#x3D;100；</p>
-<h4 id="3-2单一var声明法"><a href="#3-2单一var声明法" class="headerlink" title="3.2单一var声明法"></a>3.2单一var声明法</h4><p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/b8d65bbf71ab424a9f88cdfa21111e29.png"></p>
-<blockquote>
-<p>如写做：var a &#x3D; 10；a&#x3D;20;那么后面的 20 就会覆盖掉前面的 10<br>命名规则（用接近的英文单词）<br>变量名必须以英文字母、_、$ 开头</p>
-</blockquote>
-<p>变量名可以包括英文字母、_、$、数字</p>
-<p>不可以用系统的关键字、保留字作为变量名</p>
-<p>注意：起变量名一定要以英文语义化</p>
-<h4 id="关键字与保留字"><a href="#关键字与保留字" class="headerlink" title="关键字与保留字"></a>关键字与保留字</h4><p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/7783e53d84694fb4a607f5a16634f8a8.png"></p>
-<h3 id="四、基本语法"><a href="#四、基本语法" class="headerlink" title="四、基本语法"></a>四、基本语法</h3><p>下面是变量,例：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">var</span> b = <span class="number">20</span>;</span><br><span class="line"><span class="keyword">var</span> c;</span><br><span class="line">c = a + b;</span><br></pre></td></tr></table></figure>
-<p>先运算等号右边的 a+b，运算完后，再赋值给左边 c<br>先取值，再赋值</p>
-<h4 id="4-1运算大于赋值的优先级"><a href="#4-1运算大于赋值的优先级" class="headerlink" title="4.1运算大于赋值的优先级"></a>4.1运算大于赋值的优先级</h4><p>js 是动态语言，动态语言基本上都是解释性语言，解释性语言基本上都是脚本语言<br>js 是浮点型语言（带小数点）</p>
-<h4 id="4-2值类型（数据类型）"><a href="#4-2值类型（数据类型）" class="headerlink" title="4.2值类型（数据类型）"></a>4.2值类型（数据类型）</h4><h5 id="1-不可改变的原始值（栈数据）栈-stack"><a href="#1-不可改变的原始值（栈数据）栈-stack" class="headerlink" title="1.不可改变的原始值（栈数据）栈 stack"></a>1.不可改变的原始值（栈数据）栈 stack</h5><blockquote>
-<p>已经放进去的值不可改变，只会改房间编号为 null(硬盘原理)</p>
-</blockquote>
-<pre><code>1.Number 数字,例 var a = 123;
-2.String 字符串,语言放双引号里，例 var a=”语言”，““是空串
-3.Boolean 布尔数字,就两个值，false，true
-4.undefined 是没有定义的，表示还没赋值,仅一个值 underfined
-5.null 代表空，占位用，用空值来覆盖
-</code></pre>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a =<span class="number">10</span>;</span><br><span class="line"><span class="keyword">var</span> b = a;</span><br><span class="line">a = <span class="number">20</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(b)</span><br><span class="line">答案：<span class="number">10</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>原始值是我把一个值放到另一个值里面，改了第一个值，第二个值不变</p>
-</blockquote>
-<h5 id="2-引用值（堆数据）大致上放堆-heap-里面"><a href="#2-引用值（堆数据）大致上放堆-heap-里面" class="headerlink" title="2.引用值（堆数据）大致上放堆 heap 里面"></a>2.引用值（堆数据）大致上放堆 heap 里面</h5><p>array 数组, Object, function … data,RegExp 正则</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="literal">false</span>,”abc”]; <span class="comment">//这是数组</span></span><br><span class="line">例：<span class="keyword">var</span> arr = [<span class="number">1</span>];</span><br><span class="line"><span class="keyword">var</span> arr1 = arr;</span><br><span class="line">arr.<span class="title function_">push</span>(<span class="number">2</span>);</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(arr1);</span><br><span class="line">答案：arr 是 <span class="number">1</span>,<span class="number">2</span>   arr1 是 <span class="number">1</span>,<span class="number">2</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>引用值是把第一个值放到第二个值里面，改第一个值，第二个值也改变</p>
-</blockquote>
-<p>js 由值决定类型。原始值和引用值唯一的不同是赋值形式不同<br><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/41ac78870d2c4440b23d759f997963ba.png"></p>
-<p>var a &#x3D; 10;var b &#x3D;a；是 a 先取出 10，copy 一份放到 b 里面，改变 a 的值，b 的值是不变的，再把 a&#x3D;20;时 b 的值还是 10，不发生改变。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>];</span><br><span class="line"><span class="keyword">var</span> arr1 =arr;</span><br><span class="line">arr.<span class="title function_">push</span>(<span class="number">3</span>);</span><br><span class="line">答案：这往[<span class="number">1</span>,<span class="number">2</span>]放 <span class="number">3</span>，arr 和 arr1 都是[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>引用值是在栈内存里面放堆的地址，拷贝的也是地址，所以改变 arr，arr1 也变了</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>]; </span><br><span class="line"><span class="keyword">var</span> arr1 =arr; </span><br><span class="line">arr = [<span class="number">1</span>,<span class="number">3</span>]; </span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(arr1)</span><br><span class="line">答案：arr = [<span class="number">1</span>,<span class="number">3</span>];</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>新建了一个新的房间。arr1 是 1,2,现在是插入新引入值”房间”,会在堆里面重新申请一间房，并指向新房间</p>
-</blockquote>
-<h5 id="3-js-语句基本规"><a href="#3-js-语句基本规" class="headerlink" title="3.js 语句基本规"></a>3.js 语句基本规</h5><p>语句后面要用分号结束“；”但 function test(){}，for(){}，if(){}后面都不用加分号<br>js 语法错误会引发后续代码终止，但不会影响其它 js 代码块<br>书写格式要规范，“&#x3D; + &#x2F; -”两边都应该有空格<br><strong>错误分为两种</strong><br>1）低级错误（语法解析错误），不能写中文<br>2）逻辑错误（标准错误，情有可原，错的那个执行不了）</p>
-<h3 id="五、js运算符"><a href="#五、js运算符" class="headerlink" title="五、js运算符"></a>五、js运算符</h3><h4 id="5-1-运算操作符"><a href="#5-1-运算操作符" class="headerlink" title="5.1 运算操作符"></a>5.1 运算操作符</h4><ol>
-<li><p>+</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">“+”作用：数学运算、字符串链接</span><br><span class="line">任何数据类型加字符串都等于字符串</span><br><span class="line">例 <span class="keyword">var</span> a = “a”+ <span class="literal">true</span> + <span class="number">1</span>; <span class="comment">//打印 atrue1</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span> + “a” + <span class="number">1</span> + <span class="number">1</span>; <span class="comment">//打印 1a11</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span> + <span class="number">1</span> + “a” + <span class="number">1</span> + <span class="number">1</span>; <span class="comment">//打印 2a11，从左向右运算</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span> + <span class="number">1</span> + “a” +( <span class="number">1</span> + <span class="number">2</span>); <span class="comment">//打印 2a3</span></span><br></pre></td></tr></table></figure></li>
-<li><p>*、- 、&#x2F;</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a = <span class="number">0</span> – <span class="number">1</span>； <span class="comment">//等于-1</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">2</span> * <span class="number">1</span>； <span class="comment">//等于 2</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">0</span> / <span class="number">0</span>； <span class="comment">//答案是 NaN，应该得出一个数字类型的数，但是没法表达，</span></span><br><span class="line">就用 <span class="title class_">NaN</span> (<span class="title class_">NaN</span> 是 <span class="title class_">Not</span> a <span class="title class_">Number</span> 非数，不是数，但是是数字类型</span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span> / <span class="number">0</span>; <span class="comment">//是 infinity</span></span><br><span class="line">例 <span class="keyword">var</span> a = -<span class="number">1</span> / <span class="number">0</span>; /是-infinity</span><br></pre></td></tr></table></figure></li>
-<li><p>%<br>摩尔，模，是取余数的意思</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">5</span>%<span class="number">2</span> <span class="comment">//5%2 是五除二的余数，商二余一</span></span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">5</span>%<span class="number">1</span> <span class="comment">//是五除一的余数，结果是 0</span></span><br><span class="line">例 <span class="keyword">var</span> num = <span class="number">1</span> % <span class="number">5</span>; <span class="comment">//意思是 1 除以 5 的余数。商 0 余 1</span></span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">4</span>%<span class="number">6</span> <span class="comment">//是四除六的余数，结果是 4</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">4</span>;a % = <span class="number">5</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">// 4</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">0</span>;a % = <span class="number">5</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//0</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">10</span>;a %= <span class="number">2</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//0</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">3</span>;a % = <span class="number">4</span>; <span class="comment">//4</span></span><br></pre></td></tr></table></figure>
-<p>优先级”&#x3D;“最弱【赋值符号优先级最低】，”()”优先级较高</p>
-</li>
-<li><p>++</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a = <span class="number">10</span>; a = a + <span class="number">1</span>; <span class="comment">//结果 11</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
-<p>a &#x3D; a + 1;写成 a ++是一种简化形式“++”，是自身加一，再赋值给自身<br>a++是 a&#x3D;a+1 的简化形式</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(++a );<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//答案 11；11</span></span><br><span class="line">是先执行++，再执行本条语句 <span class="variable language_">document</span>.<span class="title function_">write</span>(++a)</span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(a ++);<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//答案 1；2。是先执行</span></span><br><span class="line">语句(<span class="variable language_">document</span>.<span class="title function_">write</span>(a))，再++，所以第一次打印的还是 a，第二次打印 a++后的值</span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>；<span class="keyword">var</span> b=++a -<span class="number">1</span>+a++;<span class="variable language_">document</span>.<span class="title function_">write</span>(b + “ ” + a) <span class="comment">//答案 21 12</span></span><br><span class="line">先++a，这个时候 a=<span class="number">11</span>，再-<span class="number">1</span>，再加 a，b 就是 <span class="number">21</span>，最后++，a 就是 <span class="number">12</span></span><br></pre></td></tr></table></figure>
-<p>赋值的顺序自右向左，计算的顺序自左向右（按数学来）</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>；<span class="keyword">var</span> b = a ++ + <span class="number">1</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(b)； <span class="comment">//答案 2，先执行 var b =a+1，</span></span><br><span class="line">再 a++</span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>；<span class="keyword">var</span> b = a ++ + <span class="number">1</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(a)；<span class="variable language_">document</span>.<span class="title function_">write</span>(b)； <span class="comment">//答案 2，2</span></span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>；<span class="keyword">var</span> b = ++a + <span class="number">1</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(a)；<span class="variable language_">document</span>.<span class="title function_">write</span>(b)； <span class="comment">//答案 2，3</span></span><br><span class="line">例 <span class="keyword">var</span> i = <span class="number">1</span>;<span class="keyword">var</span> a = i++; <span class="comment">//答案 a = 1; 此时 i 先将值 1 赋给 a,然后自己+1，i=2;</span></span><br><span class="line"><span class="keyword">var</span> b = ++i; <span class="comment">//答案 b = 3；此时 i 先自己+1 为 3.再给 b 赋值，b=3;</span></span><br></pre></td></tr></table></figure></li>
-<li><p>–<br>“- -”，是自身减一，在赋值给自身</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="keyword">var</span> b = a-- + -- a;<span class="variable language_">document</span>.<span class="title function_">write</span>(b); <span class="comment">//答案 0，先执行--a;此时 a 变成</span></span><br><span class="line"><span class="number">0</span>，然后第一个 a 也变成 <span class="number">0</span>，那么 b = <span class="number">0</span>-- + --a</span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="keyword">var</span> b = --a + --a;<span class="variable language_">document</span>.<span class="title function_">write</span>(b); <span class="comment">//答案-1</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a++);<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//答案 1；2</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(++a);<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//答案 2；2</span></span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>; <span class="keyword">var</span> b = a ++ +<span class="number">1</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(b); <span class="comment">//答案 2</span></span><br><span class="line">a 写在后面就后运行，先计算 a+<span class="number">1</span>=<span class="number">2</span> 赋值给 b 后再++</span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="keyword">var</span> b= ++a + <span class="number">1</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a);<span class="variable language_">document</span>.<span class="title function_">write</span>(b); <span class="comment">//答案 2；3</span></span><br></pre></td></tr></table></figure></li>
-<li><p>+&#x3D; -&#x3D;</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>;a ++;a ++;a ++;加十个</span><br><span class="line">简化写法：a +=<span class="number">10</span>;也是 a = a+<span class="number">10</span>;</span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>;a += <span class="number">10</span> + <span class="number">1</span>; <span class="comment">//答案 21</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;a = a + <span class="number">10</span>;等于 a+=<span class="number">10</span></span><br><span class="line">a++是 a +=<span class="number">1</span> 的写法</span><br></pre></td></tr></table></figure></li>
-<li><p>&#x2F;&#x3D;</p>
-</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a=<span class="number">10</span>;a/=<span class="number">2</span>; <span class="comment">//答案 5，是除二赋给自身的意思</span></span><br></pre></td></tr></table></figure>
-<ol>
-<li>*&#x3D;</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>;a *=<span class="number">2</span>; <span class="comment">//答案：20，是乘二赋给自身的意思</span></span><br></pre></td></tr></table></figure>
-<ol>
-<li>%&#x3D;</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a=<span class="number">10</span>;a%=<span class="number">2</span>; <span class="comment">//答案：0， 10 能整除 2,余数是 0,取余，余数赋给自身。</span></span><br><span class="line">例 <span class="keyword">var</span> a=<span class="number">3</span>;a%=<span class="number">4</span>; <span class="comment">//答案：3，3 除以 4，余数为 3，余数赋给自身。</span></span><br><span class="line">例 <span class="keyword">var</span> a=<span class="number">0</span>;a%=<span class="number">4</span>; <span class="comment">//答案：0，0 除以 4，余数为 0，余数赋给自身。</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;a% =<span class="number">10</span>; <span class="comment">//答案：1，1 除以 10，余数为 1，余数赋给自身。</span></span><br></pre></td></tr></table></figure>
-<h5 id="10-小测"><a href="#10-小测" class="headerlink" title="10.小测"></a>10.小测</h5><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a =(<span class="number">10</span> * <span class="number">3</span> – <span class="number">4</span> / <span class="number">2</span> + <span class="number">1</span>)%<span class="number">2</span>,b=<span class="number">3</span>;b %= a + <span class="number">3</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(a++);</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">wtite</span>(“&lt;br&gt;”);</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(--b);</span><br><span class="line"><span class="number">2</span>、<span class="keyword">var</span> a =<span class="number">123</span>; <span class="keyword">var</span> b =<span class="number">234</span>;经过计算交换 a，b 的值</span><br></pre></td></tr></table></figure>
-<p>答案</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span>、<span class="variable language_">document</span>.<span class="title function_">write</span>(a++);是 <span class="number">1</span>（先打出 <span class="number">1</span> 再++）</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(--b);是 <span class="number">2</span></span><br><span class="line">b % =a + <span class="number">3</span>,<span class="number">3</span> 的模等于 <span class="number">4</span>，除不开再赋值给 b，b 还是 <span class="number">3</span></span><br><span class="line"><span class="number">2</span>、方法一普通方法：<span class="keyword">var</span> c = a; a = b; b = c;<span class="variable language_">document</span>.<span class="title function_">write</span>(a ,b);</span><br><span class="line">方法二 a = a + b; b = a – b; a = a –b; <span class="variable language_">document</span>.<span class="title function_">write</span>(a ,b);</span><br></pre></td></tr></table></figure>
-<h4 id="5-2-比较运算符"><a href="#5-2-比较运算符" class="headerlink" title="5.2 比较运算符"></a>5.2 比较运算符</h4>]]></content>
-      <categories>
-        <category>Learn</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Stable Diffusion</title>
-    <url>/2023/04/18/Stable-Diffusion/</url>
-    <content><![CDATA[<p><img src="https://s2.loli.net/2023/04/18/nmHiVNyG1QvWha6.png" alt="image-20230418190503271"></p>
-<p>Stable Diffusion的大致工作流程如下：</p>
-<p>首先，Stable Diffusion模型将潜在种子和文本提示作为输入。 然后使用潜在种子生成大小为 64×64 的随机潜在图像表示，而文本提示通过 CLIP 文本编码器转换为 77×768 的文本嵌入。</p>
-<p>接下来，U-Net 以文本嵌入为条件迭代地对随机潜在图像表示进行去噪。 U-Net 的输出是噪声残差，用于通过调度算法计算去噪的潜在图像表示。 调度算法根据先前的噪声表示和预测的噪声残差计算预测的去噪图像表示。这里可选用的调度算法很多，每个算法各有优劣，对Stable Diffusion来说建议用以下几个：</p>
-<p>PNDM scheduler（默认）<br>DDIM scheduler<br>K-LMS scheduler<br>去噪过程重复大约 50 次以逐步检索更好的潜在图像表示。 完成后，潜在图像表示由变分自动编码器的解码器部分解码。</p>
-<h2 id="本地部署Stable-Diffusion"><a href="#本地部署Stable-Diffusion" class="headerlink" title="本地部署Stable Diffusion"></a>本地部署Stable Diffusion</h2><p>本地部署Stable Diffusion最简单的方法是使用Stable Diffusion Web Ui。</p>
-<p>Stable Diffusion Web Ui是一套无代码、可视化的Stable Diffusion集成运行环境。它将Stable Diffusion的安装部署集成打包，提供一键安装脚本，并提供Web界面操作界面，极大简化了Stable Diffusion的操作和使用，让没有不懂代码的小白也能轻松上手使用Stable Diffusion模型。</p>
-<h2 id="使用Stable-Diffusion-Web-Ui"><a href="#使用Stable-Diffusion-Web-Ui" class="headerlink" title="使用Stable Diffusion Web Ui"></a>使用Stable Diffusion Web Ui</h2><h3 id="界面介绍"><a href="#界面介绍" class="headerlink" title="界面介绍"></a>界面介绍</h3><p>Stable Diffusion Web Ui整体上分为2个部分，最上面是<strong>模型选择</strong>，可以从下拉列表中选择已下载的预训练模型<img src="https://img-blog.csdnimg.cn/50b616d90b334b1a9662986a7230e57a.png#pic_center" alt="在这里插入图片描述"></p>
-<p>模型选择下面是一个Tab栏，这里是Stable Diffusion Web Ui提供的所有功能。<img src="https://img-blog.csdnimg.cn/7e8a631509bd44fab5b70abdb31e91f1.png#pic_center" alt="在这里插入图片描述"></p>
-<ul>
-<li><strong>txt2img</strong> — 根据文本提示生成图像；</li>
-<li><strong>img2img</strong> — 根据提供的图像作为范本、结合文本提示生成图像；</li>
-<li><strong>Extras</strong> — 优化(清晰、扩展)图像；</li>
-<li><strong>PNG Info</strong> — 显示图像基本信息</li>
-<li><strong>Checkpoint Merger</strong> — 模型合并</li>
-<li><strong>Train</strong> — 根据提供的图片训练具有某种图像风格的模型</li>
-<li><strong>Settings</strong> — 系统设置</li>
-</ul>
-<p> 平时使用最多的是<strong>txt2img</strong> 和 <strong>img2img</strong>，下面针对这2大块功能详细讲解。</p>
-<h4 id="txt2img"><a href="#txt2img" class="headerlink" title="txt2img"></a>txt2img</h4><p>txt2img有三个区域：</p>
-<ul>
-<li>提示区</li>
-<li>参数调节区</li>
-<li>输出浏览区<img src="https://img-blog.csdnimg.cn/5b2d46b240ba4979a4a6a099553a6171.png#pic_center" alt="在这里插入图片描述"></li>
-</ul>
-<p>提示区主要是2个文本框，可以输入提示文本。其中：</p>
-<p><strong>prompt</strong>: 主要是对于图像进行描述。prompt对Stable Diffusion图像生成质量至关重要，因此如果想生成高质量图片，一定要在提示设计上下功夫。一个好的提示需要详细和具体，后面会专门讲解如何设计一个好的提示。</p>
-<p><strong>Negative prompt</strong>：主要是告诉模型我不想要什么样的风格或元素；</p>
-<p>参数调节区提供了大量参数用于控制和优化生成过程：</p>
-<p><strong>Sampling method</strong>：扩散去噪算法的采样模式，不同采样模式会带来不一样的效果，具体需要在实际使用中测试；</p>
-<p><strong>Sampling steps</strong>：模型生成图片的迭代步数，每多一次迭代都会给 AI 更多的机会去对比 prompt 和 当前结果，从而进一步调整图片。更高的步数需要花费更多的计算时间，但却不一定意味着会有更好的结果。当然迭代步数不足肯定会降低输出的图像质量；</p>
-<p><strong>Width、Height</strong>：输出图像宽高，图片尺寸越大越消耗资源，显存小的要特别注意。一般不建议设置的太大，因为生成后可以通过 Extras 进行放大；</p>
-<p><strong>Batch count、 Batch size</strong>：控制生成几张图，前者计算时间长，后者需要显存大；</p>
-<p><strong>CFG Scale</strong>：分类器自由引导尺度，用于控制图像与提示的一致程度，值越低产生的内容越有创意；</p>
-<p><strong>Seed</strong>：随机种子，只要种子一样，参数和模型不变，生成的图像主体就不会剧烈变化，适用于对生成图像进行微调；</p>
-<p><strong>Restore faces</strong>：优化面部，当对生成的面部不满意时可以勾选该选项；</p>
-<p><strong>Tiling</strong>：生成一张可以平铺的图像；</p>
-<p><strong>Highres. fix</strong>：使用两个步骤的过程进行生成，以较小的分辨率创建图像，然后在不改变构图的情况下改进其中的细节，选中该选项会有一系列新的参数，其中重要的是：</p>
-<p> <strong>Upscaler</strong>：缩放算法；</p>
-<p> <strong>Upscale by</strong>：放大倍数；</p>
-<p> <strong>Denoising strength</strong>：决定算法对图像内容的保留程度。0什么都不会改变，1会得到一个完全不同的图像；</p>
-<h4 id="img2img"><a href="#img2img" class="headerlink" title="img2img"></a>img2img</h4><p>img2img跟txt2img界面类似，不同的是没有了txt2img中的参数调节区，取而代之的是图像范本区。<img src="https://img-blog.csdnimg.cn/49d1b13ee3f94e6f96b4377b8edbf857.png#pic_center" alt="在这里插入图片描述"></p>
-<p>我们可以上传范本图片让Stable Diffusion模仿，其他地方跟txt2img相同</p>
-<h3 id="界面汉化"><a href="#界面汉化" class="headerlink" title="界面汉化"></a>界面汉化</h3><p>通过<a href="https://download.csdn.net/download/JarodYv/87542257">这里</a>下载简体中文语言文件，下载完成后将其复制到项目文件夹的“localizations”目录中。之后在Settings -&gt; User interface -&gt; Localization (requires restart)，在下拉菜单中选择zh_CN。如果下拉列表中看不到zh_CN，请先点击右侧的刷新按钮，然后就能在下拉列表中看到了。设置完成后记得点击页面上方的“Apply settings”按钮保存设置。<br><img src="https://img-blog.csdnimg.cn/a6543281d36941eaba303c0bd9cfe06d.png#pic_center" alt="在这里插入图片描述"></p>
-<p>语言设置需要重启才能生效。<code>Ctrl + C</code>先终止Stable Diffusion Web Ui服务，然后再运行<code>webui.bat</code>或<code>webui.sh</code>，重启后刷新浏览器页面就能看到语言变成了简体中文了。<img src="https://img-blog.csdnimg.cn/797cba1ab85b41f789f60034e5156bec.png#pic_center" alt="在这里插入图片描述"></p>
-<h4 id="prompt语法"><a href="#prompt语法" class="headerlink" title="prompt语法"></a>prompt语法</h4><p>为了产生具有特定风格的图像，必须以特定格式提供文本提示。 这通常需要添加提示修饰符或添加更多关键字或关键短语来实现。下面为大家介绍一下Stable Diffusion的prompt语法规则。</p>
-<p>Stable Diffusion提示文本中的关键字或关键短语通过半角逗号分割，一般越靠前权重越高。我们可以通过提示修饰符来认为修改权重。</p>
-<ul>
-<li>(tag)：增加权重5%</li>
-<li>[tag]：降低权重5%</li>
-<li>(tag: weight)：设置具体权重值</li>
-</ul>
-<h3 id="Stable-Diffusion资源列表"><a href="#Stable-Diffusion资源列表" class="headerlink" title="Stable Diffusion资源列表"></a>Stable Diffusion资源列表</h3><p>好的生成质量离不开好的模型，这里为大家列出了Stable Diffusion预训练模型资源的获取来源。</p>
-<h4 id="1-Hugging-Face"><a href="#1-Hugging-Face" class="headerlink" title="1.Hugging Face"></a>1.Hugging Face</h4><p><a href="https://huggingface.co/">Hugging Face</a>是一个专注于构建、训练和部署先进开源机器学习模型的网站。</p>
-<p>HuggingFace是Stable Diffusion模型创作的首选平台，目前平台上有270多个与Stable Diffusion相关的模型，用”Stable Diffusion”作为关键字就能搜到。<br> <img src="https://img-blog.csdnimg.cn/img_convert/6d0ae952095037d2731835a245e676d9.png" alt="hugging face Stable Diffusion models search results"></p>
-<h3 id="2-Civitai"><a href="#2-Civitai" class="headerlink" title="2. Civitai"></a>2. Civitai</h3><p><a href="https://civitai.com/">Civitai</a>是一个专为Stable Diffusion AI艺术模型设计的网站。该平台目前有来自250+创作者上传的1700个模型。这是迄今为止我所知的最大的AI模型库。你可以在上面分享自己的模型或生成作品。<img src="https://img-blog.csdnimg.cn/cab367f7c9bc4d84b3805aa5738def98.png#pic_center" alt="在这里插入图片描述"></p>
-<h3 id="3-Discord"><a href="#3-Discord" class="headerlink" title="3. Discord"></a>3. Discord</h3><p>在Stable Diffusion的Discord页面中有一个名为“Models-Embeddings”的专属频道，里面提供了很多可以免费下载的各种模型。<img src="https://img-blog.csdnimg.cn/img_convert/363a2d1497e04d3ecdc160b290e9d318.png#pic_center" alt="Models-embeddings Discord channel Discord page for Stable Diffusion"></p>
-]]></content>
-      <categories>
-        <category>Learn</category>
-      </categories>
-      <tags>
-        <tag>ai</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MySQL</title>
     <url>/2023/03/28/MySQL/</url>
     <content><![CDATA[<h3 id="管理MySQL服务"><a href="#管理MySQL服务" class="headerlink" title="管理MySQL服务"></a>管理MySQL服务</h3><p>启动服务</p>
@@ -413,94 +146,6 @@ CSS的优势：
       </categories>
       <tags>
         <tag>sql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2023/03/09/hello-world/</url>
-    <content><![CDATA[<p>Welcome to my blog! This is your very first post. If you get any problems when using blog, you can find the answer in <a href="https://github.com/Sangwq">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>Learn</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>eNSP</title>
-    <url>/2023/04/06/eNSP/</url>
-    <content><![CDATA[<h6 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h6><p><img src="https://s2.loli.net/2023/04/09/56i2AEgjn3NsBdf.png" alt="image-20230409163311555"></p>
-<p>当前位置所作配置</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">display this</span><br></pre></td></tr></table></figure>
-
-
-
-<h6 id="05-ip地址配置"><a href="#05-ip地址配置" class="headerlink" title="05-ip地址配置"></a>05-ip地址配置</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ip address 192.168.1.1 255.255.255.0</span><br></pre></td></tr></table></figure>
-
-<p>改名</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sysname AR2</span><br></pre></td></tr></table></figure>
-
-<h6 id="06-DHCP地址池"><a href="#06-DHCP地址池" class="headerlink" title="06-DHCP地址池"></a>06-DHCP地址池</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dhcp enable</span><br><span class="line">int g0/0/0</span><br><span class="line">dhcp select interface </span><br></pre></td></tr></table></figure>
-
-<h6 id="07-DNS域名系统"><a href="#07-DNS域名系统" class="headerlink" title="07-DNS域名系统"></a>07-DNS域名系统</h6><p><img src="https://s2.loli.net/2023/04/06/fvgz4mOFyDPhVUd.png" alt="image-20230406200841622"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dhcp server dns-list 192.168.1.100</span><br></pre></td></tr></table></figure>
-
-<h6 id="08-网关入门"><a href="#08-网关入门" class="headerlink" title="08-网关入门"></a>08-网关入门</h6><p><img src="https://s2.loli.net/2023/04/06/mbQpcC3VLzDg4dt.png" alt="image-20230406200632434"></p>
-<h6 id="09-静态路由"><a href="#09-静态路由" class="headerlink" title="09-静态路由"></a>09-静态路由</h6><p><img src="https://s2.loli.net/2023/04/06/fkHawtNGxpKqEmQ.png" alt="image-20230406202420122"></p>
-<p>查路由表</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">display ip routing-table 192.168.3.10</span><br></pre></td></tr></table></figure>
-
-<p>下一跳——去R1</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ip route-static 192.168.3.0 255.255.255.0 192.168.2.10</span><br></pre></td></tr></table></figure>
-
-<p>下一跳——回R2</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ip route-static 192.168.1.0 255.255.255.0 192.168.2.1</span><br></pre></td></tr></table></figure>
-
-<h6 id="10-TCP和UDP"><a href="#10-TCP和UDP" class="headerlink" title="10-TCP和UDP"></a>10-TCP和UDP</h6><p>Tcp：可靠性高。<br>适合对文件传输的完整性要求高，但是对延迟不敏感<br>电子邮件</p>
-<p>更新客户端<br>Udp:速度快</p>
-<h6 id="11-划分vlan"><a href="#11-划分vlan" class="headerlink" title="11-划分vlan"></a>11-划分vlan</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vlan 10</span><br><span class="line">int g0/0/1</span><br><span class="line">port link-type access</span><br><span class="line">port default vlan 10</span><br><span class="line">display vlan</span><br></pre></td></tr></table></figure>
-
-<h6 id="12-Trunk模式"><a href="#12-Trunk模式" class="headerlink" title="12-Trunk模式"></a>12-Trunk模式</h6><p><img src="https://s2.loli.net/2023/04/06/ZrQHNlCmEWxBGdw.png" alt="image-20230406211246144"></p>
-<p>注：交换机根据trunk接口打标签来回包</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">port link-type trunk </span><br><span class="line">port trunk allow-pass vlan all</span><br></pre></td></tr></table></figure>
-
-<h6 id="13-三层交换"><a href="#13-三层交换" class="headerlink" title="13-三层交换"></a>13-三层交换</h6><p>注：</p>
-<p>用三层交换技术,先用vlan把用户隔离开,再用某种技术，把隔离开用户连起来</p>
-<p>隔离:隔离是故障</p>
-<p>连通︰是正常通信</p>
-<p>用三层配置vlan的ip作为网关</p>
-<p><img src="https://s2.loli.net/2023/04/06/uaBsm2IPYhTbRl4.png" alt="image-20230406214540804"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int vlan 20</span><br><span class="line">ip add 2.2.2.254 255.255.255.0</span><br></pre></td></tr></table></figure>
-
-<h6 id="14-单臂路由"><a href="#14-单臂路由" class="headerlink" title="14-单臂路由"></a>14-单臂路由</h6><p>注：用路由器接口分两个子接口配置网关</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Huawei]int g0/0/0.10</span><br><span class="line">dot1q termination vid 10</span><br><span class="line">ip address 1.1.1.254 255.255.255.0 </span><br><span class="line">arp broadcast enable</span><br></pre></td></tr></table></figure>
-
-<h6 id="15-ACL访问列表控制"><a href="#15-ACL访问列表控制" class="headerlink" title="15-ACL访问列表控制"></a>15-ACL访问列表控制</h6><p><img src="https://s2.loli.net/2023/04/11/7AXrYJ4NOSx1RWT.png" alt="image-20230411193401023"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Huawei]acl name text</span><br><span class="line">[Huawei-acl-adv-text]rule deny ip source 192.168.10.0 0.0.0.255 destination 192.</span><br><span class="line">168.30.0 0.0.0.255</span><br><span class="line">[Huawei-acl-adv-text]rule permit ip source any destination any </span><br><span class="line">[Huawei-acl-adv-text]q</span><br><span class="line">[Huawei]in g0/0/1</span><br><span class="line">[Huawei-GigabitEthernet0/0/1]traffic-filter inbound acl name text</span><br></pre></td></tr></table></figure>
-
-<h6 id="16-NAT网络地址转换"><a href="#16-NAT网络地址转换" class="headerlink" title="16-NAT网络地址转换"></a>16-NAT网络地址转换</h6><p><img src="https://s2.loli.net/2023/04/11/YvlkgC81pSt29MG.png"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Huawei]acl name neiwang basic</span><br><span class="line">[Huawei-acl-basic-neiwang]rule permit source 192.168.0.0 0.0.255.255</span><br><span class="line"></span><br><span class="line">[Huawei]nat address-group 1 64.1.1.2 64.1.1.5 </span><br><span class="line">[Huawei]dis acl all</span><br></pre></td></tr></table></figure>
-<p> Total quantity of nonempty ACL number is 1 </p>
-<p>Basic ACL neiwang 2999, 1 rule<br>Acl’s step is 5<br> rule 5 permit source 192.168.0.0 0.0.255.255<br> <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"> </span><br><span class="line">[Huawei-GigabitEthernet0/0/1]nat outbound 2999 address-group 1 </span><br></pre></td></tr></table></figure></p>
-]]></content>
-      <categories>
-        <category>Learn</category>
-      </categories>
-      <tags>
-        <tag>eNSP</tag>
       </tags>
   </entry>
   <entry>
@@ -662,6 +307,361 @@ width和height:高度和宽度,设置之后图片可能会失真。
       </tags>
   </entry>
   <entry>
+    <title>eNSP</title>
+    <url>/2023/04/06/eNSP/</url>
+    <content><![CDATA[<h6 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h6><p><img src="https://s2.loli.net/2023/04/09/56i2AEgjn3NsBdf.png" alt="image-20230409163311555"></p>
+<p>当前位置所作配置</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">display this</span><br></pre></td></tr></table></figure>
+
+
+
+<h6 id="05-ip地址配置"><a href="#05-ip地址配置" class="headerlink" title="05-ip地址配置"></a>05-ip地址配置</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ip address 192.168.1.1 255.255.255.0</span><br></pre></td></tr></table></figure>
+
+<p>改名</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sysname AR2</span><br></pre></td></tr></table></figure>
+
+<h6 id="06-DHCP地址池"><a href="#06-DHCP地址池" class="headerlink" title="06-DHCP地址池"></a>06-DHCP地址池</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dhcp enable</span><br><span class="line">int g0/0/0</span><br><span class="line">dhcp select interface </span><br></pre></td></tr></table></figure>
+
+<h6 id="07-DNS域名系统"><a href="#07-DNS域名系统" class="headerlink" title="07-DNS域名系统"></a>07-DNS域名系统</h6><p><img src="https://s2.loli.net/2023/04/06/fvgz4mOFyDPhVUd.png" alt="image-20230406200841622"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dhcp server dns-list 192.168.1.100</span><br></pre></td></tr></table></figure>
+
+<h6 id="08-网关入门"><a href="#08-网关入门" class="headerlink" title="08-网关入门"></a>08-网关入门</h6><p><img src="https://s2.loli.net/2023/04/06/mbQpcC3VLzDg4dt.png" alt="image-20230406200632434"></p>
+<h6 id="09-静态路由"><a href="#09-静态路由" class="headerlink" title="09-静态路由"></a>09-静态路由</h6><p><img src="https://s2.loli.net/2023/04/06/fkHawtNGxpKqEmQ.png" alt="image-20230406202420122"></p>
+<p>查路由表</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">display ip routing-table 192.168.3.10</span><br></pre></td></tr></table></figure>
+
+<p>下一跳——去R1</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ip route-static 192.168.3.0 255.255.255.0 192.168.2.10</span><br></pre></td></tr></table></figure>
+
+<p>下一跳——回R2</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ip route-static 192.168.1.0 255.255.255.0 192.168.2.1</span><br></pre></td></tr></table></figure>
+
+<h6 id="10-TCP和UDP"><a href="#10-TCP和UDP" class="headerlink" title="10-TCP和UDP"></a>10-TCP和UDP</h6><p>Tcp：可靠性高。<br>适合对文件传输的完整性要求高，但是对延迟不敏感<br>电子邮件</p>
+<p>更新客户端<br>Udp:速度快</p>
+<h6 id="11-划分vlan"><a href="#11-划分vlan" class="headerlink" title="11-划分vlan"></a>11-划分vlan</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vlan 10</span><br><span class="line">int g0/0/1</span><br><span class="line">port link-type access</span><br><span class="line">port default vlan 10</span><br><span class="line">display vlan</span><br></pre></td></tr></table></figure>
+
+<h6 id="12-Trunk模式"><a href="#12-Trunk模式" class="headerlink" title="12-Trunk模式"></a>12-Trunk模式</h6><p><img src="https://s2.loli.net/2023/04/06/ZrQHNlCmEWxBGdw.png" alt="image-20230406211246144"></p>
+<p>注：交换机根据trunk接口打标签来回包</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">port link-type trunk </span><br><span class="line">port trunk allow-pass vlan all</span><br></pre></td></tr></table></figure>
+
+<h6 id="13-三层交换"><a href="#13-三层交换" class="headerlink" title="13-三层交换"></a>13-三层交换</h6><p>注：</p>
+<p>用三层交换技术,先用vlan把用户隔离开,再用某种技术，把隔离开用户连起来</p>
+<p>隔离:隔离是故障</p>
+<p>连通︰是正常通信</p>
+<p>用三层配置vlan的ip作为网关</p>
+<p><img src="https://s2.loli.net/2023/04/06/uaBsm2IPYhTbRl4.png" alt="image-20230406214540804"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int vlan 20</span><br><span class="line">ip add 2.2.2.254 255.255.255.0</span><br></pre></td></tr></table></figure>
+
+<h6 id="14-单臂路由"><a href="#14-单臂路由" class="headerlink" title="14-单臂路由"></a>14-单臂路由</h6><p>注：用路由器接口分两个子接口配置网关</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Huawei]int g0/0/0.10</span><br><span class="line">dot1q termination vid 10</span><br><span class="line">ip address 1.1.1.254 255.255.255.0 </span><br><span class="line">arp broadcast enable</span><br></pre></td></tr></table></figure>
+
+<h6 id="15-ACL访问列表控制"><a href="#15-ACL访问列表控制" class="headerlink" title="15-ACL访问列表控制"></a>15-ACL访问列表控制</h6><p><img src="https://s2.loli.net/2023/04/11/7AXrYJ4NOSx1RWT.png" alt="image-20230411193401023"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Huawei]acl name text</span><br><span class="line">[Huawei-acl-adv-text]rule deny ip source 192.168.10.0 0.0.0.255 destination 192.</span><br><span class="line">168.30.0 0.0.0.255</span><br><span class="line">[Huawei-acl-adv-text]rule permit ip source any destination any </span><br><span class="line">[Huawei-acl-adv-text]q</span><br><span class="line">[Huawei]in g0/0/1</span><br><span class="line">[Huawei-GigabitEthernet0/0/1]traffic-filter inbound acl name text</span><br></pre></td></tr></table></figure>
+
+<h6 id="16-NAT网络地址转换"><a href="#16-NAT网络地址转换" class="headerlink" title="16-NAT网络地址转换"></a>16-NAT网络地址转换</h6><p><img src="https://s2.loli.net/2023/04/11/YvlkgC81pSt29MG.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Huawei]acl name neiwang basic</span><br><span class="line">[Huawei-acl-basic-neiwang]rule permit source 192.168.0.0 0.0.255.255</span><br><span class="line"></span><br><span class="line">[Huawei]nat address-group 1 64.1.1.2 64.1.1.5 </span><br><span class="line">[Huawei]dis acl all</span><br></pre></td></tr></table></figure>
+<p> Total quantity of nonempty ACL number is 1 </p>
+<p>Basic ACL neiwang 2999, 1 rule<br>Acl’s step is 5<br> rule 5 permit source 192.168.0.0 0.0.255.255<br> <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"> </span><br><span class="line">[Huawei-GigabitEthernet0/0/1]nat outbound 2999 address-group 1 </span><br></pre></td></tr></table></figure></p>
+]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>eNSP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Stable Diffusion</title>
+    <url>/2023/04/18/Stable-Diffusion/</url>
+    <content><![CDATA[<p><img src="https://s2.loli.net/2023/04/18/nmHiVNyG1QvWha6.png" alt="image-20230418190503271"></p>
+<p>Stable Diffusion的大致工作流程如下：</p>
+<p>首先，Stable Diffusion模型将潜在种子和文本提示作为输入。 然后使用潜在种子生成大小为 64×64 的随机潜在图像表示，而文本提示通过 CLIP 文本编码器转换为 77×768 的文本嵌入。</p>
+<p>接下来，U-Net 以文本嵌入为条件迭代地对随机潜在图像表示进行去噪。 U-Net 的输出是噪声残差，用于通过调度算法计算去噪的潜在图像表示。 调度算法根据先前的噪声表示和预测的噪声残差计算预测的去噪图像表示。这里可选用的调度算法很多，每个算法各有优劣，对Stable Diffusion来说建议用以下几个：</p>
+<p>PNDM scheduler（默认）<br>DDIM scheduler<br>K-LMS scheduler<br>去噪过程重复大约 50 次以逐步检索更好的潜在图像表示。 完成后，潜在图像表示由变分自动编码器的解码器部分解码。</p>
+<h2 id="本地部署Stable-Diffusion"><a href="#本地部署Stable-Diffusion" class="headerlink" title="本地部署Stable Diffusion"></a>本地部署Stable Diffusion</h2><p>本地部署Stable Diffusion最简单的方法是使用Stable Diffusion Web Ui。</p>
+<p>Stable Diffusion Web Ui是一套无代码、可视化的Stable Diffusion集成运行环境。它将Stable Diffusion的安装部署集成打包，提供一键安装脚本，并提供Web界面操作界面，极大简化了Stable Diffusion的操作和使用，让没有不懂代码的小白也能轻松上手使用Stable Diffusion模型。</p>
+<h2 id="使用Stable-Diffusion-Web-Ui"><a href="#使用Stable-Diffusion-Web-Ui" class="headerlink" title="使用Stable Diffusion Web Ui"></a>使用Stable Diffusion Web Ui</h2><h3 id="界面介绍"><a href="#界面介绍" class="headerlink" title="界面介绍"></a>界面介绍</h3><p>Stable Diffusion Web Ui整体上分为2个部分，最上面是<strong>模型选择</strong>，可以从下拉列表中选择已下载的预训练模型<img src="https://img-blog.csdnimg.cn/50b616d90b334b1a9662986a7230e57a.png#pic_center" alt="在这里插入图片描述"></p>
+<p>模型选择下面是一个Tab栏，这里是Stable Diffusion Web Ui提供的所有功能。<img src="https://img-blog.csdnimg.cn/7e8a631509bd44fab5b70abdb31e91f1.png#pic_center" alt="在这里插入图片描述"></p>
+<ul>
+<li><strong>txt2img</strong> — 根据文本提示生成图像；</li>
+<li><strong>img2img</strong> — 根据提供的图像作为范本、结合文本提示生成图像；</li>
+<li><strong>Extras</strong> — 优化(清晰、扩展)图像；</li>
+<li><strong>PNG Info</strong> — 显示图像基本信息</li>
+<li><strong>Checkpoint Merger</strong> — 模型合并</li>
+<li><strong>Train</strong> — 根据提供的图片训练具有某种图像风格的模型</li>
+<li><strong>Settings</strong> — 系统设置</li>
+</ul>
+<p> 平时使用最多的是<strong>txt2img</strong> 和 <strong>img2img</strong>，下面针对这2大块功能详细讲解。</p>
+<h4 id="txt2img"><a href="#txt2img" class="headerlink" title="txt2img"></a>txt2img</h4><p>txt2img有三个区域：</p>
+<ul>
+<li>提示区</li>
+<li>参数调节区</li>
+<li>输出浏览区<img src="https://img-blog.csdnimg.cn/5b2d46b240ba4979a4a6a099553a6171.png#pic_center" alt="在这里插入图片描述"></li>
+</ul>
+<p>提示区主要是2个文本框，可以输入提示文本。其中：</p>
+<p><strong>prompt</strong>: 主要是对于图像进行描述。prompt对Stable Diffusion图像生成质量至关重要，因此如果想生成高质量图片，一定要在提示设计上下功夫。一个好的提示需要详细和具体，后面会专门讲解如何设计一个好的提示。</p>
+<p><strong>Negative prompt</strong>：主要是告诉模型我不想要什么样的风格或元素；</p>
+<p>参数调节区提供了大量参数用于控制和优化生成过程：</p>
+<p><strong>Sampling method</strong>：扩散去噪算法的采样模式，不同采样模式会带来不一样的效果，具体需要在实际使用中测试；</p>
+<p><strong>Sampling steps</strong>：模型生成图片的迭代步数，每多一次迭代都会给 AI 更多的机会去对比 prompt 和 当前结果，从而进一步调整图片。更高的步数需要花费更多的计算时间，但却不一定意味着会有更好的结果。当然迭代步数不足肯定会降低输出的图像质量；</p>
+<p><strong>Width、Height</strong>：输出图像宽高，图片尺寸越大越消耗资源，显存小的要特别注意。一般不建议设置的太大，因为生成后可以通过 Extras 进行放大；</p>
+<p><strong>Batch count、 Batch size</strong>：控制生成几张图，前者计算时间长，后者需要显存大；</p>
+<p><strong>CFG Scale</strong>：分类器自由引导尺度，用于控制图像与提示的一致程度，值越低产生的内容越有创意；</p>
+<p><strong>Seed</strong>：随机种子，只要种子一样，参数和模型不变，生成的图像主体就不会剧烈变化，适用于对生成图像进行微调；</p>
+<p><strong>Restore faces</strong>：优化面部，当对生成的面部不满意时可以勾选该选项；</p>
+<p><strong>Tiling</strong>：生成一张可以平铺的图像；</p>
+<p><strong>Highres. fix</strong>：使用两个步骤的过程进行生成，以较小的分辨率创建图像，然后在不改变构图的情况下改进其中的细节，选中该选项会有一系列新的参数，其中重要的是：</p>
+<p> <strong>Upscaler</strong>：缩放算法；</p>
+<p> <strong>Upscale by</strong>：放大倍数；</p>
+<p> <strong>Denoising strength</strong>：决定算法对图像内容的保留程度。0什么都不会改变，1会得到一个完全不同的图像；</p>
+<h4 id="img2img"><a href="#img2img" class="headerlink" title="img2img"></a>img2img</h4><p>img2img跟txt2img界面类似，不同的是没有了txt2img中的参数调节区，取而代之的是图像范本区。<img src="https://img-blog.csdnimg.cn/49d1b13ee3f94e6f96b4377b8edbf857.png#pic_center" alt="在这里插入图片描述"></p>
+<p>我们可以上传范本图片让Stable Diffusion模仿，其他地方跟txt2img相同</p>
+<h3 id="界面汉化"><a href="#界面汉化" class="headerlink" title="界面汉化"></a>界面汉化</h3><p>通过<a href="https://download.csdn.net/download/JarodYv/87542257">这里</a>下载简体中文语言文件，下载完成后将其复制到项目文件夹的“localizations”目录中。之后在Settings -&gt; User interface -&gt; Localization (requires restart)，在下拉菜单中选择zh_CN。如果下拉列表中看不到zh_CN，请先点击右侧的刷新按钮，然后就能在下拉列表中看到了。设置完成后记得点击页面上方的“Apply settings”按钮保存设置。<br><img src="https://img-blog.csdnimg.cn/a6543281d36941eaba303c0bd9cfe06d.png#pic_center" alt="在这里插入图片描述"></p>
+<p>语言设置需要重启才能生效。<code>Ctrl + C</code>先终止Stable Diffusion Web Ui服务，然后再运行<code>webui.bat</code>或<code>webui.sh</code>，重启后刷新浏览器页面就能看到语言变成了简体中文了。<img src="https://img-blog.csdnimg.cn/797cba1ab85b41f789f60034e5156bec.png#pic_center" alt="在这里插入图片描述"></p>
+<h4 id="prompt语法"><a href="#prompt语法" class="headerlink" title="prompt语法"></a>prompt语法</h4><p>为了产生具有特定风格的图像，必须以特定格式提供文本提示。 这通常需要添加提示修饰符或添加更多关键字或关键短语来实现。下面为大家介绍一下Stable Diffusion的prompt语法规则。</p>
+<p>Stable Diffusion提示文本中的关键字或关键短语通过半角逗号分割，一般越靠前权重越高。我们可以通过提示修饰符来认为修改权重。</p>
+<ul>
+<li>(tag)：增加权重5%</li>
+<li>[tag]：降低权重5%</li>
+<li>(tag: weight)：设置具体权重值</li>
+</ul>
+<h3 id="Stable-Diffusion资源列表"><a href="#Stable-Diffusion资源列表" class="headerlink" title="Stable Diffusion资源列表"></a>Stable Diffusion资源列表</h3><p>好的生成质量离不开好的模型，这里为大家列出了Stable Diffusion预训练模型资源的获取来源。</p>
+<h4 id="1-Hugging-Face"><a href="#1-Hugging-Face" class="headerlink" title="1.Hugging Face"></a>1.Hugging Face</h4><p><a href="https://huggingface.co/">Hugging Face</a>是一个专注于构建、训练和部署先进开源机器学习模型的网站。</p>
+<p>HuggingFace是Stable Diffusion模型创作的首选平台，目前平台上有270多个与Stable Diffusion相关的模型，用”Stable Diffusion”作为关键字就能搜到。<br> <img src="https://img-blog.csdnimg.cn/img_convert/6d0ae952095037d2731835a245e676d9.png" alt="hugging face Stable Diffusion models search results"></p>
+<h3 id="2-Civitai"><a href="#2-Civitai" class="headerlink" title="2. Civitai"></a>2. Civitai</h3><p><a href="https://civitai.com/">Civitai</a>是一个专为Stable Diffusion AI艺术模型设计的网站。该平台目前有来自250+创作者上传的1700个模型。这是迄今为止我所知的最大的AI模型库。你可以在上面分享自己的模型或生成作品。<img src="https://img-blog.csdnimg.cn/cab367f7c9bc4d84b3805aa5738def98.png#pic_center" alt="在这里插入图片描述"></p>
+<h3 id="3-Discord"><a href="#3-Discord" class="headerlink" title="3. Discord"></a>3. Discord</h3><p>在Stable Diffusion的Discord页面中有一个名为“Models-Embeddings”的专属频道，里面提供了很多可以免费下载的各种模型。<img src="https://img-blog.csdnimg.cn/img_convert/363a2d1497e04d3ecdc160b290e9d318.png#pic_center" alt="Models-embeddings Discord channel Discord page for Stable Diffusion"></p>
+]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>ai</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScript基础</title>
+    <url>/2023/03/20/JavaScript%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<h3 id="一、前端知识"><a href="#一、前端知识" class="headerlink" title="一、前端知识"></a>一、前端知识</h3><h4 id="1-1、Web发展史"><a href="#1-1、Web发展史" class="headerlink" title="1.1、Web发展史"></a>1.1、Web发展史</h4><p>Mosaic，是互联网历史上第一个获普遍使用和能够显示图片的网页浏览器。于 1993 年问世。 1994 年 4 月，马克.安德森和 Silicon Graphics（简称为 SGI，中译为“视算科技”或“硅 图”）公司的创始人吉姆·克拉克（Jim Clark）在美国加州设立了“Mosaic Communication Corporation”。 Mosaic 公司成立后，由于伊利诺伊大学拥有 Mosaic 的商标权，且伊利诺伊大学已将 技术转让给 Spy Glass 公司，开发团队必须彻底重新撰写浏览器程式码，且浏览器名 称更改为 Netscape Navigator，公司名字于 1994 年 11 月改名为“Netscape Communication Corporation”，此后沿用至今，中译为“网景”。 微软的Internet Explorer及Mozilla Firefox等，其早期版本皆以Mosaic为基础而开发。 微软随后买下Spy Glass公司的技术开发出Internet Explorer浏览器，而Mozilla Firefox 则是网景通讯家开放源代码后所衍生出的版本。</p>
+<span id="more"></span>
+<h4 id="1-2js历史"><a href="#1-2js历史" class="headerlink" title="1.2js历史"></a>1.2js历史</h4><p>JavaScript 作为 Netscape Navigator 浏览器的一部分首次出现在 1996 年。它最初的设 计目标是改善网页的用户体验。 作者：Brendan Eich 期初 JavaScript 被命名为 LiveScript，后因和 Sun 公司合作，因市场宣传需要改名 JavaScript。后来 Sun 公司被 Oracle 收购，JavaScript 版权归 Oracle 所有。</p>
+<h4 id="1-3浏览器组成"><a href="#1-3浏览器组成" class="headerlink" title="1.3浏览器组成"></a>1.3浏览器组成</h4><p>shell 部分——用户能操作部分(壳)</p>
+<p>内核部分——用户看不到的部分</p>
+<ul>
+<li>渲染引擎（语法规则和渲染）</li>
+<li>js 引擎</li>
+<li>其他模块（如异步）</li>
+</ul>
+<h4 id="1-4js引擎"><a href="#1-4js引擎" class="headerlink" title="1.4js引擎"></a>1.4js引擎</h4><p>2001 年发布 ie6，首次实现对 js 引擎的优化。 2008 年 Google 发布最新浏览器 Chrome，它是采用优化后的 javascript 引擎，引擎代 号 V8，因能把 js 代码直接转化为机械码来执行，进而以速度快而闻名。 后 Firefox 也推出了具备强大功能的 js 引擎 Firefox3.5 TraceMonkey（对频繁执行的代码做了路径优化） Firefox4.0 JeagerMonkey</p>
+<h4 id="1-5js的特色"><a href="#1-5js的特色" class="headerlink" title="1.5js的特色"></a>1.5js的特色</h4><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">编译型语言</th>
+<th align="center">解释型语言</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">怎么做</td>
+<td align="center">通篇编译后，生成翻译完的文件，程序执行翻译后的文件</td>
+<td align="center">看一行翻译一行，不生成特定文件</td>
+</tr>
+<tr>
+<td align="center">代表语言</td>
+<td align="center">c、c++</td>
+<td align="center">js、php、python</td>
+</tr>
+<tr>
+<td align="center">优点</td>
+<td align="center">快（常用于系统，游戏）</td>
+<td align="center">可以跨平台</td>
+</tr>
+<tr>
+<td align="center">缺点</td>
+<td align="center">移植性不好（不跨平台，windows和linux不能混用）</td>
+<td align="center">稍微慢点</td>
+</tr>
+</tbody></table>
+<ol>
+<li>js 是解释性语言：(不需要编译成文件）跨平台</li>
+<li>java 先通过 javac，编译成.class 文件，通过 jvm（Java 虚拟机）进行解释执行<br>.java→javac→编译→.class→jvm→解释执行（java 可以跨平台）（java 是 oak 语言）</li>
+<li>link rel &#x3D; “”是异步加载</li>
+<li>单线程：同一时间只能做一件事——js 引擎是单线程<br>（同一时间做很多事叫多线程）</li>
+<li>ECMA（欧洲计算机制造联合会）标注：为了取得技术优势，微软推出了 JScript，<br>CEnvi 推出 ScriptEase，与 JavaScript 同样可在浏览器上运行。为了统一规格 JavaScript<br>兼容于 ECMA 标准，因此也称为 ECMAScript。<br>js 是轮转时间片</li>
+</ol>
+<h4 id="1-6js执行队列"><a href="#1-6js执行队列" class="headerlink" title="1.6js执行队列"></a>1.6js执行队列</h4><p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/8fb93cf220bd4a66a4b5107a5e5787f9.png"></p>
+<h4 id="1-7主流浏览器内核"><a href="#1-7主流浏览器内核" class="headerlink" title="1.7主流浏览器内核"></a>1.7主流浏览器内核</h4><p>| 主流浏览器（必须有独立内核）市场份额大于3% |   内核名称   |<br>| :—————————————-: | :———-: |  |<br>|                     IE                     |   trident    |<br>|                   chrome                   | webkit&#x2F;blink |<br>|                  firefox                   |    gecko     |<br>|                   opera                    |    presto    |<br>|                   safari                   |   werbkit    |</p>
+<h3 id="二、引入js"><a href="#二、引入js" class="headerlink" title="二、引入js"></a>二、引入js</h3><h4 id="2-1如何引入js"><a href="#2-1如何引入js" class="headerlink" title="2.1如何引入js"></a>2.1如何引入js</h4><ul>
+<li>第一种：页面内嵌标签,写 head 里面也行,写 body 里面也行<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span> </span><br><span class="line">	<span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>第二种 ：外部 js 文件，引入<blockquote>
+<p>注意：为符合 web 标准（w3c 标准中的一项）结构（html）、行为（js）、样式（css） 相分离，通常会采用外部引入。<br>一个文件中可以包括多个 css，js——不混用</p>
+</blockquote>
+</li>
+</ul>
+<p>特殊写页面，大部分写在外部——不混用</p>
+<p>如果同时写了内部的 js 和外部的 js，那么是外部的 js 文件显示出来</p>
+<h3 id="三、变量"><a href="#三、变量" class="headerlink" title="三、变量"></a>三、变量</h3><p>HTML，css 不是编程语言，是计算机语言，编程语言需要有变量和函数 变量是存放东西，方便后续使用的框</p>
+<h4 id="3-1变量声明"><a href="#3-1变量声明" class="headerlink" title="3.1变量声明"></a>3.1变量声明</h4><p>声明、赋值分解<br>var a; 这个叫变量声明。我们向系统中申请了 var 这个框，命名叫 a 给 a 赋值 100，写作 a &#x3D;100，这里不是等号是赋值 var a ；a &#x3D;100；可以简化写成 var a&#x3D;100；</p>
+<h4 id="3-2单一var声明法"><a href="#3-2单一var声明法" class="headerlink" title="3.2单一var声明法"></a>3.2单一var声明法</h4><p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/b8d65bbf71ab424a9f88cdfa21111e29.png"></p>
+<blockquote>
+<p>如写做：var a &#x3D; 10；a&#x3D;20;那么后面的 20 就会覆盖掉前面的 10<br>命名规则（用接近的英文单词）<br>变量名必须以英文字母、_、$ 开头</p>
+</blockquote>
+<p>变量名可以包括英文字母、_、$、数字</p>
+<p>不可以用系统的关键字、保留字作为变量名</p>
+<p>注意：起变量名一定要以英文语义化</p>
+<h4 id="关键字与保留字"><a href="#关键字与保留字" class="headerlink" title="关键字与保留字"></a>关键字与保留字</h4><p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/7783e53d84694fb4a607f5a16634f8a8.png"></p>
+<h3 id="四、基本语法"><a href="#四、基本语法" class="headerlink" title="四、基本语法"></a>四、基本语法</h3><p>下面是变量,例：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">var</span> b = <span class="number">20</span>;</span><br><span class="line"><span class="keyword">var</span> c;</span><br><span class="line">c = a + b;</span><br></pre></td></tr></table></figure>
+<p>先运算等号右边的 a+b，运算完后，再赋值给左边 c<br>先取值，再赋值</p>
+<h4 id="4-1运算大于赋值的优先级"><a href="#4-1运算大于赋值的优先级" class="headerlink" title="4.1运算大于赋值的优先级"></a>4.1运算大于赋值的优先级</h4><p>js 是动态语言，动态语言基本上都是解释性语言，解释性语言基本上都是脚本语言<br>js 是浮点型语言（带小数点）</p>
+<h4 id="4-2值类型（数据类型）"><a href="#4-2值类型（数据类型）" class="headerlink" title="4.2值类型（数据类型）"></a>4.2值类型（数据类型）</h4><h5 id="1-不可改变的原始值（栈数据）栈-stack"><a href="#1-不可改变的原始值（栈数据）栈-stack" class="headerlink" title="1.不可改变的原始值（栈数据）栈 stack"></a>1.不可改变的原始值（栈数据）栈 stack</h5><blockquote>
+<p>已经放进去的值不可改变，只会改房间编号为 null(硬盘原理)</p>
+</blockquote>
+<pre><code>1.Number 数字,例 var a = 123;
+2.String 字符串,语言放双引号里，例 var a=”语言”，““是空串
+3.Boolean 布尔数字,就两个值，false，true
+4.undefined 是没有定义的，表示还没赋值,仅一个值 underfined
+5.null 代表空，占位用，用空值来覆盖
+</code></pre>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a =<span class="number">10</span>;</span><br><span class="line"><span class="keyword">var</span> b = a;</span><br><span class="line">a = <span class="number">20</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(b)</span><br><span class="line">答案：<span class="number">10</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>原始值是我把一个值放到另一个值里面，改了第一个值，第二个值不变</p>
+</blockquote>
+<h5 id="2-引用值（堆数据）大致上放堆-heap-里面"><a href="#2-引用值（堆数据）大致上放堆-heap-里面" class="headerlink" title="2.引用值（堆数据）大致上放堆 heap 里面"></a>2.引用值（堆数据）大致上放堆 heap 里面</h5><p>array 数组, Object, function … data,RegExp 正则</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="literal">false</span>,”abc”]; <span class="comment">//这是数组</span></span><br><span class="line">例：<span class="keyword">var</span> arr = [<span class="number">1</span>];</span><br><span class="line"><span class="keyword">var</span> arr1 = arr;</span><br><span class="line">arr.<span class="title function_">push</span>(<span class="number">2</span>);</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(arr1);</span><br><span class="line">答案：arr 是 <span class="number">1</span>,<span class="number">2</span>   arr1 是 <span class="number">1</span>,<span class="number">2</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>引用值是把第一个值放到第二个值里面，改第一个值，第二个值也改变</p>
+</blockquote>
+<p>js 由值决定类型。原始值和引用值唯一的不同是赋值形式不同<br><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/41ac78870d2c4440b23d759f997963ba.png"></p>
+<p>var a &#x3D; 10;var b &#x3D;a；是 a 先取出 10，copy 一份放到 b 里面，改变 a 的值，b 的值是不变的，再把 a&#x3D;20;时 b 的值还是 10，不发生改变。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>];</span><br><span class="line"><span class="keyword">var</span> arr1 =arr;</span><br><span class="line">arr.<span class="title function_">push</span>(<span class="number">3</span>);</span><br><span class="line">答案：这往[<span class="number">1</span>,<span class="number">2</span>]放 <span class="number">3</span>，arr 和 arr1 都是[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>引用值是在栈内存里面放堆的地址，拷贝的也是地址，所以改变 arr，arr1 也变了</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>]; </span><br><span class="line"><span class="keyword">var</span> arr1 =arr; </span><br><span class="line">arr = [<span class="number">1</span>,<span class="number">3</span>]; </span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(arr1)</span><br><span class="line">答案：arr = [<span class="number">1</span>,<span class="number">3</span>];</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>新建了一个新的房间。arr1 是 1,2,现在是插入新引入值”房间”,会在堆里面重新申请一间房，并指向新房间</p>
+</blockquote>
+<h5 id="3-js-语句基本规"><a href="#3-js-语句基本规" class="headerlink" title="3.js 语句基本规"></a>3.js 语句基本规</h5><p>语句后面要用分号结束“；”但 function test(){}，for(){}，if(){}后面都不用加分号<br>js 语法错误会引发后续代码终止，但不会影响其它 js 代码块<br>书写格式要规范，“&#x3D; + &#x2F; -”两边都应该有空格<br><strong>错误分为两种</strong><br>1）低级错误（语法解析错误），不能写中文<br>2）逻辑错误（标准错误，情有可原，错的那个执行不了）</p>
+<h3 id="五、js运算符"><a href="#五、js运算符" class="headerlink" title="五、js运算符"></a>五、js运算符</h3><h4 id="5-1-运算操作符"><a href="#5-1-运算操作符" class="headerlink" title="5.1 运算操作符"></a>5.1 运算操作符</h4><ol>
+<li><p>+</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">“+”作用：数学运算、字符串链接</span><br><span class="line">任何数据类型加字符串都等于字符串</span><br><span class="line">例 <span class="keyword">var</span> a = “a”+ <span class="literal">true</span> + <span class="number">1</span>; <span class="comment">//打印 atrue1</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span> + “a” + <span class="number">1</span> + <span class="number">1</span>; <span class="comment">//打印 1a11</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span> + <span class="number">1</span> + “a” + <span class="number">1</span> + <span class="number">1</span>; <span class="comment">//打印 2a11，从左向右运算</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span> + <span class="number">1</span> + “a” +( <span class="number">1</span> + <span class="number">2</span>); <span class="comment">//打印 2a3</span></span><br></pre></td></tr></table></figure></li>
+<li><p>*、- 、&#x2F;</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a = <span class="number">0</span> – <span class="number">1</span>； <span class="comment">//等于-1</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">2</span> * <span class="number">1</span>； <span class="comment">//等于 2</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">0</span> / <span class="number">0</span>； <span class="comment">//答案是 NaN，应该得出一个数字类型的数，但是没法表达，</span></span><br><span class="line">就用 <span class="title class_">NaN</span> (<span class="title class_">NaN</span> 是 <span class="title class_">Not</span> a <span class="title class_">Number</span> 非数，不是数，但是是数字类型</span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span> / <span class="number">0</span>; <span class="comment">//是 infinity</span></span><br><span class="line">例 <span class="keyword">var</span> a = -<span class="number">1</span> / <span class="number">0</span>; /是-infinity</span><br></pre></td></tr></table></figure></li>
+<li><p>%<br>摩尔，模，是取余数的意思</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">5</span>%<span class="number">2</span> <span class="comment">//5%2 是五除二的余数，商二余一</span></span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">5</span>%<span class="number">1</span> <span class="comment">//是五除一的余数，结果是 0</span></span><br><span class="line">例 <span class="keyword">var</span> num = <span class="number">1</span> % <span class="number">5</span>; <span class="comment">//意思是 1 除以 5 的余数。商 0 余 1</span></span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">4</span>%<span class="number">6</span> <span class="comment">//是四除六的余数，结果是 4</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">4</span>;a % = <span class="number">5</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">// 4</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">0</span>;a % = <span class="number">5</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//0</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">10</span>;a %= <span class="number">2</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//0</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">3</span>;a % = <span class="number">4</span>; <span class="comment">//4</span></span><br></pre></td></tr></table></figure>
+<p>优先级”&#x3D;“最弱【赋值符号优先级最低】，”()”优先级较高</p>
+</li>
+<li><p>++</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a = <span class="number">10</span>; a = a + <span class="number">1</span>; <span class="comment">//结果 11</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+<p>a &#x3D; a + 1;写成 a ++是一种简化形式“++”，是自身加一，再赋值给自身<br>a++是 a&#x3D;a+1 的简化形式</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(++a );<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//答案 11；11</span></span><br><span class="line">是先执行++，再执行本条语句 <span class="variable language_">document</span>.<span class="title function_">write</span>(++a)</span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(a ++);<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//答案 1；2。是先执行</span></span><br><span class="line">语句(<span class="variable language_">document</span>.<span class="title function_">write</span>(a))，再++，所以第一次打印的还是 a，第二次打印 a++后的值</span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>；<span class="keyword">var</span> b=++a -<span class="number">1</span>+a++;<span class="variable language_">document</span>.<span class="title function_">write</span>(b + “ ” + a) <span class="comment">//答案 21 12</span></span><br><span class="line">先++a，这个时候 a=<span class="number">11</span>，再-<span class="number">1</span>，再加 a，b 就是 <span class="number">21</span>，最后++，a 就是 <span class="number">12</span></span><br></pre></td></tr></table></figure>
+<p>赋值的顺序自右向左，计算的顺序自左向右（按数学来）</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>；<span class="keyword">var</span> b = a ++ + <span class="number">1</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(b)； <span class="comment">//答案 2，先执行 var b =a+1，</span></span><br><span class="line">再 a++</span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>；<span class="keyword">var</span> b = a ++ + <span class="number">1</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(a)；<span class="variable language_">document</span>.<span class="title function_">write</span>(b)； <span class="comment">//答案 2，2</span></span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>；<span class="keyword">var</span> b = ++a + <span class="number">1</span>；<span class="variable language_">document</span>.<span class="title function_">write</span>(a)；<span class="variable language_">document</span>.<span class="title function_">write</span>(b)； <span class="comment">//答案 2，3</span></span><br><span class="line">例 <span class="keyword">var</span> i = <span class="number">1</span>;<span class="keyword">var</span> a = i++; <span class="comment">//答案 a = 1; 此时 i 先将值 1 赋给 a,然后自己+1，i=2;</span></span><br><span class="line"><span class="keyword">var</span> b = ++i; <span class="comment">//答案 b = 3；此时 i 先自己+1 为 3.再给 b 赋值，b=3;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>–<br>“- -”，是自身减一，在赋值给自身</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="keyword">var</span> b = a-- + -- a;<span class="variable language_">document</span>.<span class="title function_">write</span>(b); <span class="comment">//答案 0，先执行--a;此时 a 变成</span></span><br><span class="line"><span class="number">0</span>，然后第一个 a 也变成 <span class="number">0</span>，那么 b = <span class="number">0</span>-- + --a</span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="keyword">var</span> b = --a + --a;<span class="variable language_">document</span>.<span class="title function_">write</span>(b); <span class="comment">//答案-1</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a++);<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//答案 1；2</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(++a);<span class="variable language_">document</span>.<span class="title function_">write</span>(a); <span class="comment">//答案 2；2</span></span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">1</span>; <span class="keyword">var</span> b = a ++ +<span class="number">1</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(b); <span class="comment">//答案 2</span></span><br><span class="line">a 写在后面就后运行，先计算 a+<span class="number">1</span>=<span class="number">2</span> 赋值给 b 后再++</span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;<span class="keyword">var</span> b= ++a + <span class="number">1</span>;<span class="variable language_">document</span>.<span class="title function_">write</span>(a);<span class="variable language_">document</span>.<span class="title function_">write</span>(b); <span class="comment">//答案 2；3</span></span><br></pre></td></tr></table></figure></li>
+<li><p>+&#x3D; -&#x3D;</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>;a ++;a ++;a ++;加十个</span><br><span class="line">简化写法：a +=<span class="number">10</span>;也是 a = a+<span class="number">10</span>;</span><br><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>;a += <span class="number">10</span> + <span class="number">1</span>; <span class="comment">//答案 21</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;a = a + <span class="number">10</span>;等于 a+=<span class="number">10</span></span><br><span class="line">a++是 a +=<span class="number">1</span> 的写法</span><br></pre></td></tr></table></figure></li>
+<li><p>&#x2F;&#x3D;</p>
+</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a=<span class="number">10</span>;a/=<span class="number">2</span>; <span class="comment">//答案 5，是除二赋给自身的意思</span></span><br></pre></td></tr></table></figure>
+<ol>
+<li>*&#x3D;</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a =<span class="number">10</span>;a *=<span class="number">2</span>; <span class="comment">//答案：20，是乘二赋给自身的意思</span></span><br></pre></td></tr></table></figure>
+<ol>
+<li>%&#x3D;</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">例 <span class="keyword">var</span> a=<span class="number">10</span>;a%=<span class="number">2</span>; <span class="comment">//答案：0， 10 能整除 2,余数是 0,取余，余数赋给自身。</span></span><br><span class="line">例 <span class="keyword">var</span> a=<span class="number">3</span>;a%=<span class="number">4</span>; <span class="comment">//答案：3，3 除以 4，余数为 3，余数赋给自身。</span></span><br><span class="line">例 <span class="keyword">var</span> a=<span class="number">0</span>;a%=<span class="number">4</span>; <span class="comment">//答案：0，0 除以 4，余数为 0，余数赋给自身。</span></span><br><span class="line">例 <span class="keyword">var</span> a = <span class="number">1</span>;a% =<span class="number">10</span>; <span class="comment">//答案：1，1 除以 10，余数为 1，余数赋给自身。</span></span><br></pre></td></tr></table></figure>
+<h5 id="10-小测"><a href="#10-小测" class="headerlink" title="10.小测"></a>10.小测</h5><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a =(<span class="number">10</span> * <span class="number">3</span> – <span class="number">4</span> / <span class="number">2</span> + <span class="number">1</span>)%<span class="number">2</span>,b=<span class="number">3</span>;b %= a + <span class="number">3</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(a++);</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">wtite</span>(“&lt;br&gt;”);</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(--b);</span><br><span class="line"><span class="number">2</span>、<span class="keyword">var</span> a =<span class="number">123</span>; <span class="keyword">var</span> b =<span class="number">234</span>;经过计算交换 a，b 的值</span><br></pre></td></tr></table></figure>
+<p>答案</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span>、<span class="variable language_">document</span>.<span class="title function_">write</span>(a++);是 <span class="number">1</span>（先打出 <span class="number">1</span> 再++）</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(--b);是 <span class="number">2</span></span><br><span class="line">b % =a + <span class="number">3</span>,<span class="number">3</span> 的模等于 <span class="number">4</span>，除不开再赋值给 b，b 还是 <span class="number">3</span></span><br><span class="line"><span class="number">2</span>、方法一普通方法：<span class="keyword">var</span> c = a; a = b; b = c;<span class="variable language_">document</span>.<span class="title function_">write</span>(a ,b);</span><br><span class="line">方法二 a = a + b; b = a – b; a = a –b; <span class="variable language_">document</span>.<span class="title function_">write</span>(a ,b);</span><br></pre></td></tr></table></figure>
+<h4 id="5-2-比较运算符"><a href="#5-2-比较运算符" class="headerlink" title="5.2 比较运算符"></a>5.2 比较运算符</h4>]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown</title>
+    <url>/2023/03/09/LearnMarkdown/</url>
+    <content><![CDATA[<p><a href="https://baidu.com/" title="这是一个百度链接">百度链接</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Sangwq/pic-bed/img/bj5.jpg"></p>
+<hr>
+<ul>
+<li>无序列表1</li>
+<li>无序列表2<ol>
+<li>有序列表1</li>
+<li>有序列表1</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><span id="more"></span>
+<p><em>斜体</em><br><strong>加粗</strong><br><code>行内代码</code><br><u>下划线</u></p>
+<blockquote>
+<p>引用</p>
+</blockquote>
+<h3 id="代办"><a href="#代办" class="headerlink" title="代办"></a>代办</h3><ul>
+<li><input checked="" disabled="" type="checkbox"> one</li>
+<li><input disabled="" type="checkbox"> two</li>
+</ul>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><table>
+<thead>
+<tr>
+<th align="left">表头</th>
+<th align="right">表头</th>
+<th align="center">表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">左对齐</td>
+<td align="right">右对齐</td>
+<td align="center">剧中</td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td align="right">12</td>
+<td align="center">13</td>
+</tr>
+</tbody></table>
+<p>脚注：<br>一键三连<a href="%E7%82%B9%E8%B5%9E%EF%BC%8C%E6%8A%95%E5%B8%81%E6%94%B6%E8%97%8F">^三连</a></p>
+]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/03/09/hello-world/</url>
+    <content><![CDATA[<p>Welcome to my blog! This is your very first post. If you get any problems when using blog, you can find the answer in <a href="https://github.com/Sangwq">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>text</title>
     <url>/2023/03/19/text/</url>
     <content><![CDATA[<h2 id="first-push"><a href="#first-push" class="headerlink" title="first push"></a>first push</h2><blockquote class="blockquote-center">
@@ -675,26 +675,6 @@ width和height:高度和宽度,设置之后图片可能会失真。
       </categories>
       <tags>
         <tag>text</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>最新的注册 ChatGPT 的方法</title>
-    <url>/2023/04/18/%E6%9C%80%E6%96%B0%E7%9A%84%E6%B3%A8%E5%86%8C-ChatGPT-%E7%9A%84%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h3 id="最新的注册-ChatGPT-的方法"><a href="#最新的注册-ChatGPT-的方法" class="headerlink" title="最新的注册 ChatGPT 的方法"></a>最新的注册 ChatGPT 的方法</h3><p>现在依然有很多人注册 ChatGPT 遇到了问题,其实注册 ChatGPT 并不是一个非常难的事情，只不过这里面有几个比较重要的要点要注意</p>
-<p>第一个要点是你的浏览器最好设置成无痕模式，或者叫做隐私浏览的模式。如果你不是在无痕模式的状态下，那你最好要把历史记录给清除一下，或者说清除一下缓存。开启无痕模式的方法是点击右上角的 3 个点，然后找到打开新的无痕窗口，点开这个就打开了无痕模式。<img src="https://s2.loli.net/2023/04/18/DJ7jBKs3vS2IkqY.png" alt="image-20230418201014562"></p>
-<p>第二个是准备一个干净的海外邮箱，最好不要用国内的邮箱，你可以跟我一样去注册一个 <a href="https://mail.proton.me/">protomail</a> 的邮箱，这个邮箱是免费的。其实这个邮箱是非常容易去注册的，你只需要设定一个邮箱，然后设定一个密码，它也不需要绑定手机号码，是很容易就可以注册成功的一个邮箱。这个邮箱是欧洲的一个公司的开发者，安全性还是很值得信赖的。<img src="https://s2.loli.net/2023/04/18/JRkjCet95NasYPy.png" alt="image-20230418201454782"></p>
-<p>第三个要点就是梯子一定要开全局或者代理的模式，梯子的 IP 最好是小语种国家，当然这里香港和澳门内地都是不可以的，不要用香港的 IPU 注册一般是用，比如说荷兰、日本、欧洲的一些国家都是可以的。<img src="https://s2.loli.net/2023/04/18/VJo8QM2rZU7bmpH.png" alt="image-20230418201609638"></p>
-<p>到了这个手机号码这里着重讲一下这个部分。手机号码这里首先要说明的是内地的手机号，香港的、澳门的这三个地方的手机号其实都不能注册成功，可以使用的是境外的手机号。境外的有两种，第一个你有境外的实体 sim 卡的手机号，第二种就是去解码平台去解码。</p>
-<p>这里用解码平台去注册了，这个就比较直接，也比较简单了，获取成本也没有那么的高。<a href="https://sms-activate.org/">SMS-Activate</a></p>
-<p><img src="https://s2.loli.net/2023/04/18/SgvdVKoykrBNjFE.png" alt="image-20230418202107339"></p>
-<p>注册成功之后，点击右上角，然后点击余额，这里点击余额下面下拉框的充值，先要先充钱，现在最低都要 1 美金起了。点击回到解码平台，我们观察页面左侧放大镜这里，搜索框这里，我们直接输入 open AI。好，我们点击一下OpenAI，下面这个结果，下面就罗列了很多个地区，可以在下面找到荷兰或者别的可以多试了，其实之前用的比较多的就是印度和那个印尼，然后现在印尼和印度其实都不太容易成功，所以最好就换一下别的国家。它这里有价格，比如说75P，就是 75 卢布，也就是 7 块钱 7 块人民币，可以选一个合适的一个价格去购买就好了。</p>
-<p>这个时候我们回到解码平台，回去之后我们等一下，等一会我就可以收到短信，现在是等待短信这个状态，等一会它就会发一个 6 位数的短信验证码，现在发过来了，就这个六位数。我们复制一下，复制过去之后其实就已经注册完了。好，先复制一下，然后回到刚才的页面，我们在粘贴，粘贴完之后它就会自动识别，然后自动到下一步，然后这整个注册的过程就结束了，这就是注册成功的页面了。</p>
-]]></content>
-      <categories>
-        <category>Learn</category>
-      </categories>
-      <tags>
-        <tag>ai</tag>
       </tags>
   </entry>
   <entry>
@@ -978,6 +958,26 @@ width和height:高度和宽度,设置之后图片可能会失真。
       </categories>
       <tags>
         <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>最新的注册 ChatGPT 的方法</title>
+    <url>/2023/04/18/%E6%9C%80%E6%96%B0%E7%9A%84%E6%B3%A8%E5%86%8C-ChatGPT-%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h3 id="最新的注册-ChatGPT-的方法"><a href="#最新的注册-ChatGPT-的方法" class="headerlink" title="最新的注册 ChatGPT 的方法"></a>最新的注册 ChatGPT 的方法</h3><p>现在依然有很多人注册 ChatGPT 遇到了问题,其实注册 ChatGPT 并不是一个非常难的事情，只不过这里面有几个比较重要的要点要注意</p>
+<p>第一个要点是你的浏览器最好设置成无痕模式，或者叫做隐私浏览的模式。如果你不是在无痕模式的状态下，那你最好要把历史记录给清除一下，或者说清除一下缓存。开启无痕模式的方法是点击右上角的 3 个点，然后找到打开新的无痕窗口，点开这个就打开了无痕模式。<img src="https://s2.loli.net/2023/04/18/DJ7jBKs3vS2IkqY.png" alt="image-20230418201014562"></p>
+<p>第二个是准备一个干净的海外邮箱，最好不要用国内的邮箱，你可以跟我一样去注册一个 <a href="https://mail.proton.me/">protomail</a> 的邮箱，这个邮箱是免费的。其实这个邮箱是非常容易去注册的，你只需要设定一个邮箱，然后设定一个密码，它也不需要绑定手机号码，是很容易就可以注册成功的一个邮箱。这个邮箱是欧洲的一个公司的开发者，安全性还是很值得信赖的。<img src="https://s2.loli.net/2023/04/18/JRkjCet95NasYPy.png" alt="image-20230418201454782"></p>
+<p>第三个要点就是梯子一定要开全局或者代理的模式，梯子的 IP 最好是小语种国家，当然这里香港和澳门内地都是不可以的，不要用香港的 IPU 注册一般是用，比如说荷兰、日本、欧洲的一些国家都是可以的。<img src="https://s2.loli.net/2023/04/18/VJo8QM2rZU7bmpH.png" alt="image-20230418201609638"></p>
+<p>到了这个手机号码这里着重讲一下这个部分。手机号码这里首先要说明的是内地的手机号，香港的、澳门的这三个地方的手机号其实都不能注册成功，可以使用的是境外的手机号。境外的有两种，第一个你有境外的实体 sim 卡的手机号，第二种就是去解码平台去解码。</p>
+<p>这里用解码平台去注册了，这个就比较直接，也比较简单了，获取成本也没有那么的高。<a href="https://sms-activate.org/">SMS-Activate</a></p>
+<p><img src="https://s2.loli.net/2023/04/18/SgvdVKoykrBNjFE.png" alt="image-20230418202107339"></p>
+<p>注册成功之后，点击右上角，然后点击余额，这里点击余额下面下拉框的充值，先要先充钱，现在最低都要 1 美金起了。点击回到解码平台，我们观察页面左侧放大镜这里，搜索框这里，我们直接输入 open AI。好，我们点击一下OpenAI，下面这个结果，下面就罗列了很多个地区，可以在下面找到荷兰或者别的可以多试了，其实之前用的比较多的就是印度和那个印尼，然后现在印尼和印度其实都不太容易成功，所以最好就换一下别的国家。它这里有价格，比如说75P，就是 75 卢布，也就是 7 块钱 7 块人民币，可以选一个合适的一个价格去购买就好了。</p>
+<p>这个时候我们回到解码平台，回去之后我们等一下，等一会我就可以收到短信，现在是等待短信这个状态，等一会它就会发一个 6 位数的短信验证码，现在发过来了，就这个六位数。我们复制一下，复制过去之后其实就已经注册完了。好，先复制一下，然后回到刚才的页面，我们在粘贴，粘贴完之后它就会自动识别，然后自动到下一步，然后这整个注册的过程就结束了，这就是注册成功的页面了。</p>
+]]></content>
+      <categories>
+        <category>Learn</category>
+      </categories>
+      <tags>
+        <tag>ai</tag>
       </tags>
   </entry>
   <entry>
